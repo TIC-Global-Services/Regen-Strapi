@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_home_solarandstorages",
+  "info": {
+    "displayName": "solarandstorage"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "number": {
+      "type": "integer"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_whychooseuses",
+  "info": {
+    "displayName": "whychooseus"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "data": {
+      "type": "component",
+      "component": "shared.cardgroup",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

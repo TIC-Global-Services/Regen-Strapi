@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_heroes",
+  "info": {
+    "displayName": "hero"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttontext": {
+      "type": "string"
+    },
+    "isButton": {
+      "type": "boolean"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_awards",
+  "info": {
+    "displayName": "awards"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "logos": {
+      "type": "component",
+      "component": "shared.imagegroup",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
