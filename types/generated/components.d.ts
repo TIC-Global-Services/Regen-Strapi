@@ -11,14 +11,29 @@ export interface HomeAwards extends Struct.ComponentSchema {
   };
 }
 
+export interface HomeCraftmanship extends Struct.ComponentSchema {
+  collectionName: 'components_home_craftmanships';
+  info: {
+    displayName: 'craftmanship';
+  };
+  attributes: {
+    batteryStorage: Schema.Attribute.Component<'shared.imagegroup', true>;
+    evCharge: Schema.Attribute.Component<'shared.imagegroup', true>;
+    inverts: Schema.Attribute.Component<'shared.imagegroup', true>;
+    panal: Schema.Attribute.Component<'shared.imagegroup', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface HomeExpertise extends Struct.ComponentSchema {
   collectionName: 'components_home_expertise';
   info: {
     displayName: 'expertise';
   };
   attributes: {
-    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    data: Schema.Attribute.Component<'shared.cardgroup', true>;
+    subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
 }
@@ -37,6 +52,44 @@ export interface HomeHero extends Struct.ComponentSchema {
   };
 }
 
+export interface HomePatnersandmembership extends Struct.ComponentSchema {
+  collectionName: 'components_home_patnersandmemberships';
+  info: {
+    displayName: 'patnersandmembership';
+  };
+  attributes: {
+    membership: Schema.Attribute.Component<'shared.imagegroup', true>;
+    patners: Schema.Attribute.Component<'shared.imagegroup', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomeRealStories extends Struct.ComponentSchema {
+  collectionName: 'components_home_real_stories';
+  info: {
+    displayName: 'realStories';
+  };
+  attributes: {
+    certificates: Schema.Attribute.Component<'shared.imagegroup', true>;
+    reviews: Schema.Attribute.Component<'shared.testimonial', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomeSmartsolar extends Struct.ComponentSchema {
+  collectionName: 'components_home_smartsolars';
+  info: {
+    displayName: 'smartsolar';
+  };
+  attributes: {
+    data: Schema.Attribute.Component<'shared.cardgroup', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface HomeSolarandstorage extends Struct.ComponentSchema {
   collectionName: 'components_home_solarandstorages';
   info: {
@@ -46,6 +99,33 @@ export interface HomeSolarandstorage extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     number: Schema.Attribute.Integer;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomeThreewayCard extends Struct.ComponentSchema {
+  collectionName: 'components_home_threeway_cards';
+  info: {
+    displayName: 'threeway.card';
+  };
+  attributes: {
+    badgesubtitle: Schema.Attribute.String;
+    badgetitle: Schema.Attribute.String;
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomeThreewaystopay extends Struct.ComponentSchema {
+  collectionName: 'components_home_threewaystopays';
+  info: {
+    displayName: 'threewaystopay';
+  };
+  attributes: {
+    data: Schema.Attribute.Component<'home.threeway-card', false>;
+    description: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
 }
@@ -92,16 +172,36 @@ export interface SharedImagegroup extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedTestimonial extends Struct.ComponentSchema {
+  collectionName: 'components_shared_testimonials';
+  info: {
+    displayName: 'testimonial';
+  };
+  attributes: {
+    author: Schema.Attribute.String;
+    rating: Schema.Attribute.Integer;
+    review: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
       'home.awards': HomeAwards;
+      'home.craftmanship': HomeCraftmanship;
       'home.expertise': HomeExpertise;
       'home.hero': HomeHero;
+      'home.patnersandmembership': HomePatnersandmembership;
+      'home.real-stories': HomeRealStories;
+      'home.smartsolar': HomeSmartsolar;
       'home.solarandstorage': HomeSolarandstorage;
+      'home.threeway-card': HomeThreewayCard;
+      'home.threewaystopay': HomeThreewaystopay;
       'home.whychooseus': HomeWhychooseus;
       'shared.cardgroup': SharedCardgroup;
       'shared.imagegroup': SharedImagegroup;
+      'shared.testimonial': SharedTestimonial;
     }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "home-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "dynamiczone",
+      "components": [
+        "home.whychooseus",
+        "home.threewaystopay",
+        "home.threeway-card",
+        "home.solarandstorage",
+        "home.smartsolar",
+        "home.real-stories",
+        "home.patnersandmembership",
+        "home.hero",
+        "home.expertise",
+        "home.craftmanship",
+        "home.awards"
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_patnersandmemberships",
+  "info": {
+    "displayName": "patnersandmembership"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "patners": {
+      "type": "component",
+      "component": "shared.imagegroup",
+      "repeatable": true
+    },
+    "membership": {
+      "type": "component",
+      "component": "shared.imagegroup",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

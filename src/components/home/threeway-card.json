@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_threeway_cards",
+  "info": {
+    "displayName": "threeway.card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "badgetitle": {
+      "type": "string"
+    },
+    "badgesubtitle": {
+      "type": "string"
+    },
+    "bgimage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

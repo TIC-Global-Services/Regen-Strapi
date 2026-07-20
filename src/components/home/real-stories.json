@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_real_stories",
+  "info": {
+    "displayName": "realStories"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "certificates": {
+      "type": "component",
+      "component": "shared.imagegroup",
+      "repeatable": true
+    },
+    "reviews": {
+      "type": "component",
+      "component": "shared.testimonial",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

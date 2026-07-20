@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_home_expertise",
+  "collectionName": "components_home_threewaystopays",
   "info": {
-    "displayName": "expertise"
+    "displayName": "threewaystopay"
   },
   "options": {},
   "attributes": {
@@ -11,10 +11,13 @@
     "subtitle": {
       "type": "string"
     },
+    "description": {
+      "type": "string"
+    },
     "data": {
       "type": "component",
-      "component": "shared.cardgroup",
-      "repeatable": true
+      "component": "home.threeway-card",
+      "repeatable": false
     }
   },
   "config": {}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_home_craftmanships",
+  "info": {
+    "displayName": "craftmanship"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "inverts": {
+      "type": "component",
+      "component": "shared.imagegroup",
+      "repeatable": true
+    },
+    "panal": {
+      "type": "component",
+      "component": "shared.imagegroup",
+      "repeatable": true
+    },
+    "batteryStorage": {
+      "type": "component",
+      "component": "shared.imagegroup",
+      "repeatable": true
+    },
+    "evCharge": {
+      "type": "component",
+      "component": "shared.imagegroup",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
