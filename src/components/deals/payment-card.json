@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_deals_payment_cards",
+  "info": {
+    "displayName": "paymentCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "footerTitle": {
+      "type": "string"
+    },
+    "footerDescription": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

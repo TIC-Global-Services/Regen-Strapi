@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_deals_ways_to_pay_sections",
+  "info": {
+    "displayName": "waysToPay"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bottomSubtitle": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "deals.payment-card"
+    }
+  },
+  "config": {}
+}

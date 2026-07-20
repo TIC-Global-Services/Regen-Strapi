@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_solar_engineering_items",
+  "info": {
+    "displayName": "engineeringItem"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "isDark": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_solar_process_steps_sections",
+  "info": {
+    "displayName": "processSteps"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.process-step"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_rebates_stc_explainer_sections",
+  "info": {
+    "displayName": "stcExplainer"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.intro-paragraph"
+    }
+  },
+  "config": {}
+}

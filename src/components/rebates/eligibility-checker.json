@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_rebates_eligibility_checker_sections",
+  "info": {
+    "displayName": "eligibilityChecker"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_solar_faq_sections",
+  "info": {
+    "displayName": "faq"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "listTitle": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.faq-item"
+    }
+  },
+  "config": {}
+}

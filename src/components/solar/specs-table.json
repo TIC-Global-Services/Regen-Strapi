@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_solar_specs_table_sections",
+  "info": {
+    "displayName": "specsTable"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "specs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.spec-row"
+    }
+  },
+  "config": {}
+}

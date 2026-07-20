@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_rebates_rebate_programs_sections",
+  "info": {
+    "displayName": "rebatePrograms"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "programs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rebates.program"
+    }
+  },
+  "config": {}
+}

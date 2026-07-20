@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_rebates_loan_benefits",
+  "info": {
+    "displayName": "loanBenefit"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

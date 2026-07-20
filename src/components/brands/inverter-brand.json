@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_brands_inverter_brands",
+  "info": {
+    "displayName": "inverterBrand"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "origin": {
+      "type": "string"
+    },
+    "positioning": {
+      "type": "text"
+    },
+    "range": {
+      "type": "string"
+    },
+    "warranty": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

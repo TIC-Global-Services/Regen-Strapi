@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_rebates_utility_cards",
+  "info": {
+    "displayName": "utilityCard"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "perKwh": {
+      "type": "string"
+    },
+    "cap": {
+      "type": "string"
+    },
+    "maximumRebate": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_solar_package_features",
+  "info": {
+    "displayName": "packageFeature"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

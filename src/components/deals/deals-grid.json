@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_deals_deals_grid_sections",
+  "info": {
+    "displayName": "dealsGrid"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "promotions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "deals.promotion"
+    },
+    "ctaText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

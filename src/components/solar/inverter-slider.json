@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_solar_inverter_slider_sections",
+  "info": {
+    "displayName": "inverterSlider"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "inverters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.inverter-type"
+    }
+  },
+  "config": {}
+}
