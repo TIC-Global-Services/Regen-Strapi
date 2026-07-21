@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_rd_achievement_items",
+  "info": {
+    "displayName": "achievementItem"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "href": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

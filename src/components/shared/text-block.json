@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_text_blocks",
+  "info": {
+    "displayName": "textBlock"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

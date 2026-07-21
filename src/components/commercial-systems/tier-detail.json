@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_commercial_systems_tier_details",
+  "info": {
+    "displayName": "tierDetail"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

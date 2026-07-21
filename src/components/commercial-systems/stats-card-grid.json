@@ -1,30 +1,28 @@
 {
-  "collectionName": "components_solar_cta_banner_sections",
+  "collectionName": "components_commercial_systems_stats_card_grids",
   "info": {
-    "displayName": "ctaBanner"
+    "displayName": "statsCardGrid"
   },
   "options": {},
   "attributes": {
     "subtitle": {
       "type": "string"
     },
-    "mainTitle": {
+    "title": {
       "type": "string"
     },
     "description": {
       "type": "text"
     },
-    "buttonText": {
-      "type": "string"
-    },
-    "buttonHref": {
-      "type": "string",
-      "default": "#quote-form"
-    },
-    "backgroundImage": {
+    "cardBackground": {
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat-item"
     }
   },
   "config": {}

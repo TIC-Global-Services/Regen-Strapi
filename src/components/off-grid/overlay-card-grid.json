@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_off_grid_overlay_card_grids",
+  "info": {
+    "displayName": "overlayCardGrid"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "cardLayout": {
+      "type": "enumeration",
+      "enum": ["grid", "list"]
+    },
+    "cardColumns": {
+      "type": "integer"
+    },
+    "overlayOpacity": {
+      "type": "integer"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaHref": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.overlay-card"
+    }
+  },
+  "config": {}
+}

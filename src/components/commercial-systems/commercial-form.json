@@ -1,27 +1,20 @@
 {
-  "collectionName": "components_solar_cta_banner_sections",
+  "collectionName": "components_commercial_systems_commercial_forms",
   "info": {
-    "displayName": "ctaBanner"
+    "displayName": "commercialForm"
   },
   "options": {},
   "attributes": {
     "subtitle": {
       "type": "string"
     },
-    "mainTitle": {
+    "title": {
       "type": "string"
     },
     "description": {
       "type": "text"
     },
-    "buttonText": {
-      "type": "string"
-    },
-    "buttonHref": {
-      "type": "string",
-      "default": "#quote-form"
-    },
-    "backgroundImage": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_step_items",
+  "info": {
+    "displayName": "stepItem"
+  },
+  "options": {},
+  "attributes": {
+    "stepNumber": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

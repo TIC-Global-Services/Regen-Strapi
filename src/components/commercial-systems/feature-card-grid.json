@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_commercial_systems_feature_card_grids",
+  "info": {
+    "displayName": "featureCardGrid"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bottomSubtitle": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.feature-card"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_icon_cards",
+  "info": {
+    "displayName": "iconCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "specs": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["default", "highlighted", "light"]
+    }
+  },
+  "config": {}
+}

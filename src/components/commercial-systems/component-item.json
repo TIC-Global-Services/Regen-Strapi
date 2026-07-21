@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_commercial_systems_component_items",
+  "info": {
+    "displayName": "componentItem"
+  },
+  "options": {},
+  "attributes": {
+    "letter": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

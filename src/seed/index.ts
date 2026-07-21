@@ -4,6 +4,15 @@ import { brandsSections } from './data/brands-page';
 import { dealsSections } from './data/deals-page';
 import { rebatesSections } from './data/rebates-page';
 import { faqSections } from './data/faq-page';
+import { commercialOffGridSections } from './data/commercial-off-grid-page';
+import { commercialSystemsSections } from './data/commercial-systems-page';
+import { offGridSolutionsSections } from './data/off-grid-solutions-page';
+import { researchDevelopmentSections } from './data/research-development-page';
+import { portfolioSections } from './data/portfolio-page';
+import { blogSections } from './data/blog-page';
+import { pressMediaSections } from './data/press-media-page';
+import { reviewsSections } from './data/reviews-page';
+import { contactSections } from './data/contact-page';
 
 async function seedSingleType(
   strapi: Core.Strapi,
@@ -39,5 +48,55 @@ export async function runSeed(strapi: Core.Strapi) {
   await seedSingleType(strapi, 'api::rebates-page.rebates-page', 'sections', rebatesSections);
   await seedSingleType(strapi, 'api::faq-page.faq-page', 'sections', faqSections);
 
-  strapi.log.info('[seed] All 5 pages seeded');
+  await seedSingleType(
+    strapi,
+    'api::commercial-off-grid-page.commercial-off-grid-page',
+    'sections',
+    commercialOffGridSections
+  );
+  await seedSingleType(
+    strapi,
+    'api::commercial-systems-page.commercial-systems-page',
+    'sections',
+    commercialSystemsSections
+  );
+  await seedSingleType(
+    strapi,
+    'api::off-grid-solutions-page.off-grid-solutions-page',
+    'sections',
+    offGridSolutionsSections
+  );
+  await seedSingleType(
+    strapi,
+    'api::research-development-page.research-development-page',
+    'sections',
+    researchDevelopmentSections
+  );
+  await seedSingleType(
+    strapi,
+    'api::portfolio-page.portfolio-page',
+    'sections',
+    portfolioSections
+  );
+  await seedSingleType(strapi, 'api::blog-page.blog-page', 'sections', blogSections);
+  await seedSingleType(
+    strapi,
+    'api::press-media-page.press-media-page',
+    'sections',
+    pressMediaSections
+  );
+  await seedSingleType(
+    strapi,
+    'api::reviews-page.reviews-page',
+    'sections',
+    reviewsSections
+  );
+  await seedSingleType(
+    strapi,
+    'api::contact-page.contact-page',
+    'sections',
+    contactSections
+  );
+
+  strapi.log.info('[seed] All 14 pages seeded');
 }

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_commercial_systems_packages_grids",
+  "info": {
+    "displayName": "packagesGrid"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "packages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "commercial-systems.package"
+    }
+  },
+  "config": {}
+}

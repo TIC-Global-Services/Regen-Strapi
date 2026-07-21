@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "reviews_pages",
+  "info": {
+    "singularName": "reviews-page",
+    "pluralName": "reviews-pages",
+    "displayName": "reviews-page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "reviews.hero",
+        "reviews.intro-section",
+        "solar.cta-banner"
+      ]
+    }
+  }
+}

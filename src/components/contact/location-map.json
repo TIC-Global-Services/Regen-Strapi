@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_contact_location_maps",
+  "info": {
+    "displayName": "locationMap"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "markers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.map-marker"
+    }
+  },
+  "config": {}
+}

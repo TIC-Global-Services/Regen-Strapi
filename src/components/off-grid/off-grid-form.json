@@ -1,27 +1,20 @@
 {
-  "collectionName": "components_solar_cta_banner_sections",
+  "collectionName": "components_off_grid_off_grid_forms",
   "info": {
-    "displayName": "ctaBanner"
+    "displayName": "offGridForm"
   },
   "options": {},
   "attributes": {
     "subtitle": {
       "type": "string"
     },
-    "mainTitle": {
+    "title": {
       "type": "string"
     },
     "description": {
       "type": "text"
     },
-    "buttonText": {
-      "type": "string"
-    },
-    "buttonHref": {
-      "type": "string",
-      "default": "#quote-form"
-    },
-    "backgroundImage": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]

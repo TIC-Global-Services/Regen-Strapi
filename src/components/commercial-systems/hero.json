@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_solar_cta_banner_sections",
+  "collectionName": "components_commercial_systems_heroes",
   "info": {
-    "displayName": "ctaBanner"
+    "displayName": "hero"
   },
   "options": {},
   "attributes": {
@@ -14,12 +14,11 @@
     "description": {
       "type": "text"
     },
-    "buttonText": {
+    "ctaText": {
       "type": "string"
     },
-    "buttonHref": {
-      "type": "string",
-      "default": "#quote-form"
+    "ctaLink": {
+      "type": "string"
     },
     "backgroundImage": {
       "type": "media",

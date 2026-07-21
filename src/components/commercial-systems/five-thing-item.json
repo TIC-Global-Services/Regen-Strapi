@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_commercial_systems_five_thing_items",
+  "info": {
+    "displayName": "fiveThingItem"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "highlight": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

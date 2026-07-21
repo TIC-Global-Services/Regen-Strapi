@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_commercial_systems_package_items",
+  "info": {
+    "displayName": "packageItem"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

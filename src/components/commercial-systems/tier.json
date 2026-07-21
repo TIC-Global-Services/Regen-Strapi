@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_commercial_systems_tiers",
+  "info": {
+    "displayName": "tier"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaHref": {
+      "type": "string"
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "commercial-systems.tier-detail"
+    }
+  },
+  "config": {}
+}
