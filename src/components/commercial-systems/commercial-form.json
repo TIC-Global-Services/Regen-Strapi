@@ -1,7 +1,7 @@
 {
   "collectionName": "components_commercial_systems_commercial_forms",
   "info": {
-    "displayName": "commercialForm"
+    "displayName": "Commercial Form"
   },
   "options": {},
   "attributes": {
@@ -17,7 +17,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

@@ -3,7 +3,7 @@ import type { Schema, Struct } from '@strapi/strapi';
 export interface BlogHero extends Struct.ComponentSchema {
   collectionName: 'components_blog_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -18,7 +18,7 @@ export interface BlogHero extends Struct.ComponentSchema {
 export interface BrandsBrandCard extends Struct.ComponentSchema {
   collectionName: 'components_brands_brand_cards';
   info: {
-    displayName: 'brandCard';
+    displayName: 'Brand Card';
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -32,7 +32,7 @@ export interface BrandsBrandCard extends Struct.ComponentSchema {
 export interface BrandsBrandsGrid extends Struct.ComponentSchema {
   collectionName: 'components_brands_brands_grid_sections';
   info: {
-    displayName: 'brandsGrid';
+    displayName: 'Brands Grid';
   };
   attributes: {
     badge: Schema.Attribute.String;
@@ -45,7 +45,7 @@ export interface BrandsBrandsGrid extends Struct.ComponentSchema {
 export interface BrandsCriteriaList extends Struct.ComponentSchema {
   collectionName: 'components_brands_criteria_list_sections';
   info: {
-    displayName: 'criteriaList';
+    displayName: 'Criteria List';
   };
   attributes: {
     introText: Schema.Attribute.Text;
@@ -58,7 +58,7 @@ export interface BrandsCriteriaList extends Struct.ComponentSchema {
 export interface BrandsFeatureItem extends Struct.ComponentSchema {
   collectionName: 'components_brands_feature_items';
   info: {
-    displayName: 'featureItem';
+    displayName: 'Feature Item';
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -70,7 +70,7 @@ export interface BrandsFeatureItem extends Struct.ComponentSchema {
 export interface BrandsHero extends Struct.ComponentSchema {
   collectionName: 'components_brands_hero_sections';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -85,7 +85,7 @@ export interface BrandsHero extends Struct.ComponentSchema {
 export interface BrandsHybridSpecialty extends Struct.ComponentSchema {
   collectionName: 'components_brands_hybrid_specialty_sections';
   info: {
-    displayName: 'hybridSpecialty';
+    displayName: 'Hybrid Specialty';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -98,7 +98,7 @@ export interface BrandsHybridSpecialty extends Struct.ComponentSchema {
 export interface BrandsInverterBrand extends Struct.ComponentSchema {
   collectionName: 'components_brands_inverter_brands';
   info: {
-    displayName: 'inverterBrand';
+    displayName: 'Inverter Brand';
   };
   attributes: {
     logo: Schema.Attribute.Media<'images'>;
@@ -113,7 +113,7 @@ export interface BrandsInverterBrand extends Struct.ComponentSchema {
 export interface BrandsInvertersSlider extends Struct.ComponentSchema {
   collectionName: 'components_brands_inverters_slider_sections';
   info: {
-    displayName: 'invertersSlider';
+    displayName: 'Inverters Slider';
   };
   attributes: {
     inverters: Schema.Attribute.Component<'brands.inverter-brand', true>;
@@ -125,7 +125,7 @@ export interface BrandsInvertersSlider extends Struct.ComponentSchema {
 export interface BrandsPhilosophy extends Struct.ComponentSchema {
   collectionName: 'components_brands_philosophy_sections';
   info: {
-    displayName: 'philosophy';
+    displayName: 'Philosophy';
   };
   attributes: {
     badge: Schema.Attribute.String;
@@ -138,7 +138,7 @@ export interface BrandsPhilosophy extends Struct.ComponentSchema {
 export interface BrandsTier1Means extends Struct.ComponentSchema {
   collectionName: 'components_brands_tier1_means_sections';
   info: {
-    displayName: 'tier1Means';
+    displayName: 'Tier1 Means';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -152,7 +152,7 @@ export interface BrandsTier1Means extends Struct.ComponentSchema {
 export interface CommercialOffGridHero extends Struct.ComponentSchema {
   collectionName: 'components_commercial_off_grid_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -168,7 +168,7 @@ export interface CommercialOffGridSolutionsPortfolio
   extends Struct.ComponentSchema {
   collectionName: 'components_commercial_off_grid_solutions_portfolios';
   info: {
-    displayName: 'solutionsPortfolio';
+    displayName: 'Solutions Portfolio';
   };
   attributes: {
     cards: Schema.Attribute.Component<'off-grid.portfolio-card', true>;
@@ -183,7 +183,7 @@ export interface CommercialSystemsCommercialForm
   extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_commercial_forms';
   info: {
-    displayName: 'commercialForm';
+    displayName: 'Commercial Form';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -196,7 +196,7 @@ export interface CommercialSystemsCommercialForm
 export interface CommercialSystemsComponentItem extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_component_items';
   info: {
-    displayName: 'componentItem';
+    displayName: 'Component Item';
   };
   attributes: {
     letter: Schema.Attribute.String;
@@ -208,7 +208,7 @@ export interface CommercialSystemsComponentsSection
   extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_components_sections';
   info: {
-    displayName: 'componentsSection';
+    displayName: 'Components Section';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -226,7 +226,7 @@ export interface CommercialSystemsFeatureCardGrid
   extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_feature_card_grids';
   info: {
-    displayName: 'featureCardGrid';
+    displayName: 'Feature Card Grid';
   };
   attributes: {
     bottomSubtitle: Schema.Attribute.Text;
@@ -239,7 +239,7 @@ export interface CommercialSystemsFeatureCardGrid
 export interface CommercialSystemsFiveThingItem extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_five_thing_items';
   info: {
-    displayName: 'fiveThingItem';
+    displayName: 'Five Thing Item';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -253,7 +253,7 @@ export interface CommercialSystemsFiveThingsSection
   extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_five_things_sections';
   info: {
-    displayName: 'fiveThingsSection';
+    displayName: 'Five Things Section';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -269,7 +269,7 @@ export interface CommercialSystemsFiveThingsSection
 export interface CommercialSystemsHero extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -285,7 +285,7 @@ export interface CommercialSystemsIndustriesSection
   extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_industries_sections';
   info: {
-    displayName: 'industriesSection';
+    displayName: 'Industries Section';
   };
   attributes: {
     industries: Schema.Attribute.Component<'commercial-systems.industry', true>;
@@ -297,7 +297,7 @@ export interface CommercialSystemsIndustriesSection
 export interface CommercialSystemsIndustry extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_industries';
   info: {
-    displayName: 'industry';
+    displayName: 'Industry';
   };
   attributes: {
     caseStudy: Schema.Attribute.String;
@@ -310,7 +310,7 @@ export interface CommercialSystemsIndustry extends Struct.ComponentSchema {
 export interface CommercialSystemsPackage extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_packages';
   info: {
-    displayName: 'package';
+    displayName: 'Package';
   };
   attributes: {
     bgClass: Schema.Attribute.String;
@@ -323,7 +323,7 @@ export interface CommercialSystemsPackage extends Struct.ComponentSchema {
 export interface CommercialSystemsPackageItem extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_package_items';
   info: {
-    displayName: 'packageItem';
+    displayName: 'Package Item';
   };
   attributes: {
     label: Schema.Attribute.String;
@@ -334,7 +334,7 @@ export interface CommercialSystemsPackageItem extends Struct.ComponentSchema {
 export interface CommercialSystemsPackagesGrid extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_packages_grids';
   info: {
-    displayName: 'packagesGrid';
+    displayName: 'Packages Grid';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -347,7 +347,7 @@ export interface CommercialSystemsPackagesGrid extends Struct.ComponentSchema {
 export interface CommercialSystemsProcessFlow extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_process_flows';
   info: {
-    displayName: 'processFlow';
+    displayName: 'Process Flow';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -360,7 +360,7 @@ export interface CommercialSystemsProcessFlow extends Struct.ComponentSchema {
 export interface CommercialSystemsStatsCardGrid extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_stats_card_grids';
   info: {
-    displayName: 'statsCardGrid';
+    displayName: 'Stats Card Grid';
   };
   attributes: {
     cardBackground: Schema.Attribute.Media<'images'>;
@@ -374,7 +374,7 @@ export interface CommercialSystemsStatsCardGrid extends Struct.ComponentSchema {
 export interface CommercialSystemsTier extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_tiers';
   info: {
-    displayName: 'tier';
+    displayName: 'Tier';
   };
   attributes: {
     ctaHref: Schema.Attribute.String;
@@ -390,7 +390,7 @@ export interface CommercialSystemsTier extends Struct.ComponentSchema {
 export interface CommercialSystemsTierDetail extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_tier_details';
   info: {
-    displayName: 'tierDetail';
+    displayName: 'Tier Detail';
   };
   attributes: {
     label: Schema.Attribute.String;
@@ -401,7 +401,7 @@ export interface CommercialSystemsTierDetail extends Struct.ComponentSchema {
 export interface CommercialSystemsTiersSection extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_tiers_sections';
   info: {
-    displayName: 'tiersSection';
+    displayName: 'Tiers Section';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -415,7 +415,7 @@ export interface CommercialSystemsWatchSystemSection
   extends Struct.ComponentSchema {
   collectionName: 'components_commercial_systems_watch_system_sections';
   info: {
-    displayName: 'watchSystemSection';
+    displayName: 'Watch System Section';
   };
   attributes: {
     ctaHref: Schema.Attribute.String;
@@ -430,7 +430,7 @@ export interface CommercialSystemsWatchSystemSection
 export interface ContactContactFormSection extends Struct.ComponentSchema {
   collectionName: 'components_contact_contact_form_sections';
   info: {
-    displayName: 'contactFormSection';
+    displayName: 'Contact Form Section';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -442,7 +442,7 @@ export interface ContactContactFormSection extends Struct.ComponentSchema {
 export interface ContactHero extends Struct.ComponentSchema {
   collectionName: 'components_contact_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -457,7 +457,7 @@ export interface ContactHero extends Struct.ComponentSchema {
 export interface ContactLocationMap extends Struct.ComponentSchema {
   collectionName: 'components_contact_location_maps';
   info: {
-    displayName: 'locationMap';
+    displayName: 'Location Map';
   };
   attributes: {
     markers: Schema.Attribute.Component<'contact.map-marker', true>;
@@ -469,7 +469,7 @@ export interface ContactLocationMap extends Struct.ComponentSchema {
 export interface ContactMapMarker extends Struct.ComponentSchema {
   collectionName: 'components_contact_map_markers';
   info: {
-    displayName: 'mapMarker';
+    displayName: 'Map Marker';
   };
   attributes: {
     left: Schema.Attribute.String;
@@ -481,7 +481,7 @@ export interface ContactMapMarker extends Struct.ComponentSchema {
 export interface DealsDealsGrid extends Struct.ComponentSchema {
   collectionName: 'components_deals_deals_grid_sections';
   info: {
-    displayName: 'dealsGrid';
+    displayName: 'Deals Grid';
   };
   attributes: {
     ctaText: Schema.Attribute.String;
@@ -495,7 +495,7 @@ export interface DealsDealsGrid extends Struct.ComponentSchema {
 export interface DealsHero extends Struct.ComponentSchema {
   collectionName: 'components_deals_hero_sections';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -510,7 +510,7 @@ export interface DealsHero extends Struct.ComponentSchema {
 export interface DealsPaymentCard extends Struct.ComponentSchema {
   collectionName: 'components_deals_payment_cards';
   info: {
-    displayName: 'paymentCard';
+    displayName: 'Payment Card';
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -524,7 +524,7 @@ export interface DealsPaymentCard extends Struct.ComponentSchema {
 export interface DealsPhilosophy extends Struct.ComponentSchema {
   collectionName: 'components_deals_philosophy_sections';
   info: {
-    displayName: 'philosophy';
+    displayName: 'Philosophy';
   };
   attributes: {
     paragraphs: Schema.Attribute.Component<'shared.intro-paragraph', true>;
@@ -536,7 +536,7 @@ export interface DealsPhilosophy extends Struct.ComponentSchema {
 export interface DealsPromotion extends Struct.ComponentSchema {
   collectionName: 'components_deals_promotions';
   info: {
-    displayName: 'promotion';
+    displayName: 'Promotion';
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -547,7 +547,7 @@ export interface DealsPromotion extends Struct.ComponentSchema {
 export interface DealsWaysToPay extends Struct.ComponentSchema {
   collectionName: 'components_deals_ways_to_pay_sections';
   info: {
-    displayName: 'waysToPay';
+    displayName: 'Ways To Pay';
   };
   attributes: {
     bottomSubtitle: Schema.Attribute.Text;
@@ -560,7 +560,7 @@ export interface DealsWaysToPay extends Struct.ComponentSchema {
 export interface DealsWhyMatters extends Struct.ComponentSchema {
   collectionName: 'components_deals_why_matters_sections';
   info: {
-    displayName: 'whyMatters';
+    displayName: 'Why Matters';
   };
   attributes: {
     heading: Schema.Attribute.String;
@@ -573,7 +573,7 @@ export interface DealsWhyMatters extends Struct.ComponentSchema {
 export interface FaqCategorizedFaq extends Struct.ComponentSchema {
   collectionName: 'components_faq_categorized_faq_sections';
   info: {
-    displayName: 'categorizedFaq';
+    displayName: 'Categorized FAQ';
   };
   attributes: {
     categories: Schema.Attribute.Component<'faq.category', true>;
@@ -583,7 +583,7 @@ export interface FaqCategorizedFaq extends Struct.ComponentSchema {
 export interface FaqCategory extends Struct.ComponentSchema {
   collectionName: 'components_faq_categories';
   info: {
-    displayName: 'category';
+    displayName: 'Category';
   };
   attributes: {
     items: Schema.Attribute.Component<'solar.faq-item', true>;
@@ -594,7 +594,7 @@ export interface FaqCategory extends Struct.ComponentSchema {
 export interface FaqHero extends Struct.ComponentSchema {
   collectionName: 'components_faq_hero_sections';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -609,7 +609,7 @@ export interface FaqHero extends Struct.ComponentSchema {
 export interface HomeAwards extends Struct.ComponentSchema {
   collectionName: 'components_home_awards';
   info: {
-    displayName: 'awards';
+    displayName: 'Awards';
   };
   attributes: {
     logos: Schema.Attribute.Component<'shared.imagegroup', true>;
@@ -620,7 +620,7 @@ export interface HomeAwards extends Struct.ComponentSchema {
 export interface HomeCraftmanship extends Struct.ComponentSchema {
   collectionName: 'components_home_craftmanships';
   info: {
-    displayName: 'craftmanship';
+    displayName: 'Craftmanship';
   };
   attributes: {
     batteryStorage: Schema.Attribute.Component<'shared.imagegroup', true>;
@@ -635,7 +635,7 @@ export interface HomeCraftmanship extends Struct.ComponentSchema {
 export interface HomeExpertise extends Struct.ComponentSchema {
   collectionName: 'components_home_expertise';
   info: {
-    displayName: 'expertise';
+    displayName: 'Expertise';
   };
   attributes: {
     data: Schema.Attribute.Component<'home.expertise-card', true>;
@@ -647,7 +647,7 @@ export interface HomeExpertise extends Struct.ComponentSchema {
 export interface HomeExpertiseCard extends Struct.ComponentSchema {
   collectionName: 'components_home_expertise_cards';
   info: {
-    displayName: 'expertise.card';
+    displayName: 'Expertise Card';
   };
   attributes: {
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -659,7 +659,7 @@ export interface HomeExpertiseCard extends Struct.ComponentSchema {
 export interface HomeHero extends Struct.ComponentSchema {
   collectionName: 'components_home_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     buttontext: Schema.Attribute.String;
@@ -673,7 +673,7 @@ export interface HomeHero extends Struct.ComponentSchema {
 export interface HomePatnersandmembership extends Struct.ComponentSchema {
   collectionName: 'components_home_patnersandmemberships';
   info: {
-    displayName: 'patnersandmembership';
+    displayName: 'Patnersandmembership';
   };
   attributes: {
     membership: Schema.Attribute.Component<'shared.imagegroup', true>;
@@ -686,7 +686,7 @@ export interface HomePatnersandmembership extends Struct.ComponentSchema {
 export interface HomeRealStories extends Struct.ComponentSchema {
   collectionName: 'components_home_real_stories';
   info: {
-    displayName: 'realStories';
+    displayName: 'Real Stories';
   };
   attributes: {
     certificates: Schema.Attribute.Component<'shared.imagegroup', true>;
@@ -699,7 +699,7 @@ export interface HomeRealStories extends Struct.ComponentSchema {
 export interface HomeSmartsolar extends Struct.ComponentSchema {
   collectionName: 'components_home_smartsolars';
   info: {
-    displayName: 'smartsolar';
+    displayName: 'Smartsolar';
   };
   attributes: {
     data: Schema.Attribute.Component<'shared.smartsolar-card', true>;
@@ -711,7 +711,7 @@ export interface HomeSmartsolar extends Struct.ComponentSchema {
 export interface HomeSolarandstorage extends Struct.ComponentSchema {
   collectionName: 'components_home_solarandstorages';
   info: {
-    displayName: 'solarandstorage';
+    displayName: 'Solarandstorage';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -724,7 +724,7 @@ export interface HomeSolarandstorage extends Struct.ComponentSchema {
 export interface HomeThreewaystopay extends Struct.ComponentSchema {
   collectionName: 'components_home_threewaystopays';
   info: {
-    displayName: 'newsandinsights';
+    displayName: 'Threewaystopay';
   };
   attributes: {
     data: Schema.Attribute.Component<'shared.threeway-card', true>;
@@ -737,7 +737,7 @@ export interface HomeThreewaystopay extends Struct.ComponentSchema {
 export interface HomeWhychooseus extends Struct.ComponentSchema {
   collectionName: 'components_home_whychooseuses';
   info: {
-    displayName: 'whychooseus';
+    displayName: 'Whychooseus';
   };
   attributes: {
     data: Schema.Attribute.Component<'shared.cardgroup', true>;
@@ -749,7 +749,7 @@ export interface HomeWhychooseus extends Struct.ComponentSchema {
 export interface OffGridAcquaSmartCard extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_acqua_smart_cards';
   info: {
-    displayName: 'acquaSmartCard';
+    displayName: 'Acqua Smart Card';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -760,7 +760,7 @@ export interface OffGridAcquaSmartCard extends Struct.ComponentSchema {
 export interface OffGridAcquaSmartSection extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_acqua_smart_sections';
   info: {
-    displayName: 'acquaSmartSection';
+    displayName: 'Acqua Smart Section';
   };
   attributes: {
     cards: Schema.Attribute.Component<'off-grid.acqua-smart-card', true>;
@@ -774,7 +774,7 @@ export interface OffGridAcquaSmartSection extends Struct.ComponentSchema {
 export interface OffGridHero extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -789,7 +789,7 @@ export interface OffGridHero extends Struct.ComponentSchema {
 export interface OffGridHybridGenDetail extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_hybrid_gen_details';
   info: {
-    displayName: 'hybridGenDetail';
+    displayName: 'Hybrid Gen Detail';
   };
   attributes: {
     image: Schema.Attribute.Media<'images'>;
@@ -800,7 +800,7 @@ export interface OffGridHybridGenDetail extends Struct.ComponentSchema {
 export interface OffGridIconCardGrid extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_icon_card_grids';
   info: {
-    displayName: 'iconCardGrid';
+    displayName: 'Icon Card Grid';
   };
   attributes: {
     cards: Schema.Attribute.Component<'shared.icon-card', true>;
@@ -815,7 +815,7 @@ export interface OffGridIconCardGrid extends Struct.ComponentSchema {
 export interface OffGridMapMarker extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_map_markers';
   info: {
-    displayName: 'mapMarker';
+    displayName: 'Map Marker';
   };
   attributes: {
     left: Schema.Attribute.String;
@@ -827,7 +827,7 @@ export interface OffGridMapMarker extends Struct.ComponentSchema {
 export interface OffGridOffGridForm extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_off_grid_forms';
   info: {
-    displayName: 'offGridForm';
+    displayName: 'Off Grid Form';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -840,7 +840,7 @@ export interface OffGridOffGridForm extends Struct.ComponentSchema {
 export interface OffGridOverlayCardGrid extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_overlay_card_grids';
   info: {
-    displayName: 'overlayCardGrid';
+    displayName: 'Overlay Card Grid';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -860,7 +860,7 @@ export interface OffGridOverlayCardGrid extends Struct.ComponentSchema {
 export interface OffGridPortfolioCard extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_portfolio_cards';
   info: {
-    displayName: 'portfolioCard';
+    displayName: 'Portfolio Card';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -877,7 +877,7 @@ export interface OffGridPortfolioCard extends Struct.ComponentSchema {
 export interface OffGridSolutionsPortfolio extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_solutions_portfolios';
   info: {
-    displayName: 'solutionsPortfolio';
+    displayName: 'Solutions Portfolio';
   };
   attributes: {
     cards: Schema.Attribute.Component<'off-grid.portfolio-card', true>;
@@ -890,7 +890,7 @@ export interface OffGridSolutionsPortfolio extends Struct.ComponentSchema {
 export interface OffGridThreeSolutionItem extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_three_solution_items';
   info: {
-    displayName: 'threeSolutionItem';
+    displayName: 'Three Solution Item';
   };
   attributes: {
     ctaHref: Schema.Attribute.String;
@@ -904,7 +904,7 @@ export interface OffGridThreeSolutionItem extends Struct.ComponentSchema {
 export interface OffGridThreeSolutionsSection extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_three_solutions_sections';
   info: {
-    displayName: 'threeSolutionsSection';
+    displayName: 'Three Solutions Section';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -917,7 +917,7 @@ export interface OffGridThreeSolutionsSection extends Struct.ComponentSchema {
 export interface OffGridWorldMap extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_world_maps';
   info: {
-    displayName: 'worldMap';
+    displayName: 'World Map';
   };
   attributes: {
     markers: Schema.Attribute.Component<'off-grid.map-marker', true>;
@@ -929,7 +929,7 @@ export interface OffGridWorldMap extends Struct.ComponentSchema {
 export interface PortfolioHero extends Struct.ComponentSchema {
   collectionName: 'components_portfolio_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -944,7 +944,7 @@ export interface PortfolioHero extends Struct.ComponentSchema {
 export interface PressFeaturedArticle extends Struct.ComponentSchema {
   collectionName: 'components_press_featured_articles';
   info: {
-    displayName: 'featuredArticle';
+    displayName: 'Featured Article';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -957,7 +957,7 @@ export interface PressFeaturedArticle extends Struct.ComponentSchema {
 export interface PressHero extends Struct.ComponentSchema {
   collectionName: 'components_press_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -972,7 +972,7 @@ export interface PressHero extends Struct.ComponentSchema {
 export interface PressLatestNewsSection extends Struct.ComponentSchema {
   collectionName: 'components_press_latest_news_sections';
   info: {
-    displayName: 'latestNewsSection';
+    displayName: 'Latest News Section';
   };
   attributes: {
     items: Schema.Attribute.Component<'press.news-item', true>;
@@ -984,7 +984,7 @@ export interface PressLatestNewsSection extends Struct.ComponentSchema {
 export interface PressNewsItem extends Struct.ComponentSchema {
   collectionName: 'components_press_news_items';
   info: {
-    displayName: 'newsItem';
+    displayName: 'News Item';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -997,7 +997,7 @@ export interface PressNewsItem extends Struct.ComponentSchema {
 export interface RdAchievementItem extends Struct.ComponentSchema {
   collectionName: 'components_rd_achievement_items';
   info: {
-    displayName: 'achievementItem';
+    displayName: 'Achievement Item';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1010,7 +1010,7 @@ export interface RdAchievementItem extends Struct.ComponentSchema {
 export interface RdCoreAchievementsSection extends Struct.ComponentSchema {
   collectionName: 'components_rd_core_achievements_sections';
   info: {
-    displayName: 'coreAchievementsSection';
+    displayName: 'Core Achievements Section';
   };
   attributes: {
     items: Schema.Attribute.Component<'rd.achievement-item', true>;
@@ -1022,7 +1022,7 @@ export interface RdCoreAchievementsSection extends Struct.ComponentSchema {
 export interface RdEnergySolutionItem extends Struct.ComponentSchema {
   collectionName: 'components_rd_energy_solution_items';
   info: {
-    displayName: 'energySolutionItem';
+    displayName: 'Energy Solution Item';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1035,7 +1035,7 @@ export interface RdEnergySolutionItem extends Struct.ComponentSchema {
 export interface RdEnergySolutionsSection extends Struct.ComponentSchema {
   collectionName: 'components_rd_energy_solutions_sections';
   info: {
-    displayName: 'energySolutionsSection';
+    displayName: 'Energy Solutions Section';
   };
   attributes: {
     items: Schema.Attribute.Component<'rd.energy-solution-item', true>;
@@ -1047,7 +1047,7 @@ export interface RdEnergySolutionsSection extends Struct.ComponentSchema {
 export interface RdHero extends Struct.ComponentSchema {
   collectionName: 'components_rd_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -1062,7 +1062,7 @@ export interface RdHero extends Struct.ComponentSchema {
 export interface RebatesEligibilityChecker extends Struct.ComponentSchema {
   collectionName: 'components_rebates_eligibility_checker_sections';
   info: {
-    displayName: 'eligibilityChecker';
+    displayName: 'Eligibility Checker';
   };
   attributes: {
     badge: Schema.Attribute.String;
@@ -1074,7 +1074,7 @@ export interface RebatesEligibilityChecker extends Struct.ComponentSchema {
 export interface RebatesHero extends Struct.ComponentSchema {
   collectionName: 'components_rebates_hero_sections';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -1089,7 +1089,7 @@ export interface RebatesHero extends Struct.ComponentSchema {
 export interface RebatesLoanBenefit extends Struct.ComponentSchema {
   collectionName: 'components_rebates_loan_benefits';
   info: {
-    displayName: 'loanBenefit';
+    displayName: 'Loan Benefit';
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -1100,7 +1100,7 @@ export interface RebatesLoanBenefit extends Struct.ComponentSchema {
 export interface RebatesLoanBenefits extends Struct.ComponentSchema {
   collectionName: 'components_rebates_loan_benefits_sections';
   info: {
-    displayName: 'loanBenefits';
+    displayName: 'Loan Benefits';
   };
   attributes: {
     benefits: Schema.Attribute.Component<'rebates.loan-benefit', true>;
@@ -1114,7 +1114,7 @@ export interface RebatesLoanBenefits extends Struct.ComponentSchema {
 export interface RebatesProgram extends Struct.ComponentSchema {
   collectionName: 'components_rebates_programs';
   info: {
-    displayName: 'program';
+    displayName: 'Program';
   };
   attributes: {
     badge: Schema.Attribute.String;
@@ -1128,7 +1128,7 @@ export interface RebatesProgram extends Struct.ComponentSchema {
 export interface RebatesRebatePrograms extends Struct.ComponentSchema {
   collectionName: 'components_rebates_rebate_programs_sections';
   info: {
-    displayName: 'rebatePrograms';
+    displayName: 'Rebate Programs';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1141,7 +1141,7 @@ export interface RebatesRebatePrograms extends Struct.ComponentSchema {
 export interface RebatesStcExplainer extends Struct.ComponentSchema {
   collectionName: 'components_rebates_stc_explainer_sections';
   info: {
-    displayName: 'stcExplainer';
+    displayName: 'STC Explainer';
   };
   attributes: {
     paragraphs: Schema.Attribute.Component<'shared.intro-paragraph', true>;
@@ -1153,7 +1153,7 @@ export interface RebatesStcExplainer extends Struct.ComponentSchema {
 export interface RebatesUtilityCard extends Struct.ComponentSchema {
   collectionName: 'components_rebates_utility_cards';
   info: {
-    displayName: 'utilityCard';
+    displayName: 'Utility Card';
   };
   attributes: {
     cap: Schema.Attribute.String;
@@ -1167,7 +1167,7 @@ export interface RebatesUtilityCard extends Struct.ComponentSchema {
 export interface RebatesUtilityCards extends Struct.ComponentSchema {
   collectionName: 'components_rebates_utility_cards_sections';
   info: {
-    displayName: 'utilityCards';
+    displayName: 'Utility Cards';
   };
   attributes: {
     badge: Schema.Attribute.String;
@@ -1180,7 +1180,7 @@ export interface RebatesUtilityCards extends Struct.ComponentSchema {
 export interface ReviewsHero extends Struct.ComponentSchema {
   collectionName: 'components_reviews_heroes';
   info: {
-    displayName: 'hero';
+    displayName: 'Hero';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -1195,7 +1195,7 @@ export interface ReviewsHero extends Struct.ComponentSchema {
 export interface ReviewsIntroSection extends Struct.ComponentSchema {
   collectionName: 'components_reviews_intro_sections';
   info: {
-    displayName: 'introSection';
+    displayName: 'Intro Section';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1207,7 +1207,7 @@ export interface ReviewsIntroSection extends Struct.ComponentSchema {
 export interface SharedBlog extends Struct.ComponentSchema {
   collectionName: 'components_shared_blogs';
   info: {
-    displayName: 'blog';
+    displayName: 'Blog';
   };
   attributes: {
     content: Schema.Attribute.RichText;
@@ -1220,7 +1220,7 @@ export interface SharedBlog extends Struct.ComponentSchema {
 export interface SharedCardgroup extends Struct.ComponentSchema {
   collectionName: 'components_shared_cardgroups';
   info: {
-    displayName: 'cardgroup';
+    displayName: 'Cardgroup';
   };
   attributes: {
     bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -1234,7 +1234,7 @@ export interface SharedCardgroup extends Struct.ComponentSchema {
 export interface SharedEditorialSection extends Struct.ComponentSchema {
   collectionName: 'components_shared_editorial_sections';
   info: {
-    displayName: 'editorialSection';
+    displayName: 'Editorial Section';
   };
   attributes: {
     align: Schema.Attribute.Enumeration<['left', 'center', 'right']>;
@@ -1247,7 +1247,7 @@ export interface SharedEditorialSection extends Struct.ComponentSchema {
 export interface SharedFeatureCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_feature_cards';
   info: {
-    displayName: 'featureCard';
+    displayName: 'Feature Card';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1262,7 +1262,7 @@ export interface SharedFeatureCard extends Struct.ComponentSchema {
 export interface SharedIconCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_icon_cards';
   info: {
-    displayName: 'iconCard';
+    displayName: 'Icon Card';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1276,7 +1276,7 @@ export interface SharedIconCard extends Struct.ComponentSchema {
 export interface SharedImagegroup extends Struct.ComponentSchema {
   collectionName: 'components_shared_imagegroups';
   info: {
-    displayName: 'imagegroup';
+    displayName: 'Imagegroup';
   };
   attributes: {
     image: Schema.Attribute.Media<
@@ -1290,7 +1290,7 @@ export interface SharedImagegroup extends Struct.ComponentSchema {
 export interface SharedIntroParagraph extends Struct.ComponentSchema {
   collectionName: 'components_shared_intro_paragraphs';
   info: {
-    displayName: 'introParagraph';
+    displayName: 'Intro Paragraph';
   };
   attributes: {
     isSecondary: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
@@ -1301,7 +1301,7 @@ export interface SharedIntroParagraph extends Struct.ComponentSchema {
 export interface SharedOverlayCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_overlay_cards';
   info: {
-    displayName: 'overlayCard';
+    displayName: 'Overlay Card';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1309,10 +1309,33 @@ export interface SharedOverlayCard extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSeo extends Struct.ComponentSchema {
+  collectionName: 'components_shared_seos';
+  info: {
+    displayName: 'SEO';
+    icon: 'search';
+  };
+  attributes: {
+    canonicalURL: Schema.Attribute.String;
+    keywords: Schema.Attribute.Text;
+    metaDescription: Schema.Attribute.Text &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 160;
+      }>;
+    metaImage: Schema.Attribute.Media<'images'>;
+    metaRobots: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'index, follow'>;
+    metaTitle: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 60;
+      }>;
+  };
+}
+
 export interface SharedSmartsolarCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_smartsolar_cards';
   info: {
-    displayName: 'smartsolar.card';
+    displayName: 'Smartsolar Card';
   };
   attributes: {
     bgimage: Schema.Attribute.Media<
@@ -1327,7 +1350,7 @@ export interface SharedSmartsolarCard extends Struct.ComponentSchema {
 export interface SharedSplitSection extends Struct.ComponentSchema {
   collectionName: 'components_shared_split_sections';
   info: {
-    displayName: 'splitSection';
+    displayName: 'Split Section';
   };
   attributes: {
     badge: Schema.Attribute.String;
@@ -1342,7 +1365,7 @@ export interface SharedSplitSection extends Struct.ComponentSchema {
 export interface SharedStatItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_stat_items';
   info: {
-    displayName: 'statItem';
+    displayName: 'Stat Item';
   };
   attributes: {
     label: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1353,7 +1376,7 @@ export interface SharedStatItem extends Struct.ComponentSchema {
 export interface SharedStepItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_step_items';
   info: {
-    displayName: 'stepItem';
+    displayName: 'Step Item';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1366,7 +1389,7 @@ export interface SharedStepItem extends Struct.ComponentSchema {
 export interface SharedTestimonial extends Struct.ComponentSchema {
   collectionName: 'components_shared_testimonials';
   info: {
-    displayName: 'testimonial';
+    displayName: 'Testimonial';
   };
   attributes: {
     author: Schema.Attribute.String;
@@ -1379,7 +1402,7 @@ export interface SharedTestimonial extends Struct.ComponentSchema {
 export interface SharedTextBlock extends Struct.ComponentSchema {
   collectionName: 'components_shared_text_blocks';
   info: {
-    displayName: 'textBlock';
+    displayName: 'Text Block';
   };
   attributes: {
     text: Schema.Attribute.RichText;
@@ -1389,7 +1412,7 @@ export interface SharedTextBlock extends Struct.ComponentSchema {
 export interface SharedThreewayCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_threeway_cards';
   info: {
-    displayName: 'newsandinsights.card';
+    displayName: 'Threeway Card';
   };
   attributes: {
     badgesubtitle: Schema.Attribute.String;
@@ -1404,7 +1427,7 @@ export interface SharedThreewayCard extends Struct.ComponentSchema {
 export interface SharedTickerItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_ticker_items';
   info: {
-    displayName: 'tickerItem';
+    displayName: 'Ticker Item';
   };
   attributes: {
     text: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1414,7 +1437,7 @@ export interface SharedTickerItem extends Struct.ComponentSchema {
 export interface SolarBrandLogo extends Struct.ComponentSchema {
   collectionName: 'components_solar_brand_logos';
   info: {
-    displayName: 'brandLogo';
+    displayName: 'Brand Logo';
   };
   attributes: {
     logo: Schema.Attribute.Media<'images'>;
@@ -1425,7 +1448,7 @@ export interface SolarBrandLogo extends Struct.ComponentSchema {
 export interface SolarBrandsGrid extends Struct.ComponentSchema {
   collectionName: 'components_solar_brands_grid_sections';
   info: {
-    displayName: 'brandsGrid';
+    displayName: 'Brands Grid';
   };
   attributes: {
     brands: Schema.Attribute.Component<'solar.brand-logo', true>;
@@ -1438,7 +1461,7 @@ export interface SolarBrandsGrid extends Struct.ComponentSchema {
 export interface SolarCtaBanner extends Struct.ComponentSchema {
   collectionName: 'components_solar_cta_banner_sections';
   info: {
-    displayName: 'ctaBanner';
+    displayName: 'CTA Banner';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -1454,7 +1477,7 @@ export interface SolarCtaBanner extends Struct.ComponentSchema {
 export interface SolarEngineeringItem extends Struct.ComponentSchema {
   collectionName: 'components_solar_engineering_items';
   info: {
-    displayName: 'engineeringItem';
+    displayName: 'Engineering Item';
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -1466,7 +1489,7 @@ export interface SolarEngineeringItem extends Struct.ComponentSchema {
 export interface SolarEngineeringItems extends Struct.ComponentSchema {
   collectionName: 'components_solar_engineering_items_sections';
   info: {
-    displayName: 'engineeringItems';
+    displayName: 'Engineering Items';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1479,7 +1502,7 @@ export interface SolarEngineeringItems extends Struct.ComponentSchema {
 export interface SolarFaq extends Struct.ComponentSchema {
   collectionName: 'components_solar_faq_sections';
   info: {
-    displayName: 'faq';
+    displayName: 'FAQ';
   };
   attributes: {
     image: Schema.Attribute.Media<'images'>;
@@ -1492,7 +1515,7 @@ export interface SolarFaq extends Struct.ComponentSchema {
 export interface SolarFaqItem extends Struct.ComponentSchema {
   collectionName: 'components_solar_faq_items';
   info: {
-    displayName: 'faqItem';
+    displayName: 'FAQ Item';
   };
   attributes: {
     answer: Schema.Attribute.RichText & Schema.Attribute.Required;
@@ -1503,7 +1526,7 @@ export interface SolarFaqItem extends Struct.ComponentSchema {
 export interface SolarInfoCard extends Struct.ComponentSchema {
   collectionName: 'components_solar_info_cards';
   info: {
-    displayName: 'infoCard';
+    displayName: 'Info Card';
   };
   attributes: {
     label: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1514,7 +1537,7 @@ export interface SolarInfoCard extends Struct.ComponentSchema {
 export interface SolarInverterSlider extends Struct.ComponentSchema {
   collectionName: 'components_solar_inverter_slider_sections';
   info: {
-    displayName: 'inverterSlider';
+    displayName: 'Inverter Slider';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1527,7 +1550,7 @@ export interface SolarInverterSlider extends Struct.ComponentSchema {
 export interface SolarInverterType extends Struct.ComponentSchema {
   collectionName: 'components_solar_inverter_types';
   info: {
-    displayName: 'inverterType';
+    displayName: 'Inverter Type';
   };
   attributes: {
     backgroundImage: Schema.Attribute.Media<'images'>;
@@ -1540,7 +1563,7 @@ export interface SolarInverterType extends Struct.ComponentSchema {
 export interface SolarPackageFeature extends Struct.ComponentSchema {
   collectionName: 'components_solar_package_features';
   info: {
-    displayName: 'packageFeature';
+    displayName: 'Package Feature';
   };
   attributes: {
     label: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1551,7 +1574,7 @@ export interface SolarPackageFeature extends Struct.ComponentSchema {
 export interface SolarPackageTier extends Struct.ComponentSchema {
   collectionName: 'components_solar_package_tiers';
   info: {
-    displayName: 'packageTier';
+    displayName: 'Package Tier';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1563,7 +1586,7 @@ export interface SolarPackageTier extends Struct.ComponentSchema {
 export interface SolarPackages extends Struct.ComponentSchema {
   collectionName: 'components_solar_packages_sections';
   info: {
-    displayName: 'packages';
+    displayName: 'Packages';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1576,7 +1599,7 @@ export interface SolarPackages extends Struct.ComponentSchema {
 export interface SolarProcessStep extends Struct.ComponentSchema {
   collectionName: 'components_solar_process_steps';
   info: {
-    displayName: 'processStep';
+    displayName: 'Process Step';
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -1589,7 +1612,7 @@ export interface SolarProcessStep extends Struct.ComponentSchema {
 export interface SolarProcessSteps extends Struct.ComponentSchema {
   collectionName: 'components_solar_process_steps_sections';
   info: {
-    displayName: 'processSteps';
+    displayName: 'Process Steps';
   };
   attributes: {
     steps: Schema.Attribute.Component<'solar.process-step', true>;
@@ -1601,7 +1624,7 @@ export interface SolarProcessSteps extends Struct.ComponentSchema {
 export interface SolarSizingCard extends Struct.ComponentSchema {
   collectionName: 'components_solar_sizing_cards';
   info: {
-    displayName: 'sizingCard';
+    displayName: 'Sizing Card';
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
@@ -1613,7 +1636,7 @@ export interface SolarSizingCard extends Struct.ComponentSchema {
 export interface SolarSizingGuide extends Struct.ComponentSchema {
   collectionName: 'components_solar_sizing_guide_sections';
   info: {
-    displayName: 'sizingGuide';
+    displayName: 'Sizing Guide';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1627,7 +1650,7 @@ export interface SolarSizingGuide extends Struct.ComponentSchema {
 export interface SolarSizingRow extends Struct.ComponentSchema {
   collectionName: 'components_solar_sizing_rows';
   info: {
-    displayName: 'sizingRow';
+    displayName: 'Sizing Row';
   };
   attributes: {
     dailyUse: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1640,7 +1663,7 @@ export interface SolarSizingRow extends Struct.ComponentSchema {
 export interface SolarSpecRow extends Struct.ComponentSchema {
   collectionName: 'components_solar_spec_rows';
   info: {
-    displayName: 'specRow';
+    displayName: 'Spec Row';
   };
   attributes: {
     brandName: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1654,7 +1677,7 @@ export interface SolarSpecRow extends Struct.ComponentSchema {
 export interface SolarSpecsTable extends Struct.ComponentSchema {
   collectionName: 'components_solar_specs_table_sections';
   info: {
-    displayName: 'specsTable';
+    displayName: 'Specs Table';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -1667,7 +1690,7 @@ export interface SolarSpecsTable extends Struct.ComponentSchema {
 export interface SolarStatsAndIntro extends Struct.ComponentSchema {
   collectionName: 'components_solar_stats_and_intro_sections';
   info: {
-    displayName: 'statsAndIntro';
+    displayName: 'Stats And Intro';
   };
   attributes: {
     introParagraphs: Schema.Attribute.Component<'shared.intro-paragraph', true>;
@@ -1678,7 +1701,7 @@ export interface SolarStatsAndIntro extends Struct.ComponentSchema {
 export interface SolarTimeline extends Struct.ComponentSchema {
   collectionName: 'components_solar_timeline_sections';
   info: {
-    displayName: 'timeline';
+    displayName: 'Timeline';
   };
   attributes: {
     consultationText: Schema.Attribute.Text;
@@ -1791,6 +1814,7 @@ declare module '@strapi/strapi' {
       'shared.imagegroup': SharedImagegroup;
       'shared.intro-paragraph': SharedIntroParagraph;
       'shared.overlay-card': SharedOverlayCard;
+      'shared.seo': SharedSeo;
       'shared.smartsolar-card': SharedSmartsolarCard;
       'shared.split-section': SharedSplitSection;
       'shared.stat-item': SharedStatItem;

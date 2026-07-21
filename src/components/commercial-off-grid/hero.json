@@ -1,7 +1,7 @@
 {
   "collectionName": "components_commercial_off_grid_heroes",
   "info": {
-    "displayName": "hero"
+    "displayName": "Hero"
   },
   "options": {},
   "attributes": {
@@ -23,7 +23,9 @@
     "backgroundImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

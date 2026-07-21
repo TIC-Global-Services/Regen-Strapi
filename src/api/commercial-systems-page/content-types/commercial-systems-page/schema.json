@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "commercial_systems_pages",
+  "info": {
+    "singularName": "commercial-systems-page",
+    "pluralName": "commercial-systems-pages",
+    "displayName": "Commercial - Commercial Systems & Case Studies"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "commercial-systems.hero",
+        "commercial-systems.stats-card-grid",
+        "commercial-systems.tiers-section",
+        "commercial-systems.components-section",
+        "commercial-systems.industries-section",
+        "commercial-systems.feature-card-grid",
+        "commercial-systems.watch-system-section",
+        "commercial-systems.packages-grid",
+        "commercial-systems.process-flow",
+        "commercial-systems.five-things-section",
+        "solar.faq",
+        "commercial-systems.commercial-form",
+        "solar.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

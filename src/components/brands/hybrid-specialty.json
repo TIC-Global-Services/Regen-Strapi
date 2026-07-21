@@ -1,7 +1,7 @@
 {
   "collectionName": "components_brands_hybrid_specialty_sections",
   "info": {
-    "displayName": "hybridSpecialty"
+    "displayName": "Hybrid Specialty"
   },
   "options": {},
   "attributes": {
@@ -17,7 +17,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_commercial_systems_watch_system_sections",
   "info": {
-    "displayName": "watchSystemSection"
+    "displayName": "Watch System Section"
   },
   "options": {},
   "attributes": {
@@ -20,7 +20,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "paragraphs": {
       "type": "component",

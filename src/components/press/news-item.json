@@ -1,14 +1,16 @@
 {
   "collectionName": "components_press_news_items",
   "info": {
-    "displayName": "newsItem"
+    "displayName": "News Item"
   },
   "options": {},
   "attributes": {
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "title": {
       "type": "string"

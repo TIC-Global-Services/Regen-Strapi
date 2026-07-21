@@ -444,7 +444,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiBlogArticleBlogArticle extends Struct.CollectionTypeSchema {
   collectionName: 'blog_articles';
   info: {
-    displayName: 'blog-article';
+    displayName: 'Blog Article';
     pluralName: 'blog-articles';
     singularName: 'blog-article';
   };
@@ -469,6 +469,268 @@ export interface ApiBlogArticleBlogArticle extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiBlogPageBlogPage extends Struct.SingleTypeSchema {
+  collectionName: 'blog_pages';
+  info: {
+    displayName: 'Blog';
+    pluralName: 'blog-pages';
+    singularName: 'blog-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-page.blog-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<['blog.hero', 'solar.cta-banner']>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiBrandsPageBrandsPage extends Struct.SingleTypeSchema {
+  collectionName: 'brands_pages';
+  info: {
+    displayName: 'Solar - Brands We Carry';
+    pluralName: 'brands-pages';
+    singularName: 'brands-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::brands-page.brands-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'brands.hero',
+        'brands.philosophy',
+        'brands.tier1-means',
+        'brands.brands-grid',
+        'solar.specs-table',
+        'brands.hybrid-specialty',
+        'brands.inverters-slider',
+        'brands.criteria-list',
+        'solar.faq',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCommercialOffGridPageCommercialOffGridPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'commercial_off_grid_pages';
+  info: {
+    displayName: 'Commercial - Commercial Off Grid';
+    pluralName: 'commercial-off-grid-pages';
+    singularName: 'commercial-off-grid-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::commercial-off-grid-page.commercial-off-grid-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'commercial-off-grid.hero',
+        'shared.editorial-section',
+        'commercial-off-grid.solutions-portfolio',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCommercialSystemsPageCommercialSystemsPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'commercial_systems_pages';
+  info: {
+    displayName: 'Commercial - Commercial Systems & Case Studies';
+    pluralName: 'commercial-systems-pages';
+    singularName: 'commercial-systems-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::commercial-systems-page.commercial-systems-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'commercial-systems.hero',
+        'commercial-systems.stats-card-grid',
+        'commercial-systems.tiers-section',
+        'commercial-systems.components-section',
+        'commercial-systems.industries-section',
+        'commercial-systems.feature-card-grid',
+        'commercial-systems.watch-system-section',
+        'commercial-systems.packages-grid',
+        'commercial-systems.process-flow',
+        'commercial-systems.five-things-section',
+        'solar.faq',
+        'commercial-systems.commercial-form',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
+  collectionName: 'contact_pages';
+  info: {
+    displayName: 'Contact';
+    pluralName: 'contact-pages';
+    singularName: 'contact-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-page.contact-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'contact.hero',
+        'contact.contact-form-section',
+        'contact.location-map',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiDealsPageDealsPage extends Struct.SingleTypeSchema {
+  collectionName: 'deals_pages';
+  info: {
+    displayName: 'Solar - Deals';
+    pluralName: 'deals-pages';
+    singularName: 'deals-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::deals-page.deals-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'deals.hero',
+        'deals.philosophy',
+        'deals.deals-grid',
+        'shared.split-section',
+        'solar.packages',
+        'deals.ways-to-pay',
+        'deals.why-matters',
+        'solar.faq',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFaqPageFaqPage extends Struct.SingleTypeSchema {
+  collectionName: 'faq_pages';
+  info: {
+    displayName: 'Solar - FAQ';
+    pluralName: 'faq-pages';
+    singularName: 'faq-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::faq-page.faq-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      ['faq.hero', 'faq.categorized-faq', 'solar.cta-banner']
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -510,107 +772,84 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
   };
 }
 
-export interface ApiPagePage extends Struct.CollectionTypeSchema {
-  collectionName: 'pages';
+export interface ApiOffGridSolutionsPageOffGridSolutionsPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'off_grid_solutions_pages';
   info: {
-    description: 'Solar, commercial and general site pages';
-    displayName: 'Page';
-    pluralName: 'pages';
-    singularName: 'page';
+    displayName: 'Commercial - Off Grid Solutions';
+    pluralName: 'off-grid-solutions-pages';
+    singularName: 'off-grid-solutions-page';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    category: Schema.Attribute.Enumeration<['solar', 'commercial', 'general']> &
-      Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::page.page'> &
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::off-grid-solutions-page.off-grid-solutions-page'
+    > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     sections: Schema.Attribute.DynamicZone<
       [
-        'solar.stats-and-intro',
-        'solar.process-steps',
-        'solar.brands-grid',
-        'solar.inverter-slider',
-        'solar.specs-table',
-        'solar.sizing-guide',
-        'solar.packages',
-        'solar.timeline',
-        'solar.engineering-items',
-        'solar.faq',
-        'solar.cta-banner',
-        'brands.hero',
-        'brands.philosophy',
-        'brands.tier1-means',
-        'brands.brands-grid',
-        'brands.hybrid-specialty',
-        'brands.inverters-slider',
-        'brands.criteria-list',
-        'deals.hero',
-        'deals.philosophy',
-        'deals.deals-grid',
-        'deals.ways-to-pay',
-        'deals.why-matters',
-        'rebates.hero',
-        'rebates.rebate-programs',
-        'rebates.stc-explainer',
-        'rebates.utility-cards',
-        'rebates.loan-benefits',
-        'rebates.eligibility-checker',
-        'faq.hero',
-        'faq.categorized-faq',
-        'commercial-systems.hero',
-        'commercial-systems.stats-card-grid',
-        'commercial-systems.tiers-section',
-        'commercial-systems.components-section',
-        'commercial-systems.industries-section',
-        'commercial-systems.feature-card-grid',
-        'commercial-systems.watch-system-section',
-        'commercial-systems.packages-grid',
-        'commercial-systems.process-flow',
-        'commercial-systems.five-things-section',
-        'commercial-systems.commercial-form',
-        'commercial-off-grid.hero',
-        'commercial-off-grid.solutions-portfolio',
         'off-grid.hero',
+        'commercial-systems.stats-card-grid',
         'off-grid.solutions-portfolio',
         'off-grid.three-solutions-section',
         'off-grid.icon-card-grid',
         'off-grid.hybrid-gen-detail',
+        'shared.editorial-section',
         'off-grid.world-map',
         'off-grid.acqua-smart-section',
         'off-grid.overlay-card-grid',
+        'solar.faq',
         'off-grid.off-grid-form',
-        'rd.hero',
-        'rd.energy-solutions-section',
-        'rd.core-achievements-section',
-        'portfolio.hero',
-        'blog.hero',
-        'press.hero',
-        'press.featured-article',
-        'press.latest-news-section',
-        'reviews.hero',
-        'reviews.intro-section',
-        'contact.hero',
-        'contact.contact-form-section',
-        'contact.location-map',
-        'shared.split-section',
-        'shared.editorial-section',
+        'solar.cta-banner',
       ]
     >;
-    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPortfolioPagePortfolioPage extends Struct.SingleTypeSchema {
+  collectionName: 'portfolio_pages';
+  info: {
+    displayName: 'Commercial - Portfolio';
+    pluralName: 'portfolio-pages';
+    singularName: 'portfolio-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::portfolio-page.portfolio-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      ['portfolio.hero', 'solar.cta-banner']
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -684,6 +923,196 @@ export interface ApiPressArticlePressArticle
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPressMediaPagePressMediaPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'press_media_pages';
+  info: {
+    displayName: 'Press & Media';
+    pluralName: 'press-media-pages';
+    singularName: 'press-media-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::press-media-page.press-media-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'press.hero',
+        'press.featured-article',
+        'press.latest-news-section',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRebatesPageRebatesPage extends Struct.SingleTypeSchema {
+  collectionName: 'rebates_pages';
+  info: {
+    displayName: 'Solar - Govt Rebates';
+    pluralName: 'rebates-pages';
+    singularName: 'rebates-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rebates-page.rebates-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'rebates.hero',
+        'rebates.rebate-programs',
+        'rebates.stc-explainer',
+        'shared.split-section',
+        'rebates.utility-cards',
+        'rebates.loan-benefits',
+        'rebates.eligibility-checker',
+        'solar.faq',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiResearchDevelopmentPageResearchDevelopmentPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'research_development_pages';
+  info: {
+    displayName: 'Commercial - Research & Development';
+    pluralName: 'research-development-pages';
+    singularName: 'research-development-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::research-development-page.research-development-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'rd.hero',
+        'shared.editorial-section',
+        'rd.energy-solutions-section',
+        'rd.core-achievements-section',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiReviewsPageReviewsPage extends Struct.SingleTypeSchema {
+  collectionName: 'reviews_pages';
+  info: {
+    displayName: 'Reviews';
+    pluralName: 'reviews-pages';
+    singularName: 'reviews-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::reviews-page.reviews-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      ['reviews.hero', 'reviews.intro-section', 'solar.cta-banner']
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSolarPageSolarPage extends Struct.SingleTypeSchema {
+  collectionName: 'solar_pages';
+  info: {
+    displayName: 'Solar - Solar System';
+    pluralName: 'solar-pages';
+    singularName: 'solar-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::solar-page.solar-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'solar.stats-and-intro',
+        'solar.process-steps',
+        'solar.brands-grid',
+        'solar.inverter-slider',
+        'solar.specs-table',
+        'solar.sizing-guide',
+        'solar.packages',
+        'solar.timeline',
+        'solar.engineering-items',
+        'solar.faq',
+        'solar.cta-banner',
+      ]
+    >;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1235,10 +1664,23 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::blog-article.blog-article': ApiBlogArticleBlogArticle;
+      'api::blog-page.blog-page': ApiBlogPageBlogPage;
+      'api::brands-page.brands-page': ApiBrandsPageBrandsPage;
+      'api::commercial-off-grid-page.commercial-off-grid-page': ApiCommercialOffGridPageCommercialOffGridPage;
+      'api::commercial-systems-page.commercial-systems-page': ApiCommercialSystemsPageCommercialSystemsPage;
+      'api::contact-page.contact-page': ApiContactPageContactPage;
+      'api::deals-page.deals-page': ApiDealsPageDealsPage;
+      'api::faq-page.faq-page': ApiFaqPageFaqPage;
       'api::home-page.home-page': ApiHomePageHomePage;
-      'api::page.page': ApiPagePage;
+      'api::off-grid-solutions-page.off-grid-solutions-page': ApiOffGridSolutionsPageOffGridSolutionsPage;
+      'api::portfolio-page.portfolio-page': ApiPortfolioPagePortfolioPage;
       'api::portfolio-project.portfolio-project': ApiPortfolioProjectPortfolioProject;
       'api::press-article.press-article': ApiPressArticlePressArticle;
+      'api::press-media-page.press-media-page': ApiPressMediaPagePressMediaPage;
+      'api::rebates-page.rebates-page': ApiRebatesPageRebatesPage;
+      'api::research-development-page.research-development-page': ApiResearchDevelopmentPageResearchDevelopmentPage;
+      'api::reviews-page.reviews-page': ApiReviewsPageReviewsPage;
+      'api::solar-page.solar-page': ApiSolarPageSolarPage;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

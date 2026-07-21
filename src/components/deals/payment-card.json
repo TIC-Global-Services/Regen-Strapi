@@ -1,7 +1,7 @@
 {
   "collectionName": "components_deals_payment_cards",
   "info": {
-    "displayName": "paymentCard"
+    "displayName": "Payment Card"
   },
   "options": {},
   "attributes": {
@@ -16,7 +16,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "footerTitle": {
       "type": "string"

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_shared_icon_cards",
   "info": {
-    "displayName": "iconCard"
+    "displayName": "Icon Card"
   },
   "options": {},
   "attributes": {
@@ -17,11 +17,17 @@
     "icon": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "variant": {
       "type": "enumeration",
-      "enum": ["default", "highlighted", "light"]
+      "enum": [
+        "default",
+        "highlighted",
+        "light"
+      ]
     }
   },
   "config": {}

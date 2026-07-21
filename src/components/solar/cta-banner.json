@@ -1,7 +1,7 @@
 {
   "collectionName": "components_solar_cta_banner_sections",
   "info": {
-    "displayName": "ctaBanner"
+    "displayName": "CTA Banner"
   },
   "options": {},
   "attributes": {
@@ -24,7 +24,9 @@
     "backgroundImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

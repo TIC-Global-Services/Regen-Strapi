@@ -1,7 +1,7 @@
 {
   "collectionName": "components_commercial_systems_stats_card_grids",
   "info": {
-    "displayName": "statsCardGrid"
+    "displayName": "Stats Card Grid"
   },
   "options": {},
   "attributes": {
@@ -17,7 +17,9 @@
     "cardBackground": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "stats": {
       "type": "component",

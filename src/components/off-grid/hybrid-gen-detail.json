@@ -1,19 +1,23 @@
 {
   "collectionName": "components_off_grid_hybrid_gen_details",
   "info": {
-    "displayName": "hybridGenDetail"
+    "displayName": "Hybrid Gen Detail"
   },
   "options": {},
   "attributes": {
     "logo": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

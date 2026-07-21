@@ -1,7 +1,7 @@
 {
   "collectionName": "components_rebates_programs",
   "info": {
-    "displayName": "program"
+    "displayName": "Program"
   },
   "options": {},
   "attributes": {
@@ -23,7 +23,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

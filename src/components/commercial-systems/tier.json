@@ -1,7 +1,7 @@
 {
   "collectionName": "components_commercial_systems_tiers",
   "info": {
-    "displayName": "tier"
+    "displayName": "Tier"
   },
   "options": {},
   "attributes": {
@@ -17,7 +17,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "ctaText": {
       "type": "string"

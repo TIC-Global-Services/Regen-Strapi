@@ -1,7 +1,7 @@
 {
   "collectionName": "components_shared_step_items",
   "info": {
-    "displayName": "stepItem"
+    "displayName": "Step Item"
   },
   "options": {},
   "attributes": {
@@ -17,7 +17,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

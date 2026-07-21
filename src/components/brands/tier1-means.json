@@ -1,7 +1,7 @@
 {
   "collectionName": "components_brands_tier1_means_sections",
   "info": {
-    "displayName": "tier1Means"
+    "displayName": "Tier 1 Means"
   },
   "options": {},
   "attributes": {
@@ -17,11 +17,16 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "imagePosition": {
       "type": "enumeration",
-      "enum": ["left", "right"]
+      "enum": [
+        "left",
+        "right"
+      ]
     }
   },
   "config": {}

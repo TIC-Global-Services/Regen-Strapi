@@ -1,7 +1,7 @@
 {
   "collectionName": "components_solar_inverter_types",
   "info": {
-    "displayName": "inverterType"
+    "displayName": "Inverter Type"
   },
   "options": {},
   "attributes": {
@@ -16,7 +16,9 @@
     "backgroundImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "infoCards": {
       "type": "component",

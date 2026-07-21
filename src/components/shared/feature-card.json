@@ -1,7 +1,7 @@
 {
   "collectionName": "components_shared_feature_cards",
   "info": {
-    "displayName": "featureCard"
+    "displayName": "Feature Card"
   },
   "options": {},
   "attributes": {
@@ -14,11 +14,16 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "textPosition": {
       "type": "enumeration",
-      "enum": ["top", "bottom"]
+      "enum": [
+        "top",
+        "bottom"
+      ]
     },
     "footerTitle": {
       "type": "string"

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_commercial_systems_components_sections",
   "info": {
-    "displayName": "componentsSection"
+    "displayName": "Components Section"
   },
   "options": {},
   "attributes": {
@@ -17,7 +17,9 @@
     "backgroundImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "items": {
       "type": "component",

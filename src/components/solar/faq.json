@@ -1,7 +1,7 @@
 {
   "collectionName": "components_solar_faq_sections",
   "info": {
-    "displayName": "faq"
+    "displayName": "FAQ"
   },
   "options": {},
   "attributes": {
@@ -14,7 +14,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "items": {
       "type": "component",

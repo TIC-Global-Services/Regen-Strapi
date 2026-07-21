@@ -1,7 +1,7 @@
 {
   "collectionName": "components_solar_process_steps",
   "info": {
-    "displayName": "processStep"
+    "displayName": "Process Step"
   },
   "options": {},
   "attributes": {
@@ -20,7 +20,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

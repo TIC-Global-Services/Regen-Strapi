@@ -1,4 +1,5 @@
 import type { Core } from "@strapi/strapi";
+import type { UID } from "@strapi/types";
 
 import { solarSections } from "./data/solar-page";
 import { brandsSections } from "./data/brands-page";
@@ -17,96 +18,80 @@ import { contactSections } from "./data/contact-page";
 
 const pages = [
   {
-    title: "Solar",
-    slug: "solar",
-    category: "solar",
+    uid: "api::solar-page.solar-page" as UID.ContentType,
+    title: "Solar - Solar System",
     sections: solarSections,
   },
   {
-    title: "Brands",
-    slug: "brands",
-    category: "solar",
+    uid: "api::brands-page.brands-page" as UID.ContentType,
+    title: "Solar - Brands We Carry",
     sections: brandsSections,
   },
   {
-    title: "Deals",
-    slug: "deals",
-    category: "solar",
+    uid: "api::deals-page.deals-page" as UID.ContentType,
+    title: "Solar - Deals",
     sections: dealsSections,
   },
   {
-    title: "Rebates",
-    slug: "rebates",
-    category: "solar",
+    uid: "api::rebates-page.rebates-page" as UID.ContentType,
+    title: "Solar - Govt Rebates",
     sections: rebatesSections,
   },
   {
-    title: "FAQ",
-    slug: "faq",
-    category: "solar",
+    uid: "api::faq-page.faq-page" as UID.ContentType,
+    title: "Solar - FAQ",
     sections: faqSections,
   },
   {
-    title: "Commercial Systems",
-    slug: "commercial-systems",
-    category: "commercial",
+    uid: "api::commercial-systems-page.commercial-systems-page" as UID.ContentType,
+    title: "Commercial - Commercial Systems & Case Studies",
     sections: commercialSystemsSections,
   },
   {
-    title: "Commercial Off Grid",
-    slug: "commercial-off-grid",
-    category: "commercial",
+    uid: "api::commercial-off-grid-page.commercial-off-grid-page" as UID.ContentType,
+    title: "Commercial - Commercial Off Grid",
     sections: commercialOffGridSections,
   },
   {
-    title: "Off Grid Solutions",
-    slug: "off-grid-solutions",
-    category: "commercial",
+    uid: "api::off-grid-solutions-page.off-grid-solutions-page" as UID.ContentType,
+    title: "Commercial - Off Grid Solutions",
     sections: offGridSolutionsSections,
   },
   {
-    title: "Research & Development",
-    slug: "research-development",
-    category: "commercial",
+    uid: "api::research-development-page.research-development-page" as UID.ContentType,
+    title: "Commercial - Research & Development",
     sections: researchDevelopmentSections,
   },
   {
-    title: "Portfolio",
-    slug: "portfolio",
-    category: "commercial",
+    uid: "api::portfolio-page.portfolio-page" as UID.ContentType,
+    title: "Commercial - Portfolio",
     sections: portfolioSections,
   },
   {
+    uid: "api::blog-page.blog-page" as UID.ContentType,
     title: "Blog",
-    slug: "blog",
-    category: "general",
     sections: blogSections,
   },
   {
+    uid: "api::press-media-page.press-media-page" as UID.ContentType,
     title: "Press & Media",
-    slug: "press-media",
-    category: "general",
     sections: pressMediaSections,
   },
   {
+    uid: "api::reviews-page.reviews-page" as UID.ContentType,
     title: "Reviews",
-    slug: "reviews",
-    category: "general",
     sections: reviewsSections,
   },
   {
+    uid: "api::contact-page.contact-page" as UID.ContentType,
     title: "Contact",
-    slug: "contact",
-    category: "general",
     sections: contactSections,
   },
-] as const;
+];
 
-async function seedPage(strapi: Core.Strapi, page: (typeof pages)[number]) {
-  const existing = await strapi.documents("api::page.page").findFirst({
-    filters: {
-      slug: page.slug,
-    },
+async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number]) {
+  const existing = await strapi.documents(page.uid).findFirst({
+    status: "published",
   });
 
   if (existing) {
@@ -114,11 +99,8 @@ async function seedPage(strapi: Core.Strapi, page: (typeof pages)[number]) {
     return;
   }
 
-  await strapi.documents("api::page.page").create({
+  await strapi.documents(page.uid).create({
     data: {
-      title: page.title,
-      slug: page.slug,
-      category: page.category,
       sections: page.sections,
     } as any,
     status: "published",
@@ -131,7 +113,7 @@ export async function runSeed(strapi: Core.Strapi) {
   strapi.log.info("🌱 Starting Page Seeder...");
 
   for (const page of pages) {
-    await seedPage(strapi, page);
+    await seedSingleType(strapi, page);
   }
 
   strapi.log.info(`✅ ${pages.length} pages seeded successfully.`);

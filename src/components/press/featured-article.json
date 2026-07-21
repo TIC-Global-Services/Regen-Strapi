@@ -1,14 +1,16 @@
 {
   "collectionName": "components_press_featured_articles",
   "info": {
-    "displayName": "featuredArticle"
+    "displayName": "Featured Article"
   },
   "options": {},
   "attributes": {
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "title": {
       "type": "string"

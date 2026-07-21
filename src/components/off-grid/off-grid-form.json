@@ -1,7 +1,7 @@
 {
   "collectionName": "components_off_grid_off_grid_forms",
   "info": {
-    "displayName": "offGridForm"
+    "displayName": "Off Grid Form"
   },
   "options": {},
   "attributes": {
@@ -17,7 +17,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

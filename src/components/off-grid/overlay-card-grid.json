@@ -1,7 +1,7 @@
 {
   "collectionName": "components_off_grid_overlay_card_grids",
   "info": {
-    "displayName": "overlayCardGrid"
+    "displayName": "Overlay Card Grid"
   },
   "options": {},
   "attributes": {
@@ -20,11 +20,16 @@
     "backgroundImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "cardLayout": {
       "type": "enumeration",
-      "enum": ["grid", "list"]
+      "enum": [
+        "grid",
+        "list"
+      ]
     },
     "cardColumns": {
       "type": "integer"

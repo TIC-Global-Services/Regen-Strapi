@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "commercial_off_grid_pages",
+  "info": {
+    "singularName": "commercial-off-grid-page",
+    "pluralName": "commercial-off-grid-pages",
+    "displayName": "Commercial - Commercial Off Grid"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "commercial-off-grid.hero",
+        "shared.editorial-section",
+        "commercial-off-grid.solutions-portfolio",
+        "solar.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

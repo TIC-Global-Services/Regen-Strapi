@@ -1,7 +1,7 @@
 {
   "collectionName": "components_solar_brand_logos",
   "info": {
-    "displayName": "brandLogo"
+    "displayName": "Brand Logo"
   },
   "options": {},
   "attributes": {
@@ -12,7 +12,9 @@
     "logo": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "research_development_pages",
+  "info": {
+    "singularName": "research-development-page",
+    "pluralName": "research-development-pages",
+    "displayName": "Commercial - Research & Development"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "rd.hero",
+        "shared.editorial-section",
+        "rd.energy-solutions-section",
+        "rd.core-achievements-section",
+        "solar.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

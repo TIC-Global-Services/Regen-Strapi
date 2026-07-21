@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "solar_pages",
+  "info": {
+    "singularName": "solar-page",
+    "pluralName": "solar-pages",
+    "displayName": "Solar - Solar System"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "solar.stats-and-intro",
+        "solar.process-steps",
+        "solar.brands-grid",
+        "solar.inverter-slider",
+        "solar.specs-table",
+        "solar.sizing-guide",
+        "solar.packages",
+        "solar.timeline",
+        "solar.engineering-items",
+        "solar.faq",
+        "solar.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

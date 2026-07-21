@@ -25,6 +25,11 @@
         "home.craftmanship",
         "home.awards"
       ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

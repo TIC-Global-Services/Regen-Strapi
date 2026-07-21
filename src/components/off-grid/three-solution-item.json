@@ -1,7 +1,7 @@
 {
   "collectionName": "components_off_grid_three_solution_items",
   "info": {
-    "displayName": "threeSolutionItem"
+    "displayName": "Three Solution Item"
   },
   "options": {},
   "attributes": {
@@ -14,7 +14,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "ctaText": {
       "type": "string"

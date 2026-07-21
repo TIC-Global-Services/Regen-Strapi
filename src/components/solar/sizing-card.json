@@ -1,7 +1,7 @@
 {
   "collectionName": "components_solar_sizing_cards",
   "info": {
-    "displayName": "sizingCard"
+    "displayName": "Sizing Card"
   },
   "options": {},
   "attributes": {
@@ -16,7 +16,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}

@@ -1,7 +1,7 @@
 {
   "collectionName": "components_rebates_utility_cards",
   "info": {
-    "displayName": "utilityCard"
+    "displayName": "Utility Card"
   },
   "options": {},
   "attributes": {
@@ -12,7 +12,9 @@
     "logo": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "perKwh": {
       "type": "string"

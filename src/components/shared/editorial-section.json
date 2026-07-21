@@ -1,7 +1,7 @@
 {
   "collectionName": "components_shared_editorial_sections",
   "info": {
-    "displayName": "editorialSection"
+    "displayName": "Editorial Section"
   },
   "options": {},
   "attributes": {
@@ -13,7 +13,11 @@
     },
     "align": {
       "type": "enumeration",
-      "enum": ["left", "center", "right"]
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
     },
     "paragraphs": {
       "type": "component",

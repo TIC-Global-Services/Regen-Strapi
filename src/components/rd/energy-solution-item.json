@@ -1,7 +1,7 @@
 {
   "collectionName": "components_rd_energy_solution_items",
   "info": {
-    "displayName": "energySolutionItem"
+    "displayName": "Energy Solution Item"
   },
   "options": {},
   "attributes": {
@@ -14,7 +14,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "href": {
       "type": "string"

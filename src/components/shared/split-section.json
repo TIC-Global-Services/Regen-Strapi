@@ -1,7 +1,7 @@
 {
   "collectionName": "components_shared_split_sections",
   "info": {
-    "displayName": "splitSection"
+    "displayName": "Split Section"
   },
   "options": {},
   "attributes": {
@@ -17,11 +17,16 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "imagePosition": {
       "type": "enumeration",
-      "enum": ["left", "right"]
+      "enum": [
+        "left",
+        "right"
+      ]
     },
     "badge": {
       "type": "string"

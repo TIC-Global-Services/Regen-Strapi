@@ -1,7 +1,7 @@
 {
   "collectionName": "components_solar_timeline_sections",
   "info": {
-    "displayName": "timeline"
+    "displayName": "Timeline"
   },
   "options": {},
   "attributes": {
@@ -17,7 +17,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "consultationTitle": {
       "type": "string"

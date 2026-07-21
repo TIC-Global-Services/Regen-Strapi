@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "press_media_pages",
+  "info": {
+    "singularName": "press-media-page",
+    "pluralName": "press-media-pages",
+    "displayName": "Press & Media"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "press.hero",
+        "press.featured-article",
+        "press.latest-news-section",
+        "solar.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

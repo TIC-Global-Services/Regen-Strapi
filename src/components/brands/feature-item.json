@@ -1,7 +1,7 @@
 {
   "collectionName": "components_brands_feature_items",
   "info": {
-    "displayName": "featureItem"
+    "displayName": "Feature Item"
   },
   "options": {},
   "attributes": {
@@ -16,7 +16,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     }
   },
   "config": {}
