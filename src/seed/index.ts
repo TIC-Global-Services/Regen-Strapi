@@ -14,89 +14,116 @@ import { pressMediaSections } from './data/press-media-page';
 import { reviewsSections } from './data/reviews-page';
 import { contactSections } from './data/contact-page';
 
+const pages = [
+  {
+    uid: 'api::solar-page.solar-page',
+    title: 'Solar - Solar System',
+    sections: solarSections,
+  },
+  {
+    uid: 'api::brands-page.brands-page',
+    title: 'Solar - Brands We Carry',
+    sections: brandsSections,
+  },
+  {
+    uid: 'api::deals-page.deals-page',
+    title: 'Solar - Deals',
+    sections: dealsSections,
+  },
+  {
+    uid: 'api::rebates-page.rebates-page',
+    title: 'Solar - Govt Rebates',
+    sections: rebatesSections,
+  },
+  {
+    uid: 'api::faq-page.faq-page',
+    title: 'Solar - FAQ',
+    sections: faqSections,
+  },
+  {
+    uid: 'api::commercial-off-grid-page.commercial-off-grid-page',
+    title: 'Commercial - Commercial Off Grid',
+    sections: commercialOffGridSections,
+  },
+  {
+    uid: 'api::portfolio-page.portfolio-page',
+    title: 'Commercial - Portfolio',
+    sections: portfolioSections,
+  },
+  {
+    uid: 'api::research-development-page.research-development-page',
+    title: 'Commercial - Research & Development',
+    sections: researchDevelopmentSections,
+  },
+  {
+    uid: 'api::commercial-systems-page.commercial-systems-page',
+    title: 'Commercial - Commercial Systems & Case Studies',
+    sections: commercialSystemsSections,
+  },
+  {
+    uid: 'api::off-grid-solutions-page.off-grid-solutions-page',
+    title: 'Commercial - Off Grid Solutions',
+    sections: offGridSolutionsSections,
+  },
+  
+  
+  {
+    uid: 'api::blog-page.blog-page',
+    title: 'Blog',
+    sections: blogSections,
+  },
+  {
+    uid: 'api::press-media-page.press-media-page',
+    title: 'Press & Media',
+    sections: pressMediaSections,
+  },
+  {
+    uid: 'api::reviews-page.reviews-page',
+    title: 'Reviews',
+    sections: reviewsSections,
+  },
+  {
+    uid: 'api::contact-page.contact-page',
+    title: 'Contact',
+    sections: contactSections,
+  },
+];
+
+
 async function seedSingleType(
   strapi: Core.Strapi,
-  uid: string,
-  field: string,
-  sections: unknown[]
+  page: (typeof pages)[number]
 ) {
-  const existing = await strapi.db.query(uid).findOne({
-    where: { publishedAt: { $notNull: true } },
+  const existing = await strapi.db.query(page.uid).findOne({
+    where: {
+      publishedAt: {
+        $notNull: true,
+      },
+    },
   });
 
   if (existing) {
-    strapi.log.info(`[seed] ${uid} already seeded, skipping`);
+    strapi.log.info(`[seed] ${page.title} already exists, skipping`);
     return;
   }
 
-  await strapi.entityService.create(uid as any, {
+  await strapi.entityService.create(page.uid as any, {
     data: {
-      [field]: sections,
+      title: page.title,
+      sections: page.sections,
       publishedAt: new Date(),
     } as any,
   });
 
-  strapi.log.info(`[seed] ${uid} seeded`);
+  strapi.log.info(`[seed] ${page.title} seeded successfully`);
 }
 
 export async function runSeed(strapi: Core.Strapi) {
   strapi.log.info('[seed] Starting data seeding...');
 
-  await seedSingleType(strapi, 'api::solar-page.solar-page', 'sections', solarSections);
-  await seedSingleType(strapi, 'api::brands-page.brands-page', 'sections', brandsSections);
-  await seedSingleType(strapi, 'api::deals-page.deals-page', 'sections', dealsSections);
-  await seedSingleType(strapi, 'api::rebates-page.rebates-page', 'sections', rebatesSections);
-  await seedSingleType(strapi, 'api::faq-page.faq-page', 'sections', faqSections);
+  for (const page of pages) {
+    await seedSingleType(strapi, page);
+  }
 
-  await seedSingleType(
-    strapi,
-    'api::commercial-off-grid-page.commercial-off-grid-page',
-    'sections',
-    commercialOffGridSections
-  );
-  await seedSingleType(
-    strapi,
-    'api::commercial-systems-page.commercial-systems-page',
-    'sections',
-    commercialSystemsSections
-  );
-  await seedSingleType(
-    strapi,
-    'api::off-grid-solutions-page.off-grid-solutions-page',
-    'sections',
-    offGridSolutionsSections
-  );
-  await seedSingleType(
-    strapi,
-    'api::research-development-page.research-development-page',
-    'sections',
-    researchDevelopmentSections
-  );
-  await seedSingleType(
-    strapi,
-    'api::portfolio-page.portfolio-page',
-    'sections',
-    portfolioSections
-  );
-  await seedSingleType(strapi, 'api::blog-page.blog-page', 'sections', blogSections);
-  await seedSingleType(
-    strapi,
-    'api::press-media-page.press-media-page',
-    'sections',
-    pressMediaSections
-  );
-  await seedSingleType(
-    strapi,
-    'api::reviews-page.reviews-page',
-    'sections',
-    reviewsSections
-  );
-  await seedSingleType(
-    strapi,
-    'api::contact-page.contact-page',
-    'sections',
-    contactSections
-  );
-
-  strapi.log.info('[seed] All 14 pages seeded');
+  strapi.log.info(`[seed] Successfully seeded ${pages.length} pages`);
 }
