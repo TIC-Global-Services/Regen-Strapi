@@ -453,6 +453,7 @@ export interface ApiBlogArticleBlogArticle extends Struct.CollectionTypeSchema {
   };
   attributes: {
     categories: Schema.Attribute.JSON;
+    category: Schema.Attribute.String;
     content: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -509,37 +510,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiLeadLead extends Struct.CollectionTypeSchema {
-  collectionName: 'leads';
-  info: {
-    displayName: 'lead';
-    pluralName: 'leads';
-    singularName: 'lead';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    address: Schema.Attribute.Text;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    email: Schema.Attribute.Email & Schema.Attribute.Required;
-    fullName: Schema.Attribute.String & Schema.Attribute.Required;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::lead.lead'> &
-      Schema.Attribute.Private;
-    message: Schema.Attribute.Text;
-    phone: Schema.Attribute.String;
-    publishedAt: Schema.Attribute.DateTime;
-    source: Schema.Attribute.String;
-    suburb: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -697,6 +667,7 @@ export interface ApiPressArticlePressArticle
   };
   attributes: {
     categories: Schema.Attribute.JSON;
+    category: Schema.Attribute.String;
     content: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -730,6 +701,7 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    category: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1264,7 +1236,6 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::blog-article.blog-article': ApiBlogArticleBlogArticle;
       'api::home-page.home-page': ApiHomePageHomePage;
-      'api::lead.lead': ApiLeadLead;
       'api::page.page': ApiPagePage;
       'api::portfolio-project.portfolio-project': ApiPortfolioProjectPortfolioProject;
       'api::press-article.press-article': ApiPressArticlePressArticle;

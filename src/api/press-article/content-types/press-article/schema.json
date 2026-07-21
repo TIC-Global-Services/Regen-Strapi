@@ -34,6 +34,9 @@
     "categories": {
       "type": "json"
     },
+    "category": {
+      "type": "string"
+    },
     "featured": {
       "type": "boolean",
       "default": false
