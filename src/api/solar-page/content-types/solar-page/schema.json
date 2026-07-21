@@ -14,6 +14,7 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
+        "solar.hero",
         "solar.stats-and-intro",
         "solar.process-steps",
         "solar.brands-grid",
