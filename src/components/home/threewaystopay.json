@@ -1,7 +1,7 @@
 {
   "collectionName": "components_home_threewaystopays",
   "info": {
-    "displayName": "threewaystopay"
+    "displayName": "newsandinsights"
   },
   "options": {},
   "attributes": {
@@ -16,8 +16,8 @@
     },
     "data": {
       "type": "component",
-      "component": "home.threeway-card",
-      "repeatable": false
+      "component": "shared.threeway-card",
+      "repeatable": true
     }
   },
   "config": {}
