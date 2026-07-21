@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_brands_inverters_slider_sections",
+  "info": {
+    "displayName": "invertersSlider"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "inverters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "brands.inverter-brand"
+    }
+  },
+  "config": {}
+}

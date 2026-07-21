@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_deals_promotions",
+  "info": {
+    "displayName": "promotion"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

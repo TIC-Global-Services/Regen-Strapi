@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_faq_categorized_faq_sections",
+  "info": {
+    "displayName": "categorizedFaq"
+  },
+  "options": {},
+  "attributes": {
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq.category"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_deals_philosophy_sections",
+  "info": {
+    "displayName": "philosophy"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.intro-paragraph"
+    }
+  },
+  "config": {}
+}

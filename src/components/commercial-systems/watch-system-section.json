@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_commercial_systems_watch_system_sections",
+  "info": {
+    "displayName": "watchSystemSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaHref": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-block"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_solar_engineering_items_sections",
+  "info": {
+    "displayName": "engineeringItems"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.engineering-item"
+    }
+  },
+  "config": {}
+}

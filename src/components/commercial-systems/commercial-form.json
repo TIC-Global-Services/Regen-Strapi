@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_commercial_systems_commercial_forms",
+  "info": {
+    "displayName": "commercialForm"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

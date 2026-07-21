@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_rd_core_achievements_sections",
+  "info": {
+    "displayName": "coreAchievementsSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rd.achievement-item"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_feature_cards",
+  "info": {
+    "displayName": "featureCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "textPosition": {
+      "type": "enumeration",
+      "enum": ["top", "bottom"]
+    },
+    "footerTitle": {
+      "type": "string"
+    },
+    "footerDescription": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

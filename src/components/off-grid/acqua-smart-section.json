@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_off_grid_acqua_smart_sections",
+  "info": {
+    "displayName": "acquaSmartSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "off-grid.acqua-smart-card"
+    }
+  },
+  "config": {}
+}

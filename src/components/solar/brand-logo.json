@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_solar_brand_logos",
+  "info": {
+    "displayName": "brandLogo"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

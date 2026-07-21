@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_solar_sizing_guide_sections",
+  "info": {
+    "displayName": "sizingGuide"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "tableRows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.sizing-row"
+    },
+    "sizingCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.sizing-card"
+    }
+  },
+  "config": {}
+}

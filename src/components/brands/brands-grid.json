@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_brands_brands_grid_sections",
+  "info": {
+    "displayName": "brandsGrid"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "badge": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "brands.brand-card"
+    }
+  },
+  "config": {}
+}

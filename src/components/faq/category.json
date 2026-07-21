@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_faq_categories",
+  "info": {
+    "displayName": "category"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.faq-item"
+    }
+  },
+  "config": {}
+}

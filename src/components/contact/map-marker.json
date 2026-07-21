@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_map_markers",
+  "info": {
+    "displayName": "mapMarker"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "top": {
+      "type": "string"
+    },
+    "left": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

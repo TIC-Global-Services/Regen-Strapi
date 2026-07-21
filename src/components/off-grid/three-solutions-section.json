@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_off_grid_three_solutions_sections",
+  "info": {
+    "displayName": "threeSolutionsSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "solutions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "off-grid.three-solution-item"
+    }
+  },
+  "config": {}
+}

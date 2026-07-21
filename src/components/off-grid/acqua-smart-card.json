@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_off_grid_acqua_smart_cards",
+  "info": {
+    "displayName": "acquaSmartCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

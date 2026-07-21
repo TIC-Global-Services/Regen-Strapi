@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_commercial_systems_stats_card_grids",
+  "info": {
+    "displayName": "statsCardGrid"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cardBackground": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat-item"
+    }
+  },
+  "config": {}
+}

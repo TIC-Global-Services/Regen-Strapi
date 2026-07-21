@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_brands_brand_cards",
+  "info": {
+    "displayName": "brandCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "middleTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "isDark": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

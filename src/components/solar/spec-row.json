@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_solar_spec_rows",
+  "info": {
+    "displayName": "specRow"
+  },
+  "options": {},
+  "attributes": {
+    "brandName": {
+      "type": "string",
+      "required": true
+    },
+    "efficiency": {
+      "type": "string"
+    },
+    "tempCoeff": {
+      "type": "string"
+    },
+    "degradation": {
+      "type": "string"
+    },
+    "warranty": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_off_grid_icon_card_grids",
+  "info": {
+    "displayName": "iconCardGrid"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "layout": {
+      "type": "integer"
+    },
+    "showHeader": {
+      "type": "boolean",
+      "default": true
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.icon-card"
+    }
+  },
+  "config": {}
+}

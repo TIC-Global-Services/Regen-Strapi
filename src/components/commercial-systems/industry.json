@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_commercial_systems_industries",
+  "info": {
+    "displayName": "industry"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "caseStudy": {
+      "type": "string"
+    },
+    "iconKey": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_off_grid_portfolio_cards",
+  "info": {
+    "displayName": "portfolioCard"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": ["text", "image"]
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["light-gray", "light-green", "dark"]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "specs": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_commercial_systems_packages",
+  "info": {
+    "displayName": "package"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "string"
+    },
+    "bgClass": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "commercial-systems.package-item"
+    }
+  },
+  "config": {}
+}

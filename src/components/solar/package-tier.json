@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_solar_package_tiers",
+  "info": {
+    "displayName": "packageTier"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.package-feature"
+    }
+  },
+  "config": {}
+}

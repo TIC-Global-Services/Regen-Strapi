@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_commercial_systems_industries_sections",
+  "info": {
+    "displayName": "industriesSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "industries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "commercial-systems.industry"
+    }
+  },
+  "config": {}
+}

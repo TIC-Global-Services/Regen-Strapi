@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_rd_energy_solutions_sections",
+  "info": {
+    "displayName": "energySolutionsSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rd.energy-solution-item"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,120 @@
+export const dealsSections = [
+  {
+    __component: "deals.hero" as const,
+    subtitle: "Solar Deals, Engineered For Value",
+    title: "Not Built On The Lowest Price.",
+    description: "Tier-1 Panels, Premium Hybrid Inverters, And Our 23-Year Workmanship Track Record — Bundled With Every Federal And WA Rebate We Can Stack. See What's On Right Now, And Lock In 2026 Rebate Values Before The 1 May Step-Down.",
+    ctaText: "Get My Tailored Quote",
+    ctaLink: "#quote-form",
+    backgroundImage: null,
+  },
+  {
+    __component: "deals.philosophy" as const,
+    subtitle: "The Cheapest Quote Is Usually",
+    title: "The Most Expensive System Over 25 Years.",
+    paragraphs: [
+      { text: "Perth Homeowners Regularly Receive Quotes Ranging From $5,000 To $14,000 For What's Described As \"A 6.6 KW System.\" The Price Difference Usually Reflects Cheaper Panels With Weaker Warranties, Subcontracted Installation Crews, Shorter Workmanship Guarantees, Or Extra Costs That Appear After Deposit.", isSecondary: false },
+      { text: "Our Deals Don't Compete At The Bottom Of That Range. They Compete On The Maths That Matters Over 25 Years: Premium Components, Warranty Terms That Outlast The Rebate Scheme, In-House Installers, And Rebate Paperwork We Handle End-To-End.", isSecondary: true },
+    ],
+  },
+  {
+    __component: "deals.deals-grid" as const,
+    subtitle: "What's On",
+    title: "Right Now.",
+    description: "Regen Power Runs Seasonal And Campaign-Based Offers Across Solar, Battery, And Solar-Plus-Battery Bundles. Current Promotions Below — Changes Month To Month.",
+    ctaText: "Get This Bundle Quoted",
+    promotions: [
+      { title: "Pre-May Rebate Boost — Battery Bundle", description: "6.6 KW Solar + 10 KWh Battery Package With All Three Rebates Stacked. Lock In The Higher Pre-May-1 Federal Rebate Value." },
+      { title: "Signature Solar Package", description: "LONGi Hi-MO + Fronius GEN24 Plus — Our Premium Solar-Only Tier For Homeowners Not Adding A Battery In This Cycle." },
+      { title: "No-Interest Upgrade", description: "Add A Battery To Your Existing Solar System Using The Plenti No-Interest Loan — $2k–$10k, 3–10 Yr Terms." },
+    ],
+  },
+  {
+    __component: "shared.split-section" as const,
+    subtitle: "Why Solar Plus Battery",
+    title: "Is The Deal Of 2026.",
+    description: "A Solar-Only System Saves You Money During The Day. A Solar-Plus-Battery System Saves You Money Around The Clock — And Right Now, In 2026, The Rebate Stack On A Battery Is The Strongest It Has Ever Been In Western Australia, Or Likely Will Be Again. Three Rebates, A No-Interest Loan, And Premium Components From A Single Installer. That's The Bundle We'd Recommend To Most Perth Households Installing In 2026.",
+    image: null,
+    imagePosition: "left",
+  },
+  {
+    __component: "solar.packages" as const,
+    subtitle: "Three Solar-Only Packages",
+    title: "All Premium",
+    description: "If You're Not Adding A Battery This Cycle, Our Solar-Only Packages Carry The Same Quality Bar As Our Bundled Systems — Just Without The Battery Hardware. Every System Is Tier-1, CEC-Certified, And Comes With Our 10-Year Workmanship Guarantee.",
+    packages: [
+      {
+        title: "Essentials", description: "Reliable, rebate-ready, and built to last 25 years.",
+        features: [
+          { label: "Panels", value: "Tier-1 (Jinko, Canadian Solar, Risen)" },
+          { label: "Inverter", value: "String — Sungrow or GoodWe" },
+          { label: "Monitoring", value: "Whole-system" },
+          { label: "Battery-Ready", value: "No" },
+        ],
+      },
+      {
+        title: "Premium", description: "Higher-output N-type panels and a battery-ready hybrid inverter.",
+        features: [
+          { label: "Panels", value: "Tier-1 premium (LONGi or JA Solar)" },
+          { label: "Inverter", value: "Hybrid — Sungrow SH or GoodWe ET" },
+          { label: "Monitoring", value: "Whole-system + battery-ready" },
+          { label: "Battery-Ready", value: "Yes" },
+        ],
+      },
+      {
+        title: "Signature", description: "Top-tier panels, full smart-home integration, Tesla-ready.",
+        features: [
+          { label: "Panels", value: "Top-tier (LONGi Hi-MO X10 or Trina Vertex S+)" },
+          { label: "Inverter", value: "Fronius GEN24 Plus" },
+          { label: "Monitoring", value: "Panel-level + smart-home" },
+          { label: "Battery-Ready", value: "Yes — Tesla-certified" },
+        ],
+      },
+    ],
+  },
+  {
+    __component: "deals.ways-to-pay" as const,
+    topSubtitle: "Three Ways To Pay",
+    title: "Including One With Zero Interest",
+    bottomSubtitle: "The Upfront Cost Of A Premium Solar Or Battery System Doesn't Need To Come Out Of Your Savings On Day One. Here's How Regen Power Customers Typically Structure Payment.",
+    cards: [
+      { title: "STC Upfront Discount", description: "Federal STC And WA Rebate Values Are Deducted Directly From Your Quoted Price. You Pay The Post-Rebate Balance.", image: null, footerTitle: "Best For", footerDescription: "Any installation — applied by default." },
+      { title: "Plenti No-Interest Loan", description: "WA-Funded No-Interest Loan From $2,001 To $10,000. Flexible 3–10 Year Terms, No Early Repayment Fees.", image: null, footerTitle: "Best For", footerDescription: "Spreading the system cost with zero interest." },
+      { title: "Third-Party Finance", description: "We Can Refer You To Accredited Green-Loan Providers For Larger Systems Or Commercial Installations.", image: null, footerTitle: "Best For", footerDescription: "Commercial or off-grid solar portfolios." },
+    ],
+  },
+  {
+    __component: "deals.why-matters" as const,
+    subtitle: "Why Our Deals Aren't The Cheapest In Perth",
+    heading: "And Why That Matters.",
+    introText: "When You Call Us In 2035 About A Synergy Tariff Change Or A Battery Expansion, The Business Answering The Phone Is The Same One That Installed Your System.",
+    items: [
+      { title: "In-House Installation", description: "Our Electricians Are Employed By Regen Power. They're Not A Labour-Hire Crew Dispatched By A Sales Agency. Same Team, Same Standard, Every Install.", image: null },
+      { title: "Tier-1 Components Only", description: "Every Panel And Inverter We Quote Is On The Clean Energy Council Approved Products List. No Budget Substitutes, No \"Equivalent\" Downgrades At Installation Day.", image: null },
+      { title: "Full Rebate + Paperwork Handling", description: "STCs, WA Residential Battery Scheme, Plenti Loan, Synergy/Horizon Connection, DEBS Feed-In — All Submitted By Our Perth Office. You Don't See A Form.", image: null },
+      { title: "23 Years Of Perth Service", description: "When You Call Us In 2035 About A Synergy Tariff Change Or A Battery Expansion, The Business Answering The Phone Is The Same One That Installed Your System. Six Consecutive ProductReview Awards Say We're Good At This.", image: null },
+    ],
+  },
+  {
+    __component: "solar.faq" as const,
+    sectionTitle: "FAQ",
+    listTitle: "Frequently Asked Questions",
+    image: null,
+    items: [
+      { question: "Q1. Why Don't You Show Prices On Your Deals Page?", answer: "Because a generic price is almost always misleading. Perth roofs differ in angle, shading, electrical phase (single vs. three-phase), and switchboard condition. Stating a single flat rate leads to unexpected variation fees during installation. Instead, we provide fixed, itemized quotes tailored to your exact property after a brief verification." },
+      { question: "Q2. Do your deals include the federal and WA rebates?", answer: "Yes. Every Quote We Produce Applies All Eligible Rebates As Upfront Discounts On Your System Price. Federal STCs (Solar), Federal Cheaper Home Batteries (Battery), And The WA Residential Battery Scheme Are All Deducted From Your Quoted Total Before You Pay." },
+      { question: "Q3. Can I Use A Plenti No-Interest Loan On My Install?", answer: "Yes. Regen Power is an authorized partner. We can structure your payment package using the zero-interest Plenti loan for eligible system sizes, meaning you pay $0 upfront and spread the cost over convenient monthly terms." },
+      { question: "Q4. Will Prices Go Up After 1 May 2026?", answer: "Yes. On 1 May 2026, the federal STC rebate values are scheduled for a step-down adjustment. Locking in your design and deposit before this date guarantees you receive the higher rebate tier, saving you hundreds of dollars on the final purchase price." },
+      { question: "Q5. Do You Price-Match Other Quotes?", answer: "We don't price-match budget flyers using generic components or subcontracted crews. However, if you have a written quote for identical, premium-tier components (e.g. Jinko panels + Sungrow inverter installed by in-house accredited electricians), we will match it." },
+      { question: "Q6. What Happens After I Request A Quote?", answer: "One of our Perth-based engineers will review your roof outline using high-resolution aerial mapping. We'll send you an initial panel placement render and system output simulation, followed by a quick call to answer any questions and verify your electrical setup. No pressure, no obligations." },
+    ],
+  },
+  {
+    __component: "solar.cta-banner" as const,
+    subtitle: "Get A Solar System Designed",
+    mainTitle: "For Your Home",
+    description: "Tell us a few details about your home and power use...",
+    buttonText: "Get My Free Quote",
+    backgroundImage: null,
+  },
+];

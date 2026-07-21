@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_split_sections",
+  "info": {
+    "displayName": "splitSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": ["left", "right"]
+    },
+    "badge": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

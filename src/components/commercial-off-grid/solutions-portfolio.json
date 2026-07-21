@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_commercial_off_grid_solutions_portfolios",
+  "info": {
+    "displayName": "solutionsPortfolio"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "layout": {
+      "type": "integer"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "off-grid.portfolio-card"
+    }
+  },
+  "config": {}
+}

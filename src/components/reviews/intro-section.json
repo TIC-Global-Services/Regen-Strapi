@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_reviews_intro_sections",
+  "info": {
+    "displayName": "introSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

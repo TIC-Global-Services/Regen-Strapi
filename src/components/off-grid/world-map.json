@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_off_grid_world_maps",
+  "info": {
+    "displayName": "worldMap"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "markers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "off-grid.map-marker"
+    }
+  },
+  "config": {}
+}

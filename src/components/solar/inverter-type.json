@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_solar_inverter_types",
+  "info": {
+    "displayName": "inverterType"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "infoCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.info-card"
+    }
+  },
+  "config": {}
+}

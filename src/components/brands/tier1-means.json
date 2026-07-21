@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_brands_tier1_means_sections",
+  "info": {
+    "displayName": "tier1Means"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": ["left", "right"]
+    }
+  },
+  "config": {}
+}

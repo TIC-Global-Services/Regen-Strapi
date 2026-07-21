@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_commercial_systems_components_sections",
+  "info": {
+    "displayName": "componentsSection"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "commercial-systems.component-item"
+    }
+  },
+  "config": {}
+}

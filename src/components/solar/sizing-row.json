@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_solar_sizing_rows",
+  "info": {
+    "displayName": "sizingRow"
+  },
+  "options": {},
+  "attributes": {
+    "dailyUse": {
+      "type": "string",
+      "required": true
+    },
+    "recommendedSize": {
+      "type": "string",
+      "required": true
+    },
+    "typicalHousehold": {
+      "type": "string"
+    },
+    "phaseRequired": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
