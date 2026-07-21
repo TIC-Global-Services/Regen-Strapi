@@ -4,7 +4,7 @@
   "info": {
     "singularName": "press-article",
     "pluralName": "press-articles",
-    "displayName": "press-article"
+    "displayName": "Press Article List"
   },
   "options": {
     "draftAndPublish": true

@@ -444,7 +444,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiBlogArticleBlogArticle extends Struct.CollectionTypeSchema {
   collectionName: 'blog_articles';
   info: {
-    displayName: 'Blog Article';
+    displayName: 'Blog Article List';
     pluralName: 'blog-articles';
     singularName: 'blog-article';
   };
@@ -740,7 +740,7 @@ export interface ApiFaqPageFaqPage extends Struct.SingleTypeSchema {
 export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   collectionName: 'home_pages';
   info: {
-    displayName: 'home-page';
+    displayName: 'Home';
     pluralName: 'home-pages';
     singularName: 'home-page';
   };
@@ -860,7 +860,7 @@ export interface ApiPortfolioProjectPortfolioProject
   extends Struct.CollectionTypeSchema {
   collectionName: 'portfolio_projects';
   info: {
-    displayName: 'portfolio-project';
+    displayName: 'Portfolio Project List';
     pluralName: 'portfolio-projects';
     singularName: 'portfolio-project';
   };
@@ -897,7 +897,7 @@ export interface ApiPressArticlePressArticle
   extends Struct.CollectionTypeSchema {
   collectionName: 'press_articles';
   info: {
-    displayName: 'press-article';
+    displayName: 'Press Article List';
     pluralName: 'press-articles';
     singularName: 'press-article';
   };
@@ -1122,7 +1122,7 @@ export interface ApiSolarPageSolarPage extends Struct.SingleTypeSchema {
 export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
   collectionName: 'testimonials';
   info: {
-    displayName: 'testimonial';
+    displayName: 'Testimonials List';
     pluralName: 'testimonials';
     singularName: 'testimonial';
   };

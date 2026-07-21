@@ -138,7 +138,7 @@ export interface BrandsPhilosophy extends Struct.ComponentSchema {
 export interface BrandsTier1Means extends Struct.ComponentSchema {
   collectionName: 'components_brands_tier1_means_sections';
   info: {
-    displayName: 'Tier1 Means';
+    displayName: 'Tier 1 Means';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -673,7 +673,7 @@ export interface HomeHero extends Struct.ComponentSchema {
 export interface HomePatnersandmembership extends Struct.ComponentSchema {
   collectionName: 'components_home_patnersandmemberships';
   info: {
-    displayName: 'Patnersandmembership';
+    displayName: 'Partners And Membership';
   };
   attributes: {
     membership: Schema.Attribute.Component<'shared.imagegroup', true>;
@@ -699,7 +699,7 @@ export interface HomeRealStories extends Struct.ComponentSchema {
 export interface HomeSmartsolar extends Struct.ComponentSchema {
   collectionName: 'components_home_smartsolars';
   info: {
-    displayName: 'Smartsolar';
+    displayName: 'Smart Solar';
   };
   attributes: {
     data: Schema.Attribute.Component<'shared.smartsolar-card', true>;
@@ -711,7 +711,7 @@ export interface HomeSmartsolar extends Struct.ComponentSchema {
 export interface HomeSolarandstorage extends Struct.ComponentSchema {
   collectionName: 'components_home_solarandstorages';
   info: {
-    displayName: 'Solarandstorage';
+    displayName: 'Solar And Storage';
   };
   attributes: {
     description: Schema.Attribute.Text;
@@ -724,7 +724,7 @@ export interface HomeSolarandstorage extends Struct.ComponentSchema {
 export interface HomeThreewaystopay extends Struct.ComponentSchema {
   collectionName: 'components_home_threewaystopays';
   info: {
-    displayName: 'Threewaystopay';
+    displayName: 'Three Ways To Pay';
   };
   attributes: {
     data: Schema.Attribute.Component<'shared.threeway-card', true>;
@@ -737,7 +737,7 @@ export interface HomeThreewaystopay extends Struct.ComponentSchema {
 export interface HomeWhychooseus extends Struct.ComponentSchema {
   collectionName: 'components_home_whychooseuses';
   info: {
-    displayName: 'Whychooseus';
+    displayName: 'Why Choose Us';
   };
   attributes: {
     data: Schema.Attribute.Component<'shared.cardgroup', true>;
@@ -1220,7 +1220,7 @@ export interface SharedBlog extends Struct.ComponentSchema {
 export interface SharedCardgroup extends Struct.ComponentSchema {
   collectionName: 'components_shared_cardgroups';
   info: {
-    displayName: 'Cardgroup';
+    displayName: 'Card Group';
   };
   attributes: {
     bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
@@ -1276,7 +1276,7 @@ export interface SharedIconCard extends Struct.ComponentSchema {
 export interface SharedImagegroup extends Struct.ComponentSchema {
   collectionName: 'components_shared_imagegroups';
   info: {
-    displayName: 'Imagegroup';
+    displayName: 'Image Group';
   };
   attributes: {
     image: Schema.Attribute.Media<
