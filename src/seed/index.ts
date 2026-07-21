@@ -1,129 +1,138 @@
-import type { Core } from '@strapi/strapi';
-import { solarSections } from './data/solar-page';
-import { brandsSections } from './data/brands-page';
-import { dealsSections } from './data/deals-page';
-import { rebatesSections } from './data/rebates-page';
-import { faqSections } from './data/faq-page';
-import { commercialOffGridSections } from './data/commercial-off-grid-page';
-import { commercialSystemsSections } from './data/commercial-systems-page';
-import { offGridSolutionsSections } from './data/off-grid-solutions-page';
-import { researchDevelopmentSections } from './data/research-development-page';
-import { portfolioSections } from './data/portfolio-page';
-import { blogSections } from './data/blog-page';
-import { pressMediaSections } from './data/press-media-page';
-import { reviewsSections } from './data/reviews-page';
-import { contactSections } from './data/contact-page';
+import type { Core } from "@strapi/strapi";
+
+import { solarSections } from "./data/solar-page";
+import { brandsSections } from "./data/brands-page";
+import { dealsSections } from "./data/deals-page";
+import { rebatesSections } from "./data/rebates-page";
+import { faqSections } from "./data/faq-page";
+import { commercialOffGridSections } from "./data/commercial-off-grid-page";
+import { commercialSystemsSections } from "./data/commercial-systems-page";
+import { offGridSolutionsSections } from "./data/off-grid-solutions-page";
+import { researchDevelopmentSections } from "./data/research-development-page";
+import { portfolioSections } from "./data/portfolio-page";
+import { blogSections } from "./data/blog-page";
+import { pressMediaSections } from "./data/press-media-page";
+import { reviewsSections } from "./data/reviews-page";
+import { contactSections } from "./data/contact-page";
 
 const pages = [
   {
-    uid: 'api::solar-page.solar-page',
-    title: 'Solar - Solar System',
+    title: "Solar",
+    slug: "solar",
+    category: "solar",
     sections: solarSections,
   },
   {
-    uid: 'api::brands-page.brands-page',
-    title: 'Solar - Brands We Carry',
+    title: "Brands",
+    slug: "brands",
+    category: "solar",
     sections: brandsSections,
   },
   {
-    uid: 'api::deals-page.deals-page',
-    title: 'Solar - Deals',
+    title: "Deals",
+    slug: "deals",
+    category: "solar",
     sections: dealsSections,
   },
   {
-    uid: 'api::rebates-page.rebates-page',
-    title: 'Solar - Govt Rebates',
+    title: "Rebates",
+    slug: "rebates",
+    category: "solar",
     sections: rebatesSections,
   },
   {
-    uid: 'api::faq-page.faq-page',
-    title: 'Solar - FAQ',
+    title: "FAQ",
+    slug: "faq",
+    category: "solar",
     sections: faqSections,
   },
   {
-    uid: 'api::commercial-off-grid-page.commercial-off-grid-page',
-    title: 'Commercial - Commercial Off Grid',
-    sections: commercialOffGridSections,
-  },
-  {
-    uid: 'api::portfolio-page.portfolio-page',
-    title: 'Commercial - Portfolio',
-    sections: portfolioSections,
-  },
-  {
-    uid: 'api::research-development-page.research-development-page',
-    title: 'Commercial - Research & Development',
-    sections: researchDevelopmentSections,
-  },
-  {
-    uid: 'api::commercial-systems-page.commercial-systems-page',
-    title: 'Commercial - Commercial Systems & Case Studies',
+    title: "Commercial Systems",
+    slug: "commercial-systems",
+    category: "commercial",
     sections: commercialSystemsSections,
   },
   {
-    uid: 'api::off-grid-solutions-page.off-grid-solutions-page',
-    title: 'Commercial - Off Grid Solutions',
+    title: "Commercial Off Grid",
+    slug: "commercial-off-grid",
+    category: "commercial",
+    sections: commercialOffGridSections,
+  },
+  {
+    title: "Off Grid Solutions",
+    slug: "off-grid-solutions",
+    category: "commercial",
     sections: offGridSolutionsSections,
   },
-  
-  
   {
-    uid: 'api::blog-page.blog-page',
-    title: 'Blog',
+    title: "Research & Development",
+    slug: "research-development",
+    category: "commercial",
+    sections: researchDevelopmentSections,
+  },
+  {
+    title: "Portfolio",
+    slug: "portfolio",
+    category: "commercial",
+    sections: portfolioSections,
+  },
+  {
+    title: "Blog",
+    slug: "blog",
+    category: "general",
     sections: blogSections,
   },
   {
-    uid: 'api::press-media-page.press-media-page',
-    title: 'Press & Media',
+    title: "Press & Media",
+    slug: "press-media",
+    category: "general",
     sections: pressMediaSections,
   },
   {
-    uid: 'api::reviews-page.reviews-page',
-    title: 'Reviews',
+    title: "Reviews",
+    slug: "reviews",
+    category: "general",
     sections: reviewsSections,
   },
   {
-    uid: 'api::contact-page.contact-page',
-    title: 'Contact',
+    title: "Contact",
+    slug: "contact",
+    category: "general",
     sections: contactSections,
   },
-];
+] as const;
 
-
-async function seedSingleType(
-  strapi: Core.Strapi,
-  page: (typeof pages)[number]
-) {
-  const existing = await strapi.db.query(page.uid).findOne({
-    where: {
-      publishedAt: {
-        $notNull: true,
-      },
+async function seedPage(strapi: Core.Strapi, page: (typeof pages)[number]) {
+  const existing = await strapi.documents("api::page.page").findFirst({
+    filters: {
+      slug: page.slug,
     },
   });
 
   if (existing) {
-    strapi.log.info(`[seed] ${page.title} already exists, skipping`);
+    strapi.log.info(`[seed] ${page.title} already exists`);
     return;
   }
 
-  await strapi.entityService.create(page.uid as any, {
+  await strapi.documents("api::page.page").create({
     data: {
       title: page.title,
+      slug: page.slug,
+      category: page.category,
       sections: page.sections,
-      publishedAt: new Date(),
     } as any,
+    status: "published",
   });
 
-  strapi.log.info(`[seed] ${page.title} seeded successfully`);
+  strapi.log.info(`[seed] ${page.title} created`);
 }
 
 export async function runSeed(strapi: Core.Strapi) {
-  strapi.log.info('[seed] Starting data seeding...');
+  strapi.log.info("🌱 Starting Page Seeder...");
 
   for (const page of pages) {
-    await seedSingleType(strapi, page);
+    await seedPage(strapi, page);
   }
 
-  strapi.log.info(`[seed] Successfully seeded ${pages.length} pages`);
+  strapi.log.info(`✅ ${pages.length} pages seeded successfully.`);
 }
