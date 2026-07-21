@@ -1,10 +1,13 @@
 {
-  "collectionName": "components_shared_cardgroups",
+  "collectionName": "components_home_expertise_cards",
   "info": {
-    "displayName": "cardgroup"
+    "displayName": "expertise.card"
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "icon": {
       "type": "media",
       "multiple": false,
@@ -15,7 +18,7 @@
         "audios"
       ]
     },
-    "bgimage": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -24,15 +27,6 @@
         "videos",
         "audios"
       ]
-    },
-    "value": {
-      "type": "integer"
-    },
-    "suffix": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
     }
   },
   "config": {}

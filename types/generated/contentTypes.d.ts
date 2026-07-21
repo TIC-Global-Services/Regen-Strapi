@@ -747,7 +747,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       [
         'home.whychooseus',
         'home.threewaystopay',
-        'home.threeway-card',
         'home.solarandstorage',
         'home.smartsolar',
         'home.real-stories',

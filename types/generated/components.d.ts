@@ -638,8 +638,20 @@ export interface HomeExpertise extends Struct.ComponentSchema {
     displayName: 'expertise';
   };
   attributes: {
-    data: Schema.Attribute.Component<'shared.cardgroup', true>;
+    data: Schema.Attribute.Component<'home.expertise-card', true>;
     subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomeExpertiseCard extends Struct.ComponentSchema {
+  collectionName: 'components_home_expertise_cards';
+  info: {
+    displayName: 'expertise.card';
+  };
+  attributes: {
+    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String;
   };
 }
@@ -690,7 +702,7 @@ export interface HomeSmartsolar extends Struct.ComponentSchema {
     displayName: 'smartsolar';
   };
   attributes: {
-    data: Schema.Attribute.Component<'shared.cardgroup', true>;
+    data: Schema.Attribute.Component<'shared.smartsolar-card', true>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -709,27 +721,13 @@ export interface HomeSolarandstorage extends Struct.ComponentSchema {
   };
 }
 
-export interface HomeThreewayCard extends Struct.ComponentSchema {
-  collectionName: 'components_home_threeway_cards';
-  info: {
-    displayName: 'threeway.card';
-  };
-  attributes: {
-    badgesubtitle: Schema.Attribute.String;
-    badgetitle: Schema.Attribute.String;
-    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    subtitle: Schema.Attribute.String;
-    title: Schema.Attribute.String;
-  };
-}
-
 export interface HomeThreewaystopay extends Struct.ComponentSchema {
   collectionName: 'components_home_threewaystopays';
   info: {
-    displayName: 'threewaystopay';
+    displayName: 'newsandinsights';
   };
   attributes: {
-    data: Schema.Attribute.Component<'home.threeway-card', false>;
+    data: Schema.Attribute.Component<'shared.threeway-card', true>;
     description: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -1213,11 +1211,9 @@ export interface SharedCardgroup extends Struct.ComponentSchema {
   };
   attributes: {
     bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    description: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     suffix: Schema.Attribute.String;
-    title: Schema.Attribute.String;
     value: Schema.Attribute.Integer;
   };
 }
@@ -1702,12 +1698,12 @@ declare module '@strapi/strapi' {
       'home.awards': HomeAwards;
       'home.craftmanship': HomeCraftmanship;
       'home.expertise': HomeExpertise;
+      'home.expertise-card': HomeExpertiseCard;
       'home.hero': HomeHero;
       'home.patnersandmembership': HomePatnersandmembership;
       'home.real-stories': HomeRealStories;
       'home.smartsolar': HomeSmartsolar;
       'home.solarandstorage': HomeSolarandstorage;
-      'home.threeway-card': HomeThreewayCard;
       'home.threewaystopay': HomeThreewaystopay;
       'home.whychooseus': HomeWhychooseus;
       'off-grid.acqua-smart-card': OffGridAcquaSmartCard;

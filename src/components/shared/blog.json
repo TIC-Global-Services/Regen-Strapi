@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_blogs",
+  "info": {
+    "displayName": "blog"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

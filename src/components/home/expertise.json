@@ -13,7 +13,7 @@
     },
     "data": {
       "type": "component",
-      "component": "shared.cardgroup",
+      "component": "home.expertise-card",
       "repeatable": true
     }
   },

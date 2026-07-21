@@ -1,15 +1,15 @@
 {
-  "collectionName": "components_home_threeway_cards",
+  "collectionName": "components_shared_threeway_cards",
   "info": {
-    "displayName": "threeway.card"
+    "displayName": "newsandinsights.card"
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "subtitle": {
-      "type": "string"
+    "description": {
+      "type": "text"
     },
     "badgetitle": {
       "type": "string"
@@ -26,6 +26,11 @@
         "videos",
         "audios"
       ]
+    },
+    "blog": {
+      "type": "component",
+      "component": "shared.blog",
+      "repeatable": false
     }
   },
   "config": {}
