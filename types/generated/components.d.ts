@@ -1204,6 +1204,19 @@ export interface ReviewsIntroSection extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedBlog extends Struct.ComponentSchema {
+  collectionName: 'components_shared_blogs';
+  info: {
+    displayName: 'blog';
+  };
+  attributes: {
+    content: Schema.Attribute.RichText;
+    description: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedCardgroup extends Struct.ComponentSchema {
   collectionName: 'components_shared_cardgroups';
   info: {
@@ -1331,6 +1344,21 @@ export interface SharedStepItem extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
     stepNumber: Schema.Attribute.Integer;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedSmartsolarCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_smartsolar_cards';
+  info: {
+    displayName: 'smartsolar.card';
+  };
+  attributes: {
+    bgimage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    description: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
 }
@@ -1647,6 +1675,21 @@ export interface SolarTimeline extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedThreewayCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_threeway_cards';
+  info: {
+    displayName: 'newsandinsights.card';
+  };
+  attributes: {
+    badgesubtitle: Schema.Attribute.String;
+    badgetitle: Schema.Attribute.String;
+    bgimage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    blog: Schema.Attribute.Component<'shared.blog', false>;
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
@@ -1740,6 +1783,7 @@ declare module '@strapi/strapi' {
       'rebates.utility-cards': RebatesUtilityCards;
       'reviews.hero': ReviewsHero;
       'reviews.intro-section': ReviewsIntroSection;
+      'shared.blog': SharedBlog;
       'shared.cardgroup': SharedCardgroup;
       'shared.editorial-section': SharedEditorialSection;
       'shared.feature-card': SharedFeatureCard;
@@ -1750,6 +1794,7 @@ declare module '@strapi/strapi' {
       'shared.split-section': SharedSplitSection;
       'shared.stat-item': SharedStatItem;
       'shared.step-item': SharedStepItem;
+      'shared.smartsolar-card': SharedSmartsolarCard;
       'shared.testimonial': SharedTestimonial;
       'shared.text-block': SharedTextBlock;
       'shared.ticker-item': SharedTickerItem;
@@ -1775,6 +1820,7 @@ declare module '@strapi/strapi' {
       'solar.specs-table': SolarSpecsTable;
       'solar.stats-and-intro': SolarStatsAndIntro;
       'solar.timeline': SolarTimeline;
+      'shared.threeway-card': SharedThreewayCard;
     }
   }
 }
