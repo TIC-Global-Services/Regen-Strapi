@@ -79,7 +79,8 @@ export const rebatesSections = [
     badge: "Paperwork",
   },
   {
-    __component: "solar.faq" as const,
+    __component: "shared.faq" as const,
+    title: "FAQ",
     sectionTitle: "FAQ",
     listTitle: "Six Rebate Questions With Schema",
     image: null,
@@ -93,10 +94,10 @@ export const rebatesSections = [
     ],
   },
   {
-    __component: "solar.cta-banner" as const,
+    __component: "shared.cta-banner" as const,
     subtitle: "Get A Solar System Designed",
     mainTitle: "For Your Home",
-    description: "Tell us a few details about your home and power use...",
+    description: "Tell us a few details about your home and power use, and one of our Perth-based CEC-accredited designers will build a system tailored to your roof, your household, and your budget. Free, no-obligation, and no high-pressure sales calls \u2014 just a proper engineering recommendation.",
     buttonText: "Get My Free Quote",
     backgroundImage: null,
   },

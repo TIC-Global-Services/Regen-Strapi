@@ -89,7 +89,7 @@ export const researchDevelopmentSections = [
     ],
   },
   {
-    __component: "solar.cta-banner" as const,
+    __component: "shared.cta-banner" as const,
     subtitle: "Build Your",
     mainTitle: "Energy Strategy",
     description:

@@ -1,5 +1,14 @@
 export const solarSections = [
-  {
+    {
+    __component: "solar.hero" as const,
+    subtitle: "Solar Power Engineered For The",
+    mainTitle: "Perth Climate",
+    description: "WA’s #1 Rated Solar Installer With 45,000+ Installations Since 2003. CEC-Approved. ProductReview Award Winner 2021–2026.",
+    ctaText: "Get Your Free Quote",
+    ctaLink: "#quote-form",
+    backgroundImage: null,
+  },
+{
     __component: "solar.stats-and-intro" as const,
     tickerItems: [
       { text: "45,000+ Solar" },
@@ -18,10 +27,10 @@ export const solarSections = [
     subtitle: "Sun To Synergy Bill",
     title: "In Four Steps",
     steps: [
-      { stepNumber: "01", title: "Sunlight Hits The Panels", description: "Photovoltaic Cells Inside Each Panel Absorb Sunlight And Convert It Into Direct Current (DC) Electricity. A Typical Modern Panel Generates 420–450 Watts Under Peak Sun Conditions.", image: null },
-      { stepNumber: "02", title: "DC Flows To The Inverter", description: "DC Electricity Travels Down The String Cables To Your Inverter. The Inverter Converts DC Into Alternating Current (AC) — The Form Of Electricity Your Appliances, Air-Conditioning, And Lights Actually Use.", image: null },
-      { stepNumber: "03", title: "Your Home Uses It First", description: "AC Power Flows Into Your Switchboard And Powers Whatever's Running Right Now — Fridge, Pool Pump, Air-Con, EV Charger. This Is Where You Save The Most, Because You're Replacing Grid Electricity In Real Time.", image: null },
-      { stepNumber: "04", title: "Surplus Exports To Grid", description: "Anything Your Home Isn't Using Is Exported To Synergy For A Feed-In Credit (DEBS) — Or, If You Have A Battery, Stored For Use After Sundown. A Well-Designed System Maximises Self-Consumption Before Export.", image: null },
+      { stepNumber: 1, title: "Sunlight Hits The Panels", description: "Photovoltaic Cells Inside Each Panel Absorb Sunlight And Convert It Into Direct Current (DC) Electricity. A Typical Modern Panel Generates 420–450 Watts Under Peak Sun Conditions.", image: null },
+      { stepNumber: 2, title: "DC Flows To The Inverter", description: "DC Electricity Travels Down The String Cables To Your Inverter. The Inverter Converts DC Into Alternating Current (AC) — The Form Of Electricity Your Appliances, Air-Conditioning, And Lights Actually Use.", image: null },
+      { stepNumber: 3, title: "Your Home Uses It First", description: "AC Power Flows Into Your Switchboard And Powers Whatever's Running Right Now — Fridge, Pool Pump, Air-Con, EV Charger. This Is Where You Save The Most, Because You're Replacing Grid Electricity In Real Time.", image: null },
+      { stepNumber: 4, title: "Surplus Exports To Grid", description: "Anything Your Home Isn't Using Is Exported To Synergy For A Feed-In Credit (DEBS) — Or, If You Have A Battery, Stored For Use After Sundown. A Well-Designed System Maximises Self-Consumption Before Export.", image: null },
     ],
   },
   {
@@ -78,17 +87,16 @@ export const solarSections = [
   },
   {
     __component: "solar.specs-table" as const,
-    subtitle: "The Specs That Actually Matter,",
-    title: "Side By Side",
-    description: "Five Specifications, Six Brands. Use This Table To Compare Warranties And Real-World Performance Metrics — The Things That Affect Your Long-Term Output.",
+    subtitle: "Five Specs That Actually",
+    title: "Affects Your Returns",
+    description: "Most Solar Brochures List A Dozen Specifications, Half Of Which Have No Meaningful Impact On Your Long-Term Savings. These Five Are The Ones Worth Understanding.",
     specs: [
-      { brandName: "Jinko Tiger Neo", efficiency: "22.3%", tempCoeff: "-0.29%/°C", degradation: "0.40%/yr", warranty: "25 yr product · 30 yr performance" },
-      { brandName: "LONGi Hi-MO X10", efficiency: "22.8%", tempCoeff: "-0.26%/°C", degradation: "0.35%/yr", warranty: "25 yr product · 30 yr performance" },
-      { brandName: "Canadian Solar TOPHiKu6", efficiency: "22.5%", tempCoeff: "-0.28%/°C", degradation: "0.40%/yr", warranty: "25 yr product · 30 yr performance" },
-      { brandName: "JA Solar DeepBlue 4.0 Pro", efficiency: "22.4%", tempCoeff: "-0.30%/°C", degradation: "0.40%/yr", warranty: "25 yr product · 30 yr performance" },
-      { brandName: "Risen Titan", efficiency: "22.0%", tempCoeff: "-0.30%/°C", degradation: "0.40%/yr", warranty: "25 yr product · 30 yr performance" },
-      { brandName: "Trina Vertex S+", efficiency: "22.3%", tempCoeff: "-0.30%/°C", degradation: "0.40%/yr", warranty: "25 yr product · 30 yr performance" },
-    ],
+      { title: "Panel Wattage", value: "440–510W", description: "The Rated Output Of A Single Panel Under Ideal Conditions. Higher Wattage = More Power Per Square Metre Of Roof. Matters Most When Roof Space Is Tight.", image: null },
+      { title: "Panel Efficiency", value: "22%–24%", description: "The Percentage Of Sunlight Converted Into Electricity. Premium Panels Sit At 21–22.5%. This Is Different From Wattage, It's Output Per Area, Not Per Panel.", image: null },
+      { title: "Temperature Coefficient", value: "0.26% TO –0.34% / °C", description: "How Much Output Drops Per Degree Above 25°C. Critical In Perth — Rooftop Panels Regularly Hit 60°C+ In Summer. Lower (More Negative) Is Worse. N-Type TOPCon Is Meaningfully Better Than P-Type PERC Here.", image: null },
+      { title: "Annual Degradation Rate", value: "0.3–0.5%/YR (N-TYPE)", description: "How Much The Panel's Output Falls Each Year As It Ages. Over 25 Years, The Difference Between 0.3%/Yr And 0.7%/Yr Compounds Into Thousands Of KWh Of Lost Generation.", image: null },
+      { title: "Product Vs Performance Warranty", value: "25 YR PRODUCT + 25–30 YR PERFORMANCE", description: "These Are Two Different Things. Product Warranty Covers Defects In The Panel Itself. Performance Warranty Guarantees A Minimum Output Level Over Time. Always Check Both, Some Budget Panels Bundle A Long Performance Warranty With A Short Product Warranty.", image: null },
+    ]
   },
   {
     __component: "solar.sizing-guide" as const,
@@ -170,7 +178,8 @@ export const solarSections = [
     ],
   },
   {
-    __component: "solar.faq" as const,
+    __component: "shared.faq" as const,
+    title: "FAQ",
     sectionTitle: "Solar System",
     listTitle: "Frequently Asked Questions",
     image: null,
@@ -186,7 +195,7 @@ export const solarSections = [
     ],
   },
   {
-    __component: "solar.cta-banner" as const,
+    __component: "shared.cta-banner" as const,
     subtitle: "Get A Solar System Designed",
     mainTitle: "For Your Home",
     description: "Tell us a few details about your home and power use, and one of our Perth-based CEC-accredited designers will build a system tailored to your roof, your household, and your budget. Free, no-obligation, and no high-pressure sales calls — just a proper engineering recommendation.",

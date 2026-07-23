@@ -10,7 +10,18 @@ export const blogSections = [
     backgroundImage: null,
   },
   {
-    __component: "solar.cta-banner" as const,
+    __component: "blog.category-filter" as const,
+    categories: [
+      { label: "Systems & Panels", value: "Systems & Panels" },
+      { label: "Inverters", value: "Inverters" },
+      { label: "Rebates & Savings", value: "Rebates & Savings" },
+      { label: "Batteries & Storage", value: "Batteries & Storage" },
+      { label: "Perth-Specific", value: "Perth-Specific" },
+    ],
+    defaultCategory: "Systems & Panels",
+  },
+  {
+    __component: "shared.cta-banner" as const,
     subtitle: "Get A Solar System Designed",
     mainTitle: "For Your Home",
     description:

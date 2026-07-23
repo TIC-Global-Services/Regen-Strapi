@@ -171,6 +171,10 @@ export const offGridSolutionsSections = [
     __component: "off-grid.hybrid-gen-detail" as const,
     logo: null,
     image: null,
+    subtitle: "HybridGEN - Patented Hybrid",
+    title: "Power Pack",
+    description: "HybridGEN Is Regen's Own Renewable Hybrid Power Pack \u2014 A Factory-Wired Cabinet That Combines Solar PV, Optional Small Wind, Lithium Battery Storage, And Our Patented Variable-Speed Generator. It Replaces A Standard Fixed-Speed Diesel Generator With A System That Runs The Engine Only When It's Needed, Only At Its Most Efficient Speed, And Only After The Renewables Have Done Their Job.\n\nThe Result: 30\u201360% Reduction In Diesel Consumption Versus A Conventional Diesel System, Longer Engine Life From Running At Optimum Load, Stable Voltage And Frequency Across Varying Solar And Wind Input, And A System That Ships In A Fully Wired Enclosure \u2014 Drop In, Connect, And Run.",
+    patentText: "International Patent: PCT/AU2011/001068",
   },
   {
     __component: "shared.editorial-section" as const,
@@ -199,6 +203,47 @@ export const offGridSolutionsSections = [
       { name: "Singapore", top: "58%", left: "75%" },
       { name: "Indonesia", top: "67%", left: "79%" },
       { name: "Australia", top: "80%", left: "85%" },
+    ],
+  },
+  {
+    __component: "off-grid.microgrid-spec-table" as const,
+    specs: [
+      { field: "Power Output", detail: "15kW to 150kW per container, scalable beyond 1MW" },
+      { field: "Voltage", detail: "400V three-phase, 50Hz" },
+      { field: "Battery Storage", detail: "60\u2013300kWh lithium iron phosphate (LFP), expandable" },
+      { field: "Solar Input", detail: "Up to 200kW PV per container, Tier-1 panels" },
+      { field: "Wind Input", detail: "Up to 10kW optional small wind generator" },
+      { field: "Backup Generator", detail: "Variable-speed diesel/gas (HybridGEN patented control)" },
+      { field: "Container", detail: "20ft or 40ft ISO, fully weather-sealed, cyclone-rated" },
+      { field: "Operating Temp", detail: "\u221220\u00b0C to +55\u00b0C" },
+      { field: "Monitoring", detail: "Real-time web + mobile dashboard, remote diagnostics" },
+      { field: "Autonomy", detail: "Multi-day battery autonomy depending on load profile" },
+    ],
+    applications: [
+      {
+        title: "Mining & Exploration Camps",
+        description: "Containerised power for exploration sites, drill camps, and processing facilities. Plug-and-play deployment to remote tenements.",
+      },
+      {
+        title: "Telecom Towers",
+        description: "Off-grid power for cellular base stations and communications infrastructure in fringe-of-grid and remote coverage areas.",
+      },
+      {
+        title: "Resorts & Remote Lodges",
+        description: "Reliable 24/7 power for eco-resorts, safari lodges, and tourism operations beyond the reach of the grid.",
+      },
+      {
+        title: "Remote Communities",
+        description: "Village-scale microgrids supporting homes, schools, medical centres, and water-treatment plants.",
+      },
+      {
+        title: "Construction & Infrastructure",
+        description: "Temporary or permanent power for road, rail, and resource projects where grid connection is impractical or delayed.",
+      },
+      {
+        title: "Agriculture & Aquaculture",
+        description: "Power for pumping stations, packing sheds, cold storage, and processing facilities on large rural properties.",
+      },
     ],
   },
   {
@@ -268,6 +313,21 @@ export const offGridSolutionsSections = [
     ],
   },
   {
+    __component: "off-grid.off-grid-story" as const,
+    subtitle: "An Off-Grid Story",
+    title: "You Can Verify",
+    description: "Off-Grid Systems Are Bought On Trust. The Site Is Remote, The Buyer Can't Always Inspect The Work, And A System Failure 800km From Perth Is Expensive. Here's How We Earn That Trust \u2014 Verifiable, Documented, Decades-Long.",
+    cards: [
+      { title: "International Patent", description: "PCT/AU2011/001068 \u2014 Power Management System And Method For Optimising Fuel Consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed In Australia, Granted Internationally.", variant: "highlighted" },
+      { title: "Academic + Industry Founder", description: "Prof Chem Nayar \u2014 Decades Of Renewable Energy Research And Engineering. Academic Background Combined With Hands-On Industry Deployment Across Remote Sites.", variant: "light" },
+      { title: "International Patent", description: "PCT/AU2011/001068 \u2014 Power Management System And Method For Optimising Fuel Consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed In Australia, Granted Internationally.", variant: "highlighted" },
+      { title: "Academic + Industry Founder", description: "Regen Technologies Combines Academic Rigor With Field-Proven Engineering. Every Off-Grid System Is Backed By Peer-Reviewed Research And Decades Of Deployment Data.", variant: "light" },
+    ],
+    featuredImage: null,
+    featuredTitle: "Prof Chem Nayar",
+    featuredDescription: "Founder & Chief Technology Officer \u2014 Pioneer In Renewable Energy Systems And Inventor Of Regen's Patented HybridGEN Technology, Driving Decades Of Innovation In Sustainable Off-Grid Power.",
+  },
+  {
     __component: "off-grid.icon-card-grid" as const,
     layout: 4,
     showHeader: false,
@@ -305,7 +365,7 @@ export const offGridSolutionsSections = [
   {
     __component: "off-grid.overlay-card-grid" as const,
     subtitle: "Six Steps",
-    title: "Every Steps In House",
+    title: "Every Step In House",
     description:
       "Off-Grid Projects Are Engineering Jobs More Than Installation Jobs. We Run A Six-Step Process From First Call To Handover. The Early Steps Are Deliberately Heavy: Getting The Site Analysis And The Load Profile Right Is What Makes The System Reliable For The Next 20 Years.",
     backgroundImage: null,
@@ -346,7 +406,8 @@ export const offGridSolutionsSections = [
     ],
   },
   {
-    __component: "solar.faq" as const,
+    __component: "shared.faq" as const,
+    title: "FAQ",
     sectionTitle: "FAQ",
     listTitle: "Off-Grid FAQs",
     image: null,
@@ -390,14 +451,5 @@ export const offGridSolutionsSections = [
     description:
       "Off-Grid Projects Are Engineering Jobs. The First Conversation Is Technical, Not Transactional \u2014 Load Profile, Site Context, Generator History, Growth Plans, Water Needs If Any. Once We Understand The Problem, We Come Back With A System That Solves It. Send Us A Brief Site Overview Using The Form, Or Call Our Remote-Area Team Direct On 1800 073 436.",
     image: null,
-  },
-  {
-    __component: "solar.cta-banner" as const,
-    subtitle: "A Global Energy",
-    mainTitle: "Footprint",
-    description:
-      "Our Projects Extend Across Australia, India, Malaysia, Vietnam, Singapore, And The Maldives\u2014Delivering Scalable, Future-Ready Renewable Energy Solutions Across Diverse Landscapes.",
-    buttonText: "Get My Free Quote",
-    backgroundImage: null,
   },
 ];

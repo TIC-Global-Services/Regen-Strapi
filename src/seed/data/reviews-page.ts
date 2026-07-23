@@ -2,7 +2,7 @@ export const reviewsSections = [
   {
     __component: "reviews.hero" as const,
     subtitle: "Real Stories. Real Savings.",
-    mainTitle: "Real Results.",
+    title: "Real Results.",
     description: "",
     ctaText: "Get Your Free Quote",
     ctaLink: "#quote-form",
@@ -16,7 +16,12 @@ export const reviewsSections = [
       "Over The Years, We\u2019ve Helped Thousands Of Australian Homes And Businesses Transition To Renewable Energy With Confidence. Our Commitment To Quality Workmanship, Premium Products, Transparent Advice, And Ongoing Customer Support Has Earned Consistently Positive Feedback From Customers Nationwide.",
   },
   {
-    __component: "solar.cta-banner" as const,
+    __component: "reviews.testimonials-section" as const,
+    subtitle: "Real",
+    title: "Customer Stories",
+  },
+  {
+    __component: "shared.cta-banner" as const,
     subtitle: "A Global Energy",
     mainTitle: "Footprint",
     description:

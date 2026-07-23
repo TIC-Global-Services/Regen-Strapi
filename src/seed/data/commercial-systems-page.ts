@@ -353,7 +353,8 @@ export const commercialSystemsSections = [
     ],
   },
   {
-    __component: "solar.faq" as const,
+    __component: "shared.faq" as const,
+    title: "FAQ",
     sectionTitle: "FAQ",
     listTitle: "Frequently Asked Questions",
     image: null,
@@ -409,7 +410,7 @@ export const commercialSystemsSections = [
     image: null,
   },
   {
-    __component: "solar.cta-banner" as const,
+    __component: "shared.cta-banner" as const,
     subtitle: "Build Your",
     mainTitle: "Energy Strategy",
     description:

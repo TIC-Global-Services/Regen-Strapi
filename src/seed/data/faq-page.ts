@@ -12,6 +12,7 @@ export const faqSections = [
     __component: "faq.categorized-faq" as const,
     categories: [
       {
+        categoryId: "systems-panels",
         label: "Systems & Panels",
         items: [
           { question: "Q1. What's N-Type TOPCon, and does it matter?", answer: "It is a newer cell architecture that improves efficiency and heat performance. In Perth, that matters because long hot afternoons punish weaker panel designs." },
@@ -21,6 +22,7 @@ export const faqSections = [
         ],
       },
       {
+        categoryId: "inverters",
         label: "Inverters",
         items: [
           { question: "Q1. What's the difference between a string and hybrid inverter?", answer: "A string inverter handles solar generation for immediate use or export. A hybrid inverter adds the control logic needed to integrate a battery later without replacing the core inverter." },
@@ -30,6 +32,7 @@ export const faqSections = [
         ],
       },
       {
+        categoryId: "rebates-savings",
         label: "Rebates & Savings",
         items: [
           { question: "Q1. How much is the STC rebate in 2026?", answer: "It varies by system size, installation date, and zone. For a standard Perth home installing in 2026, the STC discount commonly lands around the low-thousands and is applied upfront by the installer." },
@@ -39,6 +42,7 @@ export const faqSections = [
         ],
       },
       {
+        categoryId: "installation-setup",
         label: "Installation & Setup",
         items: [
           { question: "Q1. How long does installation take?", answer: "A standard residential solar installation is usually completed in one day. Solar-plus-battery jobs can take longer depending on switchboard work and battery placement." },
@@ -48,6 +52,7 @@ export const faqSections = [
         ],
       },
       {
+        categoryId: "batteries-storage",
         label: "Batteries & Storage",
         items: [
           { question: "Q1. Do I need a battery yet?", answer: "Not every household does. A battery makes the most sense when evening usage is high, feed-in tariffs are low, or blackout resilience matters to you." },
@@ -57,6 +62,7 @@ export const faqSections = [
         ],
       },
       {
+        categoryId: "perth-specific",
         label: "Perth-Specific",
         items: [
           { question: "Q1. Why is Perth different from the east coast for solar design?", answer: "The heat profile, tariff structures, and retailer rules are different. What looks good on a generic national quote can underperform once you account for Perth conditions." },
@@ -68,7 +74,7 @@ export const faqSections = [
     ],
   },
   {
-    __component: "solar.cta-banner" as const,
+    __component: "shared.cta-banner" as const,
     subtitle: "A Five-Minute Call Is Worth A Hundred",
     mainTitle: "FAQ Pages.",
     description: "Nothing above answers your exact question like one of our Perth-based energy advisors. No sales script, no pressure, and no obligation. Just a proper engineering conversation about what would work for your home.",

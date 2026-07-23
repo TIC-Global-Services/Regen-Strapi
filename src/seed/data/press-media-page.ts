@@ -46,7 +46,23 @@ export const pressMediaSections = [
     ],
   },
   {
-    __component: "solar.cta-banner" as const,
+    __component: "press.news-section" as const,
+    subtitle: "Browse",
+    title: "All News",
+    categories: [
+      { label: "All", value: "All" },
+      { label: "Company News", value: "Company News" },
+      { label: "Projects", value: "Projects" },
+      { label: "Awards", value: "Awards" },
+      { label: "Media Coverage", value: "Media Coverage" },
+      { label: "Technology", value: "Technology" },
+      { label: "Events", value: "Events" },
+      { label: "Partnerships", value: "Partnerships" },
+    ],
+    defaultCategory: "All",
+  },
+  {
+    __component: "shared.cta-banner" as const,
     subtitle: "Get A Solar System Designed",
     mainTitle: "For Your Home",
     description:

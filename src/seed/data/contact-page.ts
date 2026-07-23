@@ -28,13 +28,4 @@ export const contactSections = [
       { name: "Victoria", top: "78%", left: "88%" },
     ],
   },
-  {
-    __component: "solar.cta-banner" as const,
-    subtitle: "A Global Energy",
-    mainTitle: "Footprint",
-    description:
-      "Our Projects Extend Across Australia, India, Malaysia, Vietnam, Singapore, And The Maldives\u2014Delivering Scalable, Future-Ready Renewable Energy Solutions Across Diverse Landscapes.",
-    buttonText: "Get My Free Quote",
-    backgroundImage: null,
-  },
 ];
