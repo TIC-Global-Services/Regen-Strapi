@@ -14,9 +14,6 @@
     "description": {
       "type": "text"
     },
-    "ctaText": {
-      "type": "string"
-    },
     "backgroundImage": {
       "type": "media",
       "multiple": false,
