@@ -5,6 +5,9 @@
   },
   "options": {},
   "attributes": {
+    "badge": {
+      "type": "string"
+    },
     "subtitle": {
       "type": "string"
     },
