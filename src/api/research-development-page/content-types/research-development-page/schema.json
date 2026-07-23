@@ -14,10 +14,10 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "rd.hero",
+        "research-and-development.hero",
         "shared.editorial-section",
-        "rd.energy-solutions-section",
-        "rd.core-achievements-section",
+        "research-and-development.energy-solutions-section",
+        "research-and-development.core-achievements-section",
         "shared.cta-banner"
       ]
     },

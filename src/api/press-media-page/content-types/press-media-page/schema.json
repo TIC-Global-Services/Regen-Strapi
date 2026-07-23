@@ -14,10 +14,10 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "press.hero",
-        "press.featured-article",
-        "press.latest-news-section",
-        "press.news-section",
+        "press-and-media.hero",
+        "press-and-media.featured-article",
+        "press-and-media.latest-news-section",
+        "press-and-media.news-section",
         "shared.cta-banner"
       ]
     },

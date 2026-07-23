@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_press_news_sections",
+  "collectionName": "components_research_and_development_energy_solutions_sections",
   "info": {
-    "displayName": "News Section"
+    "displayName": "Energy Solutions Section"
   },
   "options": {},
   "attributes": {
@@ -11,13 +11,10 @@
     "title": {
       "type": "string"
     },
-    "categories": {
+    "items": {
       "type": "component",
       "repeatable": true,
-      "component": "press.category-option"
-    },
-    "defaultCategory": {
-      "type": "string"
+      "component": "research-and-development.energy-solution-item"
     }
   },
   "config": {}

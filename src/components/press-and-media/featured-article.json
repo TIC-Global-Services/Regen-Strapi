@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_press_news_items",
+  "collectionName": "components_press_and_media_featured_articles",
   "info": {
-    "displayName": "News Item"
+    "displayName": "Featured Article"
   },
   "options": {},
   "attributes": {

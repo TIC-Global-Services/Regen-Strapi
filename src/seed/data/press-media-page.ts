@@ -1,6 +1,6 @@
 export const pressMediaSections = [
   {
-    __component: "press.hero" as const,
+    __component: "press-and-media.hero" as const,
     subtitle: "In The",
     mainTitle: "News & Media",
     description:
@@ -10,7 +10,7 @@ export const pressMediaSections = [
     backgroundImage: null,
   },
   {
-    __component: "press.featured-article" as const,
+    __component: "press-and-media.featured-article" as const,
     title: "Regen Power Leads Solar Adoption In Western Australia",
     description:
       "Regen Power Continues To Expand Its Footprint With Large-Scale Residential And Commercial Solar Installations Across WA.",
@@ -18,7 +18,7 @@ export const pressMediaSections = [
     image: null,
   },
   {
-    __component: "press.latest-news-section" as const,
+    __component: "press-and-media.latest-news-section" as const,
     subtitle: "Latest",
     title: "News",
     items: [
@@ -46,7 +46,7 @@ export const pressMediaSections = [
     ],
   },
   {
-    __component: "press.news-section" as const,
+    __component: "press-and-media.news-section" as const,
     subtitle: "Browse",
     title: "All News",
     categories: [

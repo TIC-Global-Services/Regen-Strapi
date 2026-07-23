@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_rd_energy_solutions_sections",
+  "collectionName": "components_press_and_media_news_sections",
   "info": {
-    "displayName": "Energy Solutions Section"
+    "displayName": "News Section"
   },
   "options": {},
   "attributes": {
@@ -11,10 +11,13 @@
     "title": {
       "type": "string"
     },
-    "items": {
+    "categories": {
       "type": "component",
       "repeatable": true,
-      "component": "rd.energy-solution-item"
+      "component": "press-and-media.category-option"
+    },
+    "defaultCategory": {
+      "type": "string"
     }
   },
   "config": {}

@@ -1,6 +1,6 @@
 export const researchDevelopmentSections = [
   {
-    __component: "rd.hero" as const,
+    __component: "research-and-development.hero" as const,
     subtitle: "Innovating",
     mainTitle: "The Future Of Technology",
     description:
@@ -26,7 +26,7 @@ export const researchDevelopmentSections = [
     ],
   },
   {
-    __component: "rd.energy-solutions-section" as const,
+    __component: "research-and-development.energy-solutions-section" as const,
     subtitle: "Energy Solutions",
     title: "We Are Developing",
     items: [
@@ -61,7 +61,7 @@ export const researchDevelopmentSections = [
     ],
   },
   {
-    __component: "rd.core-achievements-section" as const,
+    __component: "research-and-development.core-achievements-section" as const,
     subtitle: "Core",
     title: "Achievements",
     items: [

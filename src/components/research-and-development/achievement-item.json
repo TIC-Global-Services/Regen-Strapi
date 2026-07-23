@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_rd_energy_solution_items",
+  "collectionName": "components_research_and_development_achievement_items",
   "info": {
-    "displayName": "Energy Solution Item"
+    "displayName": "Achievement Item"
   },
   "options": {},
   "attributes": {

@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_press_latest_news_sections",
+  "collectionName": "components_research_and_development_core_achievements_sections",
   "info": {
-    "displayName": "Latest News Section"
+    "displayName": "Core Achievements Section"
   },
   "options": {},
   "attributes": {
@@ -14,7 +14,7 @@
     "items": {
       "type": "component",
       "repeatable": true,
-      "component": "press.news-item"
+      "component": "research-and-development.achievement-item"
     }
   },
   "config": {}

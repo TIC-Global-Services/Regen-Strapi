@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_rd_core_achievements_sections",
+  "collectionName": "components_press_and_media_latest_news_sections",
   "info": {
-    "displayName": "Core Achievements Section"
+    "displayName": "Latest News Section"
   },
   "options": {},
   "attributes": {
@@ -14,7 +14,7 @@
     "items": {
       "type": "component",
       "repeatable": true,
-      "component": "rd.achievement-item"
+      "component": "press-and-media.news-item"
     }
   },
   "config": {}
