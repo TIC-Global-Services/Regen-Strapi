@@ -6,8 +6,7 @@
   "options": {},
   "attributes": {
     "categoryId": {
-      "type": "uid",
-      "targetField": "label",
+      "type": "string",
       "required": true
     },
     "label": {
