@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_off_grid_table_contents",
+  "info": {
+    "displayName": "Table Content"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

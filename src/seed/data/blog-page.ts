@@ -19,6 +19,12 @@ export const blogSections = [
       { label: "Perth-Specific", value: "Perth-Specific" },
     ],
     defaultCategory: "Systems & Panels",
+    cards: [
+      { title: "How Much Does A Solar System Cost In Perth?", description: "A Complete Breakdown Of Solar Installation Costs, System Sizes, And What Influences Pricing In 2026.", image: null, imagePosition: "right" },
+      { title: "Is Battery Storage Worth It In 2026?", description: "Discover How Battery Storage Can Reduce Your Energy Bills And Whether It\u2019s The Right Investment For Your Home.", image: null, imagePosition: "left" },
+      { title: "WA Solar & Battery Rebates Explained", description: "Learn About Available Government Rebates, Eligibility Criteria, And How To Maximize Your Savings.", image: null, imagePosition: "right" },
+      { title: "Home EV Charging: Everything You Need To Know", description: "A Beginner-Friendly Guide To Installing EV Chargers At Home, Costs Involved, And Charging Efficiency Tips.", image: null, imagePosition: "left" },
+    ],
   },
   {
     __component: "shared.cta-banner" as const,

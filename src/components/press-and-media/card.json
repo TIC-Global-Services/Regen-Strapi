@@ -1,20 +1,18 @@
 {
-  "collectionName": "components_commercial_systems_industries",
+  "collectionName": "components_press_and_media_cards",
   "info": {
-    "displayName": "Industry"
+    "displayName": "Card"
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "text"
     },
-    "caseStudy": {
-      "type": "string"
-    },
-    "icon": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_off_grid_microgrid_table_headers",
+  "info": {
+    "displayName": "Microgrid Table Header"
+  },
+  "options": {},
+  "attributes": {
+    "col1": {
+      "type": "string",
+      "required": true
+    },
+    "col2": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

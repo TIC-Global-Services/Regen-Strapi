@@ -103,42 +103,42 @@ export const commercialSystemsSections = [
         description:
           "High Continuous Daytime Load; Power-Factor Charges; Refrigeration That Never Sleeps. Solar Offsets The Highest-Cost Tariff Blocks.",
         caseStudy: "Smithfield Manufacturing, Kewdale Industrial",
-        iconKey: "manufacturing",
+        icon: null,
       },
       {
         title: "Hospital & Accommodation",
         description:
           "Air-Conditioning, Kitchens, Laundries Running Through The Warmest Hours Of The Day. Demand Peaks At Lunchtime \u2014 Perfect Solar Match.",
         caseStudy: "Perth City YHA, Saint Mary Coptic Church Hall",
-        iconKey: "hospitality",
+        icon: null,
       },
       {
         title: "Healthcare & Medical",
         description:
           "24/7 Operation, High HVAC Load, Sensitive Equipment. Solar With Battery Backup Reduces Both Running Costs And Outage Risk.",
         caseStudy: "Illawarra Medical Centre",
-        iconKey: "healthcare",
+        icon: null,
       },
       {
         title: "Retail & Shopping Centres",
         description:
           "Trading Hours Align With Solar Peak. Multi-Tenancy Buildings Can Split Solar Between Common Areas And Tenants.",
         caseStudy: "Duncraig Retail, Dubbo Retail",
-        iconKey: "retail",
+        icon: null,
       },
       {
         title: "Education & Community",
         description:
           "Schools, Churches, Community Halls \u2014 Daytime Occupancy, Fixed Budgets, ESG Mandates. Battery Shifts Production Into Evening Events.",
         caseStudy: "Saint Mary Coptic Church",
-        iconKey: "education",
+        icon: null,
       },
       {
         title: "Agribusiness & Rural Enterprise",
         description:
           "Pumping, Dairy, Packing Sheds, Marron Farms, Vineyards. Often Combined With Off-Grid Microgrid.",
         caseStudy: "Banasurasagar Reservoir; Agricultural Off-Grid Case Studies",
-        iconKey: "agribusiness",
+        icon: null,
       },
     ],
   },

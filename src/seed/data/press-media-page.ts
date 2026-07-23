@@ -60,6 +60,17 @@ export const pressMediaSections = [
       { label: "Partnerships", value: "Partnerships" },
     ],
     defaultCategory: "All",
+    cards: [
+      { title: "Best-Rated Solar Installer 2025", description: "Recognised By SolarQuotes For Outstanding Customer Satisfaction.", image: null },
+      { title: "$1.93M ARC Research Grant", description: "Partnering With Curtin University To Advance Household Battery Adoption.", image: null },
+      { title: "From Research To Rooftops", description: "Accelerating Australia\u2019s Transition To Smarter Renewable Energy.", image: null },
+      { title: "Five Years Of ProductReview Success", description: "Recognised For Consistent Customer Satisfaction And Installation Quality.", image: null },
+      { title: "22+ Years Of Renewable Innovation", description: "Celebrating Two Decades Of Engineering Excellence And Industry Leadership.", image: null },
+      { title: "Sustainable Power For Pulau Ubin", description: "Delivering Hybrid Microgrid Technology For Remote Communities In Singapore.", image: null },
+      { title: "Executive Of The Year Finalist", description: "Dr. Nikhil Jayaraj Recognised For Leadership In Renewable Energy.", image: null },
+      { title: "Top Brand PV Installer 2024", description: "Honoured With The EUPD Research Installer Award For Excellence.", image: null },
+      { title: "45,000 Solar Installations Milestone", description: "Delivering Trusted Renewable Energy Solutions Across Australia.", image: null },
+    ],
   },
   {
     __component: "shared.cta-banner" as const,

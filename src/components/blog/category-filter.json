@@ -12,6 +12,11 @@
     },
     "defaultCategory": {
       "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.card"
     }
   },
   "config": {}

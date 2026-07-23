@@ -5,29 +5,15 @@
   },
   "options": {},
   "attributes": {
-    "industries": {
+    "filters": {
       "type": "component",
       "repeatable": true,
       "component": "portfolio.filter-option"
     },
-    "systemSizes": {
+    "cards": {
       "type": "component",
       "repeatable": true,
-      "component": "portfolio.filter-option"
-    },
-    "locations": {
-      "type": "component",
-      "repeatable": true,
-      "component": "portfolio.filter-option"
-    },
-    "searchPlaceholder": {
-      "type": "string"
-    },
-    "defaultIndustry": {
-      "type": "string"
-    },
-    "defaultSize": {
-      "type": "string"
+      "component": "portfolio.card"
     }
   },
   "config": {}

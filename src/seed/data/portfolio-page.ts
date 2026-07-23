@@ -11,7 +11,8 @@ export const portfolioSections = [
   },
   {
     __component: "portfolio.filters" as const,
-    industries: [
+    filters: [
+      { label: "All", value: "all" },
       { label: "Commercial Office", value: "commercial-office" },
       { label: "Manufacturing", value: "manufacturing" },
       { label: "Agriculture", value: "agriculture" },
@@ -19,22 +20,11 @@ export const portfolioSections = [
       { label: "Residential", value: "residential" },
       { label: "EV Charging", value: "ev-charging" },
     ],
-    systemSizes: [
-      { label: "Under 10kW", value: "under-10kw" },
-      { label: "10kW - 30kW", value: "10kw-30kw" },
-      { label: "30kW - 100kW", value: "30kw-100kw" },
-      { label: "100kW+", value: "100kw-plus" },
+    cards: [
+      { title: "Fremantle Cold Storage Facility", description: "Industrial Manufacturing Facility In Metro Perth Cut Annual Energy Costs By 42% With A 75kW Solar System.", image: null },
+      { title: "Perth CBD Office Tower", description: "A 150kW rooftop system powering a 12-storey commercial office tower in the Perth CBD.", image: null },
+      { title: "Margaret River Winery", description: "30kW off-grid solar + battery system for a premium winery in the Margaret River region.", image: null },
     ],
-    locations: [
-      { label: "Perth Metro", value: "perth-metro" },
-      { label: "Fremantle", value: "fremantle" },
-      { label: "Mandurah", value: "mandurah" },
-      { label: "Bunbury", value: "bunbury" },
-      { label: "Regional WA", value: "regional-wa" },
-    ],
-    searchPlaceholder: "Search",
-    defaultIndustry: "commercial-office",
-    defaultSize: "30kw-100kw",
   },
   {
     __component: "shared.cta-banner" as const,

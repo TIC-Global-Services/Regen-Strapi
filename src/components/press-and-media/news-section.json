@@ -18,6 +18,11 @@
     },
     "defaultCategory": {
       "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "press-and-media.card"
     }
   },
   "config": {}

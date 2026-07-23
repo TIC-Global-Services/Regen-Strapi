@@ -11,15 +11,15 @@
     "title": {
       "type": "string"
     },
-    "specs": {
+    "headers": {
       "type": "component",
-      "repeatable": true,
-      "component": "off-grid.microgrid-spec"
+      "repeatable": false,
+      "component": "off-grid.microgrid-table-header"
     },
-    "applications": {
+    "tableContent": {
       "type": "component",
       "repeatable": true,
-      "component": "off-grid.microgrid-application"
+      "component": "off-grid.table-content"
     }
   },
   "config": {}
