@@ -18,6 +18,18 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "patentText": {
+      "type": "string"
     }
   },
   "config": {}

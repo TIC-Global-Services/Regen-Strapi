@@ -16,7 +16,7 @@
       "components": [
         "faq.hero",
         "faq.categorized-faq",
-        "solar.cta-banner"
+        "shared.cta-banner"
       ]
     },
     "seo": {

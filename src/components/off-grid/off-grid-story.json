@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_off_grid_off_grid_story_sections",
+  "info": {
+    "displayName": "Off Grid Story"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "off-grid.story-card"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "featuredImageAlt": {
+      "type": "string"
+    },
+    "featuredTitle": {
+      "type": "string"
+    },
+    "featuredDescription": {
+      "type": "text"
+    },
+    "featuredHref": {
+      "type": "string"
+    },
+    "showReadMore": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

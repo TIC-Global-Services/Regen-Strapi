@@ -1,10 +1,13 @@
 {
-  "collectionName": "components_solar_faq_sections",
+  "collectionName": "components_shared_faq_sections",
   "info": {
     "displayName": "FAQ"
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
     "sectionTitle": {
       "type": "string"
     },
@@ -21,7 +24,7 @@
     "items": {
       "type": "component",
       "repeatable": true,
-      "component": "solar.faq-item"
+      "component": "shared.faq-item"
     }
   },
   "config": {}

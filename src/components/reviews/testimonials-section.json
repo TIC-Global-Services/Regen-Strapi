@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_reviews_testimonials_sections",
+  "info": {
+    "displayName": "Testimonials Section"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

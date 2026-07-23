@@ -5,6 +5,12 @@
   },
   "options": {},
   "attributes": {
+    "introSubtitle": {
+      "type": "string"
+    },
+    "introTitle": {
+      "type": "string"
+    },
     "tickerItems": {
       "type": "component",
       "repeatable": true,

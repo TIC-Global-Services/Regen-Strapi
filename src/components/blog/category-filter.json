@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_blog_category_filter_sections",
+  "info": {
+    "displayName": "Category Filter"
+  },
+  "options": {},
+  "attributes": {
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blog.category-option"
+    },
+    "defaultCategory": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

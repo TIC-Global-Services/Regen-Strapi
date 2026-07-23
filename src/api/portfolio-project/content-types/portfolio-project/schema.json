@@ -40,9 +40,6 @@
     "featured": {
       "type": "boolean",
       "default": false
-    },
-    "categories": {
-      "type": "json"
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_rebates_eligibility_questions",
+  "info": {
+    "displayName": "Eligibility Question"
+  },
+  "options": {},
+  "attributes": {
+    "questionId": {
+      "type": "uid",
+      "targetField": "question",
+      "required": true
+    },
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "helperText": {
+      "type": "text",
+      "required": true
+    },
+    "loanOnly": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

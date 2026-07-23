@@ -17,7 +17,8 @@
         "press.hero",
         "press.featured-article",
         "press.latest-news-section",
-        "solar.cta-banner"
+        "press.news-section",
+        "shared.cta-banner"
       ]
     },
     "seo": {

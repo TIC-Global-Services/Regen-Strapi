@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_portfolio_filters_sections",
+  "info": {
+    "displayName": "Filters"
+  },
+  "options": {},
+  "attributes": {
+    "industries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "portfolio.filter-option"
+    },
+    "systemSizes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "portfolio.filter-option"
+    },
+    "locations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "portfolio.filter-option"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    },
+    "defaultIndustry": {
+      "type": "string"
+    },
+    "defaultSize": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

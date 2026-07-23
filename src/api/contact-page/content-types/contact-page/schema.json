@@ -16,8 +16,7 @@
       "components": [
         "contact.hero",
         "contact.contact-form-section",
-        "contact.location-map",
-        "solar.cta-banner"
+        "contact.location-map"
       ]
     },
     "seo": {

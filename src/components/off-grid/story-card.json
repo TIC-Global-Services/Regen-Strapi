@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_off_grid_story_cards",
+  "info": {
+    "displayName": "Story Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "highlighted",
+        "light"
+      ],
+      "default": "default"
+    }
+  },
+  "config": {}
+}

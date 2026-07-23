@@ -16,7 +16,8 @@
       "components": [
         "reviews.hero",
         "reviews.intro-section",
-        "solar.cta-banner"
+        "reviews.testimonials-section",
+        "shared.cta-banner"
       ]
     },
     "seo": {

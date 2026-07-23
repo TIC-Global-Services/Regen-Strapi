@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_off_grid_microgrid_applications",
+  "info": {
+    "displayName": "Microgrid Application"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

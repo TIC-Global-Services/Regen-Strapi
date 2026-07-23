@@ -13,6 +13,16 @@
     },
     "description": {
       "type": "text"
+    },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rebates.eligibility-question"
+    },
+    "results": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rebates.eligibility-result"
     }
   },
   "config": {}

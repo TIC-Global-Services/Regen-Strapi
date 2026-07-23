@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_off_grid_microgrid_spec_table_sections",
+  "info": {
+    "displayName": "Microgrid Spec Table"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "specs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "off-grid.microgrid-spec"
+    },
+    "applications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "off-grid.microgrid-application"
+    }
+  },
+  "config": {}
+}

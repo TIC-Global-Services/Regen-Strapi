@@ -15,7 +15,8 @@
       "type": "dynamiczone",
       "components": [
         "blog.hero",
-        "solar.cta-banner"
+        "blog.category-filter",
+        "shared.cta-banner"
       ]
     },
     "seo": {

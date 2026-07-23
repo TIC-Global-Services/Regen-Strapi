@@ -1,23 +1,23 @@
 {
-  "collectionName": "components_deals_philosophy_sections",
+  "collectionName": "components_brands_specs_table_sections",
   "info": {
-    "displayName": "Philosophy"
+    "displayName": "Specs Table"
   },
   "options": {},
   "attributes": {
-    "badge": {
-      "type": "string"
-    },
     "subtitle": {
       "type": "string"
     },
     "title": {
       "type": "string"
     },
-    "paragraphs": {
+    "description": {
+      "type": "text"
+    },
+    "columns": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.intro-paragraph"
+      "component": "brands.spec-column"
     }
   },
   "config": {}

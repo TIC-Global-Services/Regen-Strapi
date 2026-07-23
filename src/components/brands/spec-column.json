@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_brands_spec_columns",
+  "info": {
+    "displayName": "Spec Column"
+  },
+  "options": {},
+  "attributes": {
+    "brand": {
+      "type": "string",
+      "required": true
+    },
+    "efficiency": {
+      "type": "string"
+    },
+    "tempCoeff": {
+      "type": "string"
+    },
+    "degradation": {
+      "type": "string"
+    },
+    "warranty": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

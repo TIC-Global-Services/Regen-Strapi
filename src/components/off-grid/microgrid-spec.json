@@ -1,16 +1,16 @@
 {
-  "collectionName": "components_solar_faq_items",
+  "collectionName": "components_off_grid_microgrid_specs",
   "info": {
-    "displayName": "FAQ Item"
+    "displayName": "Microgrid Spec"
   },
   "options": {},
   "attributes": {
-    "question": {
+    "field": {
       "type": "string",
       "required": true
     },
-    "answer": {
-      "type": "richtext",
+    "detail": {
+      "type": "string",
       "required": true
     }
   },

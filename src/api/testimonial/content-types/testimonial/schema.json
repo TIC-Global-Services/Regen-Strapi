@@ -27,9 +27,6 @@
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
-    },
-    "category": {
-      "type": "string"
     }
   }
 }

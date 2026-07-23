@@ -24,9 +24,9 @@
         "commercial-systems.packages-grid",
         "commercial-systems.process-flow",
         "commercial-systems.five-things-section",
-        "solar.faq",
+        "shared.faq",
         "commercial-systems.commercial-form",
-        "solar.cta-banner"
+        "shared.cta-banner"
       ]
     },
     "seo": {

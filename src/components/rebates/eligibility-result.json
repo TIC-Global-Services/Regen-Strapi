@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_rebates_eligibility_results",
+  "info": {
+    "displayName": "Eligibility Result"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "enumeration",
+      "enum": [
+        "eligible-stack",
+        "eligible-rebates-only",
+        "not-eligible"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -5,6 +5,11 @@
   },
   "options": {},
   "attributes": {
+    "categoryId": {
+      "type": "uid",
+      "targetField": "label",
+      "required": true
+    },
     "label": {
       "type": "string",
       "required": true
@@ -12,7 +17,7 @@
     "items": {
       "type": "component",
       "repeatable": true,
-      "component": "solar.faq-item"
+      "component": "shared.faq-item"
     }
   },
   "config": {}

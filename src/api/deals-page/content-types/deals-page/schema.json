@@ -21,8 +21,8 @@
         "solar.packages",
         "deals.ways-to-pay",
         "deals.why-matters",
-        "solar.faq",
-        "solar.cta-banner"
+        "shared.faq",
+        "shared.cta-banner"
       ]
     },
     "seo": {

@@ -22,11 +22,12 @@
         "off-grid.hybrid-gen-detail",
         "shared.editorial-section",
         "off-grid.world-map",
+        "off-grid.microgrid-spec-table",
         "off-grid.acqua-smart-section",
+        "off-grid.off-grid-story",
         "off-grid.overlay-card-grid",
-        "solar.faq",
-        "off-grid.off-grid-form",
-        "solar.cta-banner"
+        "shared.faq",
+        "off-grid.off-grid-form"
       ]
     },
     "seo": {

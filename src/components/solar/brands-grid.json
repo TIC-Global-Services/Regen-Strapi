@@ -18,6 +18,13 @@
       "type": "component",
       "repeatable": true,
       "component": "solar.brand-logo"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaHref": {
+      "type": "string",
+      "default": "#quote-form"
     }
   },
   "config": {}

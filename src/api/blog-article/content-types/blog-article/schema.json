@@ -35,9 +35,6 @@
     },
     "categories": {
       "type": "json"
-    },
-    "category": {
-      "type": "string"
     }
   }
 }

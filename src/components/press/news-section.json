@@ -1,23 +1,23 @@
 {
-  "collectionName": "components_deals_philosophy_sections",
+  "collectionName": "components_press_news_sections",
   "info": {
-    "displayName": "Philosophy"
+    "displayName": "News Section"
   },
   "options": {},
   "attributes": {
-    "badge": {
-      "type": "string"
-    },
     "subtitle": {
       "type": "string"
     },
     "title": {
       "type": "string"
     },
-    "paragraphs": {
+    "categories": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.intro-paragraph"
+      "component": "press.category-option"
+    },
+    "defaultCategory": {
+      "type": "string"
     }
   },
   "config": {}
