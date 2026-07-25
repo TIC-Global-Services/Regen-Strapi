@@ -5,10 +5,10 @@
   },
   "options": {},
   "attributes": {
-    "filters": {
+    "filterGroups": {
       "type": "component",
       "repeatable": true,
-      "component": "portfolio.filter-option"
+      "component": "portfolio.filter-group"
     },
     "cards": {
       "type": "component",

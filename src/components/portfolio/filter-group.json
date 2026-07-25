@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_portfolio_filter_groups",
+  "info": {
+    "displayName": "Filter Group"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "portfolio.filter-option"
+    }
+  },
+  "config": {}
+}
