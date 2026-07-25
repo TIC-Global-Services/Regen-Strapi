@@ -18,6 +18,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "categoryKey": {
+      "type": "string"
     }
   },
   "config": {}
