@@ -6,8 +6,7 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "description": {
       "type": "text"
@@ -18,6 +17,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "categoryKey": {
+      "type": "string"
     }
   },
   "config": {}

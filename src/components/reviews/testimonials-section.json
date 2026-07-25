@@ -10,6 +10,11 @@
     },
     "title": {
       "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reviews.card"
     }
   },
   "config": {}

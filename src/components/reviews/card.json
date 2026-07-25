@@ -1,14 +1,25 @@
 {
-  "collectionName": "components_blog_cards",
+  "collectionName": "components_reviews_cards",
   "info": {
     "displayName": "Card"
   },
   "options": {},
   "attributes": {
-    "title": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "testimonial",
+        "image"
+      ],
+      "required": true
+    },
+    "location": {
       "type": "string"
     },
-    "description": {
+    "name": {
+      "type": "string"
+    },
+    "quote": {
       "type": "text"
     },
     "image": {
@@ -18,15 +29,7 @@
         "images"
       ]
     },
-    "imagePosition": {
-      "type": "enumeration",
-      "enum": [
-        "right",
-        "left"
-      ],
-      "default": "right"
-    },
-    "categoryKey": {
+    "imageAlt": {
       "type": "string"
     }
   },
