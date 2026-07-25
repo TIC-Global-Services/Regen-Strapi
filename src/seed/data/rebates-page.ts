@@ -68,6 +68,19 @@ export const rebatesSections = [
     badge: "Scannable Yes / No",
     title: "Am I Eligible?",
     description: "A quick self-check. If you can answer yes to the core items below, you are aligned with the federal plus WA rebate stack. The no-interest loan has its own additional income condition.",
+    questions: [
+      { id: 1, question: "Do you own and live in your own home?", helperText: "The rebates and loan are available to owner-occupiers. Landlords and tenants may have different pathways.", loanOnly: false },
+      { id: 2, question: "Is your combined household income below $210,000?", helperText: "This is the income eligibility cap for the WA no-interest loan. The federal battery rebate and STCs have no income test.", loanOnly: false },
+      { id: 3, question: "Is your home in a Synergy or Horizon Power area?", helperText: "Synergy covers the Perth metro/SWIS region. Horizon serves regional WA. Both administer the WA Battery Scheme.", loanOnly: false },
+      { id: 4, question: "Do you currently have a solar system, or are you installing one alongside the battery?", helperText: "Battery rebates are primarily designed for solar-plus-battery installations. Battery-only is also possible in some cases.", loanOnly: false },
+      { id: 5, question: "Are you willing to join a Virtual Power Plant (VPP)?", helperText: "VPP participation is a condition of the WA battery rebate under the current scheme rules.", loanOnly: false },
+      { id: 6, question: "Do you have a recent electricity bill showing your annual usage?", helperText: "The loan assessment will look at your address, credit history, and ability to repay.", loanOnly: true },
+    ],
+    results: [
+      { key: "eligible-stack", title: "You Are Eligible For The Full Rebate Stack + Interest-Free Loan", description: "Based on your answers, you qualify for the federal battery rebate, the WA Residential Battery Scheme, and the no-interest loan. The combined support could cover a substantial portion of your battery installation." },
+      { key: "eligible-rebates-only", title: "You Are Eligible For Rebates, But Not The Interest-Free Loan", description: "Based on your answers, you qualify for the federal battery rebate and the WA scheme, but may not meet the income or VPP criteria for the no-interest loan. Rebates alone still provide meaningful support." },
+      { key: "not-eligible", title: "You May Not Be Eligible Under Current Scheme Rules", description: "Based on your answers, you may not fully meet the eligibility criteria for the combined rebate stack. Please contact our team to discuss alternative pathways, off-grid options, or future scheme changes." },
+    ],
   },
   {
     __component: "shared.split-section" as const,

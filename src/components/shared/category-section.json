@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_category_sections",
+  "info": {
+    "displayName": "Category Section"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.category"
+    }
+  },
+  "config": {}
+}

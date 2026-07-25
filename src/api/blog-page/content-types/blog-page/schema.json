@@ -16,6 +16,7 @@
       "components": [
         "blog.hero",
         "blog.category-filter",
+        "shared.category-section",
         "shared.cta-banner"
       ]
     },

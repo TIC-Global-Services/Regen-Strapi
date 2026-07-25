@@ -16,6 +16,7 @@
       "components": [
         "portfolio.hero",
         "portfolio.filters",
+        "shared.category-section",
         "shared.cta-banner"
       ]
     },

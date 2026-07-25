@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_categories",
+  "info": {
+    "displayName": "Category"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.category-item"
+    }
+  },
+  "config": {}
+}
