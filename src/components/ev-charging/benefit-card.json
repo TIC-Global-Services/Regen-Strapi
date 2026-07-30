@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ev_charging_benefit_cards",
+  "info": {
+    "displayName": "Benefit Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}
