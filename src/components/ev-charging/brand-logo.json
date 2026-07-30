@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ev_charging_brand_logos",
+  "info": {
+    "displayName": "Brand Logo"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

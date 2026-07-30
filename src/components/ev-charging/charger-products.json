@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_ev_charging_charger_products",
+  "info": {
+    "displayName": "Charger Products"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "products": {
+      "type": "component",
+      "component": "ev-charging.charger-product",
+      "repeatable": true
+    },
+    "brands": {
+      "type": "component",
+      "component": "ev-charging.brand-logo",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

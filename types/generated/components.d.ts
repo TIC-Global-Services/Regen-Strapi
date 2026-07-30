@@ -1,5 +1,43 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BlogCard extends Struct.ComponentSchema {
+  collectionName: 'components_blog_cards';
+  info: {
+    displayName: 'Card';
+  };
+  attributes: {
+    categoryKey: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    imagePosition: Schema.Attribute.Enumeration<['right', 'left']> &
+      Schema.Attribute.DefaultTo<'right'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BlogCategoryFilter extends Struct.ComponentSchema {
+  collectionName: 'components_blog_category_filter_sections';
+  info: {
+    displayName: 'Category Filter';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'blog.card', true>;
+    categories: Schema.Attribute.Component<'blog.category-option', true>;
+    defaultCategory: Schema.Attribute.String;
+  };
+}
+
+export interface BlogCategoryOption extends Struct.ComponentSchema {
+  collectionName: 'components_blog_category_options';
+  info: {
+    displayName: 'Category Option';
+  };
+  attributes: {
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    value: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface BlogHero extends Struct.ComponentSchema {
   collectionName: 'components_blog_heroes';
   info: {
@@ -130,6 +168,33 @@ export interface BrandsPhilosophy extends Struct.ComponentSchema {
   attributes: {
     badge: Schema.Attribute.String;
     paragraphs: Schema.Attribute.Component<'shared.intro-paragraph', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface BrandsSpecColumn extends Struct.ComponentSchema {
+  collectionName: 'components_brands_spec_columns';
+  info: {
+    displayName: 'Spec Column';
+  };
+  attributes: {
+    brand: Schema.Attribute.String & Schema.Attribute.Required;
+    degradation: Schema.Attribute.String;
+    efficiency: Schema.Attribute.String;
+    tempCoeff: Schema.Attribute.String;
+    warranty: Schema.Attribute.String;
+  };
+}
+
+export interface BrandsSpecsTable extends Struct.ComponentSchema {
+  collectionName: 'components_brands_specs_table_sections';
+  info: {
+    displayName: 'Specs Table';
+  };
+  attributes: {
+    columns: Schema.Attribute.Component<'brands.spec-column', true>;
+    description: Schema.Attribute.Text;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -302,7 +367,7 @@ export interface CommercialSystemsIndustry extends Struct.ComponentSchema {
   attributes: {
     caseStudy: Schema.Attribute.String;
     description: Schema.Attribute.Text;
-    iconKey: Schema.Attribute.String;
+    icon: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String;
   };
 }
@@ -527,6 +592,7 @@ export interface DealsPhilosophy extends Struct.ComponentSchema {
     displayName: 'Philosophy';
   };
   attributes: {
+    badge: Schema.Attribute.String;
     paragraphs: Schema.Attribute.Component<'shared.intro-paragraph', true>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -570,6 +636,240 @@ export interface DealsWhyMatters extends Struct.ComponentSchema {
   };
 }
 
+export interface EvChargingBenefitCard extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_benefit_cards';
+  info: {
+    displayName: 'Benefit Card';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingBenefitCards extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_benefit_cards';
+  info: {
+    displayName: 'Benefit Cards';
+  };
+  attributes: {
+    benefits: Schema.Attribute.Component<'ev-charging.benefit-card', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingBrandLogo extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_brand_logos';
+  info: {
+    displayName: 'Brand Logo';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingBulletPoint extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_bullet_points';
+  info: {
+    displayName: 'Bullet Point';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingChargerProduct extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_charger_products';
+  info: {
+    displayName: 'Charger Product';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingChargerProducts extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_charger_products';
+  info: {
+    displayName: 'Charger Products';
+  };
+  attributes: {
+    brands: Schema.Attribute.Component<'ev-charging.brand-logo', true>;
+    products: Schema.Attribute.Component<'ev-charging.charger-product', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingFeatureCard extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_feature_cards';
+  info: {
+    displayName: 'Feature Card';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingFeatureCards extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_feature_cards';
+  info: {
+    displayName: 'Feature Cards';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'ev-charging.feature-card', true>;
+    description: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingHero extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_heroes';
+  info: {
+    displayName: 'Hero';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    buttonLink: Schema.Attribute.String;
+    buttonText: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    showOverlay: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface EvChargingHomeBattery extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_home_batteries';
+  info: {
+    displayName: 'Home Battery (V2H)';
+  };
+  attributes: {
+    bulletPoints: Schema.Attribute.Component<'ev-charging.bullet-point', true>;
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    paragraphs: Schema.Attribute.Component<'ev-charging.paragraph', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingInstallationStep extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_installation_steps';
+  info: {
+    displayName: 'Installation Step';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    number: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingInstallationSteps extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_installation_steps';
+  info: {
+    displayName: 'Installation Steps';
+  };
+  attributes: {
+    steps: Schema.Attribute.Component<'ev-charging.installation-step', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingInstallerBrand extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_installer_brands';
+  info: {
+    displayName: 'Installer Brand';
+  };
+  attributes: {
+    cardTitle: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    logo: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+    specs: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingInstallerBrands extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_installer_brands';
+  info: {
+    displayName: 'Installer Brands';
+  };
+  attributes: {
+    brands: Schema.Attribute.Component<'ev-charging.installer-brand', true>;
+    description: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingParagraph extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_paragraphs';
+  info: {
+    displayName: 'Paragraph';
+  };
+  attributes: {
+    text: Schema.Attribute.RichText;
+  };
+}
+
+export interface EvChargingSpec extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_specs';
+  info: {
+    displayName: 'Spec';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+  };
+}
+
+export interface EvChargingStats extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_stats';
+  info: {
+    displayName: 'Stats (Why Choose Us)';
+  };
+  attributes: {
+    awardWinnerBg: Schema.Attribute.Media<'images'>;
+    awardWinnerCount: Schema.Attribute.Integer;
+    awardWinnerLogo: Schema.Attribute.Media<'images'>;
+    awardWinnerTitle: Schema.Attribute.String;
+    batteryInstallationsCount: Schema.Attribute.Integer;
+    batteryInstallationsLabel: Schema.Attribute.String;
+    solarInstallationsCount: Schema.Attribute.Integer;
+    solarInstallationsLabel: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    yearsInBusinessBg: Schema.Attribute.Media<'images'>;
+    yearsInBusinessCount: Schema.Attribute.Integer;
+    yearsInBusinessDescription: Schema.Attribute.Text;
+  };
+}
+
+export interface EvChargingWallConnector extends Struct.ComponentSchema {
+  collectionName: 'components_ev_charging_wall_connectors';
+  info: {
+    displayName: 'Wall Connector';
+  };
+  attributes: {
+    description: Schema.Attribute.RichText;
+    image: Schema.Attribute.Media<'images'>;
+    specs: Schema.Attribute.Component<'ev-charging.spec', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface FaqCategorizedFaq extends Struct.ComponentSchema {
   collectionName: 'components_faq_categorized_faq_sections';
   info: {
@@ -586,7 +886,8 @@ export interface FaqCategory extends Struct.ComponentSchema {
     displayName: 'Category';
   };
   attributes: {
-    items: Schema.Attribute.Component<'solar.faq-item', true>;
+    categoryId: Schema.Attribute.String & Schema.Attribute.Required;
+    items: Schema.Attribute.Component<'shared.faq-item', true>;
     label: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -617,16 +918,60 @@ export interface HomeAwards extends Struct.ComponentSchema {
   };
 }
 
+export interface HomeBadgeItem extends Struct.ComponentSchema {
+  collectionName: 'components_home_badge_items';
+  info: {
+    displayName: 'Badge Item';
+  };
+  attributes: {
+    alt: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+  };
+}
+
+export interface HomeBatteryQuote extends Struct.ComponentSchema {
+  collectionName: 'components_home_battery_quotes';
+  info: {
+    displayName: 'Battery Quote CTA';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomeBrandCategory extends Struct.ComponentSchema {
+  collectionName: 'components_home_brand_categories';
+  info: {
+    displayName: 'Brand Category';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    logos: Schema.Attribute.Component<'home.brand-logo', true>;
+  };
+}
+
+export interface HomeBrandLogo extends Struct.ComponentSchema {
+  collectionName: 'components_home_brand_logos';
+  info: {
+    displayName: 'Brand Logo';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
+  };
+}
+
 export interface HomeCraftmanship extends Struct.ComponentSchema {
   collectionName: 'components_home_craftmanships';
   info: {
-    displayName: 'Craftmanship';
+    displayName: 'Craftsmanship';
   };
   attributes: {
-    batteryStorage: Schema.Attribute.Component<'shared.imagegroup', true>;
-    evCharge: Schema.Attribute.Component<'shared.imagegroup', true>;
-    inverts: Schema.Attribute.Component<'shared.imagegroup', true>;
-    panal: Schema.Attribute.Component<'shared.imagegroup', true>;
+    categories: Schema.Attribute.Component<'home.brand-category', true>;
+    defaultTabId: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -638,9 +983,10 @@ export interface HomeExpertise extends Struct.ComponentSchema {
     displayName: 'Expertise';
   };
   attributes: {
-    data: Schema.Attribute.Component<'home.expertise-card', true>;
+    accentTitle: Schema.Attribute.String;
+    bgImage: Schema.Attribute.Media<'images'>;
+    items: Schema.Attribute.Component<'home.expertise-card', true>;
     subtitle: Schema.Attribute.String;
-    title: Schema.Attribute.String;
   };
 }
 
@@ -650,8 +996,35 @@ export interface HomeExpertiseCard extends Struct.ComponentSchema {
     displayName: 'Expertise Card';
   };
   attributes: {
-    icon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    icon: Schema.Attribute.Media<'images'>;
+    image: Schema.Attribute.Media<'images'>;
+    textColor: Schema.Attribute.Enumeration<['text-black', 'text-white']>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HomeFeatureItem extends Struct.ComponentSchema {
+  collectionName: 'components_home_feature_items';
+  info: {
+    displayName: 'Feature Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    number: Schema.Attribute.String;
+    title: Schema.Attribute.Text;
+  };
+}
+
+export interface HomeFinancingCard extends Struct.ComponentSchema {
+  collectionName: 'components_home_financing_cards';
+  info: {
+    displayName: 'Financing Card';
+  };
+  attributes: {
+    ctaText: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String;
   };
 }
@@ -662,22 +1035,44 @@ export interface HomeHero extends Struct.ComponentSchema {
     displayName: 'Hero';
   };
   attributes: {
-    buttontext: Schema.Attribute.String;
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    buttonLink: Schema.Attribute.String;
+    buttonText: Schema.Attribute.String;
+    buttonTextColor: Schema.Attribute.Enumeration<['text-black', 'text-white']>;
     description: Schema.Attribute.Text;
-    isButton: Schema.Attribute.Boolean;
-    subtitle: Schema.Attribute.Text;
+    descriptionColor: Schema.Attribute.Enumeration<
+      ['text-white', 'text-black']
+    >;
+    mediaType: Schema.Attribute.Enumeration<['image', 'video']>;
+    showOverlay: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    subtitle: Schema.Attribute.String;
+    subtitleColor: Schema.Attribute.Enumeration<['text-white', 'text-black']>;
     title: Schema.Attribute.Text;
+    videoFile: Schema.Attribute.Media<'videos'>;
+  };
+}
+
+export interface HomeLogoItem extends Struct.ComponentSchema {
+  collectionName: 'components_home_logo_items';
+  info: {
+    displayName: 'Logo Item';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String;
   };
 }
 
 export interface HomePatnersandmembership extends Struct.ComponentSchema {
   collectionName: 'components_home_patnersandmemberships';
   info: {
-    displayName: 'Partners And Membership';
+    displayName: 'Partners & Memberships';
   };
   attributes: {
-    membership: Schema.Attribute.Component<'shared.imagegroup', true>;
-    patners: Schema.Attribute.Component<'shared.imagegroup', true>;
+    memberships: Schema.Attribute.Component<'home.logo-item', true>;
+    membershipsTitle: Schema.Attribute.String;
+    partners: Schema.Attribute.Component<'home.logo-item', true>;
+    partnersTitle: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -689,7 +1084,8 @@ export interface HomeRealStories extends Struct.ComponentSchema {
     displayName: 'Real Stories';
   };
   attributes: {
-    certificates: Schema.Attribute.Component<'shared.imagegroup', true>;
+    badges: Schema.Attribute.Component<'home.badge-item', true>;
+    googleLogo: Schema.Attribute.Media<'images'>;
     reviews: Schema.Attribute.Component<'shared.testimonial', true>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -699,25 +1095,26 @@ export interface HomeRealStories extends Struct.ComponentSchema {
 export interface HomeSmartsolar extends Struct.ComponentSchema {
   collectionName: 'components_home_smartsolars';
   info: {
-    displayName: 'Smart Solar';
+    displayName: 'Latest News & Insights';
   };
   attributes: {
-    data: Schema.Attribute.Component<'shared.smartsolar-card', true>;
-    subtitle: Schema.Attribute.String;
+    bottomSubtitle: Schema.Attribute.String;
+    cards: Schema.Attribute.Component<'shared.feature-card', true>;
     title: Schema.Attribute.String;
+    topSubtitle: Schema.Attribute.String;
   };
 }
 
 export interface HomeSolarandstorage extends Struct.ComponentSchema {
   collectionName: 'components_home_solarandstorages';
   info: {
-    displayName: 'Solar And Storage';
+    displayName: 'Science of Solar & Storage';
   };
   attributes: {
-    description: Schema.Attribute.Text;
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    number: Schema.Attribute.Integer;
-    title: Schema.Attribute.String;
+    features: Schema.Attribute.Component<'home.feature-item', true>;
+    media: Schema.Attribute.Media<'images'>;
+    titleAccent: Schema.Attribute.String;
+    titleNormal: Schema.Attribute.String;
   };
 }
 
@@ -727,7 +1124,7 @@ export interface HomeThreewaystopay extends Struct.ComponentSchema {
     displayName: 'Three Ways To Pay';
   };
   attributes: {
-    data: Schema.Attribute.Component<'shared.threeway-card', true>;
+    cards: Schema.Attribute.Component<'home.financing-card', true>;
     description: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -740,9 +1137,22 @@ export interface HomeWhychooseus extends Struct.ComponentSchema {
     displayName: 'Why Choose Us';
   };
   attributes: {
-    data: Schema.Attribute.Component<'shared.cardgroup', true>;
+    awardWinnerBg: Schema.Attribute.Media<'images'>;
+    awardWinnerCount: Schema.Attribute.Integer;
+    awardWinnerLogo: Schema.Attribute.Media<'images'>;
+    awardWinnerTitle: Schema.Attribute.String;
+    batteryInstallationsCount: Schema.Attribute.Integer;
+    batteryInstallationsLabel: Schema.Attribute.String;
+    ratingBg: Schema.Attribute.Media<'images'>;
+    ratingPlatformLabel: Schema.Attribute.String;
+    ratingScore: Schema.Attribute.Integer;
+    solarInstallationsCount: Schema.Attribute.Integer;
+    solarInstallationsLabel: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
+    yearsInBusinessBg: Schema.Attribute.Media<'images'>;
+    yearsInBusinessCount: Schema.Attribute.Integer;
+    yearsInBusinessDescription: Schema.Attribute.Text;
   };
 }
 
@@ -792,8 +1202,12 @@ export interface OffGridHybridGenDetail extends Struct.ComponentSchema {
     displayName: 'Hybrid Gen Detail';
   };
   attributes: {
+    description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
     logo: Schema.Attribute.Media<'images'>;
+    patentText: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -824,6 +1238,56 @@ export interface OffGridMapMarker extends Struct.ComponentSchema {
   };
 }
 
+export interface OffGridMicrogridApplication extends Struct.ComponentSchema {
+  collectionName: 'components_off_grid_microgrid_applications';
+  info: {
+    displayName: 'Microgrid Application';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface OffGridMicrogridSpec extends Struct.ComponentSchema {
+  collectionName: 'components_off_grid_microgrid_specs';
+  info: {
+    displayName: 'Microgrid Spec';
+  };
+  attributes: {
+    detail: Schema.Attribute.String & Schema.Attribute.Required;
+    field: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface OffGridMicrogridSpecTable extends Struct.ComponentSchema {
+  collectionName: 'components_off_grid_microgrid_spec_table_sections';
+  info: {
+    displayName: 'Microgrid Spec Table';
+  };
+  attributes: {
+    headers: Schema.Attribute.Component<
+      'off-grid.microgrid-table-header',
+      false
+    >;
+    subtitle: Schema.Attribute.String;
+    tableContent: Schema.Attribute.Component<'off-grid.table-content', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface OffGridMicrogridTableHeader extends Struct.ComponentSchema {
+  collectionName: 'components_off_grid_microgrid_table_headers';
+  info: {
+    displayName: 'Microgrid Table Header';
+  };
+  attributes: {
+    col1: Schema.Attribute.String & Schema.Attribute.Required;
+    col2: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface OffGridOffGridForm extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_off_grid_forms';
   info: {
@@ -832,6 +1296,25 @@ export interface OffGridOffGridForm extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface OffGridOffGridStory extends Struct.ComponentSchema {
+  collectionName: 'components_off_grid_off_grid_story_sections';
+  info: {
+    displayName: 'Off Grid Story';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'off-grid.story-card', true>;
+    description: Schema.Attribute.Text;
+    featuredDescription: Schema.Attribute.Text;
+    featuredHref: Schema.Attribute.String;
+    featuredImage: Schema.Attribute.Media<'images'>;
+    featuredImageAlt: Schema.Attribute.String;
+    featuredTitle: Schema.Attribute.String;
+    showReadMore: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -887,6 +1370,30 @@ export interface OffGridSolutionsPortfolio extends Struct.ComponentSchema {
   };
 }
 
+export interface OffGridStoryCard extends Struct.ComponentSchema {
+  collectionName: 'components_off_grid_story_cards';
+  info: {
+    displayName: 'Story Card';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    variant: Schema.Attribute.Enumeration<['default', 'highlighted', 'light']> &
+      Schema.Attribute.DefaultTo<'default'>;
+  };
+}
+
+export interface OffGridTableContent extends Struct.ComponentSchema {
+  collectionName: 'components_off_grid_table_contents';
+  info: {
+    displayName: 'Table Content';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    value: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface OffGridThreeSolutionItem extends Struct.ComponentSchema {
   collectionName: 'components_off_grid_three_solution_items';
   info: {
@@ -921,8 +1428,53 @@ export interface OffGridWorldMap extends Struct.ComponentSchema {
   };
   attributes: {
     markers: Schema.Attribute.Component<'off-grid.map-marker', true>;
-    subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface PortfolioCard extends Struct.ComponentSchema {
+  collectionName: 'components_portfolio_cards';
+  info: {
+    displayName: 'Card';
+  };
+  attributes: {
+    categoryKey: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PortfolioFilterGroup extends Struct.ComponentSchema {
+  collectionName: 'components_portfolio_filter_groups';
+  info: {
+    displayName: 'Filter Group';
+  };
+  attributes: {
+    name: Schema.Attribute.String;
+    options: Schema.Attribute.Component<'portfolio.filter-option', true>;
+  };
+}
+
+export interface PortfolioFilterOption extends Struct.ComponentSchema {
+  collectionName: 'components_portfolio_filter_options';
+  info: {
+    displayName: 'Filter Option';
+  };
+  attributes: {
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    value: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface PortfolioFilters extends Struct.ComponentSchema {
+  collectionName: 'components_portfolio_filters_sections';
+  info: {
+    displayName: 'Filters';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'portfolio.card', true>;
+    filterGroups: Schema.Attribute.Component<'portfolio.filter-group', true>;
   };
 }
 
@@ -938,6 +1490,100 @@ export interface PortfolioHero extends Struct.ComponentSchema {
     description: Schema.Attribute.Text;
     mainTitle: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
+  };
+}
+
+export interface PressAndMediaCard extends Struct.ComponentSchema {
+  collectionName: 'components_press_and_media_cards';
+  info: {
+    displayName: 'Card';
+  };
+  attributes: {
+    categoryKey: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface PressAndMediaCategoryOption extends Struct.ComponentSchema {
+  collectionName: 'components_press_and_media_category_options';
+  info: {
+    displayName: 'Category Option';
+  };
+  attributes: {
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    value: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface PressAndMediaFeaturedArticle extends Struct.ComponentSchema {
+  collectionName: 'components_press_and_media_featured_articles';
+  info: {
+    displayName: 'Featured Article';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    href: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PressAndMediaHero extends Struct.ComponentSchema {
+  collectionName: 'components_press_and_media_heroes';
+  info: {
+    displayName: 'Hero';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    mainTitle: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
+export interface PressAndMediaLatestNewsSection extends Struct.ComponentSchema {
+  collectionName: 'components_press_and_media_latest_news_sections';
+  info: {
+    displayName: 'Latest News Section';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'press-and-media.news-item', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PressAndMediaNewsItem extends Struct.ComponentSchema {
+  collectionName: 'components_press_and_media_news_items';
+  info: {
+    displayName: 'News Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    href: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PressAndMediaNewsSection extends Struct.ComponentSchema {
+  collectionName: 'components_press_and_media_news_sections';
+  info: {
+    displayName: 'News Section';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'press-and-media.card', true>;
+    categories: Schema.Attribute.Component<
+      'press-and-media.category-option',
+      true
+    >;
+    defaultCategory: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -1067,7 +1713,36 @@ export interface RebatesEligibilityChecker extends Struct.ComponentSchema {
   attributes: {
     badge: Schema.Attribute.String;
     description: Schema.Attribute.Text;
+    questions: Schema.Attribute.Component<'rebates.eligibility-question', true>;
+    results: Schema.Attribute.Component<'rebates.eligibility-result', true>;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface RebatesEligibilityQuestion extends Struct.ComponentSchema {
+  collectionName: 'components_rebates_eligibility_questions';
+  info: {
+    displayName: 'Eligibility Question';
+  };
+  attributes: {
+    helperText: Schema.Attribute.Text & Schema.Attribute.Required;
+    loanOnly: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    question: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface RebatesEligibilityResult extends Struct.ComponentSchema {
+  collectionName: 'components_rebates_eligibility_results';
+  info: {
+    displayName: 'Eligibility Result';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    key: Schema.Attribute.Enumeration<
+      ['eligible-stack', 'eligible-rebates-only', 'not-eligible']
+    > &
+      Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -1103,8 +1778,9 @@ export interface RebatesLoanBenefits extends Struct.ComponentSchema {
     displayName: 'Loan Benefits';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    badge: Schema.Attribute.String;
     benefits: Schema.Attribute.Component<'rebates.loan-benefit', true>;
-    ctaText: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -1177,6 +1853,97 @@ export interface RebatesUtilityCards extends Struct.ComponentSchema {
   };
 }
 
+export interface ResearchAndDevelopmentAchievementItem
+  extends Struct.ComponentSchema {
+  collectionName: 'components_research_and_development_achievement_items';
+  info: {
+    displayName: 'Achievement Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    href: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ResearchAndDevelopmentCoreAchievementsSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_research_and_development_core_achievements_sections';
+  info: {
+    displayName: 'Core Achievements Section';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<
+      'research-and-development.achievement-item',
+      true
+    >;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ResearchAndDevelopmentEnergySolutionItem
+  extends Struct.ComponentSchema {
+  collectionName: 'components_research_and_development_energy_solution_items';
+  info: {
+    displayName: 'Energy Solution Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    href: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ResearchAndDevelopmentEnergySolutionsSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_research_and_development_energy_solutions_sections';
+  info: {
+    displayName: 'Energy Solutions Section';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<
+      'research-and-development.energy-solution-item',
+      true
+    >;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ResearchAndDevelopmentHero extends Struct.ComponentSchema {
+  collectionName: 'components_research_and_development_heroes';
+  info: {
+    displayName: 'Hero';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    mainTitle: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
+export interface ReviewsCard extends Struct.ComponentSchema {
+  collectionName: 'components_reviews_cards';
+  info: {
+    displayName: 'Card';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    imageAlt: Schema.Attribute.String;
+    location: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+    quote: Schema.Attribute.Text;
+    type: Schema.Attribute.Enumeration<['testimonial', 'image']> &
+      Schema.Attribute.Required;
+  };
+}
+
 export interface ReviewsHero extends Struct.ComponentSchema {
   collectionName: 'components_reviews_heroes';
   info: {
@@ -1199,6 +1966,18 @@ export interface ReviewsIntroSection extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ReviewsTestimonialsSection extends Struct.ComponentSchema {
+  collectionName: 'components_reviews_testimonials_sections';
+  info: {
+    displayName: 'Testimonials Section';
+  };
+  attributes: {
+    cards: Schema.Attribute.Component<'reviews.card', true>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -1231,6 +2010,57 @@ export interface SharedCardgroup extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCategory extends Struct.ComponentSchema {
+  collectionName: 'components_shared_categories';
+  info: {
+    displayName: 'Category';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'shared.category-item', true>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface SharedCategoryItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_category_items';
+  info: {
+    displayName: 'Category Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCategorySection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_category_sections';
+  info: {
+    displayName: 'Category Section';
+  };
+  attributes: {
+    categories: Schema.Attribute.Component<'shared.category', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedCtaBanner extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cta_banner_sections';
+  info: {
+    displayName: 'CTA Banner';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    buttonHref: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'#quote-form'>;
+    buttonText: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    mainTitle: Schema.Attribute.String;
+    subtitle: Schema.Attribute.String;
+  };
+}
+
 export interface SharedEditorialSection extends Struct.ComponentSchema {
   collectionName: 'components_shared_editorial_sections';
   info: {
@@ -1241,6 +2071,31 @@ export interface SharedEditorialSection extends Struct.ComponentSchema {
     paragraphs: Schema.Attribute.Component<'shared.intro-paragraph', true>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFaq extends Struct.ComponentSchema {
+  collectionName: 'components_shared_faq_sections';
+  info: {
+    displayName: 'FAQ';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    items: Schema.Attribute.Component<'shared.faq-item', true>;
+    listTitle: Schema.Attribute.String;
+    sectionTitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFaqItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_faq_items';
+  info: {
+    displayName: 'FAQ Item';
+  };
+  attributes: {
+    answer: Schema.Attribute.RichText & Schema.Attribute.Required;
+    question: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -1255,6 +2110,19 @@ export interface SharedFeatureCard extends Struct.ComponentSchema {
     footerTitle: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images'>;
     textPosition: Schema.Attribute.Enumeration<['top', 'bottom']>;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFormSection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_form_sections';
+  info: {
+    displayName: 'Form Section';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
 }
@@ -1393,6 +2261,7 @@ export interface SharedTestimonial extends Struct.ComponentSchema {
   };
   attributes: {
     author: Schema.Attribute.String;
+    location: Schema.Attribute.String;
     rating: Schema.Attribute.Integer;
     review: Schema.Attribute.Text;
     title: Schema.Attribute.String;
@@ -1405,7 +2274,7 @@ export interface SharedTextBlock extends Struct.ComponentSchema {
     displayName: 'Text Block';
   };
   attributes: {
-    text: Schema.Attribute.RichText;
+    text: Schema.Attribute.Text;
   };
 }
 
@@ -1452,6 +2321,9 @@ export interface SolarBrandsGrid extends Struct.ComponentSchema {
   };
   attributes: {
     brands: Schema.Attribute.Component<'solar.brand-logo', true>;
+    ctaHref: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'#quote-form'>;
+    ctaText: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
@@ -1520,6 +2392,21 @@ export interface SolarFaqItem extends Struct.ComponentSchema {
   attributes: {
     answer: Schema.Attribute.RichText & Schema.Attribute.Required;
     question: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface SolarHero extends Struct.ComponentSchema {
+  collectionName: 'components_solar_heroes';
+  info: {
+    displayName: 'Hero';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.Media<'images'>;
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -1666,11 +2553,10 @@ export interface SolarSpecRow extends Struct.ComponentSchema {
     displayName: 'Spec Row';
   };
   attributes: {
-    brandName: Schema.Attribute.String & Schema.Attribute.Required;
-    degradation: Schema.Attribute.String;
-    efficiency: Schema.Attribute.String;
-    tempCoeff: Schema.Attribute.String;
-    warranty: Schema.Attribute.String;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    value: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -1694,6 +2580,8 @@ export interface SolarStatsAndIntro extends Struct.ComponentSchema {
   };
   attributes: {
     introParagraphs: Schema.Attribute.Component<'shared.intro-paragraph', true>;
+    introSubtitle: Schema.Attribute.String;
+    introTitle: Schema.Attribute.String;
     tickerItems: Schema.Attribute.Component<'shared.ticker-item', true>;
   };
 }
@@ -1716,6 +2604,9 @@ export interface SolarTimeline extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
+      'blog.card': BlogCard;
+      'blog.category-filter': BlogCategoryFilter;
+      'blog.category-option': BlogCategoryOption;
       'blog.hero': BlogHero;
       'brands.brand-card': BrandsBrandCard;
       'brands.brands-grid': BrandsBrandsGrid;
@@ -1726,6 +2617,8 @@ declare module '@strapi/strapi' {
       'brands.inverter-brand': BrandsInverterBrand;
       'brands.inverters-slider': BrandsInvertersSlider;
       'brands.philosophy': BrandsPhilosophy;
+      'brands.spec-column': BrandsSpecColumn;
+      'brands.specs-table': BrandsSpecsTable;
       'brands.tier1-means': BrandsTier1Means;
       'commercial-off-grid.hero': CommercialOffGridHero;
       'commercial-off-grid.solutions-portfolio': CommercialOffGridSolutionsPortfolio;
@@ -1758,14 +2651,39 @@ declare module '@strapi/strapi' {
       'deals.promotion': DealsPromotion;
       'deals.ways-to-pay': DealsWaysToPay;
       'deals.why-matters': DealsWhyMatters;
+      'ev-charging.benefit-card': EvChargingBenefitCard;
+      'ev-charging.benefit-cards': EvChargingBenefitCards;
+      'ev-charging.brand-logo': EvChargingBrandLogo;
+      'ev-charging.bullet-point': EvChargingBulletPoint;
+      'ev-charging.charger-product': EvChargingChargerProduct;
+      'ev-charging.charger-products': EvChargingChargerProducts;
+      'ev-charging.feature-card': EvChargingFeatureCard;
+      'ev-charging.feature-cards': EvChargingFeatureCards;
+      'ev-charging.hero': EvChargingHero;
+      'ev-charging.home-battery': EvChargingHomeBattery;
+      'ev-charging.installation-step': EvChargingInstallationStep;
+      'ev-charging.installation-steps': EvChargingInstallationSteps;
+      'ev-charging.installer-brand': EvChargingInstallerBrand;
+      'ev-charging.installer-brands': EvChargingInstallerBrands;
+      'ev-charging.paragraph': EvChargingParagraph;
+      'ev-charging.spec': EvChargingSpec;
+      'ev-charging.stats': EvChargingStats;
+      'ev-charging.wall-connector': EvChargingWallConnector;
       'faq.categorized-faq': FaqCategorizedFaq;
       'faq.category': FaqCategory;
       'faq.hero': FaqHero;
       'home.awards': HomeAwards;
+      'home.badge-item': HomeBadgeItem;
+      'home.battery-quote': HomeBatteryQuote;
+      'home.brand-category': HomeBrandCategory;
+      'home.brand-logo': HomeBrandLogo;
       'home.craftmanship': HomeCraftmanship;
       'home.expertise': HomeExpertise;
       'home.expertise-card': HomeExpertiseCard;
+      'home.feature-item': HomeFeatureItem;
+      'home.financing-card': HomeFinancingCard;
       'home.hero': HomeHero;
+      'home.logo-item': HomeLogoItem;
       'home.patnersandmembership': HomePatnersandmembership;
       'home.real-stories': HomeRealStories;
       'home.smartsolar': HomeSmartsolar;
@@ -1778,14 +2696,32 @@ declare module '@strapi/strapi' {
       'off-grid.hybrid-gen-detail': OffGridHybridGenDetail;
       'off-grid.icon-card-grid': OffGridIconCardGrid;
       'off-grid.map-marker': OffGridMapMarker;
+      'off-grid.microgrid-application': OffGridMicrogridApplication;
+      'off-grid.microgrid-spec': OffGridMicrogridSpec;
+      'off-grid.microgrid-spec-table': OffGridMicrogridSpecTable;
+      'off-grid.microgrid-table-header': OffGridMicrogridTableHeader;
       'off-grid.off-grid-form': OffGridOffGridForm;
+      'off-grid.off-grid-story': OffGridOffGridStory;
       'off-grid.overlay-card-grid': OffGridOverlayCardGrid;
       'off-grid.portfolio-card': OffGridPortfolioCard;
       'off-grid.solutions-portfolio': OffGridSolutionsPortfolio;
+      'off-grid.story-card': OffGridStoryCard;
+      'off-grid.table-content': OffGridTableContent;
       'off-grid.three-solution-item': OffGridThreeSolutionItem;
       'off-grid.three-solutions-section': OffGridThreeSolutionsSection;
       'off-grid.world-map': OffGridWorldMap;
+      'portfolio.card': PortfolioCard;
+      'portfolio.filter-group': PortfolioFilterGroup;
+      'portfolio.filter-option': PortfolioFilterOption;
+      'portfolio.filters': PortfolioFilters;
       'portfolio.hero': PortfolioHero;
+      'press-and-media.card': PressAndMediaCard;
+      'press-and-media.category-option': PressAndMediaCategoryOption;
+      'press-and-media.featured-article': PressAndMediaFeaturedArticle;
+      'press-and-media.hero': PressAndMediaHero;
+      'press-and-media.latest-news-section': PressAndMediaLatestNewsSection;
+      'press-and-media.news-item': PressAndMediaNewsItem;
+      'press-and-media.news-section': PressAndMediaNewsSection;
       'press.featured-article': PressFeaturedArticle;
       'press.hero': PressHero;
       'press.latest-news-section': PressLatestNewsSection;
@@ -1796,6 +2732,8 @@ declare module '@strapi/strapi' {
       'rd.energy-solutions-section': RdEnergySolutionsSection;
       'rd.hero': RdHero;
       'rebates.eligibility-checker': RebatesEligibilityChecker;
+      'rebates.eligibility-question': RebatesEligibilityQuestion;
+      'rebates.eligibility-result': RebatesEligibilityResult;
       'rebates.hero': RebatesHero;
       'rebates.loan-benefit': RebatesLoanBenefit;
       'rebates.loan-benefits': RebatesLoanBenefits;
@@ -1804,12 +2742,26 @@ declare module '@strapi/strapi' {
       'rebates.stc-explainer': RebatesStcExplainer;
       'rebates.utility-card': RebatesUtilityCard;
       'rebates.utility-cards': RebatesUtilityCards;
+      'research-and-development.achievement-item': ResearchAndDevelopmentAchievementItem;
+      'research-and-development.core-achievements-section': ResearchAndDevelopmentCoreAchievementsSection;
+      'research-and-development.energy-solution-item': ResearchAndDevelopmentEnergySolutionItem;
+      'research-and-development.energy-solutions-section': ResearchAndDevelopmentEnergySolutionsSection;
+      'research-and-development.hero': ResearchAndDevelopmentHero;
+      'reviews.card': ReviewsCard;
       'reviews.hero': ReviewsHero;
       'reviews.intro-section': ReviewsIntroSection;
+      'reviews.testimonials-section': ReviewsTestimonialsSection;
       'shared.blog': SharedBlog;
       'shared.cardgroup': SharedCardgroup;
+      'shared.category': SharedCategory;
+      'shared.category-item': SharedCategoryItem;
+      'shared.category-section': SharedCategorySection;
+      'shared.cta-banner': SharedCtaBanner;
       'shared.editorial-section': SharedEditorialSection;
+      'shared.faq': SharedFaq;
+      'shared.faq-item': SharedFaqItem;
       'shared.feature-card': SharedFeatureCard;
+      'shared.form-section': SharedFormSection;
       'shared.icon-card': SharedIconCard;
       'shared.imagegroup': SharedImagegroup;
       'shared.intro-paragraph': SharedIntroParagraph;
@@ -1830,6 +2782,7 @@ declare module '@strapi/strapi' {
       'solar.engineering-items': SolarEngineeringItems;
       'solar.faq': SolarFaq;
       'solar.faq-item': SolarFaqItem;
+      'solar.hero': SolarHero;
       'solar.info-card': SolarInfoCard;
       'solar.inverter-slider': SolarInverterSlider;
       'solar.inverter-type': SolarInverterType;

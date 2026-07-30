@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_ev_charging_installation_steps",
+  "info": {
+    "displayName": "Installation Step"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

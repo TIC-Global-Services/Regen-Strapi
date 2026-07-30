@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ev_charging_specs",
+  "info": {
+    "displayName": "Spec"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
