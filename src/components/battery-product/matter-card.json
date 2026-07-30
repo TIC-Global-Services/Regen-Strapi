@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_battery_product_matter_cards",
+  "info": {
+    "displayName": "Matter Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

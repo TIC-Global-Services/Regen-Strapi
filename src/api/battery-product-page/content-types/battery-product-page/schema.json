@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "battery_product_pages",
+  "info": {
+    "singularName": "battery-product-page",
+    "pluralName": "battery-product-pages",
+    "displayName": "Battery Pages - Battery Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "battery-product.hero",
+        "battery-product.brand-matters",
+        "battery-product.our-brands",
+        "battery-product.zero-interest",
+        "battery-product.key-terms",
+        "battery-product.what-we-check",
+        "battery-product.compatible-products",
+        "battery-product.homeowners",
+        "battery-product.comparison-table",
+        "shared.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

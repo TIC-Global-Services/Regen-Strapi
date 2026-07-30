@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_battery_product_brand_matters",
+  "info": {
+    "displayName": "Brand Matters"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "component": "battery-product.matter-card",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    }
+  },
+  "config": {}
+}

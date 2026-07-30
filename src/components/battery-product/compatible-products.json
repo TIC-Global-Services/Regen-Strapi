@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_battery_product_compatible_products",
+  "info": {
+    "displayName": "Compatible Products"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "leftTitle": {
+      "type": "string"
+    },
+    "leftItems": {
+      "type": "text",
+      "repeatable": true
+    },
+    "rightTitle": {
+      "type": "string"
+    },
+    "rightItems": {
+      "type": "text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

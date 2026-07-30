@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_battery_product_our_brands",
+  "info": {
+    "displayName": "Our Brands"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "brands": {
+      "type": "component",
+      "component": "battery-product.brand-item",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    }
+  },
+  "config": {}
+}

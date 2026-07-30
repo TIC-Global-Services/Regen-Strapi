@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_battery_product_comparison_columns",
+  "info": {
+    "displayName": "Comparison Column"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

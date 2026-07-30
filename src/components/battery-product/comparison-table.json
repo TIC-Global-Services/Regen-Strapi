@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_battery_product_comparison_tables",
+  "info": {
+    "displayName": "Comparison Table"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "columns": {
+      "type": "component",
+      "component": "battery-product.comparison-column",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    },
+    "rows": {
+      "type": "component",
+      "component": "battery-product.comparison-row",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    }
+  },
+  "config": {}
+}

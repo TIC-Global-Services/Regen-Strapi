@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_battery_product_brand_items",
+  "info": {
+    "displayName": "Brand Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "link": {
+      "type": "string"
+    },
+    "specs": {
+      "type": "component",
+      "component": "battery-product.spec-item",
+      "repeatable": true,
+      "min": 1
+    }
+  },
+  "config": {}
+}

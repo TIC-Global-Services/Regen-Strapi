@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_battery_product_homeowners",
+  "info": {
+    "displayName": "Homeowners"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "component": "battery-product.feature-card",
+      "repeatable": true
+    },
+    "showReadMore": {
+      "type": "boolean",
+      "default": true
+    },
+    "centerButton": {
+      "type": "boolean",
+      "default": false
+    },
+    "centerButtonText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

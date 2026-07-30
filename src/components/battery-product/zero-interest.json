@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_battery_product_zero_interests",
+  "info": {
+    "displayName": "Zero Interest"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "component": "battery-product.solutions-card",
+      "repeatable": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": ["3", "4", "6"]
+    }
+  },
+  "config": {}
+}

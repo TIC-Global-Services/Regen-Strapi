@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_battery_product_comparison_rows",
+  "info": {
+    "displayName": "Comparison Row"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "values": {
+      "type": "text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_battery_product_solutions_cards",
+  "info": {
+    "displayName": "Solutions Card"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": ["text", "image"]
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["light-gray", "light-green", "dark"]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

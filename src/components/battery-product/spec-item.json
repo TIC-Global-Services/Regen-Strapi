@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_battery_product_spec_items",
+  "info": {
+    "displayName": "Spec Item"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

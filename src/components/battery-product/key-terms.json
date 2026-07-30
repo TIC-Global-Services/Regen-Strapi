@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_battery_product_key_terms",
+  "info": {
+    "displayName": "Key Terms"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "keyTermsBlock": {
+      "type": "component",
+      "component": "battery-product.terms-block"
+    },
+    "eligibilityBlock": {
+      "type": "component",
+      "component": "battery-product.terms-block"
+    },
+    "summaryText": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

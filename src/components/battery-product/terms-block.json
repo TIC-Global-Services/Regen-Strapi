@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_battery_product_terms_blocks",
+  "info": {
+    "displayName": "Terms Block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
