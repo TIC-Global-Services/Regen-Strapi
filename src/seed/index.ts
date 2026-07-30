@@ -15,6 +15,7 @@ import { blogSections } from "./data/blog-page";
 import { pressMediaSections } from "./data/press-media-page";
 import { reviewsSections } from "./data/reviews-page";
 import { contactSections } from "./data/contact-page";
+import { homeSections } from "./data/home-page";
 
 const pages = [
   {
@@ -182,6 +183,19 @@ const pages = [
       metaRobots: "index, follow",
     },
   },
+  {
+    uid: "api::home-page.home-page" as UID.ContentType,
+    title: "Home",
+    sections: homeSections,
+    fieldName: "data",
+    seo: {
+      metaTitle: "Regen Power | Solar & Battery Installer Perth",
+      metaDescription:
+        "WA's #1 rated solar installer with 45,000+ installations since 2003. Solar panels, battery storage, EV charging & commercial systems.",
+      keywords: "solar Perth, Regen Power, solar installer, battery storage, EV charging Perth",
+      metaRobots: "index, follow",
+    },
+  },
 ];
 
 async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number]) {
@@ -190,25 +204,33 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
     populate: ["seo"],
   } as any);
 
+  const fieldName = (page as any).fieldName || "sections";
+
   if (existing) {
-    if (!(existing as any).seo) {
+    const existingField = (existing as any)[fieldName];
+    const needsSections = !existingField || existingField.length === 0;
+    const needsSeo = !(existing as any).seo;
+
+    if (needsSections || needsSeo) {
+      const updateData: Record<string, unknown> = {};
+      if (needsSections) updateData[fieldName] = page.sections;
+      if (needsSeo) updateData.seo = page.seo;
+
       await strapi.documents(page.uid).update({
         documentId: existing.documentId,
-        data: {
-          seo: page.seo,
-        } as any,
+        data: updateData as any,
         status: "published",
       });
-      strapi.log.info(`[seed] ${page.title} seo added`);
+      strapi.log.info(`[seed] ${page.title} updated (sections: ${needsSections}, seo: ${needsSeo})`);
     } else {
-      strapi.log.info(`[seed] ${page.title} already exists`);
+      strapi.log.info(`[seed] ${page.title} already exists with content`);
     }
     return;
   }
 
   await strapi.documents(page.uid).create({
     data: {
-      sections: page.sections,
+      [fieldName]: page.sections,
       seo: page.seo,
     } as any,
     status: "published",
@@ -220,7 +242,7 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
 export async function runSeed(strapi: Core.Strapi) {
   strapi.log.info("🌱 Starting Page Seeder...");
 
-  for (const page of pages) {
+  for (const page of pages.filter((p) => p.uid === "api::home-page.home-page")) {
     await seedSingleType(strapi, page);
   }
 
