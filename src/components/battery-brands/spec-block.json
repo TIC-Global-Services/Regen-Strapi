@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_battery_brands_spec_blocks",
+  "info": {
+    "displayName": "Spec Block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "specdetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-brands.spec-detail"
+    }
+  },
+  "config": {}
+}

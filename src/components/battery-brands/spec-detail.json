@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_battery_brands_spec_details",
+  "info": {
+    "displayName": "Spec Detail"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "battery_brands_pages",
+  "info": {
+    "singularName": "battery-brands-page",
+    "pluralName": "battery-brands-pages",
+    "displayName": "Battery Pages - Brands We Carry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "battery-brands.hero",
+        "battery-brands.brand-long-term-bet",
+        "battery-brands.what-it-takes",
+        "battery-brands.seven-brand",
+        "battery-product.comparison-table",
+        "battery-brands.quick-way",
+        "battery-brands.cec-approved",
+        "battery-brands.why-our-installer",
+        "shared.faq",
+        "shared.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

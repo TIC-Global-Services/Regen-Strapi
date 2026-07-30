@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_battery_brands_cec_cards",
+  "info": {
+    "displayName": "CEC Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

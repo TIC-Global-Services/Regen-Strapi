@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_brands_bet_cards",
+  "info": {
+    "displayName": "Bet Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

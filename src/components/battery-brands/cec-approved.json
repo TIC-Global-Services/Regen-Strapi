@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_battery_brands_cec_approved",
+  "info": {
+    "displayName": "CEC Approved"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "defaultFeaturedIndex": {
+      "type": "integer",
+      "default": 2
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-brands.cec-card"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_brands_brand_long_term_bets",
+  "info": {
+    "displayName": "Brand Long Term Bet"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-brands.bet-card"
+    }
+  },
+  "config": {}
+}

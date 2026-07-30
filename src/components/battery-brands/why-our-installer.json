@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_battery_brands_why_our_installers",
+  "info": {
+    "displayName": "Why Our Installer"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "certifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-brands.cert-item"
+    },
+    "whyMattersTitle": {
+      "type": "string"
+    },
+    "whyMattersDescription": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

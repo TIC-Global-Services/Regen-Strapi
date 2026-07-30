@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_battery_brands_quick_ways",
+  "info": {
+    "displayName": "Quick Way"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "sectionHeader": {
+      "type": "string"
+    },
+    "recommendations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-brands.recommendation-item"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_brands_brand_cards",
+  "info": {
+    "displayName": "Brand Card (Seven)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "specification": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-brands.spec-block"
+    }
+  },
+  "config": {}
+}

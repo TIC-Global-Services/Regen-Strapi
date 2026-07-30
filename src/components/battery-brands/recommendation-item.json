@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_battery_brands_recommendation_items",
+  "info": {
+    "displayName": "Recommendation Item"
+  },
+  "options": {},
+  "attributes": {
+    "condition": {
+      "type": "text"
+    },
+    "recommendation": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
