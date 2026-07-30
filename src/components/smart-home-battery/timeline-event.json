@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_smart_home_battery_timeline_events",
+  "info": {
+    "displayName": "Timeline Event"
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

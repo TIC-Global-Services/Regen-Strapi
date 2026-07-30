@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_smart_home_battery_brand_cards",
+  "info": {
+    "displayName": "Brand Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "specification": {
+      "type": "component",
+      "repeatable": true,
+      "component": "smart-home-battery.brand-spec"
+    },
+    "showbutton": {
+      "type": "boolean",
+      "default": true
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

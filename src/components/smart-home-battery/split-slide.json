@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_smart_home_battery_split_slides",
+  "info": {
+    "displayName": "Split Slide"
+  },
+  "options": {},
+  "attributes": {
+    "mainDescription": {
+      "type": "text"
+    },
+    "blocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "smart-home-battery.split-block"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

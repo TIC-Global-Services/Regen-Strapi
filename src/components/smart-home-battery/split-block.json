@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_smart_home_battery_split_blocks",
+  "info": {
+    "displayName": "Split Block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

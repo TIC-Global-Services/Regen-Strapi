@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "smart_home_battery_pages",
+  "info": {
+    "singularName": "smart-home-battery-page",
+    "pluralName": "smart-home-battery-pages",
+    "displayName": "Battery Pages - Smart Home Battery System"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "smart-home-battery.hero",
+        "battery-storage.marquee",
+        "smart-home-battery.great-fit",
+        "smart-home-battery.split-section",
+        "smart-home-battery.timeline",
+        "smart-home-battery.brands-grid",
+        "smart-home-battery.install-bento",
+        "shared.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

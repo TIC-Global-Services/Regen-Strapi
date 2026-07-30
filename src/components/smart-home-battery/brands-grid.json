@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_smart_home_battery_brands_grids",
+  "info": {
+    "displayName": "Brands Grid"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "brands": {
+      "type": "component",
+      "repeatable": true,
+      "component": "smart-home-battery.brand-card"
+    }
+  },
+  "config": {}
+}

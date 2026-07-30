@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_smart_home_battery_install_bentos",
+  "info": {
+    "displayName": "Install Bento"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "blocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "smart-home-battery.install-block"
+    }
+  },
+  "config": {}
+}

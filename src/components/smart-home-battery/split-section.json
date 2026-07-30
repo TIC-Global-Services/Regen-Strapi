@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_smart_home_battery_split_sections",
+  "info": {
+    "displayName": "Split Section"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "slides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "smart-home-battery.split-slide"
+    }
+  },
+  "config": {}
+}
