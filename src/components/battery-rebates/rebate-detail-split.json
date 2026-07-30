@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_battery_rebates_rebate_detail_splits",
+  "info": {
+    "displayName": "Rebate Detail Split"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "topBoxTitle": {
+      "type": "string"
+    },
+    "topBoxItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    },
+    "bottomBoxTitle": {
+      "type": "string"
+    },
+    "bottomBoxItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    }
+  },
+  "config": {}
+}

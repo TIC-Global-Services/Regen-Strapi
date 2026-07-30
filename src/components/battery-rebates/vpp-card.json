@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_battery_rebates_vpp_cards",
+  "info": {
+    "displayName": "VPP Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

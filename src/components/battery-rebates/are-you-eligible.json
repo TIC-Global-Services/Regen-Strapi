@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_battery_rebates_are_you_eligibles",
+  "info": {
+    "displayName": "Are You Eligible"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "bottomSubtitle": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

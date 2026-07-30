@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_battery_rebates_residential_batteries",
+  "info": {
+    "displayName": "Residential Battery"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "listItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    },
+    "timingText": {
+      "type": "text"
+    },
+    "taxText": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

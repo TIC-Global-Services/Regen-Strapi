@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_rebates_finance_options",
+  "info": {
+    "displayName": "Finance Option"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionSubtitle": {
+      "type": "text"
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.finance-section"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_battery_rebates_stack_cards",
+  "info": {
+    "displayName": "Stack Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    }
+  },
+  "config": {}
+}

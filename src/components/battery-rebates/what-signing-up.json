@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_battery_rebates_what_signing_ups",
+  "info": {
+    "displayName": "What Signing Up"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "vppCardsLeft": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.vpp-card"
+    },
+    "vppCardsRight": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.vpp-card"
+    }
+  },
+  "config": {}
+}

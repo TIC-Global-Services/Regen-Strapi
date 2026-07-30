@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_battery_rebates_federal_rebates",
+  "info": {
+    "displayName": "Federal Rebate"
+  },
+  "options": {},
+  "attributes": {
+    "sectionSubtitle": {
+      "type": "string"
+    },
+    "sectionTitle": {
+      "type": "string"
+    },
+    "sectionDescription": {
+      "type": "text"
+    },
+    "keySpecsTitle": {
+      "type": "string"
+    },
+    "keySpecsBulletPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    },
+    "firstImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "eligibleCapacityTitle": {
+      "type": "string"
+    },
+    "eligibleCapacityText": {
+      "type": "text"
+    },
+    "importantNoteTitle": {
+      "type": "string"
+    },
+    "importantNoteText": {
+      "type": "text"
+    },
+    "secondImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "combinedSchemeText": {
+      "type": "text"
+    },
+    "eligibilityTitle": {
+      "type": "string"
+    },
+    "eligibilityBulletPoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_rebates_what_changes_cards",
+  "info": {
+    "displayName": "What Changes Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bullets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    }
+  },
+  "config": {}
+}

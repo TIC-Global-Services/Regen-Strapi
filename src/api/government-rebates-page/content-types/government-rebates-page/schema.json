@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "government_rebates_pages",
+  "info": {
+    "singularName": "government-rebates-page",
+    "pluralName": "government-rebates-pages",
+    "displayName": "Battery Pages - Government Rebates"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "battery-rebates.hero",
+        "battery-rebates.rebates-stack-grid",
+        "battery-rebates.residential-battery",
+        "battery-rebates.federal-rebate",
+        "battery-rebates.finance-option",
+        "battery-rebates.what-changes",
+        "battery-rebates.are-you-eligible",
+        "battery-rebates.what-signing-up",
+        "battery-rebates.rebate-detail-split",
+        "shared.faq",
+        "shared.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

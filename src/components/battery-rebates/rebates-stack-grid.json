@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_rebates_rebates_stack_grids",
+  "info": {
+    "displayName": "Rebates Stack Grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.stack-card"
+    }
+  },
+  "config": {}
+}
