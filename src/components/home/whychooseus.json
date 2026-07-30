@@ -5,16 +5,61 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "subtitle": {
       "type": "string"
     },
-    "data": {
-      "type": "component",
-      "component": "shared.cardgroup",
-      "repeatable": true
+    "title": {
+      "type": "string"
+    },
+    "awardWinnerCount": {
+      "type": "integer"
+    },
+    "awardWinnerTitle": {
+      "type": "string"
+    },
+    "awardWinnerBg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "awardWinnerLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "batteryInstallationsCount": {
+      "type": "integer"
+    },
+    "batteryInstallationsLabel": {
+      "type": "string"
+    },
+    "solarInstallationsCount": {
+      "type": "integer"
+    },
+    "solarInstallationsLabel": {
+      "type": "string"
+    },
+    "yearsInBusinessCount": {
+      "type": "integer"
+    },
+    "yearsInBusinessDescription": {
+      "type": "text"
+    },
+    "yearsInBusinessBg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "ratingScore": {
+      "type": "integer"
+    },
+    "ratingPlatformLabel": {
+      "type": "string"
+    },
+    "ratingBg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
     }
   },
   "config": {}

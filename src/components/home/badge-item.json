@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_badge_items",
+  "info": {
+    "displayName": "Badge Item"
+  },
+  "options": {},
+  "attributes": {
+    "alt": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

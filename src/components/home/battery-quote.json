@@ -1,25 +1,23 @@
 {
-  "collectionName": "components_home_expertise",
+  "collectionName": "components_home_battery_quotes",
   "info": {
-    "displayName": "Expertise"
+    "displayName": "Battery Quote CTA"
   },
   "options": {},
   "attributes": {
     "subtitle": {
       "type": "string"
     },
-    "accentTitle": {
+    "title": {
       "type": "string"
     },
-    "bgImage": {
+    "description": {
+      "type": "text"
+    },
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
-    },
-    "items": {
-      "type": "component",
-      "component": "home.expertise-card",
-      "repeatable": true
     }
   },
   "config": {}

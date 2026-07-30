@@ -5,18 +5,18 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "subtitle": {
       "type": "string"
     },
-    "subtitle": {
+    "title": {
       "type": "string"
     },
     "description": {
       "type": "string"
     },
-    "data": {
+    "cards": {
       "type": "component",
-      "component": "shared.threeway-card",
+      "component": "home.financing-card",
       "repeatable": true
     }
   },

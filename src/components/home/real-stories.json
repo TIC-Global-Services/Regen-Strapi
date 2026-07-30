@@ -5,15 +5,20 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "subtitle": {
       "type": "string"
     },
-    "certificates": {
+    "title": {
+      "type": "string"
+    },
+    "googleLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "badges": {
       "type": "component",
-      "component": "shared.imagegroup",
+      "component": "home.badge-item",
       "repeatable": true
     },
     "reviews": {

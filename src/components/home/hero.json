@@ -5,8 +5,22 @@
   },
   "options": {},
   "attributes": {
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "videoFile": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["videos"]
+    },
+    "mediaType": {
+      "type": "enumeration",
+      "enum": ["image", "video"]
+    },
     "subtitle": {
-      "type": "text"
+      "type": "string"
     },
     "title": {
       "type": "text"
@@ -14,11 +28,27 @@
     "description": {
       "type": "text"
     },
-    "buttontext": {
+    "buttonText": {
       "type": "string"
     },
-    "isButton": {
-      "type": "boolean"
+    "buttonLink": {
+      "type": "string"
+    },
+    "buttonTextColor": {
+      "type": "enumeration",
+      "enum": ["text-black", "text-white"]
+    },
+    "subtitleColor": {
+      "type": "enumeration",
+      "enum": ["text-white", "text-black"]
+    },
+    "descriptionColor": {
+      "type": "enumeration",
+      "enum": ["text-white", "text-black"]
+    },
+    "showOverlay": {
+      "type": "boolean",
+      "default": true
     }
   },
   "config": {}

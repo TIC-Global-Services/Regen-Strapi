@@ -1,24 +1,30 @@
 {
   "collectionName": "components_home_patnersandmemberships",
   "info": {
-    "displayName": "Partners And Membership"
+    "displayName": "Partners & Memberships"
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
     "subtitle": {
       "type": "string"
     },
-    "patners": {
+    "title": {
+      "type": "string"
+    },
+    "partnersTitle": {
+      "type": "string"
+    },
+    "partners": {
       "type": "component",
-      "component": "shared.imagegroup",
+      "component": "home.logo-item",
       "repeatable": true
     },
-    "membership": {
+    "membershipsTitle": {
+      "type": "string"
+    },
+    "memberships": {
       "type": "component",
-      "component": "shared.imagegroup",
+      "component": "home.logo-item",
       "repeatable": true
     }
   },

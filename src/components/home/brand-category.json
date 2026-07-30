@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_brand_categories",
+  "info": {
+    "displayName": "Brand Category"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "logos": {
+      "type": "component",
+      "component": "home.brand-logo",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,28 +1,25 @@
 {
   "collectionName": "components_home_solarandstorages",
   "info": {
-    "displayName": "Solar And Storage"
+    "displayName": "Science of Solar & Storage"
   },
   "options": {},
   "attributes": {
-    "title": {
+    "titleNormal": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
+    "titleAccent": {
+      "type": "string"
     },
-    "image": {
+    "media": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images"]
     },
-    "number": {
-      "type": "integer"
+    "features": {
+      "type": "component",
+      "component": "home.feature-item",
+      "repeatable": true
     }
   },
   "config": {}

@@ -14,16 +14,17 @@
     "data": {
       "type": "dynamiczone",
       "components": [
-        "home.whychooseus",
-        "home.threewaystopay",
-        "home.solarandstorage",
-        "home.smartsolar",
-        "home.real-stories",
-        "home.patnersandmembership",
         "home.hero",
+        "home.awards",
+        "home.whychooseus",
         "home.expertise",
+        "home.solarandstorage",
+        "home.patnersandmembership",
+        "home.threewaystopay",
         "home.craftmanship",
-        "home.awards"
+        "home.real-stories",
+        "home.smartsolar",
+        "home.battery-quote"
       ]
     },
     "seo": {

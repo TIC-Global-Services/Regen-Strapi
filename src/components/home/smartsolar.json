@@ -1,19 +1,22 @@
 {
   "collectionName": "components_home_smartsolars",
   "info": {
-    "displayName": "Smart Solar"
+    "displayName": "Latest News & Insights"
   },
   "options": {},
   "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
     "title": {
       "type": "string"
     },
-    "subtitle": {
+    "bottomSubtitle": {
       "type": "string"
     },
-    "data": {
+    "cards": {
       "type": "component",
-      "component": "shared.smartsolar-card",
+      "component": "shared.feature-card",
       "repeatable": true
     }
   },
