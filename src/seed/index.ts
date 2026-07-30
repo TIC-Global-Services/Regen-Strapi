@@ -17,6 +17,7 @@ import { reviewsSections } from "./data/reviews-page";
 import { contactSections } from "./data/contact-page";
 import { homeSections } from "./data/home-page";
 import { evChargingSections } from "./data/ev-charging-page";
+import { batteryProductSections } from "./data/battery-product-page";
 
 const pages = [
   {
@@ -185,6 +186,18 @@ const pages = [
     },
   },
   {
+    uid: "api::battery-product-page.battery-product-page" as UID.ContentType,
+    title: "Battery Product",
+    sections: batteryProductSections,
+    seo: {
+      metaTitle: "Sigenergy SigenStor Battery | Regen Power",
+      metaDescription:
+        "The Sigenergy SigenStor combines a hybrid inverter, battery, EV charger, energy management, and gateway in one system. The smartest battery in Perth.",
+      keywords: "Sigenergy SigenStor, battery storage, home battery, solar battery Perth, Regen Power",
+      metaRobots: "index, follow",
+    },
+  },
+  {
     uid: "api::ev-charging-page.ev-charging-page" as UID.ContentType,
     title: "EV Charging",
     sections: evChargingSections,
@@ -213,7 +226,6 @@ const pages = [
 
 async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number]) {
   const existing = await strapi.documents(page.uid).findFirst({
-    status: "published",
     populate: ["seo"],
   } as any);
 
@@ -255,7 +267,7 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
 export async function runSeed(strapi: Core.Strapi) {
   strapi.log.info("🌱 Starting Page Seeder...");
 
-  for (const page of pages.filter((p) => p.uid === "api::home-page.home-page" || p.uid === "api::ev-charging-page.ev-charging-page")) {
+  for (const page of pages.filter((p) => String(p.uid) === "api::home-page.home-page" || String(p.uid) === "api::ev-charging-page.ev-charging-page" || String(p.uid) === "api::battery-product-page.battery-product-page")) {
     await seedSingleType(strapi, page);
   }
 
