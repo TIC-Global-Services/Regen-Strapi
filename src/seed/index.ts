@@ -17,6 +17,11 @@ import { reviewsSections } from "./data/reviews-page";
 import { contactSections } from "./data/contact-page";
 import { homeSections } from "./data/home-page";
 import { evChargingSections } from "./data/ev-charging-page";
+import { batteryProductSections } from "./data/battery-product-page";
+import { batteryStorageSections } from "./data/battery-storage-page";
+import { smartHomeBatterySections } from "./data/smart-home-battery-page";
+import { batteryBrandsSections } from "./data/battery-brands-page";
+import { governmentRebatesSections } from "./data/government-rebates-page";
 
 const pages = [
   {
@@ -197,6 +202,66 @@ const pages = [
     },
   },
   {
+    uid: "api::battery-product-page.battery-product-page" as UID.ContentType,
+    title: "Battery Product",
+    sections: batteryProductSections,
+    seo: {
+      metaTitle: "Sigenergy SigenStor Battery | Regen Power",
+      metaDescription:
+        "The Sigenergy SigenStor combines a hybrid inverter, battery, EV charger, energy management, and gateway in one system. The smartest battery in Perth.",
+      keywords: "Sigenergy SigenStor, battery storage, home battery, solar battery Perth, Regen Power",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::battery-storage-page.battery-storage-page" as UID.ContentType,
+    title: "Battery Storage",
+    sections: batteryStorageSections,
+    seo: {
+      metaTitle: "Battery Storage Perth | Home Batteries | Regen Power",
+      metaDescription:
+        "Expert home battery storage installation in Perth. Tesla Powerwall, BYD, Sigenergy and more. WA rebates up to $7,900 available. Book a free assessment.",
+      keywords: "battery storage Perth, home battery, solar battery, Tesla Powerwall, battery rebate WA",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::battery-brands-page.battery-brands-page" as UID.ContentType,
+    title: "Battery - Brands We Carry",
+    sections: batteryBrandsSections,
+    seo: {
+      metaTitle: "Battery Brands We Carry Perth | Regen Power",
+      metaDescription:
+        "Browse the battery brands Regen Power carries and installs in Perth — Tesla Powerwall, BYD, Sigenergy, Alpha ESS, iStore, Anker Solix & Sungrow.",
+      keywords: "battery brands Perth, Tesla Powerwall, BYD, Sigenergy, Alpha ESS, iStore, Anker Solix, Sungrow",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::government-rebates-page.government-rebates-page" as UID.ContentType,
+    title: "Government Rebates",
+    sections: governmentRebatesSections,
+    seo: {
+      metaTitle: "Government Battery Rebates WA 2026 | Regen Power",
+      metaDescription:
+        "Claim up to $7,500 off your battery in WA. Stack the WA Residential Battery Scheme, federal Cheaper Home Batteries Program & interest-free loan.",
+      keywords: "WA battery rebate, battery rebate WA, government rebate battery, cheaper home batteries, battery scheme",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::smart-home-battery-page.smart-home-battery-page" as UID.ContentType,
+    title: "Smart Home Battery System",
+    sections: smartHomeBatterySections,
+    seo: {
+      metaTitle: "Smart Home Battery Storage Perth | Regen Power",
+      metaDescription:
+        "Discover smart home battery storage in Perth. VPP-ready, load shifting, API control & whole home backup. Sigenergy, Tesla Powerwall & BYD.",
+      keywords: "smart home battery, battery storage Perth, VPP, home energy management, Regen Power",
+      metaRobots: "index, follow",
+    },
+  },
+  {
     uid: "api::home-page.home-page" as UID.ContentType,
     title: "Home",
     sections: homeSections,
@@ -255,7 +320,7 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
 export async function runSeed(strapi: Core.Strapi) {
   strapi.log.info("🌱 Starting Page Seeder...");
 
-  for (const page of pages.filter((p) => p.uid === "api::home-page.home-page" || p.uid === "api::ev-charging-page.ev-charging-page")) {
+  for (const page of pages.filter((p) => String(p.uid) === "api::home-page.home-page" || String(p.uid) === "api::ev-charging-page.ev-charging-page" || String(p.uid) === "api::battery-product-page.battery-product-page" || String(p.uid) === "api::battery-storage-page.battery-storage-page" || String(p.uid) === "api::smart-home-battery-page.smart-home-battery-page" || String(p.uid) === "api::battery-brands-page.battery-brands-page" || String(p.uid) === "api::government-rebates-page.government-rebates-page")) {
     await seedSingleType(strapi, page);
   }
 
