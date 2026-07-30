@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_ev_charging_wall_connectors",
+  "info": {
+    "displayName": "Wall Connector"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "specs": {
+      "type": "component",
+      "component": "ev-charging.spec",
+      "repeatable": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

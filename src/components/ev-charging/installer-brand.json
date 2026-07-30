@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_ev_charging_installer_brands",
+  "info": {
+    "displayName": "Installer Brand"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "cardTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "specs": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
