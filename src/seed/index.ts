@@ -16,6 +16,7 @@ import { pressMediaSections } from "./data/press-media-page";
 import { reviewsSections } from "./data/reviews-page";
 import { contactSections } from "./data/contact-page";
 import { homeSections } from "./data/home-page";
+import { evChargingSections } from "./data/ev-charging-page";
 
 const pages = [
   {
@@ -184,6 +185,18 @@ const pages = [
     },
   },
   {
+    uid: "api::ev-charging-page.ev-charging-page" as UID.ContentType,
+    title: "EV Charging",
+    sections: evChargingSections,
+    seo: {
+      metaTitle: "EV Charging Installation Perth | Regen Power",
+      metaDescription:
+        "Expert EV charger installation in Perth. Tesla Wall Connector, solar-integrated charging, and V2H bidirectional systems from WA's #1 solar installer.",
+      keywords: "EV charging Perth, EV charger installation, Tesla Wall Connector, V2H, solar EV charging",
+      metaRobots: "index, follow",
+    },
+  },
+  {
     uid: "api::home-page.home-page" as UID.ContentType,
     title: "Home",
     sections: homeSections,
@@ -242,7 +255,7 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
 export async function runSeed(strapi: Core.Strapi) {
   strapi.log.info("🌱 Starting Page Seeder...");
 
-  for (const page of pages.filter((p) => p.uid === "api::home-page.home-page")) {
+  for (const page of pages.filter((p) => p.uid === "api::home-page.home-page" || p.uid === "api::ev-charging-page.ev-charging-page")) {
     await seedSingleType(strapi, page);
   }
 
