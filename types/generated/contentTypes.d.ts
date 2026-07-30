@@ -453,6 +453,7 @@ export interface ApiBlogArticleBlogArticle extends Struct.CollectionTypeSchema {
   };
   attributes: {
     categories: Schema.Attribute.JSON;
+    category: Schema.Attribute.String;
     content: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -495,14 +496,7 @@ export interface ApiBlogPageBlogPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    sections: Schema.Attribute.DynamicZone<
-      [
-        'blog.hero',
-        'blog.category-filter',
-        'shared.category-section',
-        'shared.cta-banner',
-      ]
-    >;
+    sections: Schema.Attribute.DynamicZone<['blog.hero', 'solar.cta-banner']>;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -537,13 +531,12 @@ export interface ApiBrandsPageBrandsPage extends Struct.SingleTypeSchema {
         'brands.philosophy',
         'brands.tier1-means',
         'brands.brands-grid',
-        'brands.specs-table',
+        'solar.specs-table',
         'brands.hybrid-specialty',
         'brands.inverters-slider',
         'brands.criteria-list',
-        'shared.faq',
-        'shared.form-section',
-        'shared.cta-banner',
+        'solar.faq',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -580,7 +573,7 @@ export interface ApiCommercialOffGridPageCommercialOffGridPage
         'commercial-off-grid.hero',
         'shared.editorial-section',
         'commercial-off-grid.solutions-portfolio',
-        'shared.cta-banner',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -624,9 +617,9 @@ export interface ApiCommercialSystemsPageCommercialSystemsPage
         'commercial-systems.packages-grid',
         'commercial-systems.process-flow',
         'commercial-systems.five-things-section',
-        'shared.faq',
+        'solar.faq',
         'commercial-systems.commercial-form',
-        'shared.cta-banner',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -658,7 +651,12 @@ export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     sections: Schema.Attribute.DynamicZone<
-      ['contact.hero', 'contact.contact-form-section', 'contact.location-map']
+      [
+        'contact.hero',
+        'contact.contact-form-section',
+        'contact.location-map',
+        'solar.cta-banner',
+      ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
@@ -697,53 +695,8 @@ export interface ApiDealsPageDealsPage extends Struct.SingleTypeSchema {
         'solar.packages',
         'deals.ways-to-pay',
         'deals.why-matters',
-        'shared.faq',
-        'shared.form-section',
-        'shared.cta-banner',
-      ]
-    >;
-    seo: Schema.Attribute.Component<'shared.seo', false>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiEvChargingPageEvChargingPage
-  extends Struct.SingleTypeSchema {
-  collectionName: 'ev_charging_pages';
-  info: {
-    displayName: 'EV Charging';
-    pluralName: 'ev-charging-pages';
-    singularName: 'ev-charging-page';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::ev-charging-page.ev-charging-page'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    sections: Schema.Attribute.DynamicZone<
-      [
-        'ev-charging.hero',
-        'ev-charging.wall-connector',
-        'ev-charging.charger-products',
-        'ev-charging.installer-brands',
-        'ev-charging.benefit-cards',
-        'ev-charging.home-battery',
-        'ev-charging.feature-cards',
-        'ev-charging.installation-steps',
-        'ev-charging.stats',
-        'shared.faq',
-        'shared.cta-banner',
+        'solar.faq',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -775,7 +728,7 @@ export interface ApiFaqPageFaqPage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     sections: Schema.Attribute.DynamicZone<
-      ['faq.hero', 'faq.categorized-faq', 'shared.cta-banner']
+      ['faq.hero', 'faq.categorized-faq', 'solar.cta-banner']
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
@@ -800,17 +753,16 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     data: Schema.Attribute.DynamicZone<
       [
-        'home.hero',
-        'home.awards',
         'home.whychooseus',
-        'home.expertise',
-        'home.solarandstorage',
-        'home.patnersandmembership',
         'home.threewaystopay',
-        'home.craftmanship',
-        'home.real-stories',
+        'home.solarandstorage',
         'home.smartsolar',
-        'home.battery-quote',
+        'home.real-stories',
+        'home.patnersandmembership',
+        'home.hero',
+        'home.expertise',
+        'home.craftmanship',
+        'home.awards',
       ]
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -821,37 +773,6 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiLeadLead extends Struct.CollectionTypeSchema {
-  collectionName: 'leads';
-  info: {
-    displayName: 'lead';
-    pluralName: 'leads';
-    singularName: 'lead';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    address: Schema.Attribute.Text;
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    email: Schema.Attribute.Email & Schema.Attribute.Required;
-    fullName: Schema.Attribute.String & Schema.Attribute.Required;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::lead.lead'> &
-      Schema.Attribute.Private;
-    message: Schema.Attribute.Text;
-    phone: Schema.Attribute.String;
-    publishedAt: Schema.Attribute.DateTime;
-    source: Schema.Attribute.String;
-    suburb: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -890,12 +811,11 @@ export interface ApiOffGridSolutionsPageOffGridSolutionsPage
         'off-grid.hybrid-gen-detail',
         'shared.editorial-section',
         'off-grid.world-map',
-        'off-grid.microgrid-spec-table',
         'off-grid.acqua-smart-section',
-        'off-grid.off-grid-story',
         'off-grid.overlay-card-grid',
-        'shared.faq',
+        'solar.faq',
         'off-grid.off-grid-form',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -927,12 +847,7 @@ export interface ApiPortfolioPagePortfolioPage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     sections: Schema.Attribute.DynamicZone<
-      [
-        'portfolio.hero',
-        'portfolio.filters',
-        'shared.category-section',
-        'shared.cta-banner',
-      ]
+      ['portfolio.hero', 'solar.cta-banner']
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
@@ -953,6 +868,7 @@ export interface ApiPortfolioProjectPortfolioProject
     draftAndPublish: true;
   };
   attributes: {
+    categories: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -990,6 +906,7 @@ export interface ApiPressArticlePressArticle
   };
   attributes: {
     categories: Schema.Attribute.JSON;
+    category: Schema.Attribute.String;
     content: Schema.Attribute.RichText;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1036,12 +953,10 @@ export interface ApiPressMediaPagePressMediaPage
     publishedAt: Schema.Attribute.DateTime;
     sections: Schema.Attribute.DynamicZone<
       [
-        'press-and-media.hero',
-        'press-and-media.featured-article',
-        'press-and-media.latest-news-section',
-        'press-and-media.news-section',
-        'shared.category-section',
-        'shared.cta-banner',
+        'press.hero',
+        'press.featured-article',
+        'press.latest-news-section',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -1081,8 +996,8 @@ export interface ApiRebatesPageRebatesPage extends Struct.SingleTypeSchema {
         'rebates.utility-cards',
         'rebates.loan-benefits',
         'rebates.eligibility-checker',
-        'shared.faq',
-        'shared.cta-banner',
+        'solar.faq',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -1116,11 +1031,11 @@ export interface ApiResearchDevelopmentPageResearchDevelopmentPage
     publishedAt: Schema.Attribute.DateTime;
     sections: Schema.Attribute.DynamicZone<
       [
-        'research-and-development.hero',
+        'rd.hero',
         'shared.editorial-section',
-        'research-and-development.energy-solutions-section',
-        'research-and-development.core-achievements-section',
-        'shared.cta-banner',
+        'rd.energy-solutions-section',
+        'rd.core-achievements-section',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -1152,12 +1067,7 @@ export interface ApiReviewsPageReviewsPage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     sections: Schema.Attribute.DynamicZone<
-      [
-        'reviews.hero',
-        'reviews.intro-section',
-        'reviews.testimonials-section',
-        'shared.cta-banner',
-      ]
+      ['reviews.hero', 'reviews.intro-section', 'solar.cta-banner']
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
@@ -1189,7 +1099,6 @@ export interface ApiSolarPageSolarPage extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     sections: Schema.Attribute.DynamicZone<
       [
-        'solar.hero',
         'solar.stats-and-intro',
         'solar.process-steps',
         'solar.brands-grid',
@@ -1199,9 +1108,8 @@ export interface ApiSolarPageSolarPage extends Struct.SingleTypeSchema {
         'solar.packages',
         'solar.timeline',
         'solar.engineering-items',
-        'shared.faq',
-        'shared.form-section',
-        'shared.cta-banner',
+        'solar.faq',
+        'solar.cta-banner',
       ]
     >;
     seo: Schema.Attribute.Component<'shared.seo', false>;
@@ -1222,6 +1130,7 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    category: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1761,10 +1670,8 @@ declare module '@strapi/strapi' {
       'api::commercial-systems-page.commercial-systems-page': ApiCommercialSystemsPageCommercialSystemsPage;
       'api::contact-page.contact-page': ApiContactPageContactPage;
       'api::deals-page.deals-page': ApiDealsPageDealsPage;
-      'api::ev-charging-page.ev-charging-page': ApiEvChargingPageEvChargingPage;
       'api::faq-page.faq-page': ApiFaqPageFaqPage;
       'api::home-page.home-page': ApiHomePageHomePage;
-      'api::lead.lead': ApiLeadLead;
       'api::off-grid-solutions-page.off-grid-solutions-page': ApiOffGridSolutionsPageOffGridSolutionsPage;
       'api::portfolio-page.portfolio-page': ApiPortfolioPagePortfolioPage;
       'api::portfolio-project.portfolio-project': ApiPortfolioProjectPortfolioProject;
