@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_battery_storage_great_fits",
+  "info": {
+    "displayName": "Great Fit"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "goodFitTitle": {
+      "type": "string"
+    },
+    "goodFitItems": {
+      "type": "text",
+      "repeatable": true
+    },
+    "conversationTitle": {
+      "type": "string"
+    },
+    "conversationItems": {
+      "type": "text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

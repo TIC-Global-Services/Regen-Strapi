@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_battery_storage_marquees",
+  "info": {
+    "displayName": "Marquee"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "string",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

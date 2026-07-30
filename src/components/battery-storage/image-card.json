@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_storage_image_cards",
+  "info": {
+    "displayName": "Image Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

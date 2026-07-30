@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_battery_storage_capacity_blocks",
+  "info": {
+    "displayName": "Capacity Blocks"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "component": "battery-storage.simple-card",
+      "repeatable": true
+    },
+    "footerText": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

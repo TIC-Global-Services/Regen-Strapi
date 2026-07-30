@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_battery_storage_range_grids",
+  "info": {
+    "displayName": "Range Grid"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "batteries": {
+      "type": "component",
+      "component": "battery-storage.range-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_battery_storage_bill_impacts",
+  "info": {
+    "displayName": "Bill Impact"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "component": "battery-storage.image-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

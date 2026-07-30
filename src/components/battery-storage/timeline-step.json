@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_storage_timeline_steps",
+  "info": {
+    "displayName": "Timeline Step"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

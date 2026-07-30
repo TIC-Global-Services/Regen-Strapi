@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_storage_installation_timelines",
+  "info": {
+    "displayName": "Installation Timeline"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "component": "battery-storage.timeline-step",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

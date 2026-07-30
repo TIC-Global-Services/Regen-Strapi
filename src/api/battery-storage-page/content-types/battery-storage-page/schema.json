@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "battery_storage_pages",
+  "info": {
+    "singularName": "battery-storage-page",
+    "pluralName": "battery-storage-pages",
+    "displayName": "Battery Storage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "battery-storage.hero",
+        "battery-storage.marquee",
+        "battery-storage.debs-rebate",
+        "battery-storage.jargon",
+        "battery-storage.bill-impact",
+        "battery-storage.range-grid",
+        "battery-storage.capacity-blocks",
+        "battery-storage.great-fit",
+        "battery-storage.solar-meaning",
+        "battery-storage.installation-timeline",
+        "battery-storage.team",
+        "battery-storage.customer-stories",
+        "shared.faq",
+        "shared.cta-banner"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

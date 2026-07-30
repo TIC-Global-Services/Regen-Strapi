@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_storage_customer_stories",
+  "info": {
+    "displayName": "Customer Stories"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "stories": {
+      "type": "component",
+      "component": "battery-storage.story-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
