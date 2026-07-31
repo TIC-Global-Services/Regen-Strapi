@@ -9,8 +9,9 @@
       "type": "string"
     },
     "items": {
-      "type": "text",
-      "repeatable": true
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
     }
   },
   "config": {}

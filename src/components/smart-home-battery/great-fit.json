@@ -18,15 +18,17 @@
       "type": "string"
     },
     "goodFitItems": {
-      "type": "text",
-      "repeatable": true
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
     },
     "conversationTitle": {
       "type": "string"
     },
     "conversationItems": {
-      "type": "text",
-      "repeatable": true
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
     }
   },
   "config": {}

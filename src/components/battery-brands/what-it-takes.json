@@ -15,8 +15,9 @@
       "type": "text"
     },
     "items": {
-      "type": "text",
-      "repeatable": true
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
     },
     "image": {
       "type": "media",

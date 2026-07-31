@@ -24,16 +24,16 @@ export const smartHomeBatterySections = [
     description: "Marketing has diluted the term. A truly smart home battery does more than show you an app with a state-of-charge graph. Here's what the category actually means in 2026.",
     goodFitTitle: "What It Has",
     goodFitItems: [
-      "Grid-aware: can participate in Virtual Power Plants and respond to grid dispatch events automatically",
-      "Learning: uses historical usage patterns to pre-charge, load-shift and reserve capacity for forecast outages",
-      "Orchestrating: coordinates with EV chargers, hot water, pool pumps and other controllable loads — not just batteries in isolation",
-      "Open: integrates with Home Assistant, Google Home, Apple Home, or exposes a documented API",
+      { text: "Grid-aware: can participate in Virtual Power Plants and respond to grid dispatch events automatically" },
+      { text: "Learning: uses historical usage patterns to pre-charge, load-shift and reserve capacity for forecast outages" },
+      { text: "Orchestrating: coordinates with EV chargers, hot water, pool pumps and other controllable loads — not just batteries in isolation" },
+      { text: "Open: integrates with Home Assistant, Google Home, Apple Home, or exposes a documented API" },
     ],
     conversationTitle: "What It Doesn't",
     conversationItems: [
-      "An app that just shows you your battery level",
-      "Remote on/off for a single battery unit",
-      '"Smart" as a marketing label without grid or ecosystem integration',
+      { text: "An app that just shows you your battery level" },
+      { text: "Remote on/off for a single battery unit" },
+      { text: '"Smart" as a marketing label without grid or ecosystem integration' },
     ],
   },
   {
