@@ -255,7 +255,13 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
 export async function runSeed(strapi: Core.Strapi) {
   strapi.log.info("🌱 Starting Page Seeder...");
 
-  for (const page of pages.filter((p) => p.uid === "api::battery-product-page.battery-product-page")) {
+  for (const page of pages.filter((p) =>
+    p.uid === "api::battery-product-page.battery-product-page" ||
+    p.uid === "api::battery-storage-page.battery-storage-page" ||
+    p.uid === "api::smart-home-battery-page.smart-home-battery-page" ||
+    p.uid === "api::battery-brands-page.battery-brands-page" ||
+    p.uid === "api::government-rebates-page.government-rebates-page"
+  )) {
     await seedSingleType(strapi, page);
   }
 
