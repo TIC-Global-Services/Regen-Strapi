@@ -17,6 +17,10 @@ import { reviewsSections } from "./data/reviews-page";
 import { contactSections } from "./data/contact-page";
 import { homeSections } from "./data/home-page";
 import { evChargingSections } from "./data/ev-charging-page";
+import { batteryStorageSections } from "./data/battery-storage-page";
+import { batteryBrandsSections } from "./data/battery-brands-page";
+import { governmentRebatesSections } from "./data/government-rebates-page";
+import { smartHomeBatterySections } from "./data/smart-home-battery-page";
 
 const pages = [
   {
@@ -197,6 +201,54 @@ const pages = [
     },
   },
   {
+    uid: "api::battery-storage-page.battery-storage-page" as UID.ContentType,
+    title: "Battery - Storage",
+    sections: batteryStorageSections,
+    seo: {
+      metaTitle: "Home Battery Storage Perth | Regen Power",
+      metaDescription:
+        "Store your solar energy with premium battery storage. WA rebates up to $7,500, interest-free loans available. Expert installation since 2003.",
+      keywords: "home battery storage Perth, solar battery, battery rebate WA, Tesla Powerwall, BYD",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::battery-brands-page.battery-brands-page" as UID.ContentType,
+    title: "Battery - Brands We Carry",
+    sections: batteryBrandsSections,
+    seo: {
+      metaTitle: "Battery Brands Perth | Tesla BYD Sigenergy | Regen Power",
+      metaDescription:
+        "Browse the premium battery brands we install — Tesla Powerwall 3, BYD, Alpha ESS, Sigenergy, iStore, Anker Solix & Sungrow. All CEC-approved.",
+      keywords: "battery brands Perth, Tesla Powerwall, BYD, Sigenergy, Alpha ESS, iStore, battery comparison",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::government-rebates-page.government-rebates-page" as UID.ContentType,
+    title: "Battery - Government Rebates",
+    sections: governmentRebatesSections,
+    seo: {
+      metaTitle: "WA Battery Rebates 2026 | Up To $7,500 Off | Regen Power",
+      metaDescription:
+        "Claim up to $7,500 off your home battery in WA. Stack federal + state rebates plus interest-free loans. Full eligibility guide & application help.",
+      keywords: "battery rebate WA, government battery rebate, Cheaper Home Batteries Program, WA Residential Battery Scheme, battery loan",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::smart-home-battery-page.smart-home-battery-page" as UID.ContentType,
+    title: "Battery - Smart Home Battery",
+    sections: smartHomeBatterySections,
+    seo: {
+      metaTitle: "Smart Home Battery Perth | VPP Ready | Regen Power",
+      metaDescription:
+        "Smart battery storage with VPP integration, app control & home automation. Sigenergy, Tesla Powerwall & BYD. Get paid to help power Perth.",
+      keywords: "smart battery Perth, VPP battery, home automation battery, Sigenergy, Tesla Powerwall, smart home energy",
+      metaRobots: "index, follow",
+    },
+  },
+  {
     uid: "api::home-page.home-page" as UID.ContentType,
     title: "Home",
     sections: homeSections,
@@ -255,7 +307,7 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
 export async function runSeed(strapi: Core.Strapi) {
   strapi.log.info("🌱 Starting Page Seeder...");
 
-  for (const page of pages.filter((p) => p.uid === "api::home-page.home-page" || p.uid === "api::ev-charging-page.ev-charging-page")) {
+  for (const page of pages.filter((p) => String(p.uid) === "api::battery-storage-page.battery-storage-page" || String(p.uid) === "api::battery-brands-page.battery-brands-page" || String(p.uid) === "api::government-rebates-page.government-rebates-page" || String(p.uid) === "api::smart-home-battery-page.smart-home-battery-page")) {
     await seedSingleType(strapi, page);
   }
 
