@@ -15,6 +15,7 @@
       "type": "dynamiczone",
       "components": [
         "battery-product.hero",
+        "battery-storage.marquee",
         "battery-product.brand-matters",
         "battery-product.our-brands",
         "battery-product.zero-interest",
