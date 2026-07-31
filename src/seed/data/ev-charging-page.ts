@@ -1,6 +1,14 @@
-export const evChargingSections = [
+import type { UID } from "@strapi/types";
+
+interface Section {
+  __component: string;
+  [key: string]: unknown;
+}
+
+export const evChargingSections: Section[] = [
+  // ─── 1. Hero ─────────────────────────────────────────────────────────
   {
-    __component: "ev-charging.hero" as const,
+    __component: "ev-charging.hero",
     subtitle: "Smart EV Charging",
     title: "Installing The Future Of Home Charging",
     description:
@@ -10,8 +18,9 @@ export const evChargingSections = [
     showOverlay: true,
   },
 
+  // ─── 2. Wall Connector ──────────────────────────────────────────────
   {
-    __component: "ev-charging.wall-connector" as const,
+    __component: "ev-charging.wall-connector",
     title: "Tesla Wall Connector",
     subtitle: "Gen 3",
     description:
@@ -24,8 +33,9 @@ export const evChargingSections = [
     ],
   },
 
+  // ─── 3. Charger Products ────────────────────────────────────────────
   {
-    __component: "ev-charging.charger-products" as const,
+    __component: "ev-charging.charger-products",
     subtitle: "Single-Phase Or Three-Phase?",
     title: "Here's What's Actually Different",
     products: [
@@ -48,8 +58,9 @@ export const evChargingSections = [
     ],
   },
 
+  // ─── 4. Installer Brands ─────────────────────────────────────────────
   {
-    __component: "ev-charging.installer-brands" as const,
+    __component: "ev-charging.installer-brands",
     subtitle: "More Than Tesla — Five Charger Brands",
     title: "One Trusted Installer",
     description:
@@ -81,8 +92,9 @@ export const evChargingSections = [
     ],
   },
 
+  // ─── 5. Why Charge At Home ──────────────────────────────────────────
   {
-    __component: "ev-charging.benefit-cards" as const,
+    __component: "ev-charging.benefit-cards",
     title: "Why Charge At Home",
     benefits: [
       {
@@ -103,8 +115,9 @@ export const evChargingSections = [
     ],
   },
 
+  // ─── 6. Home Battery (V2H) ─────────────────────────────────────────
   {
-    __component: "ev-charging.home-battery" as const,
+    __component: "ev-charging.home-battery",
     subtitle: "Your EV Becomes",
     title: "A Home Battery",
     paragraphs: [
@@ -124,8 +137,9 @@ export const evChargingSections = [
     ctaLink: "#contact",
   },
 
+  // ─── 7. Under One Roof (Feature Cards) ──────────────────────────────
   {
-    __component: "ev-charging.feature-cards" as const,
+    __component: "ev-charging.feature-cards",
     subtitle: "Solar, Battery, EV Charger",
     title: "Under One <br /> Roof",
     description:
@@ -149,8 +163,9 @@ export const evChargingSections = [
     ],
   },
 
+  // ─── 8. Installation Steps ──────────────────────────────────────────
   {
-    __component: "ev-charging.installation-steps" as const,
+    __component: "ev-charging.installation-steps",
     subtitle: "How EV charger installation works at",
     title: "Regen Power",
     steps: [
@@ -177,8 +192,9 @@ export const evChargingSections = [
     ],
   },
 
+  // ─── 9. Stats ────────────────────────────────────────────────────────
   {
-    __component: "ev-charging.stats" as const,
+    __component: "ev-charging.stats",
     subtitle: "Why Choose",
     title: "Regen Power",
     awardWinnerCount: 6,
@@ -191,8 +207,9 @@ export const evChargingSections = [
     yearsInBusinessDescription: "In Business, Operating From \n Canning Vale Office",
   },
 
+  // ─── 10. FAQ ─────────────────────────────────────────────────────────
   {
-    __component: "shared.faq" as const,
+    __component: "shared.faq",
     title: "FAQ",
     sectionTitle: "EV Charging",
     listTitle: "Frequently Asked Questions",
@@ -225,8 +242,9 @@ export const evChargingSections = [
     ],
   },
 
+  // ─── 11. CTA Banner ─────────────────────────────────────────────────
   {
-    __component: "shared.cta-banner" as const,
+    __component: "shared.cta-banner",
     subtitle: "Get An EV Charger Designed",
     mainTitle: "For Your Home",
     description:

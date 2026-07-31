@@ -1,6 +1,14 @@
-export const homeSections = [
+import type { UID } from "@strapi/types";
+
+interface Section {
+  __component: string;
+  [key: string]: unknown;
+}
+
+export const homeSections: Section[] = [
+  // ─── 1. Hero ─────────────────────────────────────────────────────────
   {
-    __component: "home.hero" as const,
+    __component: "home.hero",
     subtitle: "Step Into the",
     title: "Future of Energy",
     description:
@@ -11,8 +19,9 @@ export const homeSections = [
     showOverlay: true,
   },
 
+  // ─── 2. Awards & Recognition ─────────────────────────────────────────
   {
-    __component: "home.awards" as const,
+    __component: "home.awards",
     title: "Awards & Recognition",
     logos: [
       { title: "Australian Technologies", image: [] },
@@ -23,8 +32,9 @@ export const homeSections = [
     ],
   },
 
+  // ─── 3. Why Choose Us ────────────────────────────────────────────────
   {
-    __component: "home.whychooseus" as const,
+    __component: "home.whychooseus",
     subtitle: "Why Choose",
     title: "Regen Power",
     awardWinnerCount: 6,
@@ -40,8 +50,9 @@ export const homeSections = [
     ratingPlatformLabel: "Ratings On\nProductReview",
   },
 
+  // ─── 4. Expertise ────────────────────────────────────────────────────
   {
-    __component: "home.expertise" as const,
+    __component: "home.expertise",
     subtitle: "Our Energy",
     accentTitle: "Expertise",
     items: [
@@ -64,8 +75,9 @@ export const homeSections = [
     ],
   },
 
+  // ─── 5. Science of Solar & Storage ──────────────────────────────────
   {
-    __component: "home.solarandstorage" as const,
+    __component: "home.solarandstorage",
     titleNormal: "The Science Of",
     titleAccent: "Solar & Storage",
     features: [
@@ -102,8 +114,9 @@ export const homeSections = [
     ],
   },
 
+  // ─── 6. Partners & Memberships ───────────────────────────────────────
   {
-    __component: "home.patnersandmembership" as const,
+    __component: "home.patnersandmembership",
     subtitle: "Trusted Relationships",
     title: "Partners & Memberships",
     partnersTitle: "Partners",
@@ -119,8 +132,9 @@ export const homeSections = [
     ],
   },
 
+  // ─── 7. Three Ways To Pay ────────────────────────────────────────────
   {
-    __component: "home.threewaystopay" as const,
+    __component: "home.threewaystopay",
     subtitle: "Smart Solar Savings &",
     title: "Zero-Interest Financing",
     description: "",
@@ -144,8 +158,9 @@ export const homeSections = [
     ],
   },
 
+  // ─── 8. Craftsmanship ──────────────────────────────────────────────
   {
-    __component: "home.craftmanship" as const,
+    __component: "home.craftmanship",
     subtitle: "Industry-Leading Brands &",
     title: "Craftsmanship",
     defaultTabId: "panels",
@@ -192,8 +207,9 @@ export const homeSections = [
     ],
   },
 
+  // ─── 9. Real Stories ─────────────────────────────────────────────────
   {
-    __component: "home.real-stories" as const,
+    __component: "home.real-stories",
     subtitle: "Real Stories.",
     title: "Real Results.",
     badges: [
@@ -254,8 +270,9 @@ export const homeSections = [
     ],
   },
 
+  // ─── 10. Latest News & Insights ──────────────────────────────────────
   {
-    __component: "home.smartsolar" as const,
+    __component: "home.smartsolar",
     topSubtitle: "Explore Our",
     title: "Latest news & insights",
     cards: [
@@ -286,8 +303,9 @@ export const homeSections = [
     ],
   },
 
+  // ─── 11. Battery Quote CTA ──────────────────────────────────────────
   {
-    __component: "home.battery-quote" as const,
+    __component: "home.battery-quote",
     subtitle: "Get Your Free Solar &",
     title: "Battery Quote",
     description:
