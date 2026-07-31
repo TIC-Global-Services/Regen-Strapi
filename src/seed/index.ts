@@ -17,6 +17,11 @@ import { reviewsSections } from "./data/reviews-page";
 import { contactSections } from "./data/contact-page";
 import { homeSections } from "./data/home-page";
 import { evChargingSections } from "./data/ev-charging-page";
+import { batteryProductSections } from "./data/battery-product-page";
+import { batteryStorageSections } from "./data/battery-storage-page";
+import { smartHomeBatterySections } from "./data/smart-home-battery-page";
+import { batteryBrandsSections } from "./data/battery-brands-page";
+import { governmentRebatesSections } from "./data/government-rebates-page";
 
 const pages = [
   {
@@ -206,6 +211,61 @@ const pages = [
       metaDescription:
         "WA's #1 rated solar installer with 45,000+ installations since 2003. Solar panels, battery storage, EV charging & commercial systems.",
       keywords: "solar Perth, Regen Power, solar installer, battery storage, EV charging Perth",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::battery-product-page.battery-product-page" as UID.ContentType,
+    title: "Battery Pages - Battery Product",
+    sections: batteryProductSections,
+    seo: {
+      metaTitle: "Battery Storage Systems | Regen Power",
+      metaDescription: "Premium battery storage systems for Perth homes. Tesla Powerwall, BYD, Alpha ESS, Sigenergy & iStore.",
+      keywords: "battery storage, home battery, solar battery Perth",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::battery-storage-page.battery-storage-page" as UID.ContentType,
+    title: "Battery Storage",
+    sections: batteryStorageSections,
+    seo: {
+      metaTitle: "Home Battery Storage Perth | Regen Power",
+      metaDescription: "Expert home battery storage installation in Perth. Tesla Powerwall, BYD, Sigenergy and more.",
+      keywords: "battery storage Perth, home battery, solar battery",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::smart-home-battery-page.smart-home-battery-page" as UID.ContentType,
+    title: "Battery Pages - Smart Home Battery System",
+    sections: smartHomeBatterySections,
+    seo: {
+      metaTitle: "Smart Home Battery Systems | Regen Power",
+      metaDescription: "Smart home battery storage in Perth. VPP-ready, load shifting, API control & whole home backup.",
+      keywords: "smart home battery, VPP, home energy management",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::battery-brands-page.battery-brands-page" as UID.ContentType,
+    title: "Battery Brands",
+    sections: batteryBrandsSections,
+    seo: {
+      metaTitle: "Battery Brands We Carry | Regen Power",
+      metaDescription: "Browse the battery brands Regen Power carries and installs in Perth.",
+      keywords: "battery brands Perth, Tesla Powerwall, BYD, Sigenergy",
+      metaRobots: "index, follow",
+    },
+  },
+  {
+    uid: "api::government-rebates-page.government-rebates-page" as UID.ContentType,
+    title: "Government Rebates",
+    sections: governmentRebatesSections,
+    seo: {
+      metaTitle: "Government Battery Rebates | Regen Power",
+      metaDescription: "Claim rebates off your battery in WA. Stack the WA Residential Battery Scheme, federal program & interest-free loan.",
+      keywords: "WA battery rebate, government rebate battery",
       metaRobots: "index, follow",
     },
   },
