@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_battery_product_four_pillars",
+  "collectionName": "components_smart_home_battery_four_pillars",
   "info": {
     "displayName": "Four Pillars"
   },
@@ -16,7 +16,7 @@
     },
     "cards": {
       "type": "component",
-      "component": "battery-product.pillar-card",
+      "component": "smart-home-battery.pillar-card",
       "repeatable": true
     }
   },
