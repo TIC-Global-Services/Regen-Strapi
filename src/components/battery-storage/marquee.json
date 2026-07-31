@@ -6,8 +6,9 @@
   "options": {},
   "attributes": {
     "items": {
-      "type": "string",
-      "repeatable": true
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.ticker-item"
     }
   },
   "config": {}

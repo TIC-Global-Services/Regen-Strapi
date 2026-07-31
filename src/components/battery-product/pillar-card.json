@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_product_pillar_cards",
+  "info": {
+    "displayName": "Pillar Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}

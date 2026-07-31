@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_battery_product_four_pillars",
+  "info": {
+    "displayName": "Four Pillars"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "component": "battery-product.pillar-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
