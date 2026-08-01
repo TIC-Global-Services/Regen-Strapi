@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_brands_spec_row_labels",
+  "info": {
+    "displayName": "Spec Row Label"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

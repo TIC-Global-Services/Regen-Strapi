@@ -18,6 +18,11 @@
       "type": "component",
       "repeatable": true,
       "component": "brands.spec-column"
+    },
+    "rowLabels": {
+      "type": "component",
+      "repeatable": true,
+      "component": "brands.spec-row-label"
     }
   },
   "config": {}
