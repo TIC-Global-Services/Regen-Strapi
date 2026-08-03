@@ -19,10 +19,10 @@
     "description": {
       "type": "text"
     },
-    "buttonText": {
+    "ctaText": {
       "type": "string"
     },
-    "buttonLink": {
+    "ctaLink": {
       "type": "string"
     },
     "showOverlay": {

@@ -5,6 +5,12 @@
   },
   "options": {},
   "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
     "mainDescription": {
       "type": "text"
     },

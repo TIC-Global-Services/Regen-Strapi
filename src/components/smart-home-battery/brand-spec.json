@@ -8,6 +8,11 @@
     "title": {
       "type": "string"
     },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
     "description": {
       "type": "text"
     }

@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "subtitle": {
+    "topSubtitle": {
       "type": "string"
     },
     "title": {
