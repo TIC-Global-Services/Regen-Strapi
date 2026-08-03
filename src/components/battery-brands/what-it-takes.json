@@ -23,6 +23,9 @@
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
+    },
+    "imageAlt": {
+      "type": "string"
     }
   },
   "config": {}

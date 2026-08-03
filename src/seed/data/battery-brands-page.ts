@@ -4,8 +4,8 @@ export const batteryBrandsSections = [
     subtitle: "Battery Brands We Carry",
     title: "Only The Best For Perth Homes",
     description: "We install only premium battery brands with proven track records in Australian conditions. Every brand is CEC-approved, on Synergy's Supported Solutions List, and backed by genuine local warranty support.",
-    buttonText: "Get Your Free Quote",
-    buttonLink: "/contact",
+    ctaText: "Get Your Free Quote",
+    ctaLink: "#quote",
     backgroundImage: null,
   },
   {
@@ -43,6 +43,7 @@ export const batteryBrandsSections = [
       { text: "Verifiable field performance — either through our own install base or through independent industry review" },
     ],
     image: null,
+    imageAlt: "Solar panels on a roof at sunset",
   },
   {
     __component: "battery-brands.seven-brand" as const,
@@ -380,6 +381,62 @@ export const batteryBrandsSections = [
     ],
   },
   {
+    __component: "battery-product.comparison-table" as const,
+    subtitle: "Side-By-Side",
+    title: "At A Glance",
+    description: "",
+    labelColumnTitle: "Brand & Series",
+    columns: [
+      { title: "Jinko Tiger Neo" },
+      { title: "LONGi Hi-MO X10" },
+      { title: "Canadian Solar TOPHiku6" },
+      { title: "JA Solar DeepBlue 4.0 Pro" },
+      { title: "Risen Titan" },
+    ],
+    rows: [
+      {
+        label: "Efficiency",
+        values: [
+          { text: "22.3%" },
+          { text: "22.8%" },
+          { text: "22.5%" },
+          { text: "22.4%" },
+          { text: "22.0%" },
+        ],
+      },
+      {
+        label: "Temp Coeff",
+        values: [
+          { text: "-0.29%/°C" },
+          { text: "-0.26%/°C" },
+          { text: "-0.28%/°C" },
+          { text: "-0.30%/°C" },
+          { text: "-0.30%/°C" },
+        ],
+      },
+      {
+        label: "Degradation",
+        values: [
+          { text: "0.40%/yr" },
+          { text: "0.35%/yr" },
+          { text: "0.40%/yr" },
+          { text: "0.40%/yr" },
+          { text: "0.40%/yr" },
+        ],
+      },
+      {
+        label: "Warranty",
+        values: [
+          { text: "25 yr product · 30 yr performance" },
+          { text: "25 yr product · 30 yr performance" },
+          { text: "25 yr product · 30 yr performance" },
+          { text: "25 yr product · 30 yr performance" },
+          { text: "25 yr product · 30 yr performance" },
+        ],
+      },
+    ],
+  },
+  {
     __component: "battery-brands.quick-way" as const,
     title: "A Quick Way To Narrow The Field",
     subtitle: "Use This As A Starting Point — Not A Final Answer. Our Team Refines The Recommendation With Your Site-Specific Details At The Quote Stage.",
@@ -397,6 +454,7 @@ export const batteryBrandsSections = [
       { condition: "You Want Maximum Inverter Flexibility", recommendation: "BYD (Inverter-Agnostic)" },
     ],
     image: null,
+    imageAlt: "Solar panels on a roof at sunset",
   },
   {
     __component: "battery-brands.cec-approved" as const,
@@ -437,11 +495,12 @@ export const batteryBrandsSections = [
     whyMattersTitle: "Why This Matters:",
     whyMattersDescription: "When A Brand Audits An Installer's Work, Uncertified Installs Can Void The Manufacturer Warranty. Every Install We Do Is Performed By An Installer Holding The Relevant Brand Certifications — Protecting Your Warranty On Day One And Every Day After.",
     image: null,
+    imageAlt: "Solar panels installed on a roof facing the sun",
   },
   {
     __component: "shared.faq" as const,
-    title: "Ask Us Most",
-    sectionTitle: "FAQ",
+    title: "FAQ",
+    sectionTitle: "Entries",
     listTitle: "Frequently Asked Questions",
     image: null,
     items: [

@@ -16,6 +16,9 @@
       "multiple": false,
       "allowedTypes": ["images"]
     },
+    "imageAlt": {
+      "type": "string"
+    },
     "certifications": {
       "type": "component",
       "repeatable": true,
