@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_brands_spec_rows",
+  "info": {
+    "displayName": "Spec Row"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
+    }
+  },
+  "config": {}
+}

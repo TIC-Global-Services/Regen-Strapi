@@ -19,10 +19,10 @@
       "repeatable": true,
       "component": "brands.spec-column"
     },
-    "rowLabels": {
+    "rows": {
       "type": "component",
       "repeatable": true,
-      "component": "brands.spec-row-label"
+      "component": "brands.spec-row"
     }
   },
   "config": {}
