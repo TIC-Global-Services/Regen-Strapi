@@ -44,13 +44,14 @@ export const brandsSections = [
     subtitle: "The Specs That Actually Matter,",
     title: "Side By Side",
     description: "Five Specifications, Six Brands. Use This Table To Compare Warranties And Real-World Performance Metrics \u2014 The Things That Affect Your Long-Term Output.",
+    labelColumnTitle: "Brand & Series",
     columns: [
       { title: "Jinko Tiger Neo" },
       { title: "LONGi Hi-MO X10" },
       { title: "Canadian Solar TOPHiKu6" },
       { title: "JA Solar DeepBlue 4.0 Pro" },
       { title: "Risen Titan" },
-      { title: "Trina Vertex S+" },
+      { title: "Risen Titan" },
     ],
     rows: [
       {
