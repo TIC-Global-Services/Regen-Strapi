@@ -11,7 +11,7 @@
     "title": {
       "type": "string"
     },
-    "bottomSubtitle": {
+    "description": {
       "type": "text"
     },
     "cards": {

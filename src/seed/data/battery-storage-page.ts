@@ -4,8 +4,8 @@ export const batteryStorageSections = [
     subtitle: "Home Battery Storage",
     title: "Engineered For Perth Homes",
     description: "Store your solar energy, backup your home, and take control of your power bills with premium battery storage systems from the world's leading brands.",
-    buttonText: "Get Your Free Quote",
-    buttonLink: "/contact",
+    ctaText: "Get Your Free Quote",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {
@@ -30,7 +30,7 @@ export const batteryStorageSections = [
     __component: "battery-storage.jargon" as const,
     topSubtitle: "What a battery actually",
     title: "Does to your bill",
-    bottomSubtitle: "Across our 45,000+ installations, Perth households combining solar with battery storage typically see bill reductions of 70–90% — transforming electricity from a major expense into a near-negligible one.",
+    description: "Across our 45,000+ installations, Perth households combining solar with battery storage typically see bill reductions of 70–90% — transforming electricity from a major expense into a near-negligible one.",
     cards: [
       {
         title: "Maximize Your Solar",
@@ -53,7 +53,7 @@ export const batteryStorageSections = [
     __component: "battery-storage.bill-impact" as const,
     topSubtitle: "How your battery works",
     title: "(Without jargon)",
-    description: "A home battery stores the solar your panels produce during the day so you can use it after sundown, when grid electricity is most expensive.",
+    bottomSubtitle: "A home battery stores the solar your panels produce during the day so you can use it after sundown, when grid electricity is most expensive.",
     cards: [
       {
         title: "Shift Your Usage",
@@ -267,29 +267,29 @@ export const batteryStorageSections = [
     title: "That Made The Switch",
     stories: [
       {
-        quote: "Our bills went from $600 to essentially zero. The battery was the best investment we made.",
-        author: "Sarah M.",
-        location: "Joondalup, WA",
+        home: "Family Home, Joondalup",
+        specs: "10 kW solar + Tesla Powerwall 3 (13.5 kWh)",
+        description: "Our bills went from $600 to essentially zero. The battery was the best investment we made.",
         image: null,
       },
       {
-        quote: "The team at Regen Power were professional from start to finish. Highly recommend.",
-        author: "David & Lisa T.",
-        location: "Mandurah, WA",
+        home: "Retiree Couple, Mandurah",
+        specs: "6.6 kW solar + BYD B-Box HV (10 kWh)",
+        description: "The team at Regen Power were professional from start to finish. Highly recommend.",
         image: null,
       },
       {
-        quote: "We love having backup power. When the grid went down last month, we didn't even notice.",
-        author: "Mark W.",
-        location: "Fremantle, WA",
+        home: "EV Household, Fremantle",
+        specs: "5 kW solar + Alpha ESS SMILE5 (10 kWh)",
+        description: "We love having backup power. When the grid went down last month, we didn't even notice.",
         image: null,
       },
     ],
   },
   {
     __component: "shared.faq" as const,
-    title: "Ask Us Most",
-    sectionTitle: "Your Battery & Installation Questions Answered",
+    title: "Straight Answers To The Questions Perth Homeowners",
+    sectionTitle: "Ask Us Most",
     listTitle: "Frequently Asked Questions",
     image: null,
     items: [

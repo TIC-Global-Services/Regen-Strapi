@@ -5,14 +5,14 @@
   },
   "options": {},
   "attributes": {
-    "quote": {
+    "home": {
+      "type": "string"
+    },
+    "specs": {
+      "type": "string"
+    },
+    "description": {
       "type": "text"
-    },
-    "author": {
-      "type": "string"
-    },
-    "location": {
-      "type": "string"
     },
     "image": {
       "type": "media",
