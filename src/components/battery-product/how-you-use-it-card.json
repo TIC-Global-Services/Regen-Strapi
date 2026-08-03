@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_battery_product_how_you_use_it_cards",
+  "info": {
+    "displayName": "How You Use It Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

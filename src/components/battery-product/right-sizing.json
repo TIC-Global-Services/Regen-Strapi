@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_battery_product_right_sizings",
+  "info": {
+    "displayName": "Right Sizing"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "component": "battery-product.right-sizing-step",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaHref": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

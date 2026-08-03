@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_battery_product_right_sizing_steps",
+  "info": {
+    "displayName": "Right Sizing Step"
+  },
+  "options": {},
+  "attributes": {
+    "iconName": {
+      "type": "enumeration",
+      "enum": ["zap", "sun", "car", "home", "paneltop"]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

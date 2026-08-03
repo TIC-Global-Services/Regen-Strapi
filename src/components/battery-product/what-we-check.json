@@ -11,6 +11,9 @@
     "title": {
       "type": "string"
     },
+    "description": {
+      "type": "text"
+    },
     "paragraphs": {
       "type": "component",
       "repeatable": true,

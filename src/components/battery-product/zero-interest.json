@@ -5,7 +5,7 @@
   },
   "options": {},
   "attributes": {
-    "subtitle": {
+    "topSubtitle": {
       "type": "string"
     },
     "title": {
@@ -14,14 +14,32 @@
     "description": {
       "type": "text"
     },
-    "cards": {
+    "keyTerms": {
       "type": "component",
-      "component": "battery-product.solutions-card",
-      "repeatable": true
+      "component": "battery-product.terms-block"
     },
-    "layout": {
-      "type": "enumeration",
-      "enum": ["3", "4", "6"]
+    "eligibility": {
+      "type": "component",
+      "component": "battery-product.terms-block"
+    },
+    "summaryText": {
+      "type": "text"
+    },
+    "topImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "bottomImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
     }
   },
   "config": {}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_battery_product_how_you_use_its",
+  "info": {
+    "displayName": "How You Use It"
+  },
+  "options": {},
+  "attributes": {
+    "topSubtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "defaultFeaturedIndex": {
+      "type": "integer",
+      "default": 2
+    },
+    "cards": {
+      "type": "component",
+      "component": "battery-product.how-you-use-it-card",
+      "repeatable": true,
+      "required": true,
+      "min": 1
+    }
+  },
+  "config": {}
+}

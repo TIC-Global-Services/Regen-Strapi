@@ -18,6 +18,17 @@
     },
     "description": {
       "type": "text"
+    },
+    "specs": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "imageAlt": {
+      "type": "string"
     }
   },
   "config": {}
