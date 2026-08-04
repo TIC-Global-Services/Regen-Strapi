@@ -11,8 +11,8 @@ export const batteryProductSections = [
   {
     __component: "battery-storage.marquee" as const,
     items: [
-      { text: "45,000+ Solar Installations" },
-      { text: "3000+ Battery Storage Installs" },
+      { text: "45,000+ Solar" },
+      { text: "3000+ Storage Installations" },
       { text: "23 Years In Perth" },
       { text: "4.9★ Rating (Google + ProductReview)" },
     ],
@@ -94,18 +94,18 @@ export const batteryProductSections = [
       },
       {
         iconName: "car",
-        title: "Do You Own (Or Plan) An EV?",
-        placeholder: "Your Answer (e.g. Yes, in 2027)",
+        title: "EV Plans In The Next 2 Years",
+        placeholder: "Your Answer (Yes / No / 2027)",
       },
       {
         iconName: "home",
-        title: "Are You Home During Peak?",
-        placeholder: "Your Answer (e.g. Most evenings)",
+        title: "How Important Is Blackout Backup?",
+        placeholder: "Your Answer (Critical / Nice To Have)",
       },
       {
         iconName: "paneltop",
-        title: "Existing Solar Array Size",
-        placeholder: "Your Answer (e.g. 6.6 kW)",
+        title: "Do You Already Have Solar?",
+        placeholder: "Your Answer (Yes / No)",
       },
     ],
   },
@@ -315,7 +315,7 @@ export const batteryProductSections = [
       {
         type: "text",
         variant: "light-gray",
-        title: "Product Warranty Vs Performance Warranty",
+        title: "Product Warranty Vs Performance\nWarranty",
         description: "Product Warranty Covers Manufacturing Defects (Usually 10 Years). Performance Warranty Guarantees A Minimum Energy Throughput Or Capacity Retention — Typically \"60-70% Of Original Capacity After 10 Years\" Or \"X MWh Minimum Throughput\". Both Are Standard Across The Brands We Install.",
       },
       {
@@ -325,19 +325,19 @@ export const batteryProductSections = [
       {
         type: "text",
         variant: "light-gray",
-        title: "Workmanship Warranty",
+        title: "Workmanship\nWarranty",
         description: "Separate From The Manufacturer Warranty. We Provide A 5-Year Workmanship Warranty On Every Install. If The Install Caused An Issue, We Fix It. If The Product Failed, We Coordinate With The Manufacturer.",
       },
       {
         type: "text",
         variant: "light-gray",
-        title: "What Voids A Battery Warranty",
+        title: "What Voids A Battery\nWarranty",
         description: "Common Causes: DIY Electrical Work, Unauthorised Modifications, Installation Outside Temperature Specs, Not Enrolling In Required Firmware Updates. Our Installs Avoid All Of These — That's The Point Of A CEC-Accredited Installer.",
       },
       {
         type: "text",
         variant: "dark",
-        title: "Aftercare Across 23 Years Of Installs",
+        title: "Aftercare Across 23\nYears Of Installs",
         description: "Many Of Our 45,000+ Installations Are Still Running 10, 15, Even 20 Years After Day One. We Stock Parts, Service Anywhere In WA, And Our Install Team Is The Same Team That Services It Later.",
       },
       {
@@ -394,16 +394,12 @@ export const batteryProductSections = [
         description: "",
         image: null,
         textPosition: "top",
-        footerTitle: "",
-        footerDescription: "",
       },
       {
         title: "Why More Australians Are\nSwitching To Renewable\nEnergy",
         description: "",
         image: null,
         textPosition: "top",
-        footerTitle: "",
-        footerDescription: "",
       },
     ],
     showReadMore: true,
