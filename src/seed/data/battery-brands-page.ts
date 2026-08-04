@@ -1,11 +1,12 @@
 export const batteryBrandsSections = [
   {
     __component: "battery-brands.hero" as const,
-    subtitle: "Battery Brands We Carry",
-    title: "Only The Best For Perth Homes",
-    description: "We install only premium battery brands with proven track records in Australian conditions. Every brand is CEC-approved, on Synergy's Supported Solutions List, and backed by genuine local warranty support.",
+    subtitle: "Solar Battery",
+    title: "Brands We Carry In Perth",
+    description: "The brands we trust, from premium to accessible. Tesla Powerwall 3, BYD Battery-Box, Alpha ESS, iStore, Sigenergy SigenStor, Anker Solix, Goodwe Lynx Home. Every one has been through our technical review and field-tested across our 45,000+ installations.",
     ctaText: "Get Your Free Quote",
     ctaLink: "#quote",
+    showOverlay: true,
     backgroundImage: null,
   },
   {
@@ -482,7 +483,7 @@ export const batteryBrandsSections = [
   },
   {
     __component: "battery-brands.why-our-installer" as const,
-    title: "Why Our Installer Certifications Matter",
+    title: "Why Our Installer \nCertifications Matter",
     subtitle: "Installing These Brands Well Isn't Plug-And-Play. Several Of Them Require Installer Certifications Beyond General CEC Accreditation. Here's What We Hold:",
     certifications: [
       { title: "Tesla Certified Installer — Direct Tesla Training And Authorisation For Powerwall Installations" },
@@ -532,7 +533,7 @@ export const batteryBrandsSections = [
     mainTitle: "claim your rebate",
     description: "Tell us which brand you're leaning towards (or we'll help you choose) and we'll put together a personalised quote with your rebate already applied.",
     buttonText: "get my free quote",
-    buttonHref: "/contact",
+    buttonHref: "#",
     backgroundImage: null,
   },
 ];
