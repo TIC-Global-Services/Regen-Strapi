@@ -43,7 +43,7 @@ export const smartHomeBatterySections = [
     topSubtitle: "The Four",
     title: "Pillars",
     description:
-      "A smart home battery earns its name by doing four things exceptionally well. Each of these has a dedicated section below.",
+      "A smart home battery earns its name by doing four things exceptionally well. Each of these has a dedicated section \nbelow.",
     cards: [
       {
         title: "VPP Integration",
