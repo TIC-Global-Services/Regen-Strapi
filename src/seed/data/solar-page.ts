@@ -27,10 +27,10 @@ export const solarSections = [
     subtitle: "Sun To Synergy Bill",
     title: "In Four Steps",
     steps: [
-      { stepNumber: 1, title: "Sunlight Hits The Panels", description: "Photovoltaic Cells Inside Each Panel Absorb Sunlight And Convert It Into Direct Current (DC) Electricity. A Typical Modern Panel Generates 420–450 Watts Under Peak Sun Conditions.", image: null },
-      { stepNumber: 2, title: "DC Flows To The Inverter", description: "DC Electricity Travels Down The String Cables To Your Inverter. The Inverter Converts DC Into Alternating Current (AC) — The Form Of Electricity Your Appliances, Air-Conditioning, And Lights Actually Use.", image: null },
-      { stepNumber: 3, title: "Your Home Uses It First", description: "AC Power Flows Into Your Switchboard And Powers Whatever's Running Right Now — Fridge, Pool Pump, Air-Con, EV Charger. This Is Where You Save The Most, Because You're Replacing Grid Electricity In Real Time.", image: null },
-      { stepNumber: 4, title: "Surplus Exports To Grid", description: "Anything Your Home Isn't Using Is Exported To Synergy For A Feed-In Credit (DEBS) — Or, If You Have A Battery, Stored For Use After Sundown. A Well-Designed System Maximises Self-Consumption Before Export.", image: null },
+      { stepNumber: "1", title: "Sunlight Hits The Panels", description: "Photovoltaic Cells Inside Each Panel Absorb Sunlight And Convert It Into Direct Current (DC) Electricity. A Typical Modern Panel Generates 420–450 Watts Under Peak Sun Conditions.", image: null },
+      { stepNumber: "2", title: "DC Flows To The Inverter", description: "DC Electricity Travels Down The String Cables To Your Inverter. The Inverter Converts DC Into Alternating Current (AC) — The Form Of Electricity Your Appliances, Air-Conditioning, And Lights Actually Use.", image: null },
+      { stepNumber: "3", title: "Your Home Uses It First", description: "AC Power Flows Into Your Switchboard And Powers Whatever's Running Right Now — Fridge, Pool Pump, Air-Con, EV Charger. This Is Where You Save The Most, Because You're Replacing Grid Electricity In Real Time.", image: null },
+      { stepNumber: "4", title: "Surplus Exports To Grid", description: "Anything Your Home Isn't Using Is Exported To Synergy For A Feed-In Credit (DEBS) — Or, If You Have A Battery, Stored For Use After Sundown. A Well-Designed System Maximises Self-Consumption Before Export.", image: null },
     ],
   },
   {
