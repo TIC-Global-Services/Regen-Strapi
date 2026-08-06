@@ -1,9 +1,9 @@
 export const batteryStorageSections = [
   {
     __component: "battery-storage.hero" as const,
-    subtitle: "Solar Batteries Engineered For The",
-    title: "Perth Climate",
-    description: "WA's #1 Rated Solar Battery Installer With 45,000+ Installations Since 2003. CEC-Approved. ProductReview Award Winner 2021–2026.",
+    subtitle: "Solar Battery Storage",
+    title: "In Perth",
+    description: "Perth's rebate window is at its highest-ever value — but the federal step-down on 1 May 2026 changes the maths. Install with us before the deadline and we handle the rebate, the paperwork and the VPP setup, end-to-end.",
     ctaText: "Get Your Free Battery Quote",
     ctaLink: "#quote-form",
     backgroundImage: null,

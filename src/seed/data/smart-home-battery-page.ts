@@ -248,10 +248,10 @@ export const smartHomeBatterySections = [
     brands: [
       {
         title: "Sigenergy SigenStor (Our Smart Home Pick)",
+        logo: null,
         specification: [
           {
             title: "Best For:",
-            logo: null,
             description: "Tech-Forward Homes, EV Owners, Home Assistant Users",
           },
           {
@@ -270,10 +270,10 @@ export const smartHomeBatterySections = [
       },
       {
         title: "Tesla Powerwall 3 (The Benchmark)",
+        logo: null,
         specification: [
           {
             title: "Best For:",
-            logo: null,
             description: "Tesla EV Owners, Homes Valuing Industry-Leading App UX",
           },
           {
@@ -292,10 +292,10 @@ export const smartHomeBatterySections = [
       },
       {
         title: "BYD Battery-Box Premium (The Modular Choice)",
+        logo: null,
         specification: [
           {
             title: "Best For:",
-            logo: null,
             description: "Homes Wanting Modular Scalability Without Ecosystem Lock-In",
           },
           {
