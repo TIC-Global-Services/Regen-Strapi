@@ -1,0 +1,71 @@
+{
+  "collectionName": "components_ev_charging_why_choose_cards",
+  "info": {
+    "displayName": "Why Choose Card"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": ["award", "installations", "years"]
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "logoBg": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "mobileLogo": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "countSuffix": {
+      "type": "string"
+    },
+    "mobileCount": {
+      "type": "integer"
+    },
+    "mobileCountSuffix": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "mobileTitle": {
+      "type": "string"
+    },
+    "combinedText": {
+      "type": "text"
+    },
+    "productImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "showPlusButton": {
+      "type": "boolean",
+      "default": false
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "yearsText": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

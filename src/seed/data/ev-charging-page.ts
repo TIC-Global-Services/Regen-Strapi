@@ -195,16 +195,38 @@ export const evChargingSections: Section[] = [
   // ─── 9. Stats ────────────────────────────────────────────────────────
   {
     __component: "ev-charging.stats",
-    subtitle: "Why Choose",
-    title: "Regen Power",
-    awardWinnerCount: 6,
-    awardWinnerTitle: "Product Review Award\nWinner",
-    batteryInstallationsCount: 3000,
-    batteryInstallationsLabel: "Battery Installations",
-    solarInstallationsCount: 45000,
-    solarInstallationsLabel: "Solar Installations",
-    yearsInBusinessCount: 23,
-    yearsInBusinessDescription: "In Business, Operating From \n Canning Vale Office",
+    headerSubtitle: "23 Years Powering Australian",
+    headerTitle: "Homes And Counting",
+    cards: [
+      {
+        variant: "award",
+        bgColor: "#EEF6EB",
+        logoBg: null,
+        logo: null,
+        mobileLogo: "/regen_logo_nav.png",
+        count: 500,
+        countSuffix: "+",
+        title: "EV Chargers",
+        description: "Installed Across Homes And Businesses.",
+        mobileCount: 6,
+        mobileCountSuffix: "×",
+        mobileTitle: "Product Review Award Winner",
+      },
+      {
+        variant: "installations",
+        bgColor: "#A0CF44",
+        combinedText:
+          "45,000+ Solar Systems And 3,000+ Battery Systems Successfully Installed.",
+        productImage: null,
+        showPlusButton: true,
+      },
+      {
+        variant: "years",
+        bgColor: "#F0F6EC",
+        backgroundImage: null,
+        yearsText: "23 Years In Business, Operating From Our Canning Vale Office.",
+      },
+    ],
   },
 
   // ─── 10. FAQ ─────────────────────────────────────────────────────────
