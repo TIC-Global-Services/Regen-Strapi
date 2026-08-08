@@ -5,10 +5,10 @@
   },
   "options": {},
   "attributes": {
-    "title": {
+    "systemTitle": {
       "type": "string"
     },
-    "review": {
+    "quote": {
       "type": "text"
     },
     "rating": {

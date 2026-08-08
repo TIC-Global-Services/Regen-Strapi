@@ -10,7 +10,7 @@
     },
     "logos": {
       "type": "component",
-      "component": "shared.imagegroup",
+      "component": "home.award-logo",
       "repeatable": true
     }
   },

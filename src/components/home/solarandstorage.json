@@ -11,11 +11,6 @@
     "titleAccent": {
       "type": "string"
     },
-    "media": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": ["images"]
-    },
     "features": {
       "type": "component",
       "component": "home.feature-item",

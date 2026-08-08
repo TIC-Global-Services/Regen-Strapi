@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "data": {
+    "sections": {
       "type": "dynamiczone",
       "components": [
         "home.hero",

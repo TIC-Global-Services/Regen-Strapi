@@ -24,11 +24,11 @@ export const homeSections: Section[] = [
     __component: "home.awards",
     title: "Awards & Recognition",
     logos: [
-      { title: "Australian Technologies", image: [] },
-      { title: "Fast 100 2020", image: [] },
-      { title: "EUPD Research", image: [] },
-      { title: "Financial Times", image: [] },
-      { title: "Belmont Awards", image: [] },
+      { alt: "Australian Technologies", src: null },
+      { alt: "Fast 100 2020", src: null },
+      { alt: "EUPD Research", src: null },
+      { alt: "Financial Times", src: null },
+      { alt: "Belmont Awards", src: null },
     ],
   },
 
@@ -39,6 +39,8 @@ export const homeSections: Section[] = [
     title: "Regen Power",
     awardWinnerCount: 6,
     awardWinnerTitle: "Product Review Award\nWinner",
+    awardWinnerBg: null,
+    awardWinnerLogo: null,
     batteryInstallationsCount: 3000,
     batteryInstallationsLabel: "Battery Installations",
     solarInstallationsCount: 45000,
@@ -46,8 +48,10 @@ export const homeSections: Section[] = [
     yearsInBusinessCount: 23,
     yearsInBusinessDescription:
       "In Business, Operating From \n Canning Vale Office",
+    yearsInBusinessBg: null,
     ratingScore: 5,
     ratingPlatformLabel: "Ratings On\nProductReview",
+    ratingBg: null,
   },
 
   // ─── 4. Expertise ────────────────────────────────────────────────────
@@ -55,21 +59,30 @@ export const homeSections: Section[] = [
     __component: "home.expertise",
     subtitle: "Our Energy",
     accentTitle: "Expertise",
+    bgImage: null,
     items: [
       {
         title: "Residential Solar\n& Storage",
+        image: null,
+        icon: null,
         textColor: "text-black",
       },
       {
         title: "Battery Storage\n& Smart Home",
+        image: null,
+        icon: null,
         textColor: "text-black",
       },
       {
         title: "Commercial\n& Off-Grid",
+        image: null,
+        icon: null,
         textColor: "text-black",
       },
       {
         title: "Electric Vehicle\nCharging",
+        image: null,
+        icon: null,
         textColor: "text-black",
       },
     ],
@@ -86,30 +99,40 @@ export const homeSections: Section[] = [
         title: "Capture Energy From The Sun",
         description:
           "High-Efficiency Solar Panels Installed On Your Roof Absorb Sunlight Throughout The Day And Convert It Into Direct Current (DC) Electricity, Creating Clean And Renewable Energy For Your Home.",
+        mediaType: "image",
+        mediaSrc: null,
       },
       {
         number: "02",
         title: "Store Excess Power for Night",
         description:
           "Premium battery storage systems capture surplus solar generation during the day, giving you reliable power after sunset and complete blackout protection.",
+        mediaType: "image",
+        mediaSrc: null,
       },
       {
         number: "03",
         title: "Smart Home Integration",
         description:
           "Monitor and manage your household energy consumption in real-time, directing power to smart appliances and living areas for maximum efficiency.",
+        mediaType: "image",
+        mediaSrc: null,
       },
       {
         number: "04",
         title: "Fast EV Charging",
         description:
           "Charge your electric vehicle directly from your solar panels or stored battery power, driving on pure sunshine with zero emissions.",
+        mediaType: "image",
+        mediaSrc: null,
       },
       {
         number: "05",
         title: "Intelligent Power Grid Connection",
         description:
           "Feed excess energy back to the Perth grid to earn feed-in tariffs, or draw from the grid seamlessly when solar and battery storage are depleted.",
+        mediaType: "image",
+        mediaSrc: null,
       },
     ],
   },
@@ -121,14 +144,14 @@ export const homeSections: Section[] = [
     title: "Partners & Memberships",
     partnersTitle: "Partners",
     partners: [
-      { name: "Tesla Energy Certified Installer" },
-      { name: "iStore Premium Partner" },
+      { name: "Tesla Energy Certified Installer", image: null },
+      { name: "iStore Premium Partner", image: null },
     ],
     membershipsTitle: "Memberships",
     memberships: [
-      { name: "Smart Energy Council" },
-      { name: "Clean Energy Council Member" },
-      { name: "Approved Seller" },
+      { name: "Smart Energy Council", image: null },
+      { name: "Clean Energy Council Member", image: null },
+      { name: "Approved Seller", image: null },
     ],
   },
 
@@ -143,16 +166,19 @@ export const homeSections: Section[] = [
         title: "Federal STC Rebate",
         description:
           "Receive Thousands Off Your Solar System Through The Federal Government's Small-Scale Technology Certificate (STC) Scheme. Applied As An Upfront Discount At Point Of Sale.",
+        image: null,
       },
       {
         title: "WA Battery Rebate",
         description:
           "Up To $1,300 Rebate For Eligible WA Households Installing A Battery System Under The Distributed Energy Buyback Scheme (DEBS) Battery Program.",
+        image: null,
       },
       {
         title: "Interest-Free Loan Up To $10,000",
         description:
           "Through The WA Battery Rebate, Eligible Synergy Customers Can Access An Interest-Free Loan Of Up To $10,000 Repayable Over 10 Years.",
+        image: null,
         ctaText: "Check Your Eligibility",
       },
     ],
@@ -166,42 +192,46 @@ export const homeSections: Section[] = [
     defaultTabId: "panels",
     categories: [
       {
+        id: "inverters",
         label: "Inverters",
         logos: [
-          { name: "AIKO" },
-          { name: "Canadian Solar" },
-          { name: "JA Solar" },
-          { name: "Jinko Solar" },
-          { name: "LONGi" },
+          { name: "AIKO", src: null },
+          { name: "Canadian Solar", src: null },
+          { name: "JA Solar", src: null },
+          { name: "Jinko Solar", src: null },
+          { name: "LONGi", src: null },
         ],
       },
       {
+        id: "panels",
         label: "Panels",
         logos: [
-          { name: "AIKO" },
-          { name: "Canadian Solar" },
-          { name: "JA Solar" },
-          { name: "Jinko Solar" },
-          { name: "LONGi" },
-          { name: "Trina Solar" },
-          { name: "Risen" },
+          { name: "AIKO", src: null },
+          { name: "Canadian Solar", src: null },
+          { name: "JA Solar", src: null },
+          { name: "Jinko Solar", src: null },
+          { name: "LONGi", src: null },
+          { name: "Trina Solar", src: null },
+          { name: "Risen", src: null },
         ],
       },
       {
+        id: "battery-storage",
         label: "Battery Storage",
         logos: [
-          { name: "Canadian Solar" },
-          { name: "JA Solar" },
-          { name: "LONGi" },
-          { name: "Trina Solar" },
+          { name: "Canadian Solar", src: null },
+          { name: "JA Solar", src: null },
+          { name: "LONGi", src: null },
+          { name: "Trina Solar", src: null },
         ],
       },
       {
+        id: "ev-charger",
         label: "EV Charger",
         logos: [
-          { name: "Jinko Solar" },
-          { name: "Risen" },
-          { name: "LONGi" },
+          { name: "Jinko Solar", src: null },
+          { name: "Risen", src: null },
+          { name: "LONGi", src: null },
         ],
       },
     ],
@@ -215,53 +245,57 @@ export const homeSections: Section[] = [
     badges: [
       {
         alt: "Google Rating 4.9 stars based on 1,385+ reviews",
+        src: null,
       },
       {
         alt: "Best Rated Solar Installer — #1 Most Popular Western Australia 2026",
+        src: null,
       },
       {
         alt: "Top Rated Solar Panel Installers",
+        src: null,
       },
       {
         alt: "Top Rated Installers — Western Australia",
+        src: null,
       },
     ],
     reviews: [
       {
-        title: "10kW Solar + Battery System",
-        review:
+        systemTitle: "10kW Solar + Battery System",
+        quote:
           "The Entire Process Was Smooth From Consultation To Installation. Our Power Bills Dropped Almost Immediately, And The Team Kept Us Informed Every Step Of The Way.",
         author: "Sarah",
         location: "Perth",
         rating: 5,
       },
       {
-        title: "10kW Solar + Battery System",
-        review:
+        systemTitle: "10kW Solar + Battery System",
+        quote:
           "The Entire Process Was Smooth From Consultation To Installation. Our Power Bills Dropped Almost Immediately, And The Team Kept Us Informed Every Step Of The Way.",
         author: "Sarah",
         location: "Perth",
         rating: 5,
       },
       {
-        title: "10kW Solar + Battery System",
-        review:
+        systemTitle: "10kW Solar + Battery System",
+        quote:
           "The Entire Process Was Smooth From Consultation To Installation. Our Power Bills Dropped Almost Immediately, And The Team Kept Us Informed Every Step Of The Way.",
         author: "Sarah",
         location: "Perth",
         rating: 5,
       },
       {
-        title: "6.6kW Solar Panel System",
-        review:
+        systemTitle: "6.6kW Solar Panel System",
+        quote:
           "Outstanding service from start to finish. The team was professional, punctual and the quality of the installation exceeded our expectations.",
         author: "James",
         location: "Joondalup",
         rating: 5,
       },
       {
-        title: "13.2kW Commercial Solar",
-        review:
+        systemTitle: "13.2kW Commercial Solar",
+        quote:
           "Best decision we made for our business. Energy costs cut in half and the ROI was faster than projected.",
         author: "Michelle",
         location: "Fremantle",
@@ -280,6 +314,7 @@ export const homeSections: Section[] = [
         title: "STC Upfront Discount",
         description:
           "Federal STC And WA Rebate Values Are Deducted Directly From Your Quoted Price. You Pay The Post-Rebate Balance.",
+        image: null,
         textPosition: "top",
         footerTitle: "Best For",
         footerDescription: "Any installation — applied by default.",
@@ -288,6 +323,7 @@ export const homeSections: Section[] = [
         title: "Plenti No-Interest Loan",
         description:
           "WA-Funded No-Interest Loan From $2,001 To $10,000. Flexible 3–10 Year Terms, No Early Repayment Fees.",
+        image: null,
         textPosition: "top",
         footerTitle: "Best For",
         footerDescription: "Any installation — applied by default.",
@@ -296,6 +332,7 @@ export const homeSections: Section[] = [
         title: "Third-Party Finance",
         description:
           "We Can Refer You To Accredited Green-Loan Providers For Larger Systems Or Commercial Installations.",
+        image: null,
         textPosition: "top",
         footerTitle: "Best For",
         footerDescription: "Any installation — applied by default.",
@@ -310,5 +347,6 @@ export const homeSections: Section[] = [
     title: "Battery Quote",
     description:
       "Our technical sales team will design a system tailored to your home, usage, and budget. Most quotes delivered within 24 hours.",
+    image: null,
   },
 ];

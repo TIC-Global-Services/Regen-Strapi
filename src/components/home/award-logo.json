@@ -1,17 +1,17 @@
 {
-  "collectionName": "components_home_badge_items",
+  "collectionName": "components_home_award_logos",
   "info": {
-    "displayName": "Badge Item"
+    "displayName": "Award Logo"
   },
   "options": {},
   "attributes": {
-    "alt": {
-      "type": "string"
-    },
     "src": {
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
+    },
+    "alt": {
+      "type": "string"
     }
   },
   "config": {}

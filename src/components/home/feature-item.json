@@ -14,10 +14,15 @@
     "description": {
       "type": "text"
     },
-    "image": {
+    "mediaType": {
+      "type": "enumeration",
+      "enum": ["image", "video"],
+      "default": "image"
+    },
+    "mediaSrc": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": ["images", "videos"]
     }
   },
   "config": {}
