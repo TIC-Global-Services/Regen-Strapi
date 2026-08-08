@@ -8,6 +8,9 @@
     "badge": {
       "type": "string"
     },
+    "topTitle": {
+      "type": "string"
+    },
     "title": {
       "type": "string"
     },

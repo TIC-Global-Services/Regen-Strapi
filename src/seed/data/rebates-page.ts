@@ -40,6 +40,7 @@ export const rebatesSections = [
   {
     __component: "rebates.utility-cards" as const,
     badge: "WA State Rebate",
+    topTitle: "Extra WA-only Savings",
     title: "On Top Of The Federal Rebate",
     description: "Launched on Tuesday, July 1, 2025, the WA Residential Battery Scheme provides state support for home batteries that can be stacked with the federal program.",
     cards: [
