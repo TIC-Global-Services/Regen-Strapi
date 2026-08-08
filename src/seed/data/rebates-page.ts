@@ -40,7 +40,7 @@ export const rebatesSections = [
   {
     __component: "rebates.utility-cards" as const,
     badge: "WA State Rebate",
-    topTitle: "Extra WA-only Savings",
+    subtitle: "Extra WA-only Savings",
     title: "On Top Of The Federal Rebate",
     description: "Launched on Tuesday, July 1, 2025, the WA Residential Battery Scheme provides state support for home batteries that can be stacked with the federal program.",
     cards: [
@@ -52,7 +52,7 @@ export const rebatesSections = [
     __component: "rebates.loan-benefits" as const,
     subtitle: "Up To $10,000, Interest-Free",
     title: "For The Balance After Rebates",
-    description: "Alongside the rebates, eligible WA households can access a no-interest loan administered by Plenti to cover the out-of-pocket portion of a battery or solar-plus-battery installation.",
+    description: "Alongside the rebates, eligible WA households can access a no-interest loan administered by Plenti (Australian Credit Licence holder) to cover the out-of-pocket portion of a battery or solar-plus-battery install. There's no interest, no early repayment fees, and flexible 3–10 year terms.",
     ctaText: "Check Your Eligibility",
     benefits: [
       { title: "Loan Amount", description: "Borrow between $2,001 and $10,000 to support your battery installation project." },

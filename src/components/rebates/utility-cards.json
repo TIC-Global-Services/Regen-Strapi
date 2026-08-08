@@ -8,7 +8,7 @@
     "badge": {
       "type": "string"
     },
-    "topTitle": {
+    "subtitle": {
       "type": "string"
     },
     "title": {
