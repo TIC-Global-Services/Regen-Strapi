@@ -18,6 +18,15 @@
       "type": "component",
       "component": "battery-storage.image-card",
       "repeatable": true
+    },
+    "ctaDescription": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
     }
   },
   "config": {}

@@ -65,6 +65,9 @@ export const batteryStorageSections = [
     topSubtitle: "What a battery actually",
     title: "Does to your bill",
     bottomSubtitle: "Across our 45,000+ installations, Perth households combining solar with battery storage typically see bill reductions of 70–90% — transforming electricity from a major expense into a near-negligible one.",
+    ctaDescription: "Want an estimate for your home? Tell us your address and usage and we'll model it",
+    ctaText: "Get a personalised quote",
+    ctaLink: "#quote-form",
     cards: [
       {
         title: "Annual Bill Savings",
