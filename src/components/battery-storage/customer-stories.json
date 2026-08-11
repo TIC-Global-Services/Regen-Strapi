@@ -15,6 +15,13 @@
       "type": "component",
       "component": "battery-storage.story-card",
       "repeatable": true
+    },
+    "centerButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "centerButtonText": {
+      "type": "string"
     }
   },
   "config": {}

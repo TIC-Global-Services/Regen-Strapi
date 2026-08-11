@@ -269,6 +269,8 @@ export const batteryStorageSections = [
     __component: "battery-storage.customer-stories" as const,
     topSubtitle: "Perth Homes",
     title: "That Made The Switch",
+    centerButton: true,
+    centerButtonText: "View our full portfolio of 113+ installs",
     stories: [
       {
         home: "Family home, Canning Vale",
