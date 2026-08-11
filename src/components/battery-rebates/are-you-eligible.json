@@ -22,6 +22,14 @@
       "repeatable": true,
       "component": "battery-rebates.list-item"
     },
+    "additionalListTitle": {
+      "type": "string"
+    },
+    "additionalItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "battery-rebates.list-item"
+    },
     "image": {
       "type": "media",
       "multiple": false,

@@ -161,7 +161,9 @@ export const governmentRebatesSections = [
       { text: "You haven't previously received a rebate under the WA Residential Battery Scheme on this property (one per property)" },
       { text: "Your property has a reliable internet connection (required for VPP)" },
       { text: "You're willing to join a Virtual Power Plant (2-year agreement)" },
-      { text: "For the interest-free loan specifically, ADD:" },
+    ],
+    additionalListTitle: "For the interest-free loan specifically, ADD:",
+    additionalItems: [
       { text: "Combined household income under $210,000" },
       { text: "You pass a standard credit check" },
     ],
