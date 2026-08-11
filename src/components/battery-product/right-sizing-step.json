@@ -5,9 +5,10 @@
   },
   "options": {},
   "attributes": {
-    "iconName": {
-      "type": "enumeration",
-      "enum": ["zap", "sun", "car", "home", "paneltop"]
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
     },
     "title": {
       "type": "string",

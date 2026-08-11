@@ -83,27 +83,27 @@ export const batteryProductSections = [
     ctaHref: "#quote-form",
     steps: [
       {
-        iconName: "zap",
+        icon: null,
         title: "Average Quarterly Bill",
         placeholder: "Your Answer (e.g. $450)",
       },
       {
-        iconName: "sun",
+        icon: null,
         title: "Daily Energy Use",
         placeholder: "Your Answer (e.g. 25 kWh/day)",
       },
       {
-        iconName: "car",
+        icon: null,
         title: "EV Plans In The Next 2 Years",
         placeholder: "Your Answer (Yes / No / 2027)",
       },
       {
-        iconName: "home",
+        icon: null,
         title: "How Important Is Blackout Backup?",
         placeholder: "Your Answer (Critical / Nice To Have)",
       },
       {
-        iconName: "paneltop",
+        icon: null,
         title: "Do You Already Have Solar?",
         placeholder: "Your Answer (Yes / No)",
       },
