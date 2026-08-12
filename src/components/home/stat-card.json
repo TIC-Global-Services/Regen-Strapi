@@ -35,18 +35,6 @@
       "multiple": false,
       "allowedTypes": ["images"]
     },
-    "bgColor": {
-      "type": "string"
-    },
-    "textColor": {
-      "type": "string"
-    },
-    "column": {
-      "type": "integer"
-    },
-    "span": {
-      "type": "integer"
-    },
     "stats": {
       "type": "component",
       "component": "home.stat",
