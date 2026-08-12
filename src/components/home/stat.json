@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_stats",
+  "info": {
+    "displayName": "Stat"
+  },
+  "options": {},
+  "attributes": {
+    "count": {
+      "type": "integer"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

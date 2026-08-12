@@ -37,21 +37,76 @@ export const homeSections: Section[] = [
     __component: "home.whychooseus",
     subtitle: "Why Choose",
     title: "Regen Power",
-    awardWinnerCount: 6,
-    awardWinnerTitle: "Product Review Award\nWinner",
-    awardWinnerBg: null,
-    awardWinnerLogo: null,
-    batteryInstallationsCount: 3000,
-    batteryInstallationsLabel: "Battery Installations",
-    solarInstallationsCount: 45000,
-    solarInstallationsLabel: "Solar Installations",
-    yearsInBusinessCount: 23,
-    yearsInBusinessDescription:
-      "In Business, Operating From \n Canning Vale Office",
-    yearsInBusinessBg: null,
-    ratingScore: 5,
-    ratingPlatformLabel: "Ratings On\nProductReview",
-    ratingBg: null,
+    // New generic stat-card grid. Mirrors the previous 4-card design exactly.
+    cards: [
+      {
+        count: 6,
+        prefix: null,
+        suffix: "×",
+        title: "Product Review Award\nWinner",
+        description: null,
+        icon: null,
+        image: null,
+        logo: null,
+        bgColor: "#EEF6EB",
+        textColor: null,
+        column: 1,
+        span: null,
+        stats: [],
+      },
+      {
+        count: null,
+        prefix: null,
+        suffix: null,
+        title: null,
+        description: null,
+        icon: null,
+        image: null,
+        logo: null,
+        bgColor: "#A0CF44",
+        textColor: "#FFFFFF",
+        column: 2,
+        span: null,
+        stats: [
+          { count: 3000, prefix: null, suffix: "+", label: "Battery Installations" },
+          { count: 45000, prefix: null, suffix: "+", label: "Solar Installations" },
+        ],
+      },
+      {
+        count: 23,
+        prefix: null,
+        suffix: null,
+        title: "Years",
+        description: "In Business, Operating From \n Canning Vale Office",
+        icon: null,
+        image: null,
+        logo: null,
+        bgColor: "#F0F6EC",
+        textColor: null,
+        column: 3,
+        span: null,
+        stats: [],
+      },
+      {
+        // NOTE: the star icon (/star.svg) is a local frontend asset, not a
+        // Strapi media item. Upload `star.svg` to the media library and set
+        // `icon` to that media (or extend the schema to accept a raw path) so
+        // the rating star renders through the generic `cards` path.
+        count: 5,
+        prefix: null,
+        suffix: null,
+        title: "Ratings On\nProductReview",
+        description: null,
+        icon: null,
+        image: null,
+        logo: null,
+        bgColor: null,
+        textColor: "#FFFFFF",
+        column: 3,
+        span: null,
+        stats: [],
+      },
+    ],
   },
 
   // ─── 4. Expertise ────────────────────────────────────────────────────
@@ -65,25 +120,21 @@ export const homeSections: Section[] = [
         title: "Residential Solar\n& Storage",
         image: null,
         icon: null,
-        textColor: "text-black",
       },
       {
         title: "Battery Storage\n& Smart Home",
         image: null,
         icon: null,
-        textColor: "text-black",
       },
       {
         title: "Commercial\n& Off-Grid",
         image: null,
         icon: null,
-        textColor: "text-black",
       },
       {
         title: "Electric Vehicle\nCharging",
         image: null,
         icon: null,
-        textColor: "text-black",
       },
     ],
   },
@@ -189,10 +240,8 @@ export const homeSections: Section[] = [
     __component: "home.craftmanship",
     subtitle: "Industry-Leading Brands &",
     title: "Craftsmanship",
-    defaultTabId: "panels",
     categories: [
       {
-        id: "inverters",
         label: "Inverters",
         logos: [
           { name: "AIKO", src: null },
@@ -203,7 +252,6 @@ export const homeSections: Section[] = [
         ],
       },
       {
-        id: "panels",
         label: "Panels",
         logos: [
           { name: "AIKO", src: null },
@@ -216,7 +264,6 @@ export const homeSections: Section[] = [
         ],
       },
       {
-        id: "battery-storage",
         label: "Battery Storage",
         logos: [
           { name: "Canadian Solar", src: null },
@@ -226,7 +273,6 @@ export const homeSections: Section[] = [
         ],
       },
       {
-        id: "ev-charger",
         label: "EV Charger",
         logos: [
           { name: "Jinko Solar", src: null },

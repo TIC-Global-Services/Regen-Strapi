@@ -60,6 +60,11 @@
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
+    },
+    "cards": {
+      "type": "component",
+      "component": "home.stat-card",
+      "repeatable": true
     }
   },
   "config": {}

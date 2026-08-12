@@ -21,6 +21,9 @@
     },
     "ctaText": {
       "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
     }
   },
   "config": {}

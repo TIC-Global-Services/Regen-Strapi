@@ -17,10 +17,6 @@
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
-    },
-    "textColor": {
-      "type": "enumeration",
-      "enum": ["text-black", "text-white"]
     }
   },
   "config": {}

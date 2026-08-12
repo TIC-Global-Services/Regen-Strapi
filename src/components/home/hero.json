@@ -34,18 +34,6 @@
     "buttonLink": {
       "type": "string"
     },
-    "buttonTextColor": {
-      "type": "enumeration",
-      "enum": ["text-black", "text-white"]
-    },
-    "subtitleColor": {
-      "type": "enumeration",
-      "enum": ["text-white", "text-black"]
-    },
-    "descriptionColor": {
-      "type": "enumeration",
-      "enum": ["text-white", "text-black"]
-    },
     "showOverlay": {
       "type": "boolean",
       "default": true

@@ -11,9 +11,6 @@
     "title": {
       "type": "string"
     },
-    "defaultTabId": {
-      "type": "string"
-    },
     "categories": {
       "type": "component",
       "component": "home.brand-category",

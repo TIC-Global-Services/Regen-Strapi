@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_home_stat_cards",
+  "info": {
+    "displayName": "Stat Card"
+  },
+  "options": {},
+  "attributes": {
+    "count": {
+      "type": "integer"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "column": {
+      "type": "integer"
+    },
+    "span": {
+      "type": "integer"
+    },
+    "stats": {
+      "type": "component",
+      "component": "home.stat",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
