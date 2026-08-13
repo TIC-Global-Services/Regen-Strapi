@@ -112,10 +112,10 @@ export const brandsSections = [
     subtitle: "Brand",
     title: "Cards",
     inverters: [
-      { name: "Fronius", logo: null, origin: "austria", positioning: "Austrian-engineered, internationally recognised as a benchmark for inverter reliability. The GEN24 Plus Series is the premium choice for buyers who want a 20-year warranty option and built-in backup during blackouts.", range: "GEN24 Plus \u00b7 Primo & Symo GEN24 \u00b7 3\u201320 kW", warranty: "10 yr (20 extendable)" },
-      { name: "Sungrow", logo: null, origin: "china - global", positioning: "The world's largest inverter manufacturer by volume. The SH-Series hybrid inverters are engineered specifically for residential solar + battery systems, with excellent efficiency and a mature Australian service network.", range: "SH5.0RS \u00b7 SH10RT \u00b7 5\u201320 kW", warranty: "10 yr" },
-      { name: "GoodWe", logo: null, origin: "china-global", positioning: "A strong value proposition for homeowners who want a premium hybrid feature-set without the top-tier price. The ET Series offers three-phase backup and wide battery compatibility.", range: "ET Series \u00b7 ES Series \u00b7 5\u201315 kW", warranty: "10 yr" },
-      { name: "iStore", logo: null, origin: "china-global", positioning: "Locally supported, inverter-agnostic, with strong compatibility across a wide battery range. The hybrid inverter pairs well with the iStore battery and integrates seamlessly into whole-home iStore ecosystems.", range: "Hybrid Inverter \u00b7 3\u201310 kW", warranty: "10 yr" },
+      { name: "Fronius", logo: null, origin: "Austria", positioning: "Austrian-engineered, internationally recognised as a benchmark for inverter reliability. The GEN24 Plus Series is the premium choice for buyers who want a 20-year warranty option and built-in backup during blackouts.", range: "GEN24 Plus \u00b7 Primo & Symo GEN24 \u00b7 3\u201320 kW", warranty: "10 yr (20 extendable)" },
+      { name: "Sungrow", logo: null, origin: "China - Global", positioning: "The world's largest inverter manufacturer by volume. The SH-Series hybrid inverters are engineered specifically for residential solar + battery systems, with excellent efficiency and a mature Australian service network.", range: "SH5.0RS \u00b7 SH10RT \u00b7 5\u201320 kW", warranty: "10 yr" },
+      { name: "GoodWe", logo: null, origin: "China - Global", positioning: "A strong value proposition for homeowners who want a premium hybrid feature-set without the top-tier price. The ET Series offers three-phase backup and wide battery compatibility.", range: "ET Series \u00b7 ES Series \u00b7 5\u201315 kW", warranty: "10 yr" },
+      { name: "iStore", logo: null, origin: "China - Global", positioning: "Locally supported, inverter-agnostic, with strong compatibility across a wide battery range. The hybrid inverter pairs well with the iStore battery and integrates seamlessly into whole-home iStore ecosystems.", range: "Hybrid Inverter \u00b7 3\u201310 kW", warranty: "10 yr" },
     ],
   },
   {
@@ -133,7 +133,7 @@ export const brandsSections = [
   {
     __component: "shared.faq" as const,
     title: "FAQ",
-    sectionTitle: "FAQ",
+    sectionTitle: "Entries",
     listTitle: "Frequently Asked Questions",
     image: null,
     items: [

@@ -10,6 +10,7 @@ export const dealsSections = [
   },
   {
     __component: "deals.philosophy" as const,
+    badge: "OUR PHILOSOPHY",
     subtitle: "The Cheapest Quote Is Usually",
     title: "The Most Expensive System Over 25 Years.",
     paragraphs: [
@@ -23,6 +24,7 @@ export const dealsSections = [
     title: "Right Now.",
     description: "Regen Power Runs Seasonal And Campaign-Based Offers Across Solar, Battery, And Solar-Plus-Battery Bundles. Current Promotions Below \u2014 Changes Month To Month.",
     ctaText: "Get This Bundle Quoted",
+    ctaLink: "#quote-form",
     promotions: [
       { title: "Pre-May Rebate Boost \u2014 Battery Bundle", description: "6.6 KW Solar + 10 KWh Battery Package With All Three Rebates Stacked. Lock In The Higher Pre-May-1 Federal Rebate Value." },
       { title: "Signature Solar Package", description: "LONGi Hi-MO + Fronius GEN24 Plus \u2014 Our Premium Solar-Only Tier For Homeowners Not Adding A Battery In This Cycle." },
