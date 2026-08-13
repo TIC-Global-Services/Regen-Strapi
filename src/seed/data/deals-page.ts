@@ -33,6 +33,7 @@ export const dealsSections = [
   },
   {
     __component: "shared.split-section" as const,
+    badge: "THE BUNDLE",
     subtitle: "Why Solar Plus Battery",
     title: "Is The Deal Of 2026.",
     description: "A Solar-Only System Saves You Money During The Day. A Solar-Plus-Battery System Saves You Money Around The Clock \u2014 And Right Now, In 2026, The Rebate Stack On A Battery Is The Strongest It Has Ever Been In Western Australia, Or Likely Will Be Again. Three Rebates, A No-Interest Loan, And Premium Components From A Single Installer. That's The Bundle We'd Recommend To Most Perth Households Installing In 2026.",

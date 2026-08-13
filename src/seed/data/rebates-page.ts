@@ -32,7 +32,7 @@ export const rebatesSections = [
     __component: "shared.split-section" as const,
     subtitle: "Around 30% Off",
     title: "A New Home Battery",
-    description: "The Cheaper Home Batteries Program supports battery storage through 2030, but the promoted value stepped down over time. Quotes issued after Thursday, May 1, 2026 should reflect the lower post-step-down rebate position.",
+    description: "The Cheaper Home Batteries Program now supports battery storage through to 2030 but rebates decrease over time. Install before 1 May 2026 and rebates sit at roughly $300 per kWh, saving around $3,000 on a typical 10 kWh battery. After that date, the value reduces.",
     image: null,
     imagePosition: "left",
     badge: "Federal Battery Rebate",
@@ -42,7 +42,7 @@ export const rebatesSections = [
     badge: "WA State Rebate",
     subtitle: "Extra WA-only Savings",
     title: "On Top Of The Federal Rebate",
-    description: "Launched on Tuesday, July 1, 2025, the WA Residential Battery Scheme provides state support for home batteries that can be stacked with the federal program.",
+    description: "Launched on 1 July 2025, the WA Residential Battery Scheme provides a state rebate for home batteries that can be combined with the federal Cheaper Home Batteries Program, with funding for up to 100,000 installations.",
     cards: [
       { name: "Synergy", logo: null, perKwh: "$130", cap: "10 kWh", maximumRebate: "$1,300" },
       { name: "Horizon Power", logo: null, perKwh: "$380", cap: "10 kWh", maximumRebate: "$3,800" },
@@ -50,6 +50,7 @@ export const rebatesSections = [
   },
   {
     __component: "rebates.loan-benefits" as const,
+    badge: "No-Interest Low",
     subtitle: "Up To $10,000, Interest-Free",
     title: "For The Balance After Rebates",
     description: "Alongside the rebates, eligible WA households can access a no-interest loan administered by Plenti (Australian Credit Licence holder) to cover the out-of-pocket portion of a battery or solar-plus-battery install. There's no interest, no early repayment fees, and flexible 3–10 year terms.",

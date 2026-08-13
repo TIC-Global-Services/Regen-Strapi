@@ -20,8 +20,8 @@ export const brandsSections = [
   {
     __component: "brands.tier1-means" as const,
     subtitle: "What TIER-1 Means",
-    title: "Who'll Honour The Warranty \u2014 Not Who Makes The Best Panel.",
-    description: "Tier-1 Is A Bloomberg New Energy Finance Classification. It Doesn't Rate Panel Efficiency, Temperature Tolerance, Or Durability. What It Rates Is Bankability \u2014 Whether Banks Are Willing To Finance Projects Using That Manufacturer's Panels Without Recourse.",
+    title: "Tier-1 Is About Who'll Honour The Warranty \u2014 Not Who Makes The Best Panel.",
+    description: " \"Tier-1\" Is A Bloomberg New Energy Finance Classification. It Doesn't Rate Panel Efficiency, Temperature Tolerance, Or Durability. What It Rates Is Bankability \u2014 Whether Banks Are Willing To Finance Projects Using That Manufacturer's Panels Without Recourse.",
     image: null,
     imagePosition: "left",
   },
