@@ -2,7 +2,7 @@ export const solarSections = [
     {
     __component: "solar.hero" as const,
     subtitle: "Solar Power Engineered For The",
-    mainTitle: "Perth Climate",
+    title: "Perth Climate",
     description: "WA’s #1 Rated Solar Installer With 45,000+ Installations Since 2003. CEC-Approved. ProductReview Award Winner 2021–2026.",
     ctaText: "Get Your Free Quote",
     ctaLink: "#quote-form",
@@ -10,6 +10,8 @@ export const solarSections = [
   },
 {
     __component: "solar.stats-and-intro" as const,
+    introSubtitle: "A Solar System Is Two Things",
+    introTitle: "Working Together.",
     tickerItems: [
       { text: "45,000+ Solar" },
       { text: "3000+ Storage Installations" },
@@ -27,10 +29,10 @@ export const solarSections = [
     subtitle: "Sun To Synergy Bill",
     title: "In Four Steps",
     steps: [
-      { stepNumber: "1", title: "Sunlight Hits The Panels", description: "Photovoltaic Cells Inside Each Panel Absorb Sunlight And Convert It Into Direct Current (DC) Electricity. A Typical Modern Panel Generates 420–450 Watts Under Peak Sun Conditions.", image: null },
-      { stepNumber: "2", title: "DC Flows To The Inverter", description: "DC Electricity Travels Down The String Cables To Your Inverter. The Inverter Converts DC Into Alternating Current (AC) — The Form Of Electricity Your Appliances, Air-Conditioning, And Lights Actually Use.", image: null },
-      { stepNumber: "3", title: "Your Home Uses It First", description: "AC Power Flows Into Your Switchboard And Powers Whatever's Running Right Now — Fridge, Pool Pump, Air-Con, EV Charger. This Is Where You Save The Most, Because You're Replacing Grid Electricity In Real Time.", image: null },
-      { stepNumber: "4", title: "Surplus Exports To Grid", description: "Anything Your Home Isn't Using Is Exported To Synergy For A Feed-In Credit (DEBS) — Or, If You Have A Battery, Stored For Use After Sundown. A Well-Designed System Maximises Self-Consumption Before Export.", image: null },
+      { title: "Sunlight Hits The Panels", description: "Photovoltaic Cells Inside Each Panel Absorb Sunlight And Convert It Into Direct Current (DC) Electricity. A Typical Modern Panel Generates 420–450 Watts Under Peak Sun Conditions.", image: null },
+      { title: "DC Flows To The Inverter", description: "DC Electricity Travels Down The String Cables To Your Inverter. The Inverter Converts DC Into Alternating Current (AC) — The Form Of Electricity Your Appliances, Air-Conditioning, And Lights Actually Use.", image: null },
+      { title: "Your Home Uses It First", description: "AC Power Flows Into Your Switchboard And Powers Whatever's Running Right Now — Fridge, Pool Pump, Air-Con, EV Charger. This Is Where You Save The Most, Because You're Replacing Grid Electricity In Real Time.", image: null },
+      { title: "Surplus Exports To Grid", description: "Anything Your Home Isn't Using Is Exported To Synergy For A Feed-In Credit (DEBS) — Or, If You Have A Battery, Stored For Use After Sundown. A Well-Designed System Maximises Self-Consumption Before Export.", image: null },
     ],
   },
   {
@@ -38,6 +40,8 @@ export const solarSections = [
     subtitle: "Six Tier-1 Panel Brands",
     title: "One Quality Standard",
     description: "All Our Panels Are BloombergNEF Tier-1, Trusted, Proven, And Built For The Long Run. These Are Manufacturers You Can Rely On 25 Years From Now. We Use N-Type TOPCon Cells, Today's Standard For Performance. More Efficiency, Better Low-Light Output, And Less Degradation Than Older Tech.",
+    ctaText: "See our full panel range",
+    ctaHref: "",
     brands: [
       { name: "JA Solar", logo: null },
       { name: "JinkoSolar", logo: null },
@@ -54,7 +58,7 @@ export const solarSections = [
     description: "The Inverter Is The Brain Of Your Solar System — Turning DC From Panels Into Usable AC Power. It Also Manages Energy Flow, Battery Charging, And EV Integration. There Are Three Main Types, And The Right One Depends On Your Roof, Battery Plans, And Future Energy Needs.",
     inverters: [
       {
-        name: "String Inverter", title: "String", backgroundImage: null,
+        title: "String", backgroundImage: null,
         infoCards: [
           { label: "How It Works", text: "One Central Inverter That Converts DC Solar Power Into AC Power For Immediate Household Use." },
           { label: "Best For", text: "Straightforward Roofs With A Single Orientation. No Battery Planned." },
@@ -64,7 +68,7 @@ export const solarSections = [
         ],
       },
       {
-        name: "Hybrid Inverter", title: "Hybrid", backgroundImage: null,
+        title: "Hybrid", backgroundImage: null,
         infoCards: [
           { label: "How It Works", text: "One Central Inverter That Handles Both Solar Conversion And Battery Charging In A Single Unit." },
           { label: "Best For", text: "Any Home Considering A Battery Now Or Within 5 Years, Including Tesla Powerwall." },
@@ -74,7 +78,7 @@ export const solarSections = [
         ],
       },
       {
-        name: "Micro Inverter", title: "Micro", backgroundImage: null,
+        title: "Micro", backgroundImage: null,
         infoCards: [
           { label: "How It Works", text: "A Small Inverter Sits Behind Each Individual Panel. AC Is Generated On The Roof, Not In A Central Box." },
           { label: "Best For", text: "Complex Roofs, Partial Shade, Multiple Orientations, Or Demanding Monitoring." },
@@ -86,7 +90,7 @@ export const solarSections = [
     ],
   },
   {
-    __component: "solar.specs-table" as const,
+    __component: "solar.specs-row-cards" as const,
     subtitle: "Five Specs That Actually",
     title: "Affects Your Returns",
     description: "Most Solar Brochures List A Dozen Specifications, Half Of Which Have No Meaningful Impact On Your Long-Term Savings. These Five Are The Ones Worth Understanding.",
@@ -99,15 +103,21 @@ export const solarSections = [
     ]
   },
   {
-    __component: "solar.sizing-guide" as const,
+    __component: "solar.sizing-guide-table" as const,
     subtitle: "How Big Should My",
     title: "Solar System Be?",
     description: "The Right System Size Depends On Four Things: Your Daily Power Use, Your Household Size, The Phase Type Of Your Home's Power Supply, And How Much Usable Roof Space You Have.",
-    tableRows: [
-      { dailyUse: "Under 15 kWh/day", recommendedSize: "5 kW system", typicalHousehold: "1–2 people, gas hot water, modest a/c", phaseRequired: "Single-phase" },
-      { dailyUse: "15–25 kWh/day", recommendedSize: "6.6 kW system", typicalHousehold: "3–4 people, ducted a/c, average Perth home", phaseRequired: "Single-phase (standard)" },
-      { dailyUse: "25–35 kWh/day", recommendedSize: "10 kW system", typicalHousehold: "4–5 people, pool, electric hot water, full a/c", phaseRequired: "Three-phase required" },
-      { dailyUse: "35+ kWh/day", recommendedSize: "13 kW+ system", typicalHousehold: "Large home, EV charging, multiple heat pumps", phaseRequired: "Three-phase required" },
+    labelColumnTitle: "Daily Use",
+    columns: [
+      { title: "Recommended Size" },
+      { title: "Typical Household" },
+      { title: "Phase Required" },
+    ],
+    rows: [
+      { label: "Under 15 kWh/day", values: [{ text: "5 kW system" }, { text: "1–2 people, gas hot water, modest a/c" }, { text: "Single-phase" }] },
+      { label: "15–25 kWh/day", values: [{ text: "6.6 kW system" }, { text: "3–4 people, ducted a/c, average Perth home" }, { text: "Single-phase (standard)" }] },
+      { label: "25–35 kWh/day", values: [{ text: "10 kW system" }, { text: "4–5 people, pool, electric hot water, full a/c" }, { text: "Three-phase required" }] },
+      { label: "35+ kWh/day", values: [{ text: "13 kW+ system" }, { text: "Large home, EV charging, multiple heat pumps" }, { text: "Three-phase required" }] },
     ],
     sizingCards: [
       { title: "Your Daily Power Use (KWh/Day)", description: "Look At Your Most Recent Synergy Bill. The Total KWh Used ÷ Days In The Billing Period = Your Average Daily Use. Typical Perth Households Sit Between 15 And 30 KWh/Day.", image: null },

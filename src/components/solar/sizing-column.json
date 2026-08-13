@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_solar_sizing_columns",
+  "info": {
+    "displayName": "Sizing Column"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

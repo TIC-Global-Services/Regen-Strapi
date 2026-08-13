@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_solar_specs_table_sections",
+  "collectionName": "components_solar_specs_row_cards_sections",
   "info": {
-    "displayName": "Specs Table"
+    "displayName": "Specs Row Cards"
   },
   "options": {},
   "attributes": {

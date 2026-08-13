@@ -5,19 +5,14 @@
   },
   "options": {},
   "attributes": {
-    "dailyUse": {
+    "label": {
       "type": "string",
       "required": true
     },
-    "recommendedSize": {
-      "type": "string",
-      "required": true
-    },
-    "typicalHousehold": {
-      "type": "string"
-    },
-    "phaseRequired": {
-      "type": "string"
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item"
     }
   },
   "config": {}

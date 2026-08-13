@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_solar_sizing_guide_sections",
+  "collectionName": "components_solar_sizing_guide_table_sections",
   "info": {
-    "displayName": "Sizing Guide"
+    "displayName": "Sizing Guide Table"
   },
   "options": {},
   "attributes": {
@@ -14,7 +14,15 @@
     "description": {
       "type": "text"
     },
-    "tableRows": {
+    "labelColumnTitle": {
+      "type": "string"
+    },
+    "columns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.sizing-column"
+    },
+    "rows": {
       "type": "component",
       "repeatable": true,
       "component": "solar.sizing-row"
