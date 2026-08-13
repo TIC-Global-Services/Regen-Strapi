@@ -14,6 +14,12 @@
     "bottomSubtitle": {
       "type": "string"
     },
+    "centerButtonText": {
+      "type": "string"
+    },
+    "centerButtonLink": {
+      "type": "string"
+    },
     "cards": {
       "type": "component",
       "component": "shared.feature-card",

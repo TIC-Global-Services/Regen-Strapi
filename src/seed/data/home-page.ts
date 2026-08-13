@@ -339,6 +339,8 @@ export const homeSections: Section[] = [
     __component: "home.smartsolar",
     topSubtitle: "Explore Our",
     title: "Latest news & insights",
+    centerButtonText: "View All Articles",
+    centerButtonLink: "/blog",
     cards: [
       {
         title: "STC Upfront Discount",
