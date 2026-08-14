@@ -4,7 +4,7 @@
 FROM node:20-alpine AS build
 WORKDIR /app
 
-RUN apk add --no-cache libc6-compat vips-dev
+RUN apk add --no-cache libc6-compat vips-dev python3 make g++
 
 COPY package.json package-lock.json ./
 RUN npm ci
