@@ -50,27 +50,22 @@ export const batteryProductSections = [
     topSubtitle: "",
     title: "Start with how you'll use it",
     description: "The right battery for you depends less on brand prestige and more on how your household uses energy. Four questions we walk every customer through:",
-    defaultFeaturedIndex: 2,
     cards: [
       {
         title: "How much energy do you use — and when?",
         description: "Your last four Synergy bills tell us this. Most Perth households land in the 18–35 kWh/day range. Evening-heavy users (families, home workers, EV owners) need bigger batteries than working-couple households who are home only briefly.",
-        isFeatured: false,
       },
       {
-        title: "what's your eV plan?",
+        title: "What's your EV plan?",
         description: "If you own or plan to own an EV in 2026–2027, your battery sizing changes meaningfully. A 10 kWh battery that would otherwise be perfect is too small to cover evening use plus overnight EV charging. Sigenergy specifically is designed for the EV use case via its integrated DC charger.",
-        isFeatured: false,
       },
       {
         title: "How important is blackout backup?",
         description: "All the batteries on this page can provide backup, but some (Tesla Powerwall 3, Sigenergy, BYD with backup box) do it seamlessly — zero transition time, full-home coverage. Others require you to pre-select essential circuits.",
-        isFeatured: false,
       },
       {
         title: "Do you already have solar, or are we doing both?",
         description: "If you have solar: we need to match the battery to your existing inverter (AC-coupled or DC-coupled). If we're installing both: we can pair a hybrid inverter with the battery for maximum efficiency.",
-        isFeatured: false,
       },
     ],
   },
@@ -111,9 +106,6 @@ export const batteryProductSections = [
   },
   {
     __component: "battery-product.our-brands" as const,
-    topSubtitle: "Our Full",
-    title: "Battery Range",
-    description: "Every brand we install meets strict criteria for safety, reliability, warranty support, and real-world performance in Perth's unique climate.",
     brands: [
       {
         title: "Tesla Powerwall 3",
@@ -391,13 +383,13 @@ export const batteryProductSections = [
       },
       {
         title: "5 Ways EV Charging\nWorks Better With Solar",
-        description: "",
+        description: "Pairing your EV charger with rooftop solar and battery storage lets you fuel your car with the sun, dramatically cut per-km running costs, and charge during your battery's cheapest stored energy.",
         image: null,
         textPosition: "top",
       },
       {
         title: "Why More Australians Are\nSwitching To Renewable\nEnergy",
-        description: "",
+        description: "Rising power prices, generous state and federal rebates, and WA's reliable sunshine are driving more households to generate and store their own clean energy rather than buy from the grid.",
         image: null,
         textPosition: "top",
       },

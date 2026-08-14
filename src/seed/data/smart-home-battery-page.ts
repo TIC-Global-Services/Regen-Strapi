@@ -103,7 +103,7 @@ export const smartHomeBatterySections = [
       },
       {
         topSubtitle: "Move Your Energy",
-        title: "Use To When It's Cheapest",
+        title: "Use It When It's Cheapest",
         mainDescription:
           "In 2026, Perth's Distributed Energy Buyback Scheme (DEBS) pays just 2.25c per kWh for solar exported off-peak, and 10c per kWh during the 3pm–9pm window. But grid electricity costs you around 30c per kWh on the A1 tariff. A smart battery exploits that gap automatically.",
         blocks: [
@@ -321,31 +321,26 @@ export const smartHomeBatterySections = [
       "A smart home battery install is more than bolting a battery to a wall. The difference between a basic install and a properly commissioned smart system shows up every day afterwards.",
     blocks: [
       {
-        theme: "light",
         title: "VPP Enrolment Verified End-To-End",
         description:
           "We enrol your system in Synergy's Battery Rewards (or Horizon Power's Community Wave), confirm the dispatch profile with the retailer, and test a simulated activation before handover.",
       },
       {
-        theme: "light",
         title: "Automation Rules Configured To Your Usage",
         description:
           "Based on your historical Synergy bill data, we set rules for reserve capacity, EV charging windows, hot water scheduling and backup priority.",
       },
       {
-        theme: "light",
         title: "App Set Up And Walked Through In Person",
         description:
           "We log in to your device, set up notifications, configure dashboards and walk you through daily, weekly and monthly views. You leave knowing exactly what to tap.",
       },
       {
-        theme: "dark",
         title: "Home Automation Integration (If Requested)",
         description:
           "Home Assistant, Google Home, Apple Home — we'll configure the integration at handover, not leave it for you to figure out.",
       },
       {
-        theme: "light",
         title: "90-Day Tune-Up",
         description:
           "We review your first 90 days of operation, tune automation rules based on actual behaviour, and confirm VPP performance. Your system gets smarter over time.",

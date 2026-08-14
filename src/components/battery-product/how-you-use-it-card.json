@@ -12,10 +12,6 @@
     "description": {
       "type": "text",
       "required": true
-    },
-    "isFeatured": {
-      "type": "boolean",
-      "default": false
     }
   },
   "config": {}

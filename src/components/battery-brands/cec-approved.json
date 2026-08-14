@@ -11,10 +11,6 @@
     "description": {
       "type": "text"
     },
-    "defaultFeaturedIndex": {
-      "type": "integer",
-      "default": 2
-    },
     "cards": {
       "type": "component",
       "repeatable": true,

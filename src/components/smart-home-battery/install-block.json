@@ -10,10 +10,6 @@
     },
     "description": {
       "type": "text"
-    },
-    "theme": {
-      "type": "enumeration",
-      "enum": ["white", "dark", "light"]
     }
   },
   "config": {}

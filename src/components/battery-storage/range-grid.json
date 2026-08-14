@@ -11,9 +11,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "text"
-    },
     "batteries": {
       "type": "component",
       "component": "battery-storage.range-card",

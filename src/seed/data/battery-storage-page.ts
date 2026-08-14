@@ -90,7 +90,6 @@ export const batteryStorageSections = [
     __component: "battery-storage.range-grid" as const,
     topSubtitle: "Five Ways Into",
     title: "Our Battery Range",
-    description: "Explore our premium battery storage options, each engineered for different needs and budgets.",
     batteries: [
       {
         title: "Turn Your Home Into A Smart Energy Hub",
@@ -185,22 +184,18 @@ export const batteryStorageSections = [
       {
         title: "What is a VPP?",
         description: "A network of home batteries — thousands of them — that Synergy or Horizon Power can call on during peak grid stress. Instead of firing up a gas peaker, the grid pulls a bit of stored energy from each participating battery.",
-        isPrimary: true,
       },
       {
         title: "How often does it happen?",
         description: "VPP events are rare — typically a handful of times a year, usually on the hottest summer evenings. Your battery automatically responds; you don't need to do anything.",
-        isPrimary: false,
       },
       {
         title: "What do you get for it?",
         description: "Most WA VPP programs pay an annual credit or per-event bonus for participating. Many households earn $150–$300/year on top of their bill savings.",
-        isPrimary: false,
       },
       {
         title: "Do you lose control?",
         description: "No. Your battery stays charged and ready for your own backup needs. VPP events are coordinated so your household always has enough stored power to cover its own essential loads.",
-        isPrimary: false,
       },
     ],
   },
@@ -271,6 +266,7 @@ export const batteryStorageSections = [
     title: "That Made The Switch",
     centerButton: true,
     centerButtonText: "View our full portfolio of 113+ installs",
+    centerButtonLink: "/portfolio",
     stories: [
       {
         home: "Family home, Canning Vale",
@@ -294,8 +290,8 @@ export const batteryStorageSections = [
   },
   {
     __component: "shared.faq" as const,
-    title: "Straight Answers To The Questions Perth Homeowners",
-    sectionTitle: "Ask Us Most",
+    title: "FAQ",
+    sectionTitle: "Battery Storage",
     listTitle: "Frequently Asked Questions",
     image: null,
     items: [

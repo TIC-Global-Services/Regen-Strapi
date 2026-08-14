@@ -461,7 +461,6 @@ export const batteryBrandsSections = [
     __component: "battery-brands.cec-approved" as const,
     title: 'What "CEC Approved" And "Supported Solutions List" Actually Mean',
     description: "Two Different Lists — Both Matter For Different Reasons. Short Version:",
-    defaultFeaturedIndex: 2,
     cards: [
       {
         title: "What This Means For You",

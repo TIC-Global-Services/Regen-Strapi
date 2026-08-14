@@ -34,6 +34,17 @@
       "type": "component",
       "repeatable": true,
       "component": "battery-rebates.list-item"
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": ["left", "right"],
+      "default": "left"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
     }
   },
   "config": {}
