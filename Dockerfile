@@ -29,6 +29,7 @@ RUN npm ci --omit=dev && npm cache clean --force
 
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/public ./public
+COPY --from=build /app/scripts ./scripts
 
 RUN mkdir -p public/uploads .tmp && chown -R strapi:strapi /app
 

@@ -12,6 +12,7 @@
     "start": "strapi start",
     "strapi": "strapi",
     "migrate:wordpress": "node scripts/migrate-wordpress.js",
+    "seed": "node scripts/seed.js",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
   },
