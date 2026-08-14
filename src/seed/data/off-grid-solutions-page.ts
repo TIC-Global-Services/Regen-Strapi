@@ -386,7 +386,7 @@ export const offGridSolutionsSections = [
   {
     __component: "shared.faq" as const,
     title: "FAQ",
-    sectionTitle: "FAQ",
+    sectionTitle: "Entries",
     listTitle: "Off-Grid FAQs",
     image: null,
     items: [

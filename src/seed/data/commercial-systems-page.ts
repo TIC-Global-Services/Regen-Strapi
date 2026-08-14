@@ -14,7 +14,7 @@ export const commercialSystemsSections = [
     subtitle: "Commercial Power In WA Is The Highest It Has Ever Been",
     title: "And The Cheapest It Will Ever Be.",
     description:
-      "Rising Commercial Power Tariffs Since 2018 And Falling Solar Costs (Now ~$110\u2013$140/W) Make Solar A Smart Investment, With Systems Typically Paying Back In 2\u20134 Years And Delivering Low-Cost Power Long-Term\u2014Especially For Businesses That Operate During The Day.",
+      "Rising Commercial Power Tariffs Since 2018 And Falling Solar Costs (Now ~$1.10\u2013$1.40/W) Make Solar A Smart Investment, With Systems Typically Paying Back In 2\u20134 Years And Delivering Low-Cost Power Long-Term\u2014Especially For Businesses That Operate During The Day.",
     cardBackground: null,
     stats: [
       { value: "2-4 Years", label: "Typical Payback" },
@@ -199,7 +199,7 @@ export const commercialSystemsSections = [
     packages: [
       {
         title: "Small-scale Technology Certificates (STCs)",
-        desc: "Systems Up To 100kw",
+        desc: "Systems Up To 100kW",
         bgClass: "bg-[#E5EFD5] text-black",
         items: [
           {
@@ -216,7 +216,7 @@ export const commercialSystemsSections = [
       },
       {
         title: "Large-scale Generation Certificates (LGCs)",
-        desc: "Systems Above 100kw",
+        desc: "Systems Above 100kW",
         bgClass: "bg-[#A0CF44] text-black",
         items: [
           {
@@ -355,7 +355,7 @@ export const commercialSystemsSections = [
   {
     __component: "shared.faq" as const,
     title: "FAQ",
-    sectionTitle: "FAQ",
+    sectionTitle: "Entries",
     listTitle: "Frequently Asked Questions",
     image: null,
     items: [
@@ -416,6 +416,7 @@ export const commercialSystemsSections = [
     description:
       "System Size Depends On Your Energy Usage, Roof Space, And Future Needs. Our Experts Design Systems That Balance Performance And Cost For Optimal ROI.",
     buttonText: "Get Started",
+    buttonHref: "#quote-form",
     backgroundImage: null,
   },
 ];
