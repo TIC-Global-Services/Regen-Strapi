@@ -7,12 +7,14 @@
  *   node scripts/seed.js
  */
 
-const { compileStrapi, createStrapi } = require('@strapi/strapi');
+const path = require('path');
+const { createStrapi } = require('@strapi/strapi');
 const { runSeed } = require('../dist/src/seed');
 
 async function main() {
-  const appContext = await compileStrapi();
-  const app = await createStrapi(appContext).load();
+  const appDir = process.cwd();
+  const distDir = path.join(appDir, 'dist');
+  const app = await createStrapi({ appDir, distDir }).load();
 
   try {
     await runSeed(app);
