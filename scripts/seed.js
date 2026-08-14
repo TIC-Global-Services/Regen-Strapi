@@ -19,7 +19,7 @@ async function main() {
   try {
     await runSeed(app);
   } finally {
-    await app.destroy();
+    await app.destroy().catch(() => {});
   }
 
   console.log('\nDone.');
