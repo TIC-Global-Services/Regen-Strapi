@@ -24,7 +24,7 @@ RUN addgroup -S strapi && adduser -S strapi -G strapi
 ENV NODE_ENV=production
 ENV SHARP_IGNORE_GLOBAL_LIBVIPS=1
 
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json tsconfig.json ./
 RUN npm ci --omit=dev && npm cache clean --force
 
 COPY --from=build /app/dist ./dist
