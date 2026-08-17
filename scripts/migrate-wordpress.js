@@ -25,7 +25,7 @@ const os = require('os');
 const fs = require('fs/promises');
 const crypto = require('crypto');
 const mysql = require('mysql2/promise');
-const { compileStrapi, createStrapi } = require('@strapi/strapi');
+const { createStrapi } = require('@strapi/strapi');
 
 const WP_DB = {
   host: process.env.WP_DB_HOST || '127.0.0.1',
@@ -301,8 +301,9 @@ async function main() {
 
   const conn = await mysql.createConnection(WP_DB);
 
-  const appContext = await compileStrapi();
-  const app = await createStrapi(appContext).load();
+  const appDir = process.cwd();
+  const distDir = path.join(appDir, 'dist');
+  const app = await createStrapi({ appDir, distDir }).load();
   app.log.level = 'error';
 
   try {
