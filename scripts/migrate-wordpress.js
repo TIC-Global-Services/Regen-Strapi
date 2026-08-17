@@ -98,13 +98,25 @@ async function fetchImageFile(guid) {
   }
 }
 
-async function uploadImageToStrapi(strapi, guid, name) {
+const folderCache = new Map();
+
+async function getOrCreateFolder(strapi, name) {
+  if (!name) return null;
+  if (folderCache.has(name)) return folderCache.get(name);
+  const existing = await strapi.db.query('plugin::upload.folder').findOne({ where: { name, parent: null } });
+  const folder = existing || (await strapi.plugin('upload').service('folder').create({ name, parent: null }));
+  folderCache.set(name, folder.id);
+  return folder.id;
+}
+
+async function uploadImageToStrapi(strapi, guid, name, folderName) {
   const file = await fetchImageFile(guid);
   if (!file) return null;
   try {
+    const folderId = await getOrCreateFolder(strapi, folderName);
     const uploadService = strapi.plugin('upload').service('upload');
     const [uploaded] = await uploadService.upload({
-      data: { fileInfo: { name: name || file.filename } },
+      data: { fileInfo: { name: name || file.filename, folder: folderId } },
       files: {
         filepath: file.filepath,
         originalFilename: file.filename,
@@ -187,7 +199,7 @@ async function migrateBlog(strapi, conn) {
 
     const categories = await getCategories(conn, row.ID);
     const guid = await getThumbnailGuid(conn, row.ID);
-    const imageId = guid ? await uploadImageToStrapi(strapi, guid, row.post_title) : null;
+    const imageId = guid ? await uploadImageToStrapi(strapi, guid, row.post_title, 'Blog') : null;
 
     const data = {
       title: row.post_title,
@@ -230,7 +242,7 @@ async function migratePress(strapi, conn) {
 
     const categories = await getCategories(conn, row.ID, ['Press Release']);
     const guid = await getThumbnailGuid(conn, row.ID);
-    const imageId = guid ? await uploadImageToStrapi(strapi, guid, row.post_title) : null;
+    const imageId = guid ? await uploadImageToStrapi(strapi, guid, row.post_title, 'Press') : null;
 
     const data = {
       title: row.post_title,
@@ -267,7 +279,7 @@ async function migratePortfolio(strapi, conn) {
     }
 
     const guid = await getThumbnailGuid(conn, row.ID);
-    const imageId = guid ? await uploadImageToStrapi(strapi, guid, row.post_title) : null;
+    const imageId = guid ? await uploadImageToStrapi(strapi, guid, row.post_title, 'Portfolio') : null;
 
     const data = {
       title: row.post_title,
