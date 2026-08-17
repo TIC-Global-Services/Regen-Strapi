@@ -285,6 +285,7 @@ async function migratePortfolio(strapi, conn) {
       title: row.post_title,
       slug,
       description: makeDescription(row.post_excerpt, row.post_content),
+      content: cleanContent(row.post_content),
       featured: false,
     };
     if (imageId) data.image = imageId;
