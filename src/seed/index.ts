@@ -205,7 +205,6 @@ const pages = [
     uid: "api::home-page.home-page" as UID.ContentType,
     title: "Home",
     sections: homeSections,
-    fieldName: "data",
     seo: {
       metaTitle: "Regen Power | Solar & Battery Installer Perth",
       metaDescription:
