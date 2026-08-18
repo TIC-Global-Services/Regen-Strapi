@@ -1,0 +1,7 @@
+/**
+ * portfolio-project controller
+ */
+
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreController('api::portfolio-project.portfolio-project');
