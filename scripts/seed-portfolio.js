@@ -253,7 +253,10 @@ async function main() {
     if (!DRY_RUN && !SKIP_WIPE) await wipePortfolio(app);
     await seedPortfolio(app);
   } finally {
-    await app.destroy();
+    // strapi.destroy() can throw "Error: aborted" tearing down the DB pool
+    // even when every write above already completed successfully -- don't
+    // let a teardown race fail the whole run.
+    await app.destroy().catch((err) => console.warn(`  ! strapi teardown warning (safe to ignore): ${err.message}`));
   }
 
   console.log('\nDone.');
