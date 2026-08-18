@@ -40,6 +40,51 @@
     "location": {
       "type": "string"
     },
+    "suburb": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "filters": {
+      "type": "json"
+    },
+    "task": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "panels": {
+      "type": "string"
+    },
+    "panelModel": {
+      "type": "string"
+    },
+    "inverter": {
+      "type": "string"
+    },
+    "inverterModel": {
+      "type": "string"
+    },
+    "batterySize": {
+      "type": "string"
+    },
+    "energyYield": {
+      "type": "string"
+    },
+    "co2Saving": {
+      "type": "string"
+    },
     "featured": {
       "type": "boolean",
       "default": false

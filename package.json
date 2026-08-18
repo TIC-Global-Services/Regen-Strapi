@@ -12,6 +12,7 @@
     "start": "strapi start",
     "strapi": "strapi",
     "migrate:wordpress": "node scripts/migrate-wordpress.js",
+    "seed:portfolio": "node scripts/seed-portfolio.js",
     "seed": "node scripts/seed.js",
     "admin:reset-password": "node scripts/reset-admin-password.js",
     "upgrade": "npx @strapi/upgrade latest",
