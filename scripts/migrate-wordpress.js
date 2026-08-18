@@ -6,7 +6,10 @@
  * Maps:
  *   post_type=post, NOT in category "Press Release"  -> api::blog-article.blog-article
  *   post_type=post, IN category "Press Release"      -> api::press-article.press-article
- *   post_type=portfolio                               -> api::portfolio-project.portfolio-project
+ *
+ * Portfolio is NOT migrated here anymore -- it comes from the scraped
+ * portfolio-data.json export via scripts/seed-portfolio.js instead, which
+ * has richer structured fields than the raw WP post content ever did.
  *
  * publishedAt / createdAt / updatedAt are backdated to the original WP post_date.
  * Featured images are pulled from the live site (regenpower.com) via the WP
@@ -259,42 +262,6 @@ async function migratePress(strapi, conn) {
   console.log(`Press articles: ${rows.length} processed`);
 }
 
-async function migratePortfolio(strapi, conn) {
-  console.log('\n== Portfolio projects ==');
-  const [rows] = await conn.execute(
-    `SELECT p.ID, p.post_title, p.post_name, p.post_excerpt, p.post_content, p.post_date, p.post_date_gmt
-     FROM ${PREFIX}posts p
-     WHERE p.post_type = 'portfolio' AND p.post_status = 'publish'
-     ORDER BY p.post_date ASC${LIMIT ? ` LIMIT ${LIMIT}` : ''}`
-  );
-
-  for (const row of rows) {
-    const slug = sanitizeSlug(row.post_name, row.post_title);
-    const publishedAt = toIsoDate(row.post_date_gmt, row.post_date);
-    console.log(`- ${row.post_title} (${publishedAt.toISOString().slice(0, 10)})`);
-    if (DRY_RUN) continue;
-    if (await entryExists(strapi, 'api::portfolio-project.portfolio-project', slug)) {
-      console.log(`  = skip (exists): ${slug}`);
-      continue;
-    }
-
-    const guid = await getThumbnailGuid(conn, row.ID);
-    const imageId = guid ? await uploadImageToStrapi(strapi, guid, row.post_title, 'Portfolio') : null;
-
-    const data = {
-      title: row.post_title,
-      slug,
-      description: makeDescription(row.post_excerpt, row.post_content),
-      content: cleanContent(row.post_content),
-      featured: false,
-    };
-    if (imageId) data.image = imageId;
-
-    await upsertEntry(strapi, 'api::portfolio-project.portfolio-project', data, publishedAt);
-  }
-  console.log(`Portfolio projects: ${rows.length} processed`);
-}
-
 async function main() {
   console.log(`WP source: ${WP_DB.user}@${WP_DB.host}:${WP_DB.port}/${WP_DB.database} (prefix ${PREFIX})`);
   if (DRY_RUN) console.log('DRY_RUN=1 -- listing only, no Strapi writes, no image fetches');
@@ -310,7 +277,6 @@ async function main() {
   try {
     await migrateBlog(app, conn);
     await migratePress(app, conn);
-    await migratePortfolio(app, conn);
   } finally {
     await conn.end();
     await app.destroy();
