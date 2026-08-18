@@ -15,6 +15,14 @@
  * the source `image` URL and re-uploaded into the Strapi media library
  * (Portfolio folder).
  *
+ * Duplicate slugs in the source (13 collisions as of this export) get a
+ * `-2`, `-3`, ... suffix instead of crashing the run. A row that still
+ * fails to create (e.g. other validation error) is logged and skipped,
+ * the rest of the run continues. Entries whose scraped detail block
+ * doesn't match their suburb (a source-site scrape bug -- ~51/478 as of
+ * this export) are seeded as-is but listed as "suspect" at the end for
+ * manual review; there's no reliable way to auto-correct them.
+ *
  * Usage:
  *   DRY_RUN=1 node scripts/seed-portfolio.js        # preview only, no writes
  *   SEED_LIMIT=5 node scripts/seed-portfolio.js      # test with a few rows
@@ -44,11 +52,32 @@ function sanitizeSlug(slug, fallbackTitle) {
   return base || require('crypto').randomUUID().slice(0, 8);
 }
 
-function makeDescription(text, max = 160) {
-  const clean = (text || '').replace(/\s+/g, ' ').trim();
-  if (!clean) return '';
-  if (clean.length <= max) return clean;
-  return `${clean.slice(0, max - 1).trimEnd()}…`;
+const seenSlugs = new Map();
+
+function uniqueSlug(slug) {
+  const count = seenSlugs.get(slug) || 0;
+  seenSlugs.set(slug, count + 1);
+  return count === 0 ? slug : `${slug}-${count + 1}`;
+}
+
+// Boilerplate the source site leaks into scraped text (nav links etc).
+function stripBoilerplate(text) {
+  return (text || '')
+    .replace(/back to portfolio/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function makeDescription({ details, suburb, state, postcode, title }) {
+  const parts = [];
+  if (details.Task) parts.push(details.Task);
+  else if (details['System size'] || details['System Size']) parts.push(`${details['System size'] || details['System Size']} solar system`);
+  else if (details['Battery size'] || details['Battery Size']) parts.push(`${details['Battery size'] || details['Battery Size']} battery storage`);
+  if (details.Brand) parts.push(`by ${details.Brand}`);
+
+  const address = [suburb, state, postcode].filter(Boolean).join(' ');
+  const summary = [parts.join(' '), address].filter(Boolean).join(' — ');
+  return summary || title || '';
 }
 
 function buildContent(details) {
@@ -56,7 +85,7 @@ function buildContent(details) {
   const lines = [];
   for (const [key, value] of Object.entries(details || {})) {
     if (skip.has(key) || !value) continue;
-    lines.push(`**${key}:** ${value}`);
+    lines.push(`**${key}:** ${stripBoilerplate(value)}`);
   }
   return lines.join('\n\n');
 }
@@ -139,24 +168,41 @@ async function seedPortfolio(strapi) {
 
   console.log(`\n== Portfolio projects (${items.length}) ==`);
 
+  const suspect = [];
+  let created = 0;
+  let failed = 0;
+
   for (const row of items) {
-    const slug = sanitizeSlug(row.slug, row.title);
-    console.log(`- ${row.title}`);
+    const slug = uniqueSlug(sanitizeSlug(row.slug, row.title));
+    console.log(`- ${row.title}${slug !== sanitizeSlug(row.slug, row.title) ? ` (deduped slug: ${slug})` : ''}`);
     if (DRY_RUN) continue;
 
     const details = (row.details && row.details[0]) || {};
+    const rawLocation = stripBoilerplate(details.Location);
+    const suburb = row.suburb || null;
+
+    // Source site occasionally serves a mismatched detail block for a
+    // project (wrong address/brand/model) -- flag rather than silently
+    // trusting it.
+    if (suburb && rawLocation && !rawLocation.toLowerCase().includes(suburb.toLowerCase())) {
+      suspect.push({ id: row.id, title: row.title, expected: suburb, gotLocation: rawLocation });
+    }
+
+    const address = [row.suburb, row.state, row.postcode].filter(Boolean).join(', ');
+    const location = address || rawLocation || null;
+
     const imageId = row.image ? await uploadImageToStrapi(strapi, row.image, row.title, 'Portfolio') : null;
 
     const data = {
       title: row.title,
       slug,
-      description: makeDescription(details.Location || row.title),
+      description: makeDescription({ details, suburb: row.suburb, state: row.state, postcode: row.postcode, title: row.title }),
       content: buildContent(details),
       suburb: row.suburb || null,
       state: row.state || null,
       postcode: row.postcode || null,
       filters: row.filters || [],
-      location: details.Location || null,
+      location,
       task: details.Task || null,
       date: details.Date || null,
       brand: details.Brand || null,
@@ -173,9 +219,23 @@ async function seedPortfolio(strapi) {
     };
     if (imageId) data.image = imageId;
 
-    await strapi.documents(UID).create({ data, status: 'published' });
+    try {
+      await strapi.documents(UID).create({ data, status: 'published' });
+      created += 1;
+    } catch (err) {
+      failed += 1;
+      console.warn(`  ! create failed (${row.title}): ${err.message}`);
+    }
   }
-  console.log(`Portfolio projects: ${items.length} processed`);
+
+  console.log(`Portfolio projects: ${created} created, ${failed} failed, ${items.length} total`);
+  if (suspect.length) {
+    console.warn(`\n! ${suspect.length} entr${suspect.length === 1 ? 'y has' : 'ies have'} a detail block that doesn't match its suburb (source scrape issue, not auto-fixed):`);
+    for (const s of suspect.slice(0, 20)) {
+      console.warn(`  - [${s.id}] ${s.title} -- expected "${s.expected}", detail says "${s.gotLocation.slice(0, 80)}"`);
+    }
+    if (suspect.length > 20) console.warn(`  ...and ${suspect.length - 20} more`);
+  }
 }
 
 async function main() {
