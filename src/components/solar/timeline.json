@@ -26,6 +26,12 @@
     },
     "consultationText": {
       "type": "text"
+    },
+    "ctaText": {
+      "type": "text"
+    },
+    "ctaLink": {
+      "type": "text"
     }
   },
   "config": {}

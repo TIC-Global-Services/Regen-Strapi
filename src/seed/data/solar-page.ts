@@ -107,6 +107,8 @@ export const solarSections = [
     subtitle: "How Big Should My",
     title: "Solar System Be?",
     description: "The Right System Size Depends On Four Things: Your Daily Power Use, Your Household Size, The Phase Type Of Your Home's Power Supply, And How Much Usable Roof Space You Have.",
+    ctaText: "Get a Sizing Recommendation For My Home",
+    ctaLink: "#quote-form",
     labelColumnTitle: "Daily Use",
     columns: [
       { title: "Recommended Size" },
@@ -172,6 +174,8 @@ export const solarSections = [
     image: null,
     consultationTitle: "Free Consultation",
     consultationText: "A 15-Minute Call With A Regen Energy Advisor. We Review Your Bill, Household Setup, And Goals. No Pressure, No Sales Script.",
+    ctaText: "Start With A Free Consultation",
+    ctaLink: "#quote-form",
   },
   {
     __component: "solar.engineering-items" as const,

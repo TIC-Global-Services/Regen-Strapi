@@ -404,7 +404,7 @@ export const batteryProductSections = [
     mainTitle: "Battery Quote",
     description: "Our quote process takes just 15 minutes, and you'll receive 2–3 battery options tailored to your home, with all eligible rebates applied upfront, an interest-free loan option (if eligible), a clear installation timeline, and transparent, no-obligation pricing.",
     buttonText: "Get My Free Battery Quote",
-    buttonHref: "#quote-form",
+    buttonLink: "#quote-form",
     backgroundImage: null,
   },
 ];

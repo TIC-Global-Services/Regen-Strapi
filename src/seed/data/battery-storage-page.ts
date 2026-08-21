@@ -315,7 +315,7 @@ export const batteryStorageSections = [
     mainTitle: "1 May 2026",
     description: "The federal Cheaper Home Batteries Program is tiered down from 1 May. Installing before that date locks in the full rebate value and avoids the new SWIS connection rules. We handle the paperwork — you just start saving.",
     buttonText: "Get My Free Battery Quote",
-    buttonHref: "#quote-form",
+    buttonLink: "#quote-form",
     backgroundImage: null,
   },
 ];

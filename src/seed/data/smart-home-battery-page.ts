@@ -354,7 +354,7 @@ export const smartHomeBatterySections = [
     description:
       "Tell us about your home — what ecosystem you're using, whether you have an EV, what your Synergy bills look like. We'll design a smart system that actually works for you, not a generic package.",
     buttonText: "Request A Smart System Consultation",
-    buttonHref: "#consultation",
+    buttonLink: "#consultation",
     backgroundImage: null,
   },
 ];

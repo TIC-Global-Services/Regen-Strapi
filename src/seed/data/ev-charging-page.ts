@@ -272,6 +272,6 @@ export const evChargingSections: Section[] = [
     description:
       "Tell us about your car, your power setup, and your driving habits. We'll design a charging solution that fits your home, your budget, and your energy goals — free, no-obligation, and no high-pressure sales.",
     buttonText: "Get My Free EV Quote",
-    buttonHref: "/contact",
+    buttonLink: "/contact",
   },
 ];

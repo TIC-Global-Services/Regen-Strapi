@@ -532,7 +532,7 @@ export const batteryBrandsSections = [
     mainTitle: "claim your rebate",
     description: "Tell us which brand you're leaning towards (or we'll help you choose) and we'll put together a personalised quote with your rebate already applied.",
     buttonText: "get my free quote",
-    buttonHref: "#",
+    buttonLink: "#",
     backgroundImage: null,
   },
 ];

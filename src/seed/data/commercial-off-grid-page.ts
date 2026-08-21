@@ -96,7 +96,7 @@ export const commercialOffGridSections = [
     description:
       "System Size Depends On Your Energy Usage, Roof Space, And Future Needs. Our Experts Design Systems That Balance Performance And Cost For Optimal ROI.",
     buttonText: "Get Started",
-    buttonHref: "#quote-form",
+    buttonLink: "#quote-form",
     backgroundImage: null,
   },
 ];

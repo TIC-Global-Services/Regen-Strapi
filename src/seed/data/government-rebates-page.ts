@@ -262,7 +262,7 @@ export const governmentRebatesSections = [
     mainTitle: "In 30 Seconds",
     description: "Three questions. You'll know immediately whether you qualify for the full combined rebate stack, and we'll follow up with a personalised quote that pre-applies your rebate value.",
     buttonText: "Check My Rebate Eligibility",
-    buttonHref: "/contact",
+    buttonLink: "/contact",
     backgroundImage: null,
   },
 ];
