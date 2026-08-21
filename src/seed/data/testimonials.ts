@@ -1,22 +1,5 @@
 /**
  * Seed data for the "Testimonials List" collection (api::testimonial.testimonial).
- *
- * Sourced from `reviews-seed.json` in the frontend repo (Regan-Power-Next):
- *  - 10 reviews from ProductReview.com.au (listing: 5.0 overall · 2,702 reviews · 100% positive).
- *    Individual star ratings are not shown per-review on that platform, so `rating`
- *    is left unset for these — set them in admin if desired.
- *  - 6 Google reviews transcribed from screenshots. The listing averages exactly 5.0
- *    across 6 reviews, so rating 5 is certain for each.
- *
- * Seeding the DB is intentionally manual. To apply (e.g. in a script or bootstrap):
- *
- *   import { testimonialSeedData } from "./data/testimonials";
- *
- *   for (const data of testimonialSeedData) {
- *     await strapi.documents("api::testimonial.testimonial").create({ data });
- *   }
- *
- * Entries are created as drafts (draft & publish is enabled) — publish after review.
  */
 
 export interface TestimonialSeed {
