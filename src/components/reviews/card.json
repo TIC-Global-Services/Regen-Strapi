@@ -1,33 +1,17 @@
 {
   "collectionName": "components_reviews_cards",
   "info": {
-    "displayName": "Card"
+    "displayName": "Image Card"
   },
   "options": {},
   "attributes": {
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "testimonial",
-        "image"
-      ],
-      "required": true
-    },
-    "location": {
-      "type": "string"
-    },
-    "name": {
-      "type": "string"
-    },
-    "quote": {
-      "type": "text"
-    },
     "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "required": true
     },
     "imageAlt": {
       "type": "string"
