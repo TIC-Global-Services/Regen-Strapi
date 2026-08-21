@@ -21,12 +21,22 @@
       "type": "text"
     },
     "rating": {
-      "type": "integer"
+      "type": "integer",
+      "min": 1,
+      "max": 5
     },
     "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": ["images"]
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": ["website", "google", "productreview"],
+      "default": "website"
+    },
+    "reviewDate": {
+      "type": "string"
     }
   }
 }
