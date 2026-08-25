@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_promotion_battery_packages",
+  "info": { "displayName": "Battery Package" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "centerImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "centerImageAlt": { "type": "string" },
+    "packages": { "type": "component", "component": "promotion.battery-package-item", "repeatable": true }
+  },
+  "config": {}
+}

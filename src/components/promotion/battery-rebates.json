@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_promotion_battery_rebates",
+  "info": { "displayName": "Battery Rebates" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "text" },
+    "subtitle": { "type": "string" },
+    "bgImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "panels": { "type": "component", "component": "promotion.rebate-panel", "repeatable": true }
+  },
+  "config": {}
+}

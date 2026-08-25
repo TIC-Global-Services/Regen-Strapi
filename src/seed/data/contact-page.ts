@@ -11,10 +11,9 @@ export const contactSections = [
   },
   {
     __component: "contact.contact-form-section" as const,
-    subtitle: "Ready To Start Your",
-    title: "Energy Journey?",
+    title: "Contact Us",
     description:
-      "Fill In The Form Below And Our Team Will Get Back To You Within 24 Hours With A Free, No-Obligation Consultation.",
+      "Off-grid projects are engineering jobs. The first conversation is technical, not transactional — load profile, site context, generator history, growth plans, water needs if any. Once we understand the problem, we come back with a system ",
   },
   {
     __component: "contact.location-map" as const,

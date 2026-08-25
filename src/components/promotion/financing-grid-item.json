@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_promotion_financing_grid_items",
+  "info": { "displayName": "Financing Grid Item" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "icon": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  },
+  "config": {}
+}

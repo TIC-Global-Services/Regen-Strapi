@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_promotion_nested_cards",
+  "info": { "displayName": "Nested Card" },
+  "options": {},
+  "attributes": {
+    "type": { "type": "enumeration", "enum": ["logo", "image", "empty"] },
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "showBadge": { "type": "boolean", "default": false }
+  },
+  "config": {}
+}

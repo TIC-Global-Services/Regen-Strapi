@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_promotion_rebate_rows",
+  "info": { "displayName": "Rebate Row" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  },
+  "config": {}
+}

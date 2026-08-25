@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_promotion_faq_highlights",
+  "info": { "displayName": "FAQ Highlight" },
+  "options": {},
+  "attributes": {
+    "question": { "type": "string" },
+    "answer": { "type": "text" },
+    "bulletPoints": { "type": "text", "repeatable": true }
+  },
+  "config": {}
+}

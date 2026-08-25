@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_promotion_high_energies",
+  "info": { "displayName": "High Energy" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "text" },
+    "bullets": { "type": "text", "repeatable": true },
+    "badges": { "type": "component", "component": "promotion.badge-logo", "repeatable": true }
+  },
+  "config": {}
+}

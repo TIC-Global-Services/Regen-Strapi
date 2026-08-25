@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_promotion_contact_details",
+  "info": { "displayName": "Contact Details" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "data": { "type": "component", "component": "promotion.contact-data", "repeatable": true },
+    "socials": { "type": "component", "component": "promotion.social-item", "repeatable": true }
+  },
+  "config": {}
+}

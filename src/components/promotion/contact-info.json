@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_promotion_contact_infos",
+  "info": { "displayName": "Contact Info" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "items": { "type": "json" },
+    "socials": { "type": "json" }
+  },
+  "config": {}
+}

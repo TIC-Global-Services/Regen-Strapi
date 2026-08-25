@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_promotion_industry_recognitions",
+  "info": { "displayName": "Industry Recognition" },
+  "options": {},
+  "attributes": {
+    "recognitions": { "type": "component", "component": "promotion.recognition-section", "repeatable": true },
+    "variant": { "type": "enumeration", "enum": ["single", "grid"] }
+  },
+  "config": {}
+}

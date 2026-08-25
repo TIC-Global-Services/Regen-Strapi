@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_promotion_achievements",
+  "info": { "displayName": "Achievements" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "description": { "type": "text" },
+    "awards": { "type": "component", "component": "promotion.award-item", "repeatable": true },
+    "recognitions": { "type": "component", "component": "promotion.recognition-section", "repeatable": true }
+  },
+  "config": {}
+}

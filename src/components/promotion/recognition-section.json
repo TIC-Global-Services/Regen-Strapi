@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_promotion_recognition_sections",
+  "info": { "displayName": "Recognition Section" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "awards": { "type": "component", "component": "promotion.award-item", "repeatable": true }
+  },
+  "config": {}
+}

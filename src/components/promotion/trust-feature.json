@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_promotion_trust_features",
+  "info": { "displayName": "Trust Feature" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "text" },
+    "description": { "type": "text" },
+    "icon": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  },
+  "config": {}
+}

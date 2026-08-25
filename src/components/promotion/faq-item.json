@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_promotion_faq_items",
+  "info": { "displayName": "FAQ Item" },
+  "options": {},
+  "attributes": {
+    "question": { "type": "string", "required": true },
+    "answer": { "type": "text", "required": true },
+    "bulletPoints": { "type": "text", "repeatable": true }
+  },
+  "config": {}
+}

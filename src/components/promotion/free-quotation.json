@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_promotion_free_quotations",
+  "info": { "displayName": "Free Quotation" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "noticeText": { "type": "text" },
+    "noticeHighlight": { "type": "text" },
+    "videoThumbnail": { "type": "media", "multiple": false, "allowedTypes": ["images", "videos"] },
+    "videoUrl": { "type": "string" },
+    "buttonText": { "type": "string" },
+    "buttonLink": { "type": "string" }
+  },
+  "config": {}
+}

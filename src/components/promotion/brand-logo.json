@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_promotion_brand_logos",
+  "info": { "displayName": "Brand Logo" },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" },
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  },
+  "config": {}
+}

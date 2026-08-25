@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_promotion_awards_sections",
+  "info": { "displayName": "Awards Section" },
+  "options": {},
+  "attributes": {
+    "awards": { "type": "component", "component": "promotion.award-item", "repeatable": true }
+  },
+  "config": {}
+}

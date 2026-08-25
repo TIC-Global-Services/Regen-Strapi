@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_promotion_ready_to_begins",
+  "info": { "displayName": "Ready To Begin" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "text" },
+    "noticeText": { "type": "text" },
+    "noticeHighlight": { "type": "text" },
+    "contactDetails": { "type": "component", "component": "promotion.contact-details" },
+    "buttonText": { "type": "string" },
+    "buttonLink": { "type": "string" }
+  },
+  "config": {}
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_promotion_mobile_hero_configs",
+  "info": { "displayName": "Mobile Hero Config" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "highlightPrefix": { "type": "string" },
+    "highlightValue": { "type": "string" },
+    "highlightSuffix": { "type": "string" },
+    "description": { "type": "string" },
+    "ctaLabel": { "type": "string" },
+    "ctaLink": { "type": "string" },
+    "backgroundImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  },
+  "config": {}
+}

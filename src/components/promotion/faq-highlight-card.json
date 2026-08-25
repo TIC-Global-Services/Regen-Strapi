@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_promotion_faq_highlight_cards",
+  "info": { "displayName": "FAQ Highlight Card" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "bgImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "items": { "type": "component", "component": "promotion.faq-highlight", "repeatable": true },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" }
+  },
+  "config": {}
+}

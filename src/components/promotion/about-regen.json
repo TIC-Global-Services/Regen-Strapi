@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_promotion_about_regens",
+  "info": { "displayName": "About Regen" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "paragraphs": { "type": "text" },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "videoUrl": { "type": "string" }
+  },
+  "config": {}
+}

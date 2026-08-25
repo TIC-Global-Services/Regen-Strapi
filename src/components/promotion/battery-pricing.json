@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_promotion_battery_pricings",
+  "info": { "displayName": "Battery Pricing" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "backgroundImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "centerImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "items": { "type": "component", "component": "promotion.promotion-pricing-card", "repeatable": true }
+  },
+  "config": {}
+}

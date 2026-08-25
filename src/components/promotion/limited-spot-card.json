@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_promotion_limited_spot_cards",
+  "info": { "displayName": "Limited Spot Card" },
+  "options": {},
+  "attributes": {
+    "type": { "type": "enumeration", "enum": ["nested", "image", "black", "text", "dark", "nested-reverse"] },
+    "value": { "type": "string" },
+    "title": { "type": "text" },
+    "bgImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "icon": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "logoPath": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "imagePath": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "showBadge": { "type": "boolean", "default": false },
+    "nestedCard": { "type": "component", "component": "promotion.nested-card" }
+  },
+  "config": {}
+}

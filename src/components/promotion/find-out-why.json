@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_promotion_find_out_whies",
+  "info": { "displayName": "Find Out Why" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "description": { "type": "text" },
+    "awards": { "type": "component", "component": "promotion.award-item", "repeatable": true },
+    "reviews": { "type": "component", "component": "promotion.find-out-why-review", "repeatable": true }
+  },
+  "config": {}
+}

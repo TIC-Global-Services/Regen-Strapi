@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_promotion_badge_logos",
+  "info": { "displayName": "Badge Logo" },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" },
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  },
+  "config": {}
+}

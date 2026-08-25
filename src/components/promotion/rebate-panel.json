@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_promotion_rebate_panels",
+  "info": { "displayName": "Rebate Panel" },
+  "options": {},
+  "attributes": {
+    "rows": { "type": "component", "component": "promotion.rebate-row", "repeatable": true }
+  },
+  "config": {}
+}

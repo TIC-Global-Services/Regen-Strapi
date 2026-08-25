@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_promotion_promotion_pricing_cards",
+  "info": { "displayName": "Promotion Pricing Card" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "sections": { "type": "json" }
+  },
+  "config": {}
+}

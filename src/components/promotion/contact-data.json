@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_promotion_contact_data",
+  "info": { "displayName": "Contact Data" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "value": { "type": "string" }
+  },
+  "config": {}
+}

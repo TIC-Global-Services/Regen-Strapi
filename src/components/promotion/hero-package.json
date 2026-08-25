@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_promotion_hero_packages",
+  "info": { "displayName": "Hero Package" },
+  "options": {},
+  "attributes": {
+    "capacity": { "type": "string", "required": true },
+    "originalPrice": { "type": "integer", "required": true },
+    "finalPrice": { "type": "integer", "required": true },
+    "stateRebate": { "type": "integer" },
+    "federalRebate": { "type": "integer" },
+    "isFullyInstalled": { "type": "boolean", "default": true },
+    "priceNote": { "type": "string" },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  },
+  "config": {}
+}

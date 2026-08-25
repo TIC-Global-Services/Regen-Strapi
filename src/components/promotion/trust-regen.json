@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_promotion_trust_regens",
+  "info": { "displayName": "Trust Regen" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "features": { "type": "component", "component": "promotion.trust-feature", "repeatable": true }
+  },
+  "config": {}
+}

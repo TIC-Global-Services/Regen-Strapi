@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_promotion_hero_sidebars",
+  "info": { "displayName": "Hero Sidebar" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "text" },
+    "subtitle": { "type": "text" },
+    "paragraphs": { "type": "text", "repeatable": true },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" }
+  },
+  "config": {}
+}

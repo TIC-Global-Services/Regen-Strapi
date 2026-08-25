@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "promotion_pages",
+  "info": {
+    "singularName": "promotion-page",
+    "pluralName": "promotion-pages",
+    "displayName": "Promotion"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "promotion.hero",
+        "promotion.limited-spots",
+        "promotion.trust-regen",
+        "promotion.free-quotation",
+        "promotion.battery-rebates",
+        "promotion.trusted-brands",
+        "promotion.high-energy",
+        "promotion.battery-package",
+        "promotion.ready-to-begin",
+        "promotion.solar-financing",
+        "promotion.about-regen",
+        "promotion.find-out-why",
+        "promotion.achievements",
+        "promotion.industry-recognition",
+        "promotion.faq-section",
+        "promotion.awards-section",
+        "promotion.battery-pricing",
+        "promotion.contact-info"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

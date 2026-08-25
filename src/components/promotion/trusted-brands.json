@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_promotion_trusted_brands",
+  "info": { "displayName": "Trusted Brands" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "description": { "type": "text" },
+    "titleGreen": { "type": "string" },
+    "brands": { "type": "component", "component": "promotion.brand-logo", "repeatable": true },
+    "batteries": { "type": "component", "component": "promotion.battery-card", "repeatable": true }
+  },
+  "config": {}
+}

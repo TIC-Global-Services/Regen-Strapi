@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_promotion_limited_spots",
+  "info": { "displayName": "Limited Spots" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "titleGreen": { "type": "string" },
+    "cards": { "type": "component", "component": "promotion.limited-spot-card", "repeatable": true },
+    "ctaText": { "type": "string" },
+    "ctaLink": { "type": "string" }
+  },
+  "config": {}
+}

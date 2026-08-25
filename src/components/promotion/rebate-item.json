@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_promotion_rebate_items",
+  "info": { "displayName": "Rebate Item" },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" },
+    "amount": { "type": "integer" }
+  },
+  "config": {}
+}

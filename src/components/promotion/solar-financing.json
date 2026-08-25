@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_promotion_solar_financings",
+  "info": { "displayName": "Solar Financing" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "subtitle": { "type": "text" },
+    "leftBoxTitle": { "type": "string" },
+    "leftBoxText": { "type": "text" },
+    "leftBoxIcon": { "type": "string" },
+    "bgImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "gridItems": { "type": "component", "component": "promotion.financing-grid-item", "repeatable": true }
+  },
+  "config": {}
+}

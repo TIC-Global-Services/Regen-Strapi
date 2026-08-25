@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_promotion_faq_sections",
+  "info": { "displayName": "FAQ Section" },
+  "options": {},
+  "attributes": {
+    "title": { "type": "text" },
+    "subtitle": { "type": "string" },
+    "description": { "type": "text" },
+    "highlightCard": { "type": "component", "component": "promotion.faq-highlight-card" },
+    "faqItems": { "type": "component", "component": "promotion.faq-item", "repeatable": true }
+  },
+  "config": {}
+}
