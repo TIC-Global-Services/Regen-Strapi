@@ -14,6 +14,11 @@
     "description": {
       "type": "text"
     },
+    "highlights": {
+      "type": "component",
+      "component": "battery-storage.rebate-highlight",
+      "repeatable": true
+    },
     "image": {
       "type": "media",
       "multiple": false,

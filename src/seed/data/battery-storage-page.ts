@@ -20,9 +20,26 @@ export const batteryStorageSections = [
   },
   {
     __component: "battery-storage.debs-rebate" as const,
-    subtitle: "The Best Rebate Window WA Homeowners Have Ever Seen",
-    title: "And It Closes On 1 May 2026",
-    description: "If you've watched your Synergy bill rise, 2026 is one of the best times to invest in a home battery. Eligible households can access up to $1,300 (Synergy) or $3,800 (Horizon Power) through the WA Residential Battery Scheme, plus around $3,720 from the federal Cheaper Home Batteries Program for a 10kWh system. Interest-free loans of up to $10,000 over 3–10 years are also available through Plenti. With DEBS export rates as low as 2.25c/kWh off-peak, storing your solar can be worth around 30c per kWh instead of exporting it. Install before 1 May 2026 to maximise rebates before federal incentives reduce and new SWIS connection rules take effect.",
+    subtitle: "Why a battery now",
+    title: "Exporting your solar earns 2 cents. Using it after dark saves 32. That's the case for a battery.",
+    description: "If you've watched your Synergy bill climb, the maths now firmly favours storage. DEBS pays just 2c/kWh for solar exported outside the 3–9pm window — but every stored kWh you use in the evening saves you around 32c. A battery turns your midday surplus into your evening power, and three layers of government support still bring the price down:",
+    highlights: [
+      {
+        label: "WA Residential Battery Scheme",
+        description:
+          "up to $1,300 (Synergy) or $3,800 (Horizon Power) off an approved battery. 100,000 rebates state-wide, available until the allocation runs out.",
+      },
+      {
+        label: "Federal Cheaper Home Batteries Program",
+        description:
+          "around 30% off upfront cost, currently worth roughly $2,500–$2,700 on a 10 kWh system. The rate now steps down every six months — the next reduction lands 1 January 2027.",
+      },
+      {
+        label: "WA no-interest loan via Plenti",
+        description:
+          "$2,001–$10,000 over 3–10 years at 0% interest for eligible households.",
+      },
+    ],
     image: null,
     ctaText: "See If I'm Eligible For The Full Rebate",
     ctaLink: "/contact",

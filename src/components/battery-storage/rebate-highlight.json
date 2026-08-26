@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_battery_storage_rebate_highlights",
+  "info": {
+    "displayName": "Rebate Highlight"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

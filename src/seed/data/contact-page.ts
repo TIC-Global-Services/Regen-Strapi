@@ -13,7 +13,7 @@ export const contactSections = [
     __component: "contact.contact-form-section" as const,
     title: "Contact Us",
     description:
-      "Off-grid projects are engineering jobs. The first conversation is technical, not transactional — load profile, site context, generator history, growth plans, water needs if any. Once we understand the problem, we come back with a system ",
+      "Have a question, need a quote, or want to discuss your project? Fill in the form and our team will get back to you shortly.",
   },
   {
     __component: "contact.location-map" as const,
