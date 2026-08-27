@@ -50,12 +50,6 @@ export const evChargingSections: Section[] = [
           "Adds about 130 km of range per hour — ideal for fast charging, large properties, or households with multiple EVs. Requires a three-phase electrical connection.",
       },
     ],
-    brands: [
-      { name: "Sigenergy" },
-      { name: "Fronius" },
-      { name: "Goodwe" },
-      { name: "AlphaESS" },
-    ],
   },
 
   // ─── 4. Installer Brands ─────────────────────────────────────────────
@@ -141,7 +135,7 @@ export const evChargingSections: Section[] = [
   {
     __component: "ev-charging.feature-cards",
     subtitle: "Solar, Battery, EV Charger",
-    title: "Under One <br /> Roof",
+    title: "Under One Roof",
     description:
       "Most installers will sell you an EV charger. We'll connect it to the solar we put on your roof, the battery in your garage, and the app you already use.",
     cards: [
@@ -203,11 +197,6 @@ export const evChargingSections: Section[] = [
         counterSuffix: "+",
         title: "EV Chargers",
         description: "Installed across homes and businesses.",
-        image: null,
-      },
-      {
-        title: "Certified Installers",
-        description: "Tesla, Sigenergy and CEC-accredited team — your EV, done right.",
         image: null,
       },
       {

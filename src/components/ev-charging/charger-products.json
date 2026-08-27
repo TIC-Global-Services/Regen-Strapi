@@ -15,11 +15,6 @@
       "type": "component",
       "component": "ev-charging.charger-product",
       "repeatable": true
-    },
-    "brands": {
-      "type": "component",
-      "component": "ev-charging.brand-logo",
-      "repeatable": true
     }
   },
   "config": {}
