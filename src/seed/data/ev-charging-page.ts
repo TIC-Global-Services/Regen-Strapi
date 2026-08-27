@@ -192,39 +192,32 @@ export const evChargingSections: Section[] = [
     ],
   },
 
-  // ─── 9. Stats ────────────────────────────────────────────────────────
+  // ─── 9. Why Choose Us — simple cards: title, description, image; only first has counter ─
   {
     __component: "ev-charging.stats",
     headerSubtitle: "23 Years Powering Australian",
     headerTitle: "Homes And Counting",
     cards: [
       {
-        variant: "award",
-        bgColor: "#EEF6EB",
-        logoBg: null,
-        logo: null,
-        mobileLogo: "/regen_logo_nav.png",
-        count: 500,
-        countSuffix: "+",
+        counterValue: 500,
+        counterSuffix: "+",
         title: "EV Chargers",
         description: "Installed across homes and businesses.",
-        mobileCount: 6,
-        mobileCountSuffix: "×",
-        mobileTitle: "Product Review Award Winner",
+        image: null,
       },
       {
-        variant: "installations",
-        bgColor: "#A0CF44",
-        combinedText:
-          "45,000+ solar systems and 3,000+ battery systems successfully installed.",
-        productImage: null,
-        showPlusButton: true,
+        title: "Certified Installers",
+        description: "Tesla, Sigenergy and CEC-accredited team — your EV, done right.",
+        image: null,
       },
       {
-        variant: "years",
-        bgColor: "#F0F6EC",
-        backgroundImage: null,
-        yearsText: "23 years in business, operating from our Canning Vale office.",
+        title: "45,000+ solar systems and 3,000+ battery systems successfully installed.",
+        
+        image: null,
+      },
+      {
+        title: "23 years in business, operating from our Canning Vale office.",
+        image: null,
       },
     ],
   },
