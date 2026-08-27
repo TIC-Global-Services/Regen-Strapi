@@ -153,22 +153,7 @@ export const homeSections: Section[] = [
         mediaType: "image",
         mediaSrc: null,
       },
-      {
-        number: "04",
-        title: "Fast EV Charging",
-        description:
-          "Charge your electric vehicle directly from your solar panels or stored battery power, driving on pure sunshine with zero emissions.",
-        mediaType: "image",
-        mediaSrc: null,
-      },
-      {
-        number: "05",
-        title: "Intelligent Power Grid Connection",
-        description:
-          "Feed excess energy back to the Perth grid to earn feed-in tariffs, or draw from the grid seamlessly when solar and battery storage are depleted.",
-        mediaType: "image",
-        mediaSrc: null,
-      },
+      
     ],
   },
 
