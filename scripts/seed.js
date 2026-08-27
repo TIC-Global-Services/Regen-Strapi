@@ -4,19 +4,18 @@
  * Runs the page seeder (src/seed) against a running Strapi instance.
  *
  * Usage:
- *   npm run seed                              # safe:  all 22 pages, fills EMPTY/MISSING only
- *   FORCE=1 npm run seed                      # force: all 22 pages, overwrites
- *   PAGES=promotion npm run seed              # safe:  only promotion
- *   PAGES=promotion,solar,brands npm run seed # safe:  filtered set
- *   PAGES=promotion FORCE=1 npm run seed     # force: only promotion (for casing sync)
- *   PAGES=solar,home FORCE=1 npm run seed   # force: only solar+home
+ *   npm run seed                                         # safe:  all 22 pages, fills EMPTY/MISSING only
+ *   FORCE=1 npm run seed                                 # force: all 22 pages, overwrites
+ *   PAGES=promotion-page npm run seed                    # safe:  only promotion (by apiName)
+ *   PAGES=promotion-page,solar-page npm run seed        # safe:  filtered set (by apiName)
+ *   PAGES=api::promotion-page.promotion-page npm run seed # safe:  by full UID (exact)
+ *   PAGES=promotion-page FORCE=1 npm run seed           # force: only promotion
+ *   PAGES=solar-page,home-page FORCE=1 npm run seed    # force: only solar+home
  *
- * PAGES matches substring of uid or slug:
- *   promotion  -> api::promotion-page.promotion-page
- *   solar      -> api::solar-page.solar-page
- *   brands     -> api::brands-page.brands-page
- *   battery    -> all battery-* pages
- *   government -> api::government-rebates-page.government-rebates-page
+ * PAGES accepts exact apiName or full UID (comma-separated):
+ *   home-page, solar-page, promotion-page, brands-page,
+ *   battery-product-page, battery-storage-page, etc.
+ *   Run with a bad value to see the full list of valid IDs.
  */
 
 const path = require('path');
@@ -28,26 +27,22 @@ function parsePagesFilter(raw) {
   if (!raw) return undefined;
   const tokens = raw.split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
   if (tokens.length === 0) return undefined;
-  // Resolve tokens to actual UIDs via substring match (uid or slug part)
+  // Exact ID match only — by apiName (home-page) or full UID (api::home-page.home-page)
+  // No substring/prefix — so "home" won't hit "smart-home-battery-page"
+  const byApiName = new Map(pages.map(p => [p.uid.split('::')[1].split('.')[0].toLowerCase(), p.uid]));
+  const byUid = new Map(pages.map(p => [p.uid.toLowerCase(), p.uid]));
   const matched = new Set();
   for (const tok of tokens) {
-    let hit = false;
-    for (const p of pages) {
-      const uid = p.uid.toLowerCase();
-      const slug = p.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-      // also allow matching the api name part: "promotion-page", "solar-page"
-      const apiName = uid.split('::')[1]?.split('.')[0]?.toLowerCase() || '';
-      if (uid.includes(tok) || apiName.includes(tok) || slug.includes(tok)) {
-        matched.add(p.uid);
-        hit = true;
-      }
+    const uid = byUid.get(tok) || byApiName.get(tok);
+    if (uid) matched.add(uid);
+    else {
+      console.warn(`[seed] PAGES token "${tok}" matched no page. Valid IDs:`);
+      for (const p of pages) console.warn(`  - ${p.uid.split('::')[1].split('.')[0]}  (${p.uid})`);
     }
-    if (!hit) console.warn(`[seed] PAGES token "${tok}" matched no page — try: ${pages.map(p=>p.uid.split('::')[1].split('.')[0]).join(', ')}`);
   }
   const only = [...matched];
   if (only.length === 0) {
-    console.error(`[seed] No pages matched PAGES="${raw}". Available:`);
-    for (const p of pages) console.error(`  - ${p.uid}  (${p.title})`);
+    console.error(`[seed] No pages matched PAGES="${raw}".`);
     process.exit(1);
   }
   return only;
