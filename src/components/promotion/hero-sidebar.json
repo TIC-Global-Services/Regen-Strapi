@@ -5,7 +5,7 @@
   "attributes": {
     "title": { "type": "text" },
     "subtitle": { "type": "text" },
-    "paragraphs": { "type": "text", "repeatable": true },
+    "paragraphs": { "type": "json" },
     "ctaText": { "type": "string" },
     "ctaLink": { "type": "string" }
   },

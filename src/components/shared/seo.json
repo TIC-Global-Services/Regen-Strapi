@@ -8,7 +8,7 @@
   "attributes": {
     "metaTitle": {
       "type": "string",
-      "maxLength": 60
+      "maxLength": 80
     },
     "metaDescription": {
       "type": "text",

@@ -5,7 +5,7 @@
   "attributes": {
     "question": { "type": "string" },
     "answer": { "type": "text" },
-    "bulletPoints": { "type": "text", "repeatable": true }
+    "bulletPoints": { "type": "json" }
   },
   "config": {}
 }

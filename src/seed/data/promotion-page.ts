@@ -36,10 +36,7 @@ export const promotionSections: Section[] = [
     sidebar: {
       title: "Battery \nRebate \nAvailable!",
       subtitle: "WA & Federal Battery \nRebates Now Live – Save Up to $5,255!",
-      paragraphs: [
-        "Upgrade your home with a 20kWh battery with State + Federal incentives worth up to $5,255 OFF when you're ready.",
-        "Lock in today's pricing, secure your rebate spot, and be first in line for approval and installation.",
-      ],
+      paragraphs: ["Upgrade your home with a 20kWh battery with State + Federal incentives worth up to $5,255 OFF when you're ready.", "Lock in today's pricing, secure your rebate spot, and be first in line for approval and installation."],
       ctaText: "Secure My Rebate",
       ctaLink: "#quote-form-section",
     },

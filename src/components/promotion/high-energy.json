@@ -4,7 +4,7 @@
   "options": {},
   "attributes": {
     "title": { "type": "text" },
-    "bullets": { "type": "text", "repeatable": true },
+    "bullets": { "type": "json" },
     "badges": { "type": "component", "component": "promotion.badge-logo", "repeatable": true }
   },
   "config": {}
