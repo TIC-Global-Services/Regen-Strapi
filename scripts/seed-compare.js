@@ -133,9 +133,11 @@ async function main() {
     process.exit(1);
   }
 
+  const pagesLen = Array.isArray(pages) ? pages.length : 0;
   console.log(`\n🌱 DB vs Seed — ${targets.length} page${targets.length===1?'':'s'}${FILTER?` (filter: ${FILTER})`:''}\n`);
-  console.log(`Seed source: dist/src/seed (${pages.length} total pages defined)`);
-  console.log(`DB: ${app.config.get('database.connection.connection.database') || app.config.get('database.connection.connection.filename') || 'configured DB'} via strapi.documents()\n`);
+  console.log(`Seed source: dist/src/seed (${pagesLen} total pages defined)`);
+  const dbName = app.config.get('database.connection.connection.database') || app.config.get('database.connection.connection.filename') || 'configured DB';
+  console.log(`DB: ${dbName} via strapi.documents()\n`);
 
   let ok = 0, diff = 0, missing = 0, empty = 0;
 

@@ -24,7 +24,7 @@ import { batteryBrandsSections } from "./data/battery-brands-page";
 import { governmentRebatesSections } from "./data/government-rebates-page";
 import { promotionSections } from "./data/promotion-page";
 
-const pages = [
+export const pages = [
   {
     uid: "api::solar-page.solar-page" as UID.ContentType,
     title: "Solar - Solar System",
