@@ -1,15 +1,13 @@
 import type { Core } from '@strapi/strapi';
-import { runSeed } from './seed';
 
 export default {
-  register({ strapi }: { strapi: Core.Strapi }) {},
-  async bootstrap({ strapi }: { strapi: Core.Strapi }) {
-    // TEMP: force-overwrite seed run for battery pages — re-comment after it runs
-    await runSeed(strapi, {
-      force: true,
-      only: [
-        "api::promotion-page.promotion-page",
-      ],
-    });
+  register(_: { strapi: Core.Strapi }) {},
+  async bootstrap(_: { strapi: Core.Strapi }) {
+    // Seed is manual-only — run via npm scripts:
+    //   npm run seed                          # safe: fills EMPTY/MISSING
+    //   FORCE=1 npm run seed                  # force: overwrite all
+    //   PAGES=promotion,solar npm run seed    # selective (comma-separated)
+    //   PAGES=promotion FORCE=1 npm run seed # selective + force
+    // Do not auto-run here — overwrites manual Admin edits on every restart.
   },
 };
