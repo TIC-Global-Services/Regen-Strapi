@@ -283,6 +283,27 @@ const pages = [
   },
 ];
 
+function sanitizeSections(sections: any[]): any[] {
+  // Strip null-string keys that Yup rejects (only media fields allow null)
+  // Keep media nulls so relations clear correctly. Omit empty string-keys.
+  const mediaNullOk = new Set([
+    "backgroundImage","batteryImage","bgImage","image","icon","logo","videoThumbnail","centerImage","imagePath","logoPath",
+  ]);
+  function clean(obj: any): any {
+    if (Array.isArray(obj)) return obj.map(clean);
+    if (obj && typeof obj === "object") {
+      const out: any = {};
+      for (const [k, v] of Object.entries(obj)) {
+        if (v === null && !mediaNullOk.has(k)) continue;
+        out[k] = clean(v);
+      }
+      return out;
+    }
+    return obj;
+  }
+  return sections.map(clean);
+}
+
 async function seedSingleType(
   strapi: Core.Strapi,
   page: (typeof pages)[number],
@@ -294,17 +315,26 @@ async function seedSingleType(
   } as any);
 
   const fieldName = (page as any).fieldName || "sections";
+  const cleanSections = sanitizeSections(page.sections as any[]);
 
   if (existing) {
     if (force) {
-      await strapi.documents(page.uid).update({
-        documentId: existing.documentId,
-        data: {
-          [fieldName]: page.sections,
-          seo: page.seo,
-        } as any,
-        status: "published",
-      });
+      try {
+        await strapi.documents(page.uid).update({
+          documentId: existing.documentId,
+          data: {
+            [fieldName]: cleanSections,
+            seo: page.seo,
+          } as any,
+          status: "published",
+        });
+      } catch (err: any) {
+        if (err.details?.errors) {
+          strapi.log.error(`[seed] ${page.title} validation failed:`);
+          for (const e of err.details.errors) strapi.log.error(`  - ${e.path}: ${e.message}`);
+        }
+        throw err;
+      }
       strapi.log.info(`[seed] ${page.title} OVERWRITTEN`);
       return;
     }
@@ -315,14 +345,21 @@ async function seedSingleType(
 
     if (needsSections || needsSeo) {
       const updateData: Record<string, unknown> = {};
-      if (needsSections) updateData[fieldName] = page.sections;
+      if (needsSections) updateData[fieldName] = cleanSections;
       if (needsSeo) updateData.seo = page.seo;
 
-      await strapi.documents(page.uid).update({
-        documentId: existing.documentId,
-        data: updateData as any,
-        status: "published",
-      });
+      try {
+        await strapi.documents(page.uid).update({
+          documentId: existing.documentId,
+          data: updateData as any,
+          status: "published",
+        });
+      } catch (err: any) {
+        if (err.details?.errors) {
+          for (const e of err.details.errors) strapi.log.error(`  - ${e.path}: ${e.message}`);
+        }
+        throw err;
+      }
       strapi.log.info(`[seed] ${page.title} updated (sections: ${needsSections}, seo: ${needsSeo})`);
     } else {
       strapi.log.info(`[seed] ${page.title} already exists with content`);
@@ -330,13 +367,21 @@ async function seedSingleType(
     return;
   }
 
-  await strapi.documents(page.uid).create({
-    data: {
-      [fieldName]: page.sections,
-      seo: page.seo,
-    } as any,
-    status: "published",
-  });
+  try {
+    await strapi.documents(page.uid).create({
+      data: {
+        [fieldName]: cleanSections,
+        seo: page.seo,
+      } as any,
+      status: "published",
+    });
+  } catch (err: any) {
+    if (err.details?.errors) {
+      strapi.log.error(`[seed] ${page.title} validation failed:`);
+      for (const e of err.details.errors) strapi.log.error(`  - ${e.path}: ${e.message}`);
+    }
+    throw err;
+  }
 
   strapi.log.info(`[seed] ${page.title} created`);
 }
