@@ -25,7 +25,7 @@ export const rebatesSections = [
     subtitle: "Federal",
     title: "STC",
     paragraphs: [
-      { text: "The Federal Small-Scale Renewable Energy Scheme (SRES) issues Small-Scale Technology Certificates (STCs) for every eligible solar system installed. Installers trade those certificates and pass the value back to you as an upfront discount on your system price. You do not claim anything yourself. The number of STCs depends on system size and your geographic zone. Perth sits in Zone 3, so a standard 6.6 kW system installed in 2026 commonly landed around $1,600 in upfront support.", isSecondary: false },
+      { text: "The federal small-scale renewable energy scheme (SRES) issues small-scale technology certificates (STCs) for every eligible solar system installed. Installers trade those certificates and pass the value back to you as an upfront discount on your system price. You do not claim anything yourself. The number of STCs depends on system size and your geographic zone. Perth sits in zone 3, so a standard 6.6 kW system installed in 2026 commonly landed around $1,600 in upfront support.", isSecondary: false },
     ],
   },
   {
@@ -40,7 +40,7 @@ export const rebatesSections = [
   {
     __component: "rebates.utility-cards" as const,
     badge: "WA State Rebate",
-    subtitle: "Extra WA-only Savings",
+    subtitle: "Extra WA-Only Savings",
     title: "On Top Of The Federal Rebate",
     description: "Launched on 1 July 2025, the WA Residential Battery Scheme provides a state rebate for home batteries that can be combined with the federal Cheaper Home Batteries Program, with funding for up to 100,000 installations.",
     cards: [

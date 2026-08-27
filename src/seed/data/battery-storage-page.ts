@@ -20,22 +20,22 @@ export const batteryStorageSections = [
   },
   {
     __component: "battery-storage.debs-rebate" as const,
-    subtitle: "Why a battery now",
-    title: "Exporting your solar earns 2 cents. Using it after dark saves 32. That's the case for a battery.",
+    subtitle: "Why A Battery Now",
+    title: "Exporting Your Solar Earns 2 Cents. Using It After Dark Saves 32. That's The Case For A Battery.",
     description: "If you've watched your Synergy bill climb, the maths now firmly favours storage. DEBS pays just 2c/kWh for solar exported outside the 3–9pm window — but every stored kWh you use in the evening saves you around 32c. A battery turns your midday surplus into your evening power, and three layers of government support still bring the price down:",
     highlights: [
       {
         label: "WA Residential Battery Scheme",
         description:
-          "up to $1,300 (Synergy) or $3,800 (Horizon Power) off an approved battery. 100,000 rebates state-wide, available until the allocation runs out.",
+          "Up to $1,300 (Synergy) or $3,800 (Horizon Power) off an approved battery. 100,000 rebates state-wide, available until the allocation runs out.",
       },
       {
         label: "Federal Cheaper Home Batteries Program",
         description:
-          "around 30% off upfront cost, currently worth roughly $2,500–$2,700 on a 10 kWh system. The rate now steps down every six months — the next reduction lands 1 January 2027.",
+          "Around 30% off upfront cost, currently worth roughly $2,500–$2,700 on a 10 kWh system. The rate now steps down every six months — the next reduction lands 1 January 2027.",
       },
       {
-        label: "WA no-interest loan via Plenti",
+        label: "WA No-Interest Loan Via Plenti",
         description:
           "$2,001–$10,000 over 3–10 years at 0% interest for eligible households.",
       },
@@ -46,32 +46,32 @@ export const batteryStorageSections = [
   },
   {
     __component: "battery-storage.jargon" as const,
-    topSubtitle: "How your battery works",
-    title: "(Without jargon)",
+    topSubtitle: "How Your Battery Works",
+    title: "(Without Jargon)",
     description: "A home battery stores the solar your panels produce during the day so you can use it after sundown, when grid electricity is most expensive.",
     cards: [
       {
-        title: "Your panels generate solar all day",
+        title: "Your Panels Generate Solar All Day",
         description: "Perth averages 5.8 peak sun hours, one of the highest solar irradiance levels of any capital city. A 6.6kW system makes more than most homes use during daylight hours.",
         image: null,
       },
       {
-        title: "Surplus solar charges your battery, not the grid",
+        title: "Surplus Solar Charges Your Battery, Not The Grid",
         description: "Without a battery, that surplus flows to the grid for 2.25–10c per kWh. With a battery, it charges the unit directly, typically fully charging a 10 kWh battery by early afternoon.",
         image: null,
       },
       {
-        title: "Your home runs on stored solar after sunset",
+        title: "Your Home Runs On Stored Solar After Sunset",
         description: "From dusk through the evening peak (3pm–9pm) when grid electricity is most expensive, your home draws from the battery instead of Synergy. Each kWh used this way saves you around 30 cents.",
         image: null,
       },
       {
-        title: "Grid is backup, not default",
+        title: "Grid Is Backup, Not Default",
         description: "On the rare day where you run the battery flat, the grid tops you up automatically. You don't notice the handover.",
         image: null,
       },
       {
-        title: "During a blackout, your battery keeps the lights on",
+        title: "During A Blackout, Your Battery Keeps The Lights On",
         description: "With a backup-ready battery (Tesla Powerwall 3, Sigenergy, BYD with backup box), essential circuits keep running while the grid is down.",
         image: null,
       },
@@ -79,11 +79,11 @@ export const batteryStorageSections = [
   },
   {
     __component: "battery-storage.bill-impact" as const,
-    topSubtitle: "What a battery actually",
-    title: "Does to your bill",
+    topSubtitle: "What A Battery Actually",
+    title: "Does To Your Bill",
     bottomSubtitle: "Across our 45,000+ installations, Perth households combining solar with battery storage typically see bill reductions of 70–90% — transforming electricity from a major expense into a near-negligible one.",
     ctaDescription: "Want an estimate for your home? Tell us your address and usage and we'll model it",
-    ctaText: "Get a personalised quote",
+    ctaText: "Get A Personalised Quote",
     ctaLink: "#quote-form",
     cards: [
       {
@@ -112,35 +112,35 @@ export const batteryStorageSections = [
         title: "Turn Your Home Into A Smart Energy Hub",
         description: "App control, VPP integration, automated load shifting and EV-ready. The next generation of what a home battery can do.",
         image: null,
-        ctaText: "Explore smart home batteries",
+        ctaText: "Explore Smart Home Batteries",
         ctaLink: "/smart-home-battery-system",
       },
       {
         title: "Our Full Battery Range",
         description: "Tesla Powerwall 3, BYD, Alpha ESS, Sigenergy, iStore and more. Right-sized for your home, your usage and your solar system.",
         image: null,
-        ctaText: "see all products",
+        ctaText: "See All Products",
         ctaLink: "/battery-product",
       },
       {
         title: "Claim Up To $7,900 Off In 2026",
         description: "Step-by-step guide to the WA Residential Battery Scheme, federal Cheaper Home Batteries Program, and the $10,000 interest-free loan.",
         image: null,
-        ctaText: "rebate guide",
+        ctaText: "Rebate Guide",
         ctaLink: "/government-rebates",
       },
       {
         title: "Only Proven, Perth-Tested Brands",
         description: "Every brand we install is CEC-approved, on Synergy's Supported Solutions List, and field-tested in WA conditions.",
         image: null,
-        ctaText: "compare brands",
+        ctaText: "Compare Brands",
         ctaLink: "/brands-we-carry",
       },
       {
         title: "Your Questions, Answered Instantly",
         description: "40+ questions from Perth homeowners — sizing, VPP, blackouts, warranties, real-world performance.",
         image: null,
-        ctaText: "read the FAQ",
+        ctaText: "Read The FAQ",
         ctaLink: "#faq",
       },
     ],
@@ -153,21 +153,21 @@ export const batteryStorageSections = [
     cards: [
       {
         title: "WA Residential Battery Scheme",
-        description: "Up To $1,300 (Synergy) Or $3,800 (Horizon)",
+        description: "Up to $1,300 (Synergy) or $3,800 (Horizon)",
         isPrimary: false,
       },
       {
         title: "Federal Cheaper Home Batteries Program",
-        description: "Approximately $3,720 On A 10kWh Battery",
+        description: "Approximately $3,720 on a 10kWh battery",
         isPrimary: true,
       },
       {
         title: "Interest-Free Loan",
-        description: "Up To $10,000 Over 3–10 Years (Via Plenti, Income Under $210k)",
+        description: "Up to $10,000 over 3–10 years (via Plenti, income under $210k)",
         isPrimary: false,
       },
     ],
-    footerText: "Combined Value: Up To $5,000 (Synergy) Or $7,500 (Horizon) Off A 10kWh Battery. Plus The Option To Finance The Rest At 0% Interest.",
+    footerText: "Combined value: up to $5,000 (Synergy) or $7,500 (Horizon) off a 10kWh battery. Plus the option to finance the rest at 0% interest.",
     ctaText: "Full Rebate Guide",
     ctaLink: "/government-rebates",
   },
@@ -186,7 +186,7 @@ export const batteryStorageSections = [
     ],
     conversationTitle: "Worth A Conversation First",
     conversationItems: [
-      { text: "You're away during the day AND evenings — you may not cycle the battery hard enough" },
+      { text: "You're away during the day and evenings — you may not cycle the battery hard enough" },
       { text: "Your roof is heavily shaded or poorly oriented — solar sizing matters for battery value" },
       { text: "You're planning an EV purchase in 12 months — battery sizing should account for it" },
       { text: "You're a renter or strata property — rebates and technical approvals need upfront planning" },
@@ -194,24 +194,24 @@ export const batteryStorageSections = [
   },
   {
     __component: "battery-storage.solar-meaning" as const,
-    topSubtitle: "What a virtual power plant",
+    topSubtitle: "What A Virtual Power Plant",
     title: "Actually Means For You",
     description: "To claim the WA battery rebate, your system must join a Virtual Power Plant (VPP). Here's what that means in plain English.",
     cards: [
       {
-        title: "What is a VPP?",
+        title: "What Is A VPP?",
         description: "A network of home batteries — thousands of them — that Synergy or Horizon Power can call on during peak grid stress. Instead of firing up a gas peaker, the grid pulls a bit of stored energy from each participating battery.",
       },
       {
-        title: "How often does it happen?",
+        title: "How Often Does It Happen?",
         description: "VPP events are rare — typically a handful of times a year, usually on the hottest summer evenings. Your battery automatically responds; you don't need to do anything.",
       },
       {
-        title: "What do you get for it?",
+        title: "What Do You Get For It?",
         description: "Most WA VPP programs pay an annual credit or per-event bonus for participating. Many households earn $150–$300/year on top of their bill savings.",
       },
       {
-        title: "Do you lose control?",
+        title: "Do You Lose Control?",
         description: "No. Your battery stays charged and ready for your own backup needs. VPP events are coordinated so your household always has enough stored power to cover its own essential loads.",
       },
     ],
@@ -282,11 +282,11 @@ export const batteryStorageSections = [
     topSubtitle: "Perth Homes",
     title: "That Made The Switch",
     centerButton: true,
-    centerButtonText: "View our full portfolio of 113+ installs",
+    centerButtonText: "View Our Full Portfolio Of 113+ Installs",
     centerButtonLink: "/portfolio",
     stories: [
       {
-        home: "Family home, Canning Vale",
+        home: "Family Home, Canning Vale",
         specs: "10 kW solar + Tesla Powerwall 3 (13.5 kWh)",
         description: "Quarterly bill down from $680 to $90. Battery cycles once per day on average. Enrolled in Synergy VPP, earning ~$280/year in activation credits.",
         image: null,

@@ -4,7 +4,7 @@ export const researchDevelopmentSections = [
     subtitle: "Innovating",
     mainTitle: "The Future Of Technology",
     description:
-      "Advanced Research And Development Driving Next-Generation Renewable Energy Solutions.",
+      "Advanced research and development driving next-generation renewable energy solutions.",
     ctaText: "Get Your Free Quote",
     ctaLink: "#quote-form",
     backgroundImage: null,
@@ -16,11 +16,11 @@ export const researchDevelopmentSections = [
     align: "left",
     paragraphs: [
       {
-        text: "Our R&D Division Focuses On Developing Cutting-Edge Technologies In Hybrid Energy Systems,",
+        text: "Our R&D division focuses on developing cutting-edge technologies in hybrid energy systems,",
         isSecondary: false,
       },
       {
-        text: "Microgrids, And Intelligent Energy Management. These Innovations Help Improve Efficiency, Reliability, And Scalability Across All Our Solutions.",
+        text: "Microgrids, and intelligent energy management. These innovations help improve efficiency, reliability, and scalability across all our solutions.",
         isSecondary: true,
       },
     ],
@@ -33,28 +33,28 @@ export const researchDevelopmentSections = [
       {
         title: "Microgrid Development",
         description:
-          "Building Resilient, Localized Energy Networks For Efficient Power Distribution.",
+          "Building resilient, localized energy networks for efficient power distribution.",
         image: null,
         href: "/research-and-development/microgrid-development",
       },
       {
         title: "Hybrid Energy Systems",
         description:
-          "Integrating Solar, Wind, Battery, And Advanced Control Systems For Maximum Efficiency And Reliability.",
+          "Integrating solar, wind, battery, and advanced control systems for maximum efficiency and reliability.",
         image: null,
         href: "/research-and-development/hybrid-energy-systems",
       },
       {
         title: "Energy Management",
         description:
-          "Intelligent Software Platforms That Optimize Energy Generation, Storage, And Consumption In Real Time.",
+          "Intelligent software platforms that optimize energy generation, storage, and consumption in real time.",
         image: null,
         href: "/research-and-development/energy-management",
       },
       {
         title: "Emerging Technologies",
         description:
-          "Exploring Next-Generation Solutions In Hydrogen, Advanced Battery Chemistries, And Grid Integration.",
+          "Exploring next-generation solutions in hydrogen, advanced battery chemistries, and grid integration.",
         image: null,
         href: "/research-and-development/emerging-technologies",
       },
@@ -68,21 +68,21 @@ export const researchDevelopmentSections = [
       {
         title: "Pilot Programs In Remote Regions",
         description:
-          "Deploying Solutions In Underserved Areas To Ensure Accessibility And Reliability.",
+          "Deploying solutions in underserved areas to ensure accessibility and reliability.",
         image: null,
         href: "/research-and-development/pilot-programs",
       },
       {
         title: "Award-Winning Innovation",
         description:
-          "Recognized For Excellence In Renewable Energy Research And Practical Application.",
+          "Recognized for excellence in renewable energy research and practical application.",
         image: null,
         href: "/research-and-development/awards",
       },
       {
         title: "Strategic Research Partnerships",
         description:
-          "Collaborating With Universities And Research Institutions To Accelerate Technological Breakthroughs.",
+          "Collaborating with universities and research institutions to accelerate technological breakthroughs.",
         image: null,
         href: "/research-and-development/partnerships",
       },
@@ -93,7 +93,7 @@ export const researchDevelopmentSections = [
     subtitle: "Build Your",
     mainTitle: "Energy Strategy",
     description:
-      "System Size Depends On Your Energy Usage, Roof Space, And Future Needs. Our Experts Design Systems That Balance Performance And Cost For Optimal ROI.",
+      "System size depends on your energy usage, roof space, and future needs. Our experts design systems that balance performance and cost for optimal ROI.",
     buttonText: "Get Started",
     backgroundImage: null,
   },

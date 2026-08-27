@@ -9,10 +9,10 @@ export const homeSections: Section[] = [
   // ─── 1. Hero ─────────────────────────────────────────────────────────
   {
     __component: "home.hero",
-    subtitle: "Step Into the",
-    title: "Future of Energy",
+    subtitle: "Step Into The",
+    title: "Future Of Energy",
     description:
-      "WA's #1 rated solar installer with 45,000+ installations since 2003.\nCEC-approved. ProductReview Award Winner 2021–2026.",
+      "WA's #1 rated solar installer with 45,000+ installations since 2003.\nCEC-approved. ProductReview award winner 2021–2026.",
     buttonText: "Get Started",
     buttonLink: "/contact",
     mediaType: "image",
@@ -69,7 +69,7 @@ export const homeSections: Section[] = [
         prefix: null,
         suffix: null,
         title: "Years",
-        description: "In Business, Operating From \n Canning Vale Office",
+        description: "In business, operating from \n Canning Vale office",
         icon: null,
         image: null,
         logo: null,
@@ -133,13 +133,13 @@ export const homeSections: Section[] = [
         number: "01",
         title: "Capture Energy From The Sun",
         description:
-          "High-Efficiency Solar Panels Installed On Your Roof Absorb Sunlight Throughout The Day And Convert It Into Direct Current (DC) Electricity, Creating Clean And Renewable Energy For Your Home.",
+          "High-efficiency solar panels installed on your roof absorb sunlight throughout the day and convert it into direct current (DC) electricity, creating clean and renewable energy for your home.",
         mediaType: "image",
         mediaSrc: null,
       },
       {
         number: "02",
-        title: "Store Excess Power for Night",
+        title: "Store Excess Power For Night",
         description:
           "Premium battery storage systems capture surplus solar generation during the day, giving you reliable power after sunset and complete blackout protection.",
         mediaType: "image",
@@ -200,19 +200,19 @@ export const homeSections: Section[] = [
       {
         title: "Federal STC Rebate",
         description:
-          "Receive Thousands Off Your Solar System Through The Federal Government's Small-Scale Technology Certificate (STC) Scheme. Applied As An Upfront Discount At Point Of Sale.",
+          "Receive thousands off your solar system through the federal Government's small-scale technology certificate (STC) scheme. Applied as an upfront discount at point of sale.",
         image: null,
       },
       {
         title: "WA Battery Rebate",
         description:
-          "Up To $1,300 Rebate For Eligible WA Households Installing A Battery System Under The Distributed Energy Buyback Scheme (DEBS) Battery Program.",
+          "Up to $1,300 rebate for eligible WA households installing a battery system under the distributed energy buyback scheme (DEBS) battery program.",
         image: null,
       },
       {
         title: "Interest-Free Loan Up To $10,000",
         description:
-          "Through The WA Battery Rebate, Eligible Synergy Customers Can Access An Interest-Free Loan Of Up To $10,000 Repayable Over 10 Years.",
+          "Through the WA battery rebate, eligible Synergy customers can access an interest-free loan of up to $10,000 repayable over 10 years.",
         image: null,
         ctaText: "Check Your Eligibility",
       },
@@ -294,7 +294,7 @@ export const homeSections: Section[] = [
       {
         systemTitle: "10kW Solar + Battery System",
         quote:
-          "The Entire Process Was Smooth From Consultation To Installation. Our Power Bills Dropped Almost Immediately, And The Team Kept Us Informed Every Step Of The Way.",
+          "The entire process was smooth from consultation to installation. Our power bills dropped almost immediately, and the team kept us informed every step of the way.",
         author: "Sarah",
         location: "Perth",
         rating: 5,
@@ -302,7 +302,7 @@ export const homeSections: Section[] = [
       {
         systemTitle: "10kW Solar + Battery System",
         quote:
-          "The Entire Process Was Smooth From Consultation To Installation. Our Power Bills Dropped Almost Immediately, And The Team Kept Us Informed Every Step Of The Way.",
+          "The entire process was smooth from consultation to installation. Our power bills dropped almost immediately, and the team kept us informed every step of the way.",
         author: "Sarah",
         location: "Perth",
         rating: 5,
@@ -310,7 +310,7 @@ export const homeSections: Section[] = [
       {
         systemTitle: "10kW Solar + Battery System",
         quote:
-          "The Entire Process Was Smooth From Consultation To Installation. Our Power Bills Dropped Almost Immediately, And The Team Kept Us Informed Every Step Of The Way.",
+          "The entire process was smooth from consultation to installation. Our power bills dropped almost immediately, and the team kept us informed every step of the way.",
         author: "Sarah",
         location: "Perth",
         rating: 5,
@@ -338,14 +338,14 @@ export const homeSections: Section[] = [
   {
     __component: "home.smartsolar",
     topSubtitle: "Explore Our",
-    title: "Latest news & insights",
+    title: "Latest News & Insights",
     centerButtonText: "View All Articles",
     centerButtonLink: "/blog",
     cards: [
       {
         title: "STC Upfront Discount",
         description:
-          "Federal STC And WA Rebate Values Are Deducted Directly From Your Quoted Price. You Pay The Post-Rebate Balance.",
+          "Federal STC and WA rebate values are deducted directly from your quoted price. You pay the post-rebate balance.",
         image: null,
         textPosition: "top",
         footerTitle: "Best For",
@@ -354,7 +354,7 @@ export const homeSections: Section[] = [
       {
         title: "Plenti No-Interest Loan",
         description:
-          "WA-Funded No-Interest Loan From $2,001 To $10,000. Flexible 3–10 Year Terms, No Early Repayment Fees.",
+          "WA-funded no-interest loan from $2,001 to $10,000. Flexible 3–10 year terms, no early repayment fees.",
         image: null,
         textPosition: "top",
         footerTitle: "Best For",
@@ -363,7 +363,7 @@ export const homeSections: Section[] = [
       {
         title: "Third-Party Finance",
         description:
-          "We Can Refer You To Accredited Green-Loan Providers For Larger Systems Or Commercial Installations.",
+          "We can refer you to accredited green-loan providers for larger systems or commercial installations.",
         image: null,
         textPosition: "top",
         footerTitle: "Best For",

@@ -4,7 +4,7 @@ export const commercialSystemsSections = [
     subtitle: "Commercial Solar In Perth,",
     mainTitle: "Designed By Engineers",
     description:
-      "Commercial Solar Systems For Perth And WA Businesses Since 2003. 10kW To 1MW, In-House Engineers, Integrated Battery Storage, Full Rebate Management. Explore Case Studies And Request A Free Energy Assessment.",
+      "Commercial solar systems for Perth and WA businesses since 2003. 10 kW to 1 MW, in-house engineers, integrated battery storage, full rebate management. Explore case studies and request a free energy assessment.",
     ctaText: "Book Energy Assessment",
     ctaLink: "#quote-form",
     backgroundImage: null,
@@ -14,7 +14,7 @@ export const commercialSystemsSections = [
     subtitle: "Commercial Power In WA Is The Highest It Has Ever Been",
     title: "And The Cheapest It Will Ever Be.",
     description:
-      "Rising Commercial Power Tariffs Since 2018 And Falling Solar Costs (Now ~$1.10\u2013$1.40/W) Make Solar A Smart Investment, With Systems Typically Paying Back In 2\u20134 Years And Delivering Low-Cost Power Long-Term\u2014Especially For Businesses That Operate During The Day.",
+      "Rising commercial power tariffs since 2018 and falling solar costs (now ~$1.10–$1.40/W) make solar a smart investment, with systems typically paying back in 2–4 years and delivering low-cost power long-term — especially for businesses that operate during the day.",
     cardBackground: null,
     stats: [
       { value: "2-4 Years", label: "Typical Payback" },
@@ -26,54 +26,54 @@ export const commercialSystemsSections = [
     __component: "commercial-systems.tiers-section" as const,
     title: "Three Different Financial Cases",
     description:
-      "Commercial Solar In Perth Divides Cleanly Into Three System Sizes \u2014 Each With Its Own Approval Pathway, Certificate Type, And Financial Logic. Pick The Band That Fits Your Roof And Your Bill, Then Talk To Us About Specifics.",
+      "Commercial solar in Perth divides cleanly into three system sizes — each with its own approval pathway, certificate type, and financial logic. Pick the band that fits your roof and your bill, then talk to us about specifics.",
     tiers: [
       {
         title: "Small Business And SME",
         subtitle: "10kW To 39kW DC (30kVA AC)",
         description:
-          "Systems Up To 30kVA Benefit From A Simplified Western Power Approval\u2014No GPU, Studies, Or Extra Fees. A ~39kW / 30kVA Setup Fits This Range, Maximizes Incentives, And Typically Pays Back In 2\u20133 Years.",
+          "Systems up to 30 kVA benefit from a simplified Western Power approval — no GPU, studies, or extra fees. A ~39 kW / 30 kVA setup fits this range, maximizes incentives, and typically pays back in 2–3 years.",
         image: null,
         ctaText: "See SME Case Studies",
         ctaHref: "#",
         details: [
-          { label: "Typical Install", value: "39kW DC, 30kVA Inverter, Optional 30\u201360kWh Battery" },
+          { label: "Typical Install", value: "39kW DC, 30kVA Inverter, Optional 30–60kWh Battery" },
           { label: "Approval Pathway", value: "Streamlined Western Power Application, ~10 Days" },
           { label: "Certificate", value: "Federal STCs (One-Off, Applied As Upfront Discount)" },
-          { label: "Anchor Case Study", value: "Saint Mary Coptic Church \u2014 Hospitality / Community" },
-          { label: "Indicative Roof Area", value: "200\u2013300m\u00b2 Of Unshaded Roof" },
+          { label: "Anchor Case Study", value: "Saint Mary Coptic Church — Hospitality / Community" },
+          { label: "Indicative Roof Area", value: "200–300m² Of Unshaded Roof" },
         ],
       },
       {
         title: "Mid-Market Commercial",
-        subtitle: "50kW\u2013100kW DC",
+        subtitle: "50kW–100kW DC",
         description:
-          "Systems Over 30kVA AC Require A Western Power Engineering Study And A Grid Protection Unit (GPU), Adding $12,000\u2013$18,000 To The Project. Despite The Added Cost, 50\u2013100kW Systems Benefit From Economies Of Scale And Can Typically Achieve A Payback In Under Three Years.",
+          "Systems over 30 kVA AC require a Western Power engineering study and a grid protection unit (GPU), adding $12,000–$18,000 to the project. Despite the added cost, 50–100 kW systems benefit from economies of scale and can typically achieve a payback in under three years.",
         image: null,
         ctaText: "See Mid-Market Case Studies",
         ctaHref: "#",
         details: [
-          { label: "Typical Install", value: "50kW, 70kW Or 100kW DC \u00b7 Three-Phase String Or Hybrid Inverters" },
-          { label: "Approval Pathway", value: "Western Power Engineering Study + GPU (~6\u201310 Weeks)" },
+          { label: "Typical Install", value: "50kW, 70kW Or 100kW DC · Three-Phase String Or Hybrid Inverters" },
+          { label: "Approval Pathway", value: "Western Power Engineering Study + GPU (~6–10 Weeks)" },
           { label: "Certificate", value: "Federal STCs Applied As An Upfront Discount" },
           { label: "Anchor Case Study", value: "Smithfield & Kewdale Commercial Projects" },
-          { label: "Indicative Roof Area", value: "400\u20131,000m\u00b2 Of Unshaded Roof" },
+          { label: "Indicative Roof Area", value: "400–1,000m² Of Unshaded Roof" },
         ],
       },
       {
         title: "Large Commercial & Industrial",
-        subtitle: "150kW\u20131MW+",
+        subtitle: "150kW–1MW+",
         description:
-          "Systems Above 100kW Generate Large-Scale Generation Certificates (LGCs) Instead Of STCs, Creating An Ongoing Revenue Stream Alongside Electricity Bill Savings. A Typical 150kW System Can Generate 210 LGCs Annually, Delivering $8,400\u2013$12,600 In Additional Yearly Value.",
+          "Systems above 100 kW generate Large-scale Generation Certificates (LGCs) instead of STCs, creating an ongoing revenue stream alongside electricity bill savings. A typical 150 kW system can generate 210 LGCs annually, delivering $8,400–$12,600 in additional yearly value.",
         image: null,
         ctaText: "Discuss A 100kW+ Project",
         ctaHref: "#",
         details: [
-          { label: "Typical Install", value: "150kW, 300kW, 500kW Or 1MW+ \u00b7 Multiple Inverters \u00b7 Optional Battery Or Ground-Mount" },
-          { label: "Approval Pathway", value: "Full Western Power Process \u00b7 LGC Accreditation And PPAs Where Applicable" },
+          { label: "Typical Install", value: "150kW, 300kW, 500kW Or 1MW+ · Multiple Inverters · Optional Battery Or Ground-Mount" },
+          { label: "Approval Pathway", value: "Full Western Power Process · LGC Accreditation And PPAs Where Applicable" },
           { label: "Certificate", value: "Large-Scale Generation Certificates (Ongoing Revenue)" },
           { label: "Anchor Case Study", value: "Banasurasagar Reservoir (International Scale)" },
-          { label: "Indicative Roof Area", value: "1,000m\u00b2+ Of Unshaded Roof Or Ground-Mount Sites" },
+          { label: "Indicative Roof Area", value: "1,000m²+ Of Unshaded Roof Or Ground-Mount Sites" },
         ],
       },
     ],
@@ -82,7 +82,7 @@ export const commercialSystemsSections = [
     __component: "commercial-systems.components-section" as const,
     title: "One Reliable System",
     description:
-      "A Commercial Solar System Isn\u2019t Fundamentally Different From A Residential One \u2014 It\u2019s The Same Six Components, Scaled Up. The Differences Are In The Engineering: Three-Phase Wiring, Larger String Sizing, Switchboard Upgrades, And Grid-Protection Devices For Systems Above 30kVA. Here\u2019s How The Pieces Fit Together.",
+      "A commercial solar system isn’t fundamentally different from a residential one — it’s the same six components, scaled up. The differences are in the engineering: three-phase wiring, larger string sizing, switchboard upgrades, and grid-protection devices for systems above 30 kVA. Here’s how the pieces fit together.",
     backgroundImage: null,
     items: [
       { letter: "A", title: "Solar Panels" },
@@ -101,42 +101,42 @@ export const commercialSystemsSections = [
       {
         title: "Manufacturing & Cold Storage",
         description:
-          "High Continuous Daytime Load; Power-Factor Charges; Refrigeration That Never Sleeps. Solar Offsets The Highest-Cost Tariff Blocks.",
+          "High continuous daytime load; power-factor charges; refrigeration that never sleeps. Solar offsets the highest-cost tariff blocks.",
         caseStudy: "Smithfield Manufacturing, Kewdale Industrial",
         icon: null,
       },
       {
         title: "Hospital & Accommodation",
         description:
-          "Air-Conditioning, Kitchens, Laundries Running Through The Warmest Hours Of The Day. Demand Peaks At Lunchtime \u2014 Perfect Solar Match.",
+          "Air-conditioning, kitchens, laundries running through the warmest hours of the day. Demand peaks at lunchtime — perfect solar match.",
         caseStudy: "Perth City YHA, Saint Mary Coptic Church Hall",
         icon: null,
       },
       {
         title: "Healthcare & Medical",
         description:
-          "24/7 Operation, High HVAC Load, Sensitive Equipment. Solar With Battery Backup Reduces Both Running Costs And Outage Risk.",
+          "24/7 operation, high HVAC load, sensitive equipment. Solar with battery backup reduces both running costs and outage risk.",
         caseStudy: "Illawarra Medical Centre",
         icon: null,
       },
       {
         title: "Retail & Shopping Centres",
         description:
-          "Trading Hours Align With Solar Peak. Multi-Tenancy Buildings Can Split Solar Between Common Areas And Tenants.",
+          "Trading hours align with solar peak. Multi-tenancy buildings can split solar between common areas and tenants.",
         caseStudy: "Duncraig Retail, Dubbo Retail",
         icon: null,
       },
       {
         title: "Education & Community",
         description:
-          "Schools, Churches, Community Halls \u2014 Daytime Occupancy, Fixed Budgets, ESG Mandates. Battery Shifts Production Into Evening Events.",
+          "Schools, churches, community halls — daytime occupancy, fixed budgets, ESG mandates. Battery shifts production into evening events.",
         caseStudy: "Saint Mary Coptic Church",
         icon: null,
       },
       {
         title: "Agribusiness & Rural Enterprise",
         description:
-          "Pumping, Dairy, Packing Sheds, Marron Farms, Vineyards. Often Combined With Off-Grid Microgrid.",
+          "Pumping, dairy, packing sheds, marron farms, vineyards. Often combined with off-grid microgrid.",
         caseStudy: "Banasurasagar Reservoir; Agricultural Off-Grid Case Studies",
         icon: null,
       },
@@ -147,30 +147,30 @@ export const commercialSystemsSections = [
     topSubtitle: "Six Commercial Installs",
     title: "Six Different Briefs",
     bottomSubtitle:
-      "The Fastest Payback In WA Commercial Solar Comes From Businesses Whose Operating Hours Line Up With Peak Solar Generation \u2014 Roughly 9am To 4pm. These Six Industries Are Where We\u2019ve Installed The Most Systems And Seen The Strongest Results.",
+      "The fastest payback in WA commercial solar comes from businesses whose operating hours line up with peak solar generation — roughly 9am to 4pm. These six industries are where we’ve installed the most systems and seen the strongest results.",
     cards: [
       {
-        title: "Perth City YHA \u00b7 Perth, WA",
+        title: "Perth City YHA · Perth, WA",
         description:
-          "37kW Rooftop On-Grid\n30% Of Annual Electricity Offset, 39 Tonnes CO\u2082 Saved Per Year, 2.2-Year Payback.",
+          "37 kW rooftop on-grid\n30% of annual electricity offset, 39 tonnes CO₂ saved per year, 2.2-year payback.",
         image: null,
         textPosition: "top",
         footerTitle: "Read More",
         footerDescription: "",
       },
       {
-        title: "Illawarra Medical Centre \u00b7 Wollongong, NSW",
+        title: "Illawarra Medical Centre · Wollongong, NSW",
         description:
-          "Battery-Backed Medical Install\n24/7 Reliability, Reduced Grid Demand, Ongoing LGC Revenue Stream.",
+          "Battery-backed medical install\n24/7 reliability, reduced grid demand, ongoing LGC revenue stream.",
         image: null,
         textPosition: "top",
         footerTitle: "Read More",
         footerDescription: "",
       },
       {
-        title: "Smithfield Manufacturing \u00b7 Smithfield, NSW",
+        title: "Smithfield Manufacturing · Smithfield, NSW",
         description:
-          "High-Daytime-Load Factory\nDirect Offset Of Peak Tariff Blocks, Full STC + LGC Stacking, Under-3-Year Payback.",
+          "High-daytime-load factory\nDirect offset of peak tariff blocks, full STC + LGC stacking, under-3-year payback.",
         image: null,
         textPosition: "top",
         footerTitle: "Read More",
@@ -181,13 +181,13 @@ export const commercialSystemsSections = [
   {
     __component: "commercial-systems.watch-system-section" as const,
     subtitle: "We Watch Your System",
-    title: "So You Don\u2019t Have To",
+    title: "So You Don’t Have To",
     ctaText: "Contact Us",
     ctaHref: "/contact",
     image: null,
     paragraphs: [
-      { text: "Every Commercial Install We Complete Ships With Solarog-Based Monitoring. The Web And Mobile Dashboard Tracks Per-String Yield, Inverter Health, System Uptime, And CO\u2082 Offset In Real Time." },
-      { text: "If Something Goes Wrong \u2014 A String Falls Offline, An Inverter Throws A Fault, Performance Drops Below Modelled Output \u2014 We See It Before You Do. Full-Service Maintenance Contracts Are Available; Talk To Us About Coverage." },
+      { text: "Every commercial install we complete ships with Solarog-based monitoring. The web and mobile dashboard tracks per-string yield, inverter health, system uptime, and CO₂ offset in real time." },
+      { text: "If something goes wrong — a string falls offline, an inverter throws a fault, performance drops below modelled output — we see it before you do. Full-service maintenance contracts are available; talk to us about coverage." },
     ],
   },
   {
@@ -195,17 +195,17 @@ export const commercialSystemsSections = [
     subtitle: "Three Federal Incentives That Stack With Your",
     title: "Commercial Install",
     description:
-      "Federal Incentives Reduce The Upfront Cost Of Commercial Solar Significantly\u2014But Only If You Understand Which Ones Apply At Your System Size. Here Are The Three That Matter In WA In 2026.",
+      "Federal incentives reduce the upfront cost of commercial solar significantly — but only if you understand which ones apply at your system size. Here are the three that matter in WA in 2026.",
     packages: [
       {
-        title: "Small-scale Technology Certificates (STCs)",
-        desc: "Systems Up To 100kW",
+        title: "Small-Scale Technology Certificates (STCs)",
+        desc: "Systems up to 100 kW",
         bgClass: "bg-[#E5EFD5] text-black",
         items: [
           {
             label: "Federal STC Value",
             value:
-              "$35\u2013$40 per certificate, calculated on expected production through 2030 \u2014 worth roughly $300\u2013$500 per kW installed in 2026, depending on the deeming year.",
+              "$35–$40 per certificate, calculated on expected production through 2030 — worth roughly $300–$500 per kW installed in 2026, depending on the deeming year.",
           },
           {
             label: "How You Receive It",
@@ -215,14 +215,14 @@ export const commercialSystemsSections = [
         ],
       },
       {
-        title: "Large-scale Generation Certificates (LGCs)",
-        desc: "Systems Above 100kW",
+        title: "Large-Scale Generation Certificates (LGCs)",
+        desc: "Systems above 100 kW",
         bgClass: "bg-[#A0CF44] text-black",
         items: [
           {
             label: "LGC Market Value",
             value:
-              "1 LGC per MWh produced. Currently $40\u2013$60 per LGC, traded on the open market. A 150kW Perth system creates ~210 LGCs/year \u2014 $8,400\u2013$12,600/year of additional revenue.",
+              "1 LGC per MWh produced. Currently $40–$60 per LGC, traded on the open market. A 150 kW Perth system creates ~210 LGCs/year — $8,400–$12,600/year of additional revenue.",
           },
           {
             label: "How You Receive It",
@@ -232,19 +232,19 @@ export const commercialSystemsSections = [
         ],
       },
       {
-        title: "Instant asset write-off",
-        desc: "Eligible Businesses (Turnover Threshold Applies)",
+        title: "Instant Asset Write-Off",
+        desc: "Eligible businesses (turnover threshold applies)",
         bgClass: "bg-[#E5EFD5] text-black",
         items: [
           {
             label: "Tax Benefit",
             value:
-              "Full deduction in the year of purchase rather than depreciated over 10\u201315 years.",
+              "Full deduction in the year of purchase rather than depreciated over 10–15 years.",
           },
           {
             label: "How You Receive It",
             value:
-              "Tax-time benefit. Confirm eligibility with your accountant \u2014 thresholds change annually.",
+              "Tax-time benefit. Confirm eligibility with your accountant — thresholds change annually.",
           },
         ],
       },
@@ -255,55 +255,55 @@ export const commercialSystemsSections = [
     subtitle: "Nine Steps From",
     title: "First Call To Handover",
     description:
-      "Commercial Solar Isn\u2019t A Product \u2014 It\u2019s A Project. The Right Design Depends On Roof Type, Electrical Infrastructure, Load Profile, Tariff Structure, Available Rebates, And Operational Constraints. Here\u2019s The Process We Run From Your First Call To System Handover.",
+      "Commercial solar isn’t a product — it’s a project. The right design depends on roof type, electrical infrastructure, load profile, tariff structure, available rebates, and operational constraints. Here’s the process we run from your first call to system handover.",
     steps: [
       {
         stepNumber: 1,
         title: "First Call & Bill Review",
         description:
-          "We Review Your Synergy Or Horizon Bill To Understand Daytime Load, Tariff Block, And Site Constraints.",
+          "We review your Synergy or Horizon bill to understand daytime load, tariff block, and site constraints.",
         image: null,
       },
       {
         stepNumber: 2,
         title: "Site Inspection",
         description:
-          "An Engineer Visits Site To Inspect Roof, Switchboard, And Load Profile. No Subcontractor.",
+          "An engineer visits site to inspect roof, switchboard, and load profile. No subcontractor.",
         image: null,
       },
       {
         stepNumber: 3,
         title: "System Design & Modelling",
         description:
-          "In-House Engineers Build A Tailored Design, Payback Projection, And Yield Model For Your Approval.",
+          "In-house engineers build a tailored design, payback projection, and yield model for your approval.",
         image: null,
       },
       {
         stepNumber: 4,
         title: "Approval & Administration",
         description:
-          "Western Power Application, Building Permit If Needed, Council DA If Required. We Manage All Paperwork.",
+          "Western Power application, building permit if needed, council DA if required. We manage all paperwork.",
         image: null,
       },
       {
         stepNumber: 5,
         title: "Procurement & Staging",
         description:
-          "Panels, Inverters, And Mounting Are Pre-Staged In Our Canning Vale Warehouse Before Site Delivery.",
+          "Panels, inverters, and mounting are pre-staged in our Canning Vale warehouse before site delivery.",
         image: null,
       },
       {
         stepNumber: 6,
         title: "Installation",
         description:
-          "In-House EC9676-Licensed Electricians Install Rail, Panels, And AC Infrastructure To Regen Standard.",
+          "In-house EC9676-licensed electricians install rail, panels, and AC infrastructure to Regen standard.",
         image: null,
       },
       {
         stepNumber: 7,
         title: "Commissioning & Handover",
         description:
-          "System Is Tested, Monitoring Is Provisioned, And You Receive Full Documentation And Rebate Paperwork.",
+          "System is tested, monitoring is provisioned, and you receive full documentation and rebate paperwork.",
         image: null,
       },
     ],
@@ -313,41 +313,41 @@ export const commercialSystemsSections = [
     subtitle: "Five Things You Only Get From",
     title: "A 23-Year Engineered Installer",
     description:
-      "Most Perth Commercial Installers Are Sales Businesses With A Contracted Install Crew. We\u2019re An Engineering Business With Our Own Electricians, Our Own R&D, And Our Own IP. Here\u2019s How That Shows Up On A Project.",
+      "Most Perth commercial installers are sales businesses with a contracted install crew. We’re an engineering business with our own electricians, our own R&D, and our own IP. Here’s how that shows up on a project.",
     items: [
       {
         number: 1,
-        title: "Engineering Depth \u2014 Not Just Sales",
+        title: "Engineering Depth — Not Just Sales",
         description:
-          "Prof Chem Nayar Holds The International Patent (PCT/AU2011/001068) Behind Regen\u2019s HybridGEN Technology, With Off-Grid Systems Deployed Across Australia And The Asia-Pacific Region.",
+          "Prof Chem Nayar holds the international patent (PCT/AU2011/001068) behind Regen’s HybridGEN technology, with off-grid systems deployed across Australia and the Asia-Pacific region.",
         highlight: false,
       },
       {
         number: 2,
         title: "In-House Electricians, Not Labour-Hire",
         description:
-          "EC9676 Licensed Regen Electricians Install Regen Systems. Same Team, Same Standard, Every Project. No Surprise Subcontractor On The Day.",
+          "EC9676 licensed Regen electricians install Regen systems. Same team, same standard, every project. No surprise subcontractor on the day.",
         highlight: true,
       },
       {
         number: 3,
         title: "Tier-1 Only, No Budget Substitution",
         description:
-          "Six Panel Brands And Four Inverter Brands, All CEC-Approved. We Don\u2019t Switch Components At Install Day To A Cheaper Equivalent.",
+          "Six panel brands and four inverter brands, all CEC-approved. We don’t switch components at install day to a cheaper equivalent.",
         highlight: false,
       },
       {
         number: 4,
         title: "Full Rebate And Paperwork Management",
         description:
-          "STCs, LGCs, Western Power Application, GPU Certification, Synergy/Horizon Connection, DEBS Feed-In Registration, Building Permit. All Submitted By Our Canning Vale Office.",
+          "STCs, LGCs, Western Power application, GPU certification, Synergy/Horizon connection, DEBS feed-in registration, building permit. All submitted by our Canning Vale office.",
         highlight: true,
       },
       {
         number: 5,
         title: "23 Years And Still Answering The Phone",
         description:
-          "When You Call Us In 2035 About A Tariff Change Or An Inverter Warranty Claim, The Business Answering Will Be The Same One That Installed The System. Six Consecutive ProductReview Awards Say We\u2019re Good At That.",
+          "When you call us in 2035 about a tariff change or an inverter warranty claim, the business answering will be the same one that installed the system. Six consecutive ProductReview awards say we’re good at that.",
         highlight: false,
       },
     ],
@@ -362,15 +362,15 @@ export const commercialSystemsSections = [
       {
         question: "Q1. What Size Solar System Do I Need?",
         answer:
-          "For a Perth small business, a 10\u201330kW system is the typical starting point. For mid-market and industrial, we size against your daytime load profile and tariff structure \u2014 a free energy assessment gives you a number within 30 minutes.",
+          "For a Perth small business, a 10–30kW system is the typical starting point. For mid-market and industrial, we size against your daytime load profile and tariff structure — a free energy assessment gives you a number within 30 minutes.",
       },
       {
-        question: "Q2. How much will a solar system save me in Perth?",
+        question: "Q2. How Much Will A Solar System Save Me In Perth?",
         answer:
-          "Most Perth commercial installs pay back in 2\u20134 years. Daytime self-consumption is the lever: businesses operating during sunlight hours see 80%+ of generated kWh used directly, avoiding low-value feed-in tariffs entirely.",
+          "Most Perth commercial installs pay back in 2–4 years. Daytime self-consumption is the lever: businesses operating during sunlight hours see 80%+ of generated kWh used directly, avoiding low-value feed-in tariffs entirely.",
       },
       {
-        question: "Q3. What\u2019s The Difference Between A Hybrid And A String Inverter?",
+        question: "Q3. What’s The Difference Between A Hybrid And A String Inverter?",
         answer:
           "A string inverter is standard and converts solar power for immediate use or grid export. A hybrid inverter manages solar + battery in a single unit and is required for any system designed to add battery storage now or later.",
       },
@@ -387,17 +387,17 @@ export const commercialSystemsSections = [
       {
         question: "Q6. How Long Does Installation Take?",
         answer:
-          "Small commercial systems (under 30kVA) are typically completed in 1\u20133 days. Mid-market and large-scale projects are staged over 1\u20134 weeks depending on roof access, switchboard works, and grid connection scheduling.",
+          "Small commercial systems (under 30kVA) are typically completed in 1–3 days. Mid-market and large-scale projects are staged over 1–4 weeks depending on roof access, switchboard works, and grid connection scheduling.",
       },
       {
-        question: "Q7. Will My System Work If There\u2019s A Blackout?",
+        question: "Q7. Will My System Work If There’s A Blackout?",
         answer:
           "Standard string inverters shut down during blackouts to protect grid workers. If you need backup during outages, a hybrid inverter + battery configured for emergency power supply (EPS) is required.",
       },
       {
         question: "Q8. How Much Is The Federal STC Rebate In 2026?",
         answer:
-          "STCs degress on 1 January each year until 2030. In 2026, a 30kW commercial system typically receives $300\u2013$500 per kW as an upfront discount, applied directly to your invoice.",
+          "STCs degress on 1 January each year until 2030. In 2026, a 30kW commercial system typically receives $300–$500 per kW as an upfront discount, applied directly to your invoice.",
       },
     ],
   },
@@ -406,7 +406,7 @@ export const commercialSystemsSections = [
     subtitle: "Tell Us About Your Facility",
     title: "We Will Come Back With A Number",
     description:
-      "A Commercial Energy Assessment Is Free And Takes About 30 Minutes \u2014 Most Of It On A Screen-Share With Your Last 12 Months Of Synergy Or Horizon Bills. We\u2019ll Come Back Inside A Week With A Sized System, A Rebate-Applied Price, And A Payback Projection Your Accountant Can Model.",
+      "A commercial energy assessment is free and takes about 30 minutes — most of it on a screen-share with your last 12 months of Synergy or Horizon bills. We’ll come back inside a week with a sized system, a rebate-applied price, and a payback projection your accountant can model.",
     image: null,
   },
   {
@@ -414,7 +414,7 @@ export const commercialSystemsSections = [
     subtitle: "Build Your",
     mainTitle: "Energy Strategy",
     description:
-      "System Size Depends On Your Energy Usage, Roof Space, And Future Needs. Our Experts Design Systems That Balance Performance And Cost For Optimal ROI.",
+      "System size depends on your energy usage, roof space, and future needs. Our experts design systems that balance performance and cost for optimal ROI.",
     buttonText: "Get Started",
     buttonLink: "#quote-form",
     backgroundImage: null,

@@ -24,7 +24,7 @@ export const evChargingSections: Section[] = [
     title: "Tesla Wall Connector",
     subtitle: "Gen 3",
     description:
-      "We're A Tesla Certified Partner. So When We Install Tesla, You're Buying It From The Source. The Tesla Wall Connector Gen 3 Is The Most Popular Home EV Charger In Australia — And For Good Reason. It Charges At Up To 22kW On Three-Phase Power, Comes With A 7.3-Metre Tethered Type 2 Cable That Fits Every Modern EV In Australia, And Pairs To The Tesla App For Live Monitoring And Over-The-Air Firmware Updates.",
+      "We're a Tesla certified partner. So when we install Tesla, you're buying it from the source. The Tesla Wall Connector Gen 3 is the most popular home EV charger in Australia — and for good reason. It charges at up to 22kW on three-phase power, comes with a 7.3-metre tethered Type 2 cable that fits every modern EV in Australia, and pairs to the Tesla app for live monitoring and over-the-air firmware updates.",
     specs: [
       { label: "Up To 22kW (Three-Phase)" },
       { label: "7.3m Tethered Type 2 Cable" },
@@ -42,12 +42,12 @@ export const evChargingSections: Section[] = [
       {
         name: "Single-Phase 7 KW",
         description:
-          "Adds About 45 Km Of Range Per Hour — Enough To Fully Replenish The Average Daily Commute In Two To Three Hours, Every Night. Works In Nearly Every Perth Home And With Every EV Sold In Australia.",
+          "Adds about 45 km of range per hour — enough to fully replenish the average daily commute in two to three hours, every night. Works in nearly every Perth home and with every EV sold in Australia.",
       },
       {
         name: "Three-Phase 22 KW",
         description:
-          "Adds About 130 Km Of Range Per Hour — Ideal for fast charging, large properties, or households with multiple EVs. Requires a three-phase electrical connection.",
+          "Adds about 130 km of range per hour — ideal for fast charging, large properties, or households with multiple EVs. Requires a three-phase electrical connection.",
       },
     ],
     brands: [
@@ -64,13 +64,13 @@ export const evChargingSections: Section[] = [
     subtitle: "More Than Tesla — Five Charger Brands",
     title: "One Trusted Installer",
     description:
-      "Different Homes, Different EVs, Different Energy Setups. We Carry The Brands We Trust To Deliver.",
+      "Different homes, different EVs, different energy setups. We carry the brands we trust to deliver.",
     brands: [
       {
         name: "Sigenergy",
         cardTitle: "Sigenergy, For The Buyer Thinking 10 Years Ahead",
         description:
-          "SigenStor Is An All-In-One Solar, Battery, And EV Charging System With Bidirectional Charging And Advanced Energy Management.",
+          "SigenStor is an all-in-one solar, battery, and EV charging system with bidirectional charging and advanced energy management.",
       },
       {
         name: "Fronius",
@@ -81,13 +81,13 @@ export const evChargingSections: Section[] = [
       {
         name: "Goodwe",
         cardTitle: "Goodwe HCA G2 — The Smart-Value All-Rounder",
-        description: "Smart EV Charging Built For Goodwe Solar Systems. Up To 22 KW | 5-Year Warranty",
+        description: "Smart EV charging built for Goodwe solar systems. Up to 22 kW | 5-year warranty",
       },
       {
         name: "AlphaESS",
         cardTitle: "Alpha ESS, For Alpha Battery Owners",
         description:
-          "Designed For Alpha ESS Battery Homes. Intelligent Charging Modes Optimise Solar Usage, Off-Peak Tariffs, And Charging Performance.",
+          "Designed for Alpha ESS battery homes. Intelligent charging modes optimise solar usage, off-peak tariffs, and charging performance.",
       },
     ],
   },
@@ -122,16 +122,16 @@ export const evChargingSections: Section[] = [
     title: "A Home Battery",
     paragraphs: [
       {
-        text: "Vehicle-To-Home (V2H) Lets Your Car Push Energy Back Into Your Home — Or Even Back To The Grid. With A 75-100 KWh Battery On Wheels, Your EV Can Power The House For Days During An Outage.",
+        text: "Vehicle-to-home (V2H) lets your car push energy back into your home — or even back to the grid. With a 75-100 kWh battery on wheels, your EV can power the house for days during an outage.",
       },
       {
-        text: "Sigenergy's SigenStor With The EV DC Charging Module Is The Only System In Our Range That Supports True Bidirectional 25kW DC Charging Today.",
+        text: "Sigenergy's SigenStor with the EV DC charging module is the only system in our range that supports true bidirectional 25kW DC charging today.",
       },
     ],
     bulletPoints: [
-      { text: "25 KW Bidirectional Power" },
-      { text: "Up To 100+ KWh Of Vehicle Storage As Backup" },
-      { text: "V2H + V2G Ready" },
+      { text: "25 kW bidirectional power" },
+      { text: "Up to 100+ kWh of vehicle storage as backup" },
+      { text: "V2H + V2G ready" },
     ],
     ctaText: "Talk To Us About Sigenergy",
     ctaLink: "#contact",
@@ -143,22 +143,22 @@ export const evChargingSections: Section[] = [
     subtitle: "Solar, Battery, EV Charger",
     title: "Under One <br /> Roof",
     description:
-      "Most Installers Will Sell You An EV Charger. We'll Connect It To The Solar We Put On Your Roof, The Battery In Your Garage, And The App You Already Use.",
+      "Most installers will sell you an EV charger. We'll connect it to the solar we put on your roof, the battery in your garage, and the app you already use.",
     cards: [
       {
         title: "Solar Surplus Diversion",
         description:
-          "Spare Solar Generation Flows Straight To Your EV Instead Of Being Exported At Low Feed-In Tariffs.",
+          "Spare solar generation flows straight to your EV instead of being exported at low feed-in tariffs.",
       },
       {
         title: "Battery Boost",
         description:
-          "When The Sun Goes Down, Your Battery Keeps Charging The Car. When The Grid Goes Down, Your Car Keeps Your Home Running.",
+          "When the sun goes down, your battery keeps charging the car. When the grid goes down, your car keeps your home running.",
       },
       {
         title: "One App",
         description:
-          "Live Monitoring Of Generation, Storage, And EV Charging In A Single Dashboard.",
+          "Live monitoring of generation, storage, and EV charging in a single dashboard.",
       },
     ],
   },
@@ -166,13 +166,13 @@ export const evChargingSections: Section[] = [
   // ─── 8. Installation Steps ──────────────────────────────────────────
   {
     __component: "ev-charging.installation-steps",
-    subtitle: "How EV charger installation works at",
+    subtitle: "How EV Charger Installation Works At",
     title: "Regen Power",
     steps: [
       {
         number: "01",
         title: "Online Site Survey",
-        description: "Tell Us About Your Home And EV. We'll Assess The Job And Provide A Quote, No Obligation.",
+        description: "Tell us about your home and EV. We'll assess the job and provide a quote, no obligation.",
       },
       {
         number: "02",
@@ -207,7 +207,7 @@ export const evChargingSections: Section[] = [
         count: 500,
         countSuffix: "+",
         title: "EV Chargers",
-        description: "Installed Across Homes And Businesses.",
+        description: "Installed across homes and businesses.",
         mobileCount: 6,
         mobileCountSuffix: "×",
         mobileTitle: "Product Review Award Winner",
@@ -216,7 +216,7 @@ export const evChargingSections: Section[] = [
         variant: "installations",
         bgColor: "#A0CF44",
         combinedText:
-          "45,000+ Solar Systems And 3,000+ Battery Systems Successfully Installed.",
+          "45,000+ solar systems and 3,000+ battery systems successfully installed.",
         productImage: null,
         showPlusButton: true,
       },
@@ -224,7 +224,7 @@ export const evChargingSections: Section[] = [
         variant: "years",
         bgColor: "#F0F6EC",
         backgroundImage: null,
-        yearsText: "23 Years In Business, Operating From Our Canning Vale Office.",
+        yearsText: "23 years in business, operating from our Canning Vale office.",
       },
     ],
   },
@@ -237,27 +237,27 @@ export const evChargingSections: Section[] = [
     listTitle: "Frequently Asked Questions",
     items: [
       {
-        question: "Q1. How Long Does It Take To Install An EV Charger?",
+        question: "Q1. How long does it take to install an EV charger?",
         answer:
           "Most residential EV charger installations are completed in half a day. A single-phase 7kW charger typically takes 3–4 hours. Three-phase 22kW installations may take slightly longer depending on your switchboard configuration.",
       },
       {
-        question: "Q2. Can I Charge My EV With Solar Power?",
+        question: "Q2. Can I charge my EV with solar power?",
         answer:
           "Absolutely. Our chargers are designed to prioritise solar energy first. When paired with a battery, you can store excess daytime solar and charge your car overnight — completely off-grid.",
       },
       {
-        question: "Q3. What Type Of Charger Do I Need?",
+        question: "Q3. What type of charger do I need?",
         answer:
           "For most Australian homes, a single-phase 7kW Type 2 charger is ideal — it fully charges most EVs overnight. If you have three-phase power and need faster charging, a 22kW charger can do it in under 2 hours.",
       },
       {
-        question: "Q4. Do I Need To Upgrade My Switchboard?",
+        question: "Q4. Do I need to upgrade my switchboard?",
         answer:
           "In some cases, yes. Older switchboards may need a safety upgrade to support a dedicated EV circuit. We assess this during our free site inspection and include any required upgrades in your quote upfront.",
       },
       {
-        question: "Q5. Is An EV Charger Worth It If I Don't Have Solar?",
+        question: "Q5. Is an EV charger worth it if I don't have solar?",
         answer:
           "Yes — even without solar, a dedicated home charger is significantly cheaper and more convenient than public charging. You can schedule charging for off-peak hours to reduce costs.",
       },

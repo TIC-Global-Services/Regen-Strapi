@@ -4,7 +4,7 @@ export const commercialOffGridSections = [
     subtitle: "Powering Business",
     mainTitle: "Anywhere",
     description:
-      "Scalable Solar And Hybrid Energy Solutions Designed To Reduce Operational Costs, Increase Efficiency, And Ensure Uninterrupted Power.",
+      "Scalable solar and hybrid energy solutions designed to reduce operational costs, increase efficiency, and ensure uninterrupted power.",
     ctaText: "Request Consultation",
     ctaLink: "#quote-form",
     backgroundImage: null,
@@ -16,11 +16,11 @@ export const commercialOffGridSections = [
     align: "left",
     paragraphs: [
       {
-        text: "From Large-Scale Commercial Rooftops To Complex Off-Grid Environments, Our Solar Solutions Are Thoughtfully Engineered To Deliver Reliable Performance, Energy Independence, And Long-Term Cost Savings. Every System Is Tailored To The Specific Operational Needs Of Your Business,",
+        text: "From large-scale commercial rooftops to complex off-grid environments, our solar solutions are thoughtfully engineered to deliver reliable performance, energy independence, and long-term cost savings. Every system is tailored to the specific operational needs of your business,",
         isSecondary: false,
       },
       {
-        text: "Ensuring Maximum Efficiency And Return On Investment. By Combining Advanced Solar Technology, High-Quality Components, And Intelligent System Design, We Create Scalable Energy Solutions That Help Businesses Reduce Operating Costs, Improve Sustainability, And Achieve Greater Control Over Their Energy Future.",
+        text: "Ensuring maximum efficiency and return on investment. By combining advanced solar technology, high-quality components, and intelligent system design, we create scalable energy solutions that help businesses reduce operating costs, improve sustainability, and achieve greater control over their energy future.",
         isSecondary: true,
       },
     ],
@@ -30,7 +30,7 @@ export const commercialOffGridSections = [
     subtitle: "Solutions For",
     title: "Every Business Size",
     description:
-      "From Small Business Rooftops To Large-Scale Industrial Ground-Mounts, We Design Systems That Match Your Energy Profile And Business Objectives.",
+      "From small business rooftops to large-scale industrial ground-mounts, we design systems that match your energy profile and business objectives.",
     layout: 6,
     cards: [
       {
@@ -38,8 +38,8 @@ export const commercialOffGridSections = [
         variant: "light-gray",
         title: "Small Business\n10\u201339kW DC",
         description:
-          "Streamlined Western Power Approval, Maximum STC Benefit, 2\u20133 Year Payback.",
-        specs: "39kW DC \u00b7 30kVA Inverter \u00b7 Optional 30\u201360kWh Battery",
+          "Streamlined Western Power approval, maximum STC benefit, 2\u20133 year payback.",
+        specs: "39kW DC \u00b7 30kVA inverter \u00b7 optional 30\u201360kWh battery",
         image: null,
       },
       {
@@ -47,8 +47,8 @@ export const commercialOffGridSections = [
         variant: "light-gray",
         title: "Mid-Market\n50\u2013100kW DC",
         description:
-          "Full Engineering Study + GPU, Economies Of Scale, Sub-3-Year Payback Typical.",
-        specs: "50\u2013100kW DC \u00b7 Three-Phase Hybrid Inverters \u00b7 STC Upfront Discount",
+          "Full engineering study + GPU, economies of scale, sub-3-year payback typical.",
+        specs: "50\u2013100kW DC \u00b7 three-phase hybrid inverters \u00b7 STC upfront discount",
         image: null,
       },
       {
@@ -56,8 +56,8 @@ export const commercialOffGridSections = [
         variant: "dark",
         title: "Large Commercial\n150kW\u20131MW+",
         description:
-          "LGC Revenue Stream, PPA Structures, Custom Ground-Mount Or Rooftop Solutions.",
-        specs: "150kW\u20131MW+ \u00b7 Multi-Inverter \u00b7 LGC Accreditation Ongoing Revenue",
+          "LGC revenue stream, PPA structures, custom ground-mount or rooftop solutions.",
+        specs: "150kW\u20131MW+ \u00b7 multi-inverter \u00b7 LGC accreditation ongoing revenue",
         image: null,
       },
       {
@@ -65,8 +65,8 @@ export const commercialOffGridSections = [
         variant: "light-gray",
         title: "Off-Grid\nRemote Sites",
         description:
-          "HybridGEN Power Packs, Containerised Microgrids, Solar-Wind-Diesel Hybrid Systems.",
-        specs: "15\u2013150kW Per Container \u00b7 Multi-Day Battery Autonomy \u00b7 Remote Monitoring",
+          "HybridGEN power packs, containerised microgrids, solar-wind-diesel hybrid systems.",
+        specs: "15\u2013150kW per container \u00b7 multi-day battery autonomy \u00b7 remote monitoring",
         image: null,
       },
       {
@@ -74,8 +74,8 @@ export const commercialOffGridSections = [
         variant: "light-gray",
         title: "HybridGEN\nPatented Power Pack",
         description:
-          "Factory-Integrated Solar + Battery + Variable-Speed Generator For Maximum Efficiency.",
-        specs: "30\u201360% Fuel Savings \u00b7 International Patent \u00b7 Australia & Asia Deployments",
+          "Factory-integrated solar + battery + variable-speed generator for maximum efficiency.",
+        specs: "30\u201360% fuel savings \u00b7 international patent \u00b7 Australia & Asia deployments",
         image: null,
       },
       {
@@ -83,8 +83,8 @@ export const commercialOffGridSections = [
         variant: "light-gray",
         title: "EV Charging\n& Fleet",
         description:
-          "Solar-Tied EV Charging Infrastructure For Commercial Fleets And Public Facilities.",
-        specs: "AC & DC Chargers \u00b7 Battery-Buffered \u00b7 VPP-Ready",
+          "Solar-tied EV charging infrastructure for commercial fleets and public facilities.",
+        specs: "AC & DC chargers \u00b7 battery-buffered \u00b7 VPP-ready",
         image: null,
       },
     ],
@@ -94,7 +94,7 @@ export const commercialOffGridSections = [
     subtitle: "Build Your",
     mainTitle: "Energy Strategy",
     description:
-      "System Size Depends On Your Energy Usage, Roof Space, And Future Needs. Our Experts Design Systems That Balance Performance And Cost For Optimal ROI.",
+      "System size depends on your energy usage, roof space, and future needs. Our experts design systems that balance performance and cost for optimal ROI.",
     buttonText: "Get Started",
     buttonLink: "#quote-form",
     backgroundImage: null,

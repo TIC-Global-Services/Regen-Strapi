@@ -16,17 +16,17 @@ export const batteryBrandsSections = [
     cards: [
       {
         title: "Cheap Brands Disappear",
-        description: "35+ Solar Companies In WA Have Closed In The Last 3 Years Alone. When The Installer Went, So Did Their Warranties. We Only Install Brands With Genuine Global Scale And Australian Distribution Partners.",
+        description: "35+ solar companies in WA have closed in the last 3 years alone. When the installer went, so did their warranties. We only install brands with genuine global scale and Australian distribution partners.",
         image: null,
       },
       {
         title: "The Chemistry You Want Is LFP",
-        description: "Lithium Iron Phosphate Runs Cooler, Tolerates Perth's Heat Better Than Older NMC Chemistry, And Has A Fundamentally Lower Thermal Runaway Risk. Every Brand We Install Uses LFP Exclusively.",
+        description: "Lithium iron phosphate runs cooler, tolerates Perth's heat better than older NMC chemistry, and has a fundamentally lower thermal runaway risk. Every brand we install uses LFP exclusively.",
         image: null,
       },
       {
         title: "Ecosystem Lock-In Is Real",
-        description: "For Better Or Worse, Some Brands Work With Everything (BYD). Others Build An Ecosystem Around Themselves (Tesla, Sigenergy) With Benefits If You Buy In Fully, Less Benefit If You Mix. Know What You're Choosing.",
+        description: "For better or worse, some brands work with everything (BYD). Others build an ecosystem around themselves (Tesla, Sigenergy) with benefits if you buy in fully, less benefit if you mix. Know what you're choosing.",
         image: null,
       },
     ],
@@ -37,8 +37,8 @@ export const batteryBrandsSections = [
     title: "We don't install every battery on the market. The brands below cleared a specific bar:",
     description: "Brands we have specifically chosen not to install (for reference): older NMC chemistry products, single-source imports without Australian distribution, brands without genuine VPP compatibility, batteries under 5 kWh (too small to clear WA rebate minimum).",
     items: [
-      { text: "CEC Approved Battery List — included and current" },
-      { text: "Synergy or Horizon Power Supported Solutions List — qualified for WA Residential Battery Scheme" },
+      { text: "CEC approved battery list — included and current" },
+      { text: "Synergy or Horizon Power supported solutions list — qualified for WA residential battery scheme" },
       { text: "LFP chemistry — safer, longer-lasting, better in WA heat" },
       { text: "Australian distribution presence — warranty support that survives the retailer" },
       { text: "Verifiable field performance — either through our own install base or through independent industry review" },
@@ -52,108 +52,108 @@ export const batteryBrandsSections = [
     brands: [
       {
         title: "Tesla Powerwall 3",
-        description: "The Category Benchmark. Seamless, Premium, Integrated.",
+        description: "The category benchmark. Seamless, premium, integrated.",
         specification: [
           {
             title: "Key Specs:",
             specdetails: [
               { title: "Usable Capacity", description: "13.5 kWh" },
-              { title: "Continuous Power", description: "Up To 11.04 kW" },
-              { title: "Chemistry", description: "Lithium Iron Phosphate (LFP)" },
+              { title: "Continuous Power", description: "Up to 11.04 kW" },
+              { title: "Chemistry", description: "Lithium iron phosphate (LFP)" },
               { title: "Warranty", description: "10 Years" },
               { title: "Temperature Range", description: "-20°C to 50°C" },
-              { title: "Integrated Solar Inverter", description: "Yes (Up To 20 kW DC Solar Input)" },
+              { title: "Integrated Solar Inverter", description: "Yes (up to 20 kW DC solar input)" },
               { title: "Dimensions", description: "Approximately 1100 × 610 × 190 mm" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Smart Home:", description: "Native Tesla App. Home Assistant Via Community Plugins. Limited Google/Apple Home Support." },
-              { title: "Certifications:", description: "CEC Approved Battery · Tesla Certified Installer (We Hold This)" },
+              { title: "Smart Home:", description: "Native Tesla app. Home Assistant via community plugins. Limited Google/Apple home support." },
+              { title: "Certifications:", description: "CEC approved battery · Tesla certified installer (we hold this)" },
             ],
           },
           {
             title: "Why We Carry It:",
             specdetails: [
-              { title: "", description: "Tesla Powerwall Is The Single Most Installed Home Battery In Australia And Its App Remains The Category Benchmark For User Experience. Powerwall 3's Integrated Solar Inverter Reduces Installation Complexity And Cost — You Don't Need A Separate Hybrid Inverter. For Tesla EV Owners, Native Integration Across Powerwall, Wall Connector And Vehicle Is Uniquely Seamless." },
+              { title: "", description: "Tesla Powerwall is the single most installed home battery in Australia and its app remains the category benchmark for user experience. Powerwall 3's integrated solar inverter reduces installation complexity and cost — you don't need a separate hybrid inverter. For Tesla EV owners, native integration across Powerwall, wall connector and vehicle is uniquely seamless." },
             ],
           },
           {
             title: "Feature Bullets:",
             specdetails: [
-              { title: "", description: "Integrated Solar Inverter — One Unit, One Install" },
-              { title: "", description: "Tesla App — Industry-Leading Monitoring And Control" },
-              { title: "", description: "10 kW Continuous Backup — Runs Most Of A Home, Not Just 'Essential Circuits'" },
-              { title: "", description: "Stackable Via Additional Full Units As Needs Grow" },
-              { title: "", description: "Over-The-Air Firmware Updates For 10-Year Warranty" },
-              { title: "", description: "Indoor Or Outdoor Installation (IP Rated)" },
+              { title: "", description: "Integrated solar inverter — one unit, one install" },
+              { title: "", description: "Tesla app — industry-leading monitoring and control" },
+              { title: "", description: "10 kW continuous backup — runs most of a home, not just 'essential circuits'" },
+              { title: "", description: "Stackable via additional full units as needs grow" },
+              { title: "", description: "Over-the-air firmware updates for 10-year warranty" },
+              { title: "", description: "Indoor or outdoor installation (IP rated)" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Best For:", description: "Households Valuing Premium App UX, Tesla EV Owners, Homes Prioritising Whole-Home Backup With Zero Transition Time." },
-              { title: "VPP Compatibility:", description: "On Synergy Supported Solutions List. Battery Rewards Eligible." },
+              { title: "Best For:", description: "Households valuing premium app UX, Tesla EV owners, homes prioritising whole-home backup with zero transition time." },
+              { title: "VPP Compatibility:", description: "On Synergy supported solutions list. Battery rewards eligible." },
             ],
           },
         ],
       },
       {
         title: "BYD Battery-Box Premium HVS/HVM",
-        description: "The Scalable Modular LFP. Inverter-Agnostic. Field-Proven.",
+        description: "The scalable modular LFP. Inverter-agnostic. Field-proven.",
         specification: [
           {
             title: "Key Specs:",
             specdetails: [
-              { title: "Usable Capacity", description: "5.1–12.8 kWh Per Tower (HVS) / Larger Range On HVM" },
-              { title: "Max Scale", description: "Up To 38.4 kWh Via 3 Parallel HVS Towers" },
-              { title: "Chemistry", description: "LFP (Lithium Iron Phosphate)" },
-              { title: "Warranty", description: "10 Years Product + 10 Years Performance" },
-              { title: "Protection Rating", description: "IP55 (Indoor Or Outdoor)" },
-              { title: "Inverter Compatibility", description: "1-Phase, 3-Phase High-Voltage Battery" },
+              { title: "Usable Capacity", description: "5.1–12.8 kWh per tower (HVS) / larger range on HVM" },
+              { title: "Max Scale", description: "Up to 38.4 kWh via 3 parallel HVS towers" },
+              { title: "Chemistry", description: "LFP (lithium iron phosphate)" },
+              { title: "Warranty", description: "10 years product + 10 years performance" },
+              { title: "Protection Rating", description: "IP55 (indoor or outdoor)" },
+              { title: "Inverter Compatibility", description: "1-phase, 3-phase high-voltage battery" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "VPP Compatibility:", description: "On Synergy Supported Solutions List. Battery Rewards Eligible. Smart Home: Home Assistant Via Community Integrations. BYD BYOS App. API Via Inverter." },
-              { title: "Certifications:", description: "CEC Approved Battery · BYD Authorised Installer" },
+              { title: "VPP Compatibility:", description: "On Synergy supported solutions list. Battery rewards eligible. Smart home: Home Assistant via community integrations. BYD BYOS app. API via inverter." },
+              { title: "Certifications:", description: "CEC approved battery · BYD authorised installer" },
             ],
           },
           {
             title: "Why We Carry It:",
             specdetails: [
-              { title: "", description: "BYD Is The World's Largest Producer Of Rechargeable Batteries. The Battery-Box's Modular Plug Design Requires No Internal Wiring And Scales In 2.56 kWh Increments, Making It The Most Flexible System On The Market For Households That Want To Start Smaller And Grow. Compatible With Major Hybrid Inverters Including Sungrow, Fronius And SolaX — You're Not Locked Into One Inverter Ecosystem." },
+              { title: "", description: "BYD is the world's largest producer of rechargeable batteries. The Battery-Box's modular plug design requires no internal wiring and scales in 2.56 kWh increments, making it the most flexible system on the market for households that want to start smaller and grow. Compatible with major hybrid inverters including Sungrow, Fronius and SolaX — you're not locked into one inverter ecosystem." },
             ],
           },
           {
             title: "Feature Bullets:",
             specdetails: [
-              { title: "", description: "Modular Towers — Add Capacity Without Replacing The System" },
-              { title: "", description: "Inverter-Agnostic — Choose From Sungrow, Fronius, SolaX" },
-              { title: "", description: "IP55 Outdoor-Rated — No Enclosure Required" },
-              { title: "", description: "High Peak Output Per kWh — Runs Pumps, ACs And Motor Loads Well" },
-              { title: "", description: "Performance Warranty With Minimum Capacity Retention" },
+              { title: "", description: "Modular towers — add capacity without replacing the system" },
+              { title: "", description: "Inverter-agnostic — choose from Sungrow, Fronius, SolaX" },
+              { title: "", description: "IP55 outdoor-rated — no enclosure required" },
+              { title: "", description: "High peak output per kWh — runs pumps, ACs and motor loads well" },
+              { title: "", description: "Performance warranty with minimum capacity retention" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Best For:", description: "Households Wanting Modular Scalability Without Ecosystem Lock-In; Homes Planning To Expand Capacity As EV Ownership Or Usage Grows." },
+              { title: "Best For:", description: "Households wanting modular scalability without ecosystem lock-in; homes planning to expand capacity as EV ownership or usage grows." },
             ],
           },
         ],
       },
       {
         title: "Alpha ESS SMILE5",
-        description: "The Flexible Hybrid For Smaller Homes And Modular Growth.",
+        description: "The flexible hybrid for smaller homes and modular growth.",
         specification: [
           {
             title: "Key Specs:",
             specdetails: [
               { title: "Usable Capacity", description: "2.9–80 kWh (Modular)" },
-              { title: "Inverter", description: "5 kW Single-Phase Hybrid Built-In" },
+              { title: "Inverter", description: "5 kW single-phase hybrid built-in" },
               { title: "Chemistry", description: "LFP" },
               { title: "Warranty", description: "10 Years" },
               { title: "Backup", description: "Yes" },
@@ -162,86 +162,86 @@ export const batteryBrandsSections = [
           {
             title: "",
             specdetails: [
-              { title: "Smart Home:", description: "Home Assistant Native Integration. AlphaCloud App. Vendor API Available." },
-              { title: "Certifications:", description: "CEC Approved Battery" },
+              { title: "Smart Home:", description: "Home Assistant native integration. AlphaCloud app. Vendor API available." },
+              { title: "Certifications:", description: "CEC approved battery" },
             ],
           },
           {
             title: "Why We Carry It:",
             specdetails: [
-              { title: "", description: "Alpha ESS Offers One Of The Widest Capacity Ranges Of Any Brand — From A Small 2.9 kWh Starter Through To Commercial-Scale 80 kWh. The SMILE5's Built-In 5 kW Hybrid Inverter Simplifies Installations For Homes Without Existing Battery-Ready Inverters. Strong Value-Tier Option For Budget-Conscious Households Who Want Quality LFP Chemistry Without Premium-Brand Pricing." },
+              { title: "", description: "Alpha ESS offers one of the widest capacity ranges of any brand — from a small 2.9 kWh starter through to commercial-scale 80 kWh. The SMILE5's built-in 5 kW hybrid inverter simplifies installations for homes without existing battery-ready inverters. Strong value-tier option for budget-conscious households who want quality LFP chemistry without premium-brand pricing." },
             ],
           },
           {
             title: "Feature Bullets:",
             specdetails: [
-              { title: "", description: "Built-In 5 kW Hybrid Inverter — No Separate Inverter Needed" },
-              { title: "", description: "Capacity Range From 2.9 kWh To 80 kWh" },
-              { title: "", description: "Strong Value-Tier Option For Budget-Minded Buyers" },
-              { title: "", description: "Grid-Interactive With VPP Compatibility" },
+              { title: "", description: "Built-in 5 kW hybrid inverter — no separate inverter needed" },
+              { title: "", description: "Capacity range from 2.9 kWh to 80 kWh" },
+              { title: "", description: "Strong value-tier option for budget-minded buyers" },
+              { title: "", description: "Grid-interactive with VPP compatibility" },
               { title: "", description: "10-Year Warranty" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Best For:", description: "Smaller Perth Homes, Apartments With Limited Installation Space, Households Wanting Flexibility To Start Small And Expand." },
-              { title: "VPP Compatibility:", description: "On Synergy Supported Solutions List." },
+              { title: "Best For:", description: "Smaller Perth homes, apartments with limited installation space, households wanting flexibility to start small and expand." },
+              { title: "VPP Compatibility:", description: "On Synergy supported solutions list." },
             ],
           },
         ],
       },
       {
         title: "iStore Battery",
-        description: "Slim, Modular, Australian-Supported.",
+        description: "Slim, modular, Australian-supported.",
         specification: [
           {
             title: "Key Specs:",
             specdetails: [
-              { title: "Module Capacity", description: "5 kWh Per Module" },
-              { title: "Max Capacity", description: "Up To 30 kWh (3 Modules × 2 Parallel Sets)" },
-              { title: "Module Weight", description: "50 Kg" },
+              { title: "Module Capacity", description: "5 kWh per module" },
+              { title: "Max Capacity", description: "Up to 30 kWh (3 modules × 2 parallel sets)" },
+              { title: "Module Weight", description: "50 kg" },
               { title: "Depth Of Discharge", description: "100%" },
-              { title: "Dimensions", description: "670 Mm Width × 150 Mm Depth (Slim Profile)" },
+              { title: "Dimensions", description: "670 mm width × 150 mm depth (slim profile)" },
               { title: "Warranty", description: "10 Years" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Smart Home:", description: "iStore App. Google Home Via iStore Hub." },
-              { title: "Certifications:", description: "CEC Approved Battery · iStore Authorised Installer" },
+              { title: "Smart Home:", description: "iStore app. Google Home via iStore Hub." },
+              { title: "Certifications:", description: "CEC approved battery · iStore authorised installer" },
             ],
           },
           {
             title: "Why We Carry It:",
             specdetails: [
-              { title: "", description: "iStore Is An Australian Brand With Local Support Infrastructure — Warranty Response Times Are Typically Faster Than International Brands. The 150mm Slim Depth Makes It One Of The Lowest-Profile Wall-Mount Batteries On The Market, Useful In Tight Installations. 100% Depth Of Discharge Means Every kWh You Buy Is Usable." },
+              { title: "", description: "iStore is an Australian brand with local support infrastructure — warranty response times are typically faster than international brands. The 150mm slim depth makes it one of the lowest-profile wall-mount batteries on the market, useful in tight installations. 100% depth of discharge means every kWh you buy is usable." },
             ],
           },
           {
             title: "Feature Bullets:",
             specdetails: [
-              { title: "", description: "100% Depth Of Discharge — No Reserved Capacity" },
-              { title: "", description: "150mm Slim Depth — Wall-Mount In Tight Spaces" },
-              { title: "", description: "Modular 5 kWh Units — Start Small, Scale Up" },
-              { title: "", description: "Optional Backup Box For Emergency Power" },
-              { title: "", description: "Fire Extinguishers And Energy Optimisers Built-In" },
-              { title: "", description: "Works With iStore Air-To-Energy And Pool Heater For Full Ecosystem" },
+              { title: "", description: "100% depth of discharge — no reserved capacity" },
+              { title: "", description: "150mm slim depth — wall-mount in tight spaces" },
+              { title: "", description: "Modular 5 kWh units — start small, scale up" },
+              { title: "", description: "Optional backup box for emergency power" },
+              { title: "", description: "Fire extinguishers and energy optimisers built-in" },
+              { title: "", description: "Works with iStore air-to-energy and pool heater for full ecosystem" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Best For:", description: "Homes With Constrained Installation Space; Buyers Who Value Local Support Over Global Brand Prestige; iStore Ecosystem Users (Hot Water, Pool Heating)." },
-              { title: "VPP Compatibility:", description: "On Synergy Supported Solutions List." },
+              { title: "Best For:", description: "Homes with constrained installation space; buyers who value local support over global brand prestige; iStore ecosystem users (hot water, pool heating)." },
+              { title: "VPP Compatibility:", description: "On Synergy supported solutions list." },
             ],
           },
         ],
       },
       {
         title: "Anker Solix",
-        description: "Consumer-Tech Pedigree. Australian Launch. Strong App UX.",
+        description: "Consumer-tech pedigree. Australian launch. Strong app UX.",
         specification: [
           {
             title: "Key Specs:",
@@ -255,55 +255,55 @@ export const batteryBrandsSections = [
           {
             title: "",
             specdetails: [
-              { title: "Smart Home:", description: "Anker Cloud App. Home Assistant Via Community Plugins." },
+              { title: "Smart Home:", description: "Anker Cloud app. Home Assistant via community plugins." },
               { title: "Certifications:", description: "CEC Approved Battery" },
             ],
           },
           {
             title: "Why We Carry It:",
             specdetails: [
-              { title: "", description: "Anker Brings Consumer-Electronics Reliability (The Brand Most Australians Know From Phone Chargers And Portable Power) Into The Residential Battery Category. The App UX Is A Notable Strength — Cleaner And More Approachable Than Many Industry-Default Interfaces. LFP Chemistry And Modular Scalability Match Our Selection Criteria." },
+              { title: "", description: "Anker brings consumer-electronics reliability (the brand most Australians know from phone chargers and portable power) into the residential battery category. The app UX is a notable strength — cleaner and more approachable than many industry-default interfaces. LFP chemistry and modular scalability match our selection criteria." },
             ],
           },
           {
             title: "Feature Bullets:",
             specdetails: [
-              { title: "", description: "Modular, Scalable Design" },
-              { title: "", description: "LFP Chemistry — Safer, Longer-Lasting" },
-              { title: "", description: "Polished App UX — Intuitive For Non-Technical Users" },
+              { title: "", description: "Modular, scalable design" },
+              { title: "", description: "LFP chemistry — safer, longer-lasting" },
+              { title: "", description: "Polished app UX — intuitive for non-technical users" },
               { title: "", description: "VPP Compatibility" },
-              { title: "", description: "10-Year Warranty Backed By A Global Consumer Brand" },
+              { title: "", description: "10-year warranty backed by a global consumer brand" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Best For:", description: "Households Who Value Consumer-Brand Familiarity, First-Time Battery Buyers, Buyers Who Prioritise App Usability." },
-              { title: "VPP Compatibility:", description: "On Synergy Supported Solutions List (Verify Specific Model At Quote Stage)" },
+              { title: "Best For:", description: "Households who value consumer-brand familiarity, first-time battery buyers, buyers who prioritise app usability." },
+              { title: "VPP Compatibility:", description: "On Synergy supported solutions list (verify specific model at quote stage)" },
             ],
           },
         ],
       },
       {
         title: "Sigenergy SigenStor",
-        description: "The Ultimate 5-in-1 Smart Battery. High-Power DC Charging & V2H Ready.",
+        description: "The ultimate 5-in-1 smart battery. High-power DC charging & V2H ready.",
         specification: [
           {
             title: "Key Specs:",
             specdetails: [
               { title: "Usable Capacity", description: "5.0 - 48.0 kWh (Modular)" },
               { title: "Continuous Power", description: "Up to 25 kW (Bidirectional DC)" },
-              { title: "Chemistry", description: "LFP (Lithium Iron Phosphate)" },
-              { title: "Warranty", description: "10 Years Battery & Inverter, 5 Years Gateway" },
-              { title: "Protection Rating", description: "IP66 (Highest Industry Rating)" },
+              { title: "Chemistry", description: "LFP (lithium iron phosphate)" },
+              { title: "Warranty", description: "10 years battery & inverter, 5 years gateway" },
+              { title: "Protection Rating", description: "IP66 (highest industry rating)" },
               { title: "Dimensions", description: "Stackable modules, space-saving footprint" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Smart Home:", description: "Native Home Assistant Integration. GPT-4 Powered MySigen Assistant. Advanced Energy Management." },
-              { title: "Certifications:", description: "CEC Approved Battery · Sigenergy Pro Partner (We Hold This)" },
+              { title: "Smart Home:", description: "Native Home Assistant integration. GPT-4 powered MySigen assistant. Advanced energy management." },
+              { title: "Certifications:", description: "CEC approved battery · Sigenergy pro partner (we hold this)" },
             ],
           },
           {
@@ -315,33 +315,33 @@ export const batteryBrandsSections = [
           {
             title: "Feature Bullets:",
             specdetails: [
-              { title: "", description: "5-in-1 Integrated Design — Sleek, Space-Saving Stack" },
-              { title: "", description: "DC Fast EV Charging — Up to 25 kW Bidirectional Power" },
-              { title: "", description: "V2H/V2G Bidirectional Ready — Use Your EV to Power Your Home" },
-              { title: "", description: "GPT-4 Powered MySigen AI Assistant for Smart Optimization" },
-              { title: "", description: "Modular Capacity (5 to 48 kWh per stack)" },
-              { title: "", description: "IP66 Rating for Demanding Outdoor Environments" },
+              { title: "", description: "5-in-1 integrated design — sleek, space-saving stack" },
+              { title: "", description: "DC fast EV charging — up to 25 kW bidirectional power" },
+              { title: "", description: "V2H/V2G bidirectional ready — use your EV to power your home" },
+              { title: "", description: "GPT-4 powered MySigen AI assistant for smart optimization" },
+              { title: "", description: "Modular capacity (5 to 48 kWh per stack)" },
+              { title: "", description: "IP66 rating for demanding outdoor environments" },
             ],
           },
           {
             title: "",
             specdetails: [
-              { title: "Best For:", description: "Tech-Forward Homes, EV Owners wanting DC Fast Charging, and Home Assistant Enthusiasts." },
-              { title: "VPP Compatibility:", description: "On Synergy Supported Solutions List. Battery Rewards Eligible." },
+              { title: "Best For:", description: "Tech-forward homes, EV owners wanting DC fast charging, and Home Assistant enthusiasts." },
+              { title: "VPP Compatibility:", description: "On Synergy supported solutions list. battery rewards eligible." },
             ],
           },
         ],
       },
       {
         title: "Sungrow SBH Series",
-        description: "High-Voltage, High-Power Backup for Sungrow Inverters.",
+        description: "High-voltage, high-power backup for Sungrow inverters.",
         specification: [
           {
             title: "Key Specs:",
             specdetails: [
               { title: "Usable Capacity", description: "10 - 40 kWh (Modular)" },
-              { title: "Continuous Power", description: "Up to 20 kW High-Voltage Output" },
-              { title: "Chemistry", description: "LFP (Lithium Iron Phosphate)" },
+              { title: "Continuous Power", description: "Up to 20 kW high-voltage output" },
+              { title: "Chemistry", description: "LFP (lithium iron phosphate)" },
               { title: "Warranty", description: "10 Years" },
               { title: "Dimensions", description: "Modular snap-fit stack" },
             ],
@@ -349,8 +349,8 @@ export const batteryBrandsSections = [
           {
             title: "",
             specdetails: [
-              { title: "Smart Home:", description: "iSolarCloud App. Integrated Smart Meter Monitoring." },
-              { title: "Certifications:", description: "CEC Approved Battery · Sungrow Authorised Installer" },
+              { title: "Smart Home:", description: "iSolarCloud app. Integrated smart meter monitoring." },
+              { title: "Certifications:", description: "CEC approved battery · Sungrow authorised installer" },
             ],
           },
           {
@@ -362,19 +362,19 @@ export const batteryBrandsSections = [
           {
             title: "Feature Bullets:",
             specdetails: [
-              { title: "", description: "Tool-Free Plug-and-Play Snap-Fit Modular Connection" },
-              { title: "", description: "High Output Power — Up to 20 kW Continuous Backup" },
-              { title: "", description: "Natively Integrates with Sungrow High-Voltage Hybrid Inverters" },
-              { title: "", description: "High Reliability LFP Technology" },
-              { title: "", description: "100% Usable Capacity (100% DoD)" },
-              { title: "", description: "Direct Remote Monitoring via iSolarCloud App" },
+              { title: "", description: "Tool-free plug-and-play snap-fit modular connection" },
+              { title: "", description: "High output power — up to 20 kW continuous backup" },
+              { title: "", description: "Natively integrates with Sungrow high-voltage hybrid inverters" },
+              { title: "", description: "High reliability LFP technology" },
+              { title: "", description: "100% usable capacity (100% DoD)" },
+              { title: "", description: "Direct remote monitoring via iSolarCloud app" },
             ],
           },
           {
             title: "",
             specdetails: [
               { title: "Best For:", description: "Homes with existing Sungrow inverters looking for seamless integration and high backup power capacity." },
-              { title: "VPP Compatibility:", description: "On Synergy Supported Solutions List. Battery Rewards Eligible." },
+              { title: "VPP Compatibility:", description: "On Synergy supported solutions list. battery rewards eligible." },
             ],
           },
         ],
@@ -460,23 +460,23 @@ export const batteryBrandsSections = [
   {
     __component: "battery-brands.cec-approved" as const,
     title: 'What "CEC Approved" And "Supported Solutions List" Actually Mean',
-    description: "Two Different Lists — Both Matter For Different Reasons. Short Version:",
+    description: "Two different lists — both matter for different reasons. Short version:",
     cards: [
       {
         title: "What This Means For You",
-        description: "When We Quote A Battery, It Will Be On Both Lists. If You're Researching A Brand Not On Our Page, Check Both Lists Before Committing. Scheme Eligibility Hinges On It.",
+        description: "When we quote a battery, it will be on both lists. If you're researching a brand not on our page, check both lists before committing. Scheme eligibility hinges on it.",
       },
       {
         title: "CEC Approved Battery List",
-        description: "Maintained By The Clean Energy Council. A Battery Must Be CEC-Approved To Be Installed By A CEC-Accredited Installer, Which Is A Prerequisite For The Federal Cheaper Home Batteries Program Rebate. All 7 Brands On This Page Are CEC-Approved.",
+        description: "Maintained by the Clean Energy Council. A battery must be CEC-approved to be installed by a CEC-accredited installer, which is a prerequisite for the Federal Cheaper Home Batteries Program rebate. All 7 brands on this page are CEC-approved.",
       },
       {
         title: "Synergy / Horizon Power Supported Solutions List",
-        description: "Maintained By The WA Electricity Retailers. A Battery Must Appear On The SSL (For Your Retailer) To Qualify For The WA Residential Battery Scheme Rebate. All 7 Brands On This Page Are On The Relevant SSL — But Specific Models Vary, So We Confirm The Exact Product Eligibility At Quote Stage.",
+        description: "Maintained by the WA electricity retailers. A battery must appear on the SSL (for your retailer) to qualify for the WA residential battery scheme rebate. All 7 brands on this page are on the relevant SSL — but specific models vary, so we confirm the exact product eligibility at quote stage.",
       },
       {
         title: "Why The Two Lists Aren't Identical",
-        description: "CEC Approval Is A Safety And Performance Standard. SSL Inclusion Adds WA-Specific Requirements Around VPP Compatibility, Data Protocol And Network Integration. A Battery Can Be CEC-Approved But Not On A WA SSL — Common For Newer Brands Still Working Through State Qualification.",
+        description: "CEC approval is a safety and performance standard. SSL inclusion adds WA-specific requirements around VPP compatibility, data protocol and network integration. A battery can be CEC-approved but not on a WA SSL — common for newer brands still working through state qualification.",
       },
     ],
   },
@@ -493,7 +493,7 @@ export const batteryBrandsSections = [
       { title: "SAA-Accredited (Solar Accreditation Australia) — Required For WA Residential Battery Scheme" },
     ],
     whyMattersTitle: "Why This Matters:",
-    whyMattersDescription: "When A Brand Audits An Installer's Work, Uncertified Installs Can Void The Manufacturer Warranty. Every Install We Do Is Performed By An Installer Holding The Relevant Brand Certifications — Protecting Your Warranty On Day One And Every Day After.",
+    whyMattersDescription: "When a brand audits an installer's work, uncertified installs can void the manufacturer warranty. Every install we do is performed by an installer holding the relevant brand certifications — protecting your warranty on day one and every day after.",
     image: null,
     imageAlt: "Solar panels installed on a roof facing the sun",
   },
@@ -510,7 +510,7 @@ export const batteryBrandsSections = [
       },
       {
         question: "What is Depth of Discharge (DoD)?",
-        answer: "Depth of Discharge refers to the percentage of the battery's capacity that can be safely used without damaging the cells. High-quality LFP batteries like Tesla and iStore support 100% DoD, meaning you can use their full capacity.",
+        answer: "Depth of discharge refers to the percentage of the battery's capacity that can be safely used without damaging the cells. High-quality LFP batteries like Tesla and iStore support 100% DoD, meaning you can use their full capacity.",
       },
       {
         question: "Which battery brand is best for going off-grid?",

@@ -4,7 +4,7 @@ export const offGridSolutionsSections = [
     subtitle: "Off-Grid Power, Engineered For",
     mainTitle: "Remote Western Australia",
     description:
-      "With Over 20 Years Of Experience, We Design And Install Off-Grid Power Systems For Remote Homes, Farms, Mining Sites, And More Across Australia And Globally. Our HybridGEN Technology Powers Sites Across Asia. If Grid Access Is Limited Or Unreliable, Our Engineering Team Can Help You Find The Right Solution.",
+      "With over 20 years of experience, we design and install off-grid power systems for remote homes, farms, mining sites, and more across Australia and globally. Our HybridGEN technology powers sites across Asia. If grid access is limited or unreliable, our engineering team can help you find the right solution.",
     ctaText: "Talk To Our Team",
     ctaLink: "#quote-form",
     backgroundImage: null,
@@ -14,7 +14,7 @@ export const offGridSolutionsSections = [
     subtitle: "When The Grid Stops",
     title: "Your Costs Start",
     description:
-      "In Western Australia, Many Areas Lie Beyond Reliable Grid Access. Connecting Can Cost $30k\u2013$200k Per Km, While Running Diesel Generators Is Expensive And Inefficient. Standard Solar Alone Often Isn\u2019t Enough For Harsh Conditions\u2014Making Well-Designed Off-Grid Renewable Systems A Smarter, More Reliable Solution.",
+      "In Western Australia, many areas lie beyond reliable grid access. Connecting can cost $30k\u2013$200k per km, while running diesel generators is expensive and inefficient. Standard solar alone often isn\u2019t enough for harsh conditions\u2014making well-designed off-grid renewable systems a smarter, more reliable solution.",
     cardBackground: null,
     stats: [
       { value: "$30k-\n$200k/KM", label: "Grid Extension" },
@@ -27,16 +27,16 @@ export const offGridSolutionsSections = [
     subtitle: "Four Segments.",
     title: "Four Different Specifications.",
     description:
-      "Off-Grid Systems Are Sized To The Customer. A Weekender Shed Needs Different Engineering To A Mining Camp. Pick The Segment That Fits Your Site To See How We Scope And Design.",
+      "Off-grid systems are sized to the customer. A weekender shed needs different engineering to a mining camp. Pick the segment that fits your site to see how we scope and design.",
     cards: [
       {
         type: "text",
         variant: "light-gray",
         title: "Remote Homes &\nLifestyle Blocks",
         description:
-          "Off-Grid Family Homes, Weekenders, Lifestyle Properties Beyond The SWIS, Granny Flats, Sheds And Live-In Studios",
+          "Off-grid family homes, weekenders, lifestyle properties beyond the SWIS, granny flats, sheds and live-in studios",
         specs:
-          "10\u201320kW Solar + 30\u201360kWh Storage + 5\u201310kVA Backup Generator. Stand-Alone Solar+Battery",
+          "10\u201320kW solar + 30\u201360kWh storage + 5\u201310kVA backup generator. Stand-alone solar+battery",
         image: null,
       },
       {
@@ -52,9 +52,9 @@ export const offGridSolutionsSections = [
         variant: "light-gray",
         title: "Farms, Stations &\nAgribusiness",
         description:
-          "Sheep, Cattle, Cropping, Dairy, Marron, Vineyard. Bore Pumps, Packing Sheds, Freezers, Electric Fences, EV Charging.",
+          "Sheep, cattle, cropping, dairy, marron, vineyard. Bore pumps, packing sheds, freezers, electric fences, EV charging.",
         specs:
-          "30\u2013100kW Solar + 60\u2013200kWh Storage + Diesel/Gas Hybrid Generator. HybridGEN-Pack Or Full Microgrid",
+          "30\u2013100kW solar + 60\u2013200kWh storage + diesel/gas hybrid generator. HybridGEN-pack or full microgrid",
         image: null,
       },
       {
@@ -62,9 +62,9 @@ export const offGridSolutionsSections = [
         variant: "light-gray",
         title: "Mining, Telecom &\nResorts",
         description:
-          "Exploration Camps, Communications Towers, Tourist Lodges, Remote Workshops. Often Three-Phase, Often Modular.",
+          "Exploration camps, communications towers, tourist lodges, remote workshops. Often three-phase, often modular.",
         specs:
-          "Containerised Microgrid 15\u2013150kW. Solar-Wind-Diesel Hybrid. Multi-Source Generation, Multi-Day Battery Autonomy.",
+          "Containerised microgrid 15\u2013150kW. Solar-wind-diesel hybrid. Multi-source generation, multi-day battery autonomy.",
         image: null,
       },
       {
@@ -72,9 +72,9 @@ export const offGridSolutionsSections = [
         variant: "dark",
         title: "Remote Communities\n& Infrastructure",
         description:
-          "Villages, Schools, Medical Centres, Water Plants, Irrigation, Sewage. Often Paired With Our AcquaSmart Water-Treatment System.",
+          "Villages, schools, medical centres, water plants, irrigation, sewage. Often paired with our AcquaSmart water-treatment system.",
         specs:
-          "Custom Microgrid + AcquaSmart Water Solution Where Applicable. International Experience Across India, Indonesia, Maldives, Vietnam, Sri Lanka.",
+          "Custom microgrid + AcquaSmart water solution where applicable. International experience across India, Indonesia, Maldives, Vietnam, Sri Lanka.",
         image: null,
       },
       {
@@ -92,20 +92,20 @@ export const offGridSolutionsSections = [
     subtitle: "Three Engineered Solutions",
     title: "One Design Principle",
     description:
-      "Across Every Off-Grid Project, Our Design Principle Is The Same: Maximum Renewable Share, Minimum Lifetime Cost, Real Reliability. Three Product Platforms Make That Possible \u2014 Pick The One That Fits The Segment, And We Engineer To Your Site.",
+      "Across every off-grid project, our design principle is the same: maximum renewable share, minimum lifetime cost, real reliability. Three product platforms make that possible — pick the one that fits the segment, and we engineer to your site.",
     solutions: [
       {
         title: "Standalone Solar + Battery",
         description:
-          "Solar PV + Lithium Battery + Small Backup Generator. The Straightforward Off-Grid Solution For Homes And Small Commercial Sites. Remote Homes, Lifestyle Blocks, Holiday Properties, Small Workshops, Weekenders.",
+          "Solar PV + lithium battery + small backup generator. The straightforward off-grid solution for homes and small commercial sites. Remote homes, lifestyle blocks, holiday properties, small workshops, weekenders.",
         image: null,
         ctaText: "Learn More",
         ctaHref: "#",
       },
       {
-        title: "Hybridgen: Patented Hybrid Power Pack",
+        title: "HybridGEN: Patented Hybrid Power Pack",
         description:
-          "A Factory-Integrated System Combining Solar, Optional Wind, Battery Storage, And A Variable-Speed Generator\u2014Delivering Far Better Efficiency Than Traditional Diesel Setups. Farms, Stations, Agribusiness, Telecom Towers, Irrigation, Treatment Plants \u2014 Wherever A Diesel Generator Is Currently The Primary Power Source.",
+          "A factory-integrated system combining solar, optional wind, battery storage, and a variable-speed generator—delivering far better efficiency than traditional diesel setups. Farms, stations, agribusiness, telecom towers, irrigation, treatment plants — wherever a diesel generator is currently the primary power source.",
         image: null,
         ctaText: "Learn More",
         ctaHref: "#",
@@ -113,7 +113,7 @@ export const offGridSolutionsSections = [
       {
         title: "Solar-Wind-Diesel Microgrid",
         description:
-          "Containerised, Portable Microgrid System (15kW To 150kW Per Container); Multi-Container Designs Available. Multi-Source Generation; Multi-Day Battery Autonomy; Remote Monitoring. Mining And Exploration Camps, Resorts, Remote Communities, Fringe-Of-Grid Commercial Sites, And International Projects.",
+          "Containerised, portable microgrid system (15kW to 150kW per container); multi-container designs available. Multi-source generation; multi-day battery autonomy; remote monitoring. Mining and exploration camps, resorts, remote communities, fringe-of-grid commercial sites, and international projects.",
         image: null,
         ctaText: "Learn More",
         ctaHref: "#",
@@ -125,43 +125,43 @@ export const offGridSolutionsSections = [
     subtitle: "The Straightforward",
     title: "Off-Grid Solution",
     description:
-      "For Most Remote Homes, The Ideal Setup Is Simple: A Well-Sized Solar System, Lithium Batteries With Multi-Day Backup, And A Small Generator Used Only When Needed. We Design Based On Your Usage, Use Premium Components, And Plan For Worst-Case Conditions\u2014So The Generator Runs Only A Few Times A Year.",
+      "For most remote homes, the ideal setup is simple: a well-sized solar system, lithium batteries with multi-day backup, and a small generator used only when needed. We design based on your usage, use premium components, and plan for worst-case conditions—so the generator runs only a few times a year.",
     layout: 4,
     showHeader: true,
     cards: [
       {
         title: "Tier 1 - Cabin",
         description:
-          "Workshops, Sheds, Micro-Homes, Studios, Weekenders",
+          "Workshops, sheds, micro-homes, studios, weekenders",
         specs:
-          "5kW Solar \u00b7 10-15kWh Battery \u00b7 Small AC Inverter \u00b7 Optional 3kVA Generator",
+          "5kW solar \u00b7 10-15kWh battery \u00b7 small AC inverter \u00b7 optional 3kVA generator",
         icon: null,
         variant: "default",
       },
       {
         title: "Tier 2 - Holiday & Energy-Efficient Homes",
         description:
-          "Holiday Homes, Small Efficient Homes",
+          "Holiday homes, small efficient homes",
         specs:
-          "8kW Solar \u00b7 20-30kWh Battery \u00b7 Hybrid Inverter \u00b7 5kVA Generator",
+          "8kW solar \u00b7 20-30kWh battery \u00b7 hybrid inverter \u00b7 5kVA generator",
         icon: null,
         variant: "default",
       },
       {
         title: "Tier 3 - Family Home / Small Farm",
         description:
-          "Standard 3-4 Bedroom Homes, Small Farms, Small Businesses",
+          "Standard 3-4 bedroom homes, small farms, small businesses",
         specs:
-          "12-18kW Solar \u00b7 40-60kWh Battery \u00b7 Selectronic Inverter-Charger \u00b7 8kVA Generator",
+          "12-18kW solar \u00b7 40-60kWh battery \u00b7 Selectronic inverter-charger \u00b7 8kVA generator",
         icon: null,
         variant: "default",
       },
       {
         title: "Tier 4 - Large Home / Community Precinct",
         description:
-          "Large Homes, Community Living, Large Farms",
+          "Large homes, community living, large farms",
         specs:
-          "20-30kW Solar \u00b7 80-120kWh Battery \u00b7 Multi-Phase Selectronic \u00b7 12-15kVA Generator",
+          "20-30kW solar \u00b7 80-120kWh battery \u00b7 multi-phase Selectronic \u00b7 12-15kVA generator",
         icon: null,
         variant: "default",
       },
@@ -173,8 +173,8 @@ export const offGridSolutionsSections = [
     image: null,
     subtitle: "HybridGEN - Patented Hybrid",
     title: "Power Pack",
-    description: "HybridGEN Is Regen's Own Renewable Hybrid Power Pack \u2014 A Factory-Wired Cabinet That Combines Solar PV, Optional Small Wind, Lithium Battery Storage, And Our Patented Variable-Speed Generator. It Replaces A Standard Fixed-Speed Diesel Generator With A System That Runs The Engine Only When It's Needed, Only At Its Most Efficient Speed, And Only After The Renewables Have Done Their Job.\n\nThe Result: 30\u201360% Reduction In Diesel Consumption Versus A Conventional Diesel System, Longer Engine Life From Running At Optimum Load, Stable Voltage And Frequency Across Varying Solar And Wind Input, And A System That Ships In A Fully Wired Enclosure \u2014 Drop In, Connect, And Run.",
-    patentText: "International Patent: PCT/AU2011/001068",
+    description: "HybridGEN is Regen's own renewable hybrid power pack — a factory-wired cabinet that combines solar PV, optional small wind, lithium battery storage, and our patented variable-speed generator. It replaces a standard fixed-speed diesel generator with a system that runs the engine only when it's needed, only at its most efficient speed, and only after the renewables have done their job.\n\nThe result: 30–60% reduction in diesel consumption versus a conventional diesel system, longer engine life from running at optimum load, stable voltage and frequency across varying solar and wind input, and a system that ships in a fully wired enclosure — drop in, connect, and run.",
+    patentText: "International patent: PCT/AU2011/001068",
   },
   {
     __component: "shared.editorial-section" as const,
@@ -183,11 +183,11 @@ export const offGridSolutionsSections = [
     align: "left",
     paragraphs: [
       {
-        text: "Diesel Generators Are Typically Sized To Peak Demand. But For Most Remote Sites, Peak Demand Happens For A Few Hours A Day \u2014 Most Of The Time The Engine Is Loafing At 20\u201340% Of Its Rated Capacity. At Low Load, Three Things Go Wrong: Fuel Efficiency Drops Sharply (More Litres Per KWh Produced);",
+        text: "Diesel generators are typically sized to peak demand. But for most remote sites, peak demand happens for a few hours a day — most of the time the engine is loafing at 20–40% of its rated capacity. At low load, three things go wrong: fuel efficiency drops sharply (more litres per kWh produced);",
         isSecondary: false,
       },
       {
-        text: " Incomplete Combustion Causes Wet Stacking And Cylinder Glazing (Engine Wears Out Faster); And Voltage And Frequency Become Unstable As Renewable Inputs Vary. HybridGEN\u2019s Variable-Speed Generator Runs The Engine At The Speed That Matches The Current Load \u2014 Extending Engine Life, Cutting Fuel Consumption By 30\u201360%, And Stabilising Power Quality Even When Solar And Wind Inputs Swing.",
+        text: " Incomplete combustion causes wet stacking and cylinder glazing (engine wears out faster); and voltage and frequency become unstable as renewable inputs vary. HybridGEN’s variable-speed generator runs the engine at the speed that matches the current load — extending engine life, cutting fuel consumption by 30–60%, and stabilising power quality even when solar and wind inputs swing.",
         isSecondary: true,
       },
     ],
@@ -231,11 +231,11 @@ export const offGridSolutionsSections = [
     align: "left",
     paragraphs: [
       {
-        text: "For Mining, Resorts, Remote Communities, And Fringe-Of-Grid Sites, Regen Delivers Containerised Microgrids From 15kW To 150kW Per Container,",
+        text: "For mining, resorts, remote communities, and fringe-of-grid sites, Regen delivers containerised microgrids from 15kW to 150kW per container,",
         isSecondary: false,
       },
       {
-        text: " Scalable Beyond 1MW. Combining Solar PV, Optional Wind, Lithium Battery Storage, And Patented Hybrid Control, They\u2019re Built For Harsh Conditions And Proven Across Australia, The Maldives, Singapore, And Sri Lanka.",
+        text: " Scalable beyond 1MW. Combining solar PV, optional wind, lithium battery storage, and patented hybrid control, they’re built for harsh conditions and proven across Australia, the Maldives, Singapore, and Sri Lanka.",
         isSecondary: true,
       },
     ],
@@ -245,23 +245,23 @@ export const offGridSolutionsSections = [
     subtitle: "Clean Drinking Water For Remote Communities",
     title: "Powered By HybridGEN.",
     description:
-      "AcquaSmart Is Regen\u2019s Trailer-Mounted Water Treatment Solution For Remote Locations, Combining HybridGEN Renewable Power With Reverse Osmosis, UV And Ozone Sterilisation, And Real-Time Monitoring. Built For Villages, Rural Communities, And Off-Grid Sites, It Delivers WHO-Standard Drinking Water Wherever It\u2019s Needed.",
+      "AcquaSmart is Regen’s trailer-mounted water treatment solution for remote locations, combining HybridGEN renewable power with reverse osmosis, UV and ozone sterilisation, and real-time monitoring. Built for villages, rural communities, and off-grid sites, it delivers WHO-standard drinking water wherever it’s needed.",
     image: null,
     cards: [
       {
-        title: "Power source",
+        title: "Power Source",
         description:
-          "Regen HybridGEN \u2014 solar PV, optional small wind, optional micro-hydro, variable-speed generator backup",
+          "Regen HybridGEN — solar PV, optional small wind, optional micro-hydro, variable-speed generator backup",
       },
       {
-        title: "Pre-treatment",
+        title: "Pre-Treatment",
         description:
           "Driving pump, source water tank, source water pump, quartz sand filter, activated carbon filter, softener, fine filter",
       },
       {
-        title: "Reverse osmosis",
+        title: "Reverse Osmosis",
         description:
-          "Semi-permeable helix membrane; removes 96%+ dissolved solids, 99%+ organic matter, 99%+ colloidal matter, ~100% bacteria; stainless inlet/outlet pipes; flow rate up to 15m\u00b3/hr",
+          "Semi-permeable helix membrane; removes 96%+ dissolved solids, 99%+ organic matter, 99%+ colloidal matter, ~100% bacteria; stainless inlet/outlet pipes; flow rate up to 15m³/hr",
       },
       {
         title: "Sterilisation",
@@ -274,17 +274,17 @@ export const offGridSolutionsSections = [
           "Fully automatic PLC + touchscreen + network communication; remote monitoring; safety protection on every pump and valve",
       },
       {
-        title: "Form factor",
+        title: "Form Factor",
         description:
           "Trailer-mounted, towable by pickup; fully self-contained",
       },
       {
-        title: "Best for",
+        title: "Best For",
         description:
           "Remote villages without piped water; dispersed rural households; communities failing piped-water standards; off-grid sites combining power + water",
       },
       {
-        title: "Source water",
+        title: "Source Water",
         description:
           "Rivers, lakes, floods, broken water mains, most freshwater sources",
       },
@@ -294,16 +294,16 @@ export const offGridSolutionsSections = [
     __component: "off-grid.off-grid-story" as const,
     subtitle: "An Off-Grid Story",
     title: "You Can Verify",
-    description: "Off-Grid Systems Are Bought On Trust. The Site Is Remote, The Buyer Can't Always Inspect The Work, And A System Failure 800km From Perth Is Expensive. Here's How We Earn That Trust \u2014 Verifiable, Documented, Decades-Long.",
+    description: "Off-grid systems are bought on trust. The site is remote, the buyer can't always inspect the work, and a system failure 800km from Perth is expensive. Here's how we earn that trust — verifiable, documented, decades-long.",
     cards: [
-      { title: "International Patent", description: "PCT/AU2011/001068 \u2014 Power Management System And Method For Optimising Fuel Consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed In Australia, Granted Internationally.", variant: "highlighted" },
-      { title: "Academic + Industry Founder", description: "Prof Chem Nayar \u2014 Decades Of Renewable Energy Research And Engineering. Academic Background Combined With Hands-On Industry Deployment Across Remote Sites.", variant: "light" },
-      { title: "International Patent", description: "PCT/AU2011/001068 \u2014 Power Management System And Method For Optimising Fuel Consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed In Australia, Granted Internationally.", variant: "highlighted" },
-      { title: "Academic + Industry Founder", description: "Regen Technologies Combines Academic Rigor With Field-Proven Engineering. Every Off-Grid System Is Backed By Peer-Reviewed Research And Decades Of Deployment Data.", variant: "light" },
+      { title: "International Patent", description: "PCT/AU2011/001068 — power management system and method for optimising fuel consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed in Australia, granted internationally.", variant: "highlighted" },
+      { title: "Academic + Industry Founder", description: "Prof Chem Nayar — decades of renewable energy research and engineering. Academic background combined with hands-on industry deployment across remote sites.", variant: "light" },
+      { title: "International Patent", description: "PCT/AU2011/001068 — power management system and method for optimising fuel consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed in Australia, granted internationally.", variant: "highlighted" },
+      { title: "Academic + Industry Founder", description: "Regen Technologies combines academic rigor with field-proven engineering. Every off-grid system is backed by peer-reviewed research and decades of deployment data.", variant: "light" },
     ],
     featuredImage: null,
     featuredTitle: "Prof Chem Nayar",
-    featuredDescription: "Founder & Chief Technology Officer \u2014 Pioneer In Renewable Energy Systems And Inventor Of Regen's Patented HybridGEN Technology, Driving Decades Of Innovation In Sustainable Off-Grid Power.",
+    featuredDescription: "Founder & chief technology officer — pioneer in renewable energy systems and inventor of Regen's patented HybridGEN technology, driving decades of innovation in sustainable off-grid power.",
   },
   {
     __component: "off-grid.icon-card-grid" as const,
@@ -313,28 +313,28 @@ export const offGridSolutionsSections = [
       {
         title: "International Patent",
         description:
-          "PCT/AU2011/001068 \u2014 Power Management System And Method For Optimising Fuel Consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed In Australia, Granted Internationally.",
+          "PCT/AU2011/001068 — power management system and method for optimising fuel consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed in Australia, granted internationally.",
         icon: null,
         variant: "highlighted",
       },
       {
         title: "Academic + Industry Founder",
         description:
-          "Prof Chem Nayar \u2014 Decades Of Renewable Energy Research And Engineering. Academic Background Combined With Hands-On Industry Deployment Across Remote Sites.",
+          "Prof Chem Nayar — decades of renewable energy research and engineering. Academic background combined with hands-on industry deployment across remote sites.",
         icon: null,
         variant: "light",
       },
       {
         title: "International Patent",
         description:
-          "PCT/AU2011/001068 \u2014 Power Management System And Method For Optimising Fuel Consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed In Australia, Granted Internationally.",
+          "PCT/AU2011/001068 — power management system and method for optimising fuel consumption. Inventor: Prof Chem Nayar (Regen Technologies Pty Ltd). Filed in Australia, granted internationally.",
         icon: null,
         variant: "highlighted",
       },
       {
         title: "Academic + Industry Founder",
         description:
-          "Regen Technologies Combines Academic Rigor With Field-Proven Engineering. Every Off-Grid System Is Backed By Peer-Reviewed Research And Decades Of Deployment Data.",
+          "Regen Technologies combines academic rigor with field-proven engineering. Every off-grid system is backed by peer-reviewed research and decades of deployment data.",
         icon: null,
         variant: "light",
       },
@@ -345,7 +345,7 @@ export const offGridSolutionsSections = [
     subtitle: "Six Steps",
     title: "Every Step In House",
     description:
-      "Off-Grid Projects Are Engineering Jobs More Than Installation Jobs. We Run A Six-Step Process From First Call To Handover. The Early Steps Are Deliberately Heavy: Getting The Site Analysis And The Load Profile Right Is What Makes The System Reliable For The Next 20 Years.",
+      "Off-grid projects are engineering jobs more than installation jobs. We run a six-step process from first call to handover. The early steps are deliberately heavy: getting the site analysis and the load profile right is what makes the system reliable for the next 20 years.",
     backgroundImage: null,
     cardLayout: "grid",
     cardColumns: 3,
@@ -354,32 +354,32 @@ export const offGridSolutionsSections = [
       {
         title: "Discovery & Load Analysis",
         description:
-          "Site Location, Access, Climate Band, Intended Loads, Expected Growth, Generator History. We Size By Worst-Week-Of-Winter, Not By Annual Average.",
+          "Site location, access, climate band, intended loads, expected growth, generator history. We size by worst-week-of-winter, not by annual average.",
       },
       {
         title: "Site Survey",
         description:
-          "On-Site Visit (Or Detailed Remote Survey For International Jobs). Photos, GPS, Soil And Mounting Assessment, Shading, Wind Regime, Source-Water If AcquaSmart Is In Scope.",
+          "On-site visit (or detailed remote survey for international jobs). Photos, GPS, soil and mounting assessment, shading, wind regime, source-water if AcquaSmart is in scope.",
       },
       {
         title: "System Design",
         description:
-          "In-House Engineering. Solar Sizing, Design, Battery Sizing, Generator Sizing, Control System, Monitoring, Plus Piping And Water-Treatment Design Where AcquaSmart Is Included.",
+          "In-house engineering. Solar sizing, design, battery sizing, generator sizing, control system, monitoring, plus piping and water-treatment design where AcquaSmart is included.",
       },
       {
         title: "Procurement & Factory Wiring",
         description:
-          "We Pre-Wire HybridGEN Packs And Microgrid Containers In Our Perth Facility. Cuts On-Site Time, Cuts Site-Risk, And Means The Unit Arrives Ready To Commission.",
+          "We pre-wire HybridGEN packs and microgrid containers in our Perth facility. Cuts on-site time, cuts site-risk, and means the unit arrives ready to commission.",
       },
       {
         title: "Delivery, Install, Commissioning",
         description:
-          "Transport To Site (Truck For WA, Container Shipping For International), On-Site Mechanical Install + Electrical Termination + Start-Up Testing.",
+          "Transport to site (truck for WA, container shipping for international), on-site mechanical install + electrical termination + start-up testing.",
       },
       {
         title: "Handover & Remote Support",
         description:
-          "App + Dashboard Walkthrough; Performance Baseline; Remote Monitoring Activated; Maintenance Contracts Available \u2014 Particularly Important For Sites Without Local Trades Support.",
+          "App + dashboard walkthrough; performance baseline; remote monitoring activated; maintenance contracts available — particularly important for sites without local trades support.",
       },
     ],
   },
@@ -391,34 +391,34 @@ export const offGridSolutionsSections = [
     image: null,
     items: [
       {
-        question: "Q1. How Much Does An Off-Grid System Cost?",
+        question: "Q1. How much does an off-grid system cost?",
         answer:
-          "Off-grid systems vary widely based on your energy needs, site conditions, and chosen components. A small cabin system starts around $15k\u2013$25k, while a full home system with HybridGEN can range $50k\u2013$200k+. We size to your actual load profile, not generic estimates.",
+          "Off-grid systems vary widely based on your energy needs, site conditions, and chosen components. A small cabin system starts around $15k–$25k, while a full home system with HybridGEN can range $50k–$200k+. We size to your actual load profile, not generic estimates.",
       },
       {
         question: "Q2. Is off-grid cheaper than connecting to the grid?",
         answer:
-          "Often, Yes. Western Power\u2019s Quoted Cost To Extend A Line To A Remote Property Is Typically $30,000\u2013$200,000 Per Kilometre. If Your Nearest Line Is More Than A Few Kilometres Away, An Off-Grid System Is Usually Cheaper To Install \u2014 And You Have No Power Bills, No Demand Charges, And No Exposure To Grid Outages Thereafter.",
+          "Often, yes. Western Power’s quoted cost to extend a line to a remote property is typically $30,000–$200,000 per kilometre. If your nearest line is more than a few kilometres away, an off-grid system is usually cheaper to install — and you have no power bills, no demand charges, and no exposure to grid outages thereafter.",
       },
       {
-        question: "Q3. Will I Still Need A Diesel Generator If I Go Off-Grid?",
+        question: "Q3. Will I still need a diesel generator if I go off-grid?",
         answer:
-          "Most off-grid systems include a backup generator for extended low-renewable periods. With our HybridGEN variable-speed generator, it only runs when needed and at the most efficient speed \u2014 typically a few times a year rather than daily.",
+          "Most off-grid systems include a backup generator for extended low-renewable periods. With our HybridGEN variable-speed generator, it only runs when needed and at the most efficient speed — typically a few times a year rather than daily.",
       },
       {
-        question: "Q4. What About Cyclones, Dust Storms, And Extreme Weather?",
+        question: "Q4. What about cyclones, dust storms, and extreme weather?",
         answer:
-          "Regen systems are engineered for remote WA conditions \u2014 cyclone-rated mounting, dust-sealed enclosures, and battery chemistries suited to high temperatures. We design for the worst week your site has seen in 20 years, not the average day.",
+          "Regen systems are engineered for remote WA conditions — cyclone-rated mounting, dust-sealed enclosures, and battery chemistries suited to high temperatures. We design for the worst week your site has seen in 20 years, not the average day.",
       },
       {
-        question: "Q5. Can My Off-Grid System Run A 3-Phase Load?",
+        question: "Q5. Can my off-grid system run a 3-phase load?",
         answer:
           "Yes. We routinely design three-phase systems for mining camps, workshops, irrigation pumps, and large homes. Our engineers size the inverter and battery bank to handle the starting currents of motors and heavy equipment.",
       },
       {
-        question: "Q6. What About Western Power\u2019s Free Stand-Alone Power System (SPS) Program?",
+        question: "Q6. What about Western Power’s free stand-alone power system (SPS) program?",
         answer:
-          "Western Power\u2019s SPS program supplies a basic system to eligible properties at no cost. If you need more capacity, three-phase, or want to own your system outright, a Regen off-grid system is usually a better long-term fit. We can advise on the trade-offs.",
+          "Western Power’s SPS program supplies a basic system to eligible properties at no cost. If you need more capacity, three-phase, or want to own your system outright, a Regen off-grid system is usually a better long-term fit. We can advise on the trade-offs.",
       },
     ],
   },
@@ -427,7 +427,7 @@ export const offGridSolutionsSections = [
     subtitle: "Talk To Our Remote Area",
     title: "Engineering Team",
     description:
-      "Off-Grid Projects Are Engineering Jobs. The First Conversation Is Technical, Not Transactional \u2014 Load Profile, Site Context, Generator History, Growth Plans, Water Needs If Any. Once We Understand The Problem, We Come Back With A System That Solves It. Send Us A Brief Site Overview Using The Form, Or Call Our Remote-Area Team Direct On 1800 073 436.",
+      "Off-grid projects are engineering jobs. The first conversation is technical, not transactional — load profile, site context, generator history, growth plans, water needs if any. Once we understand the problem, we come back with a system that solves it. Send us a brief site overview using the form, or call our remote-area team direct on 1800 073 436.",
     image: null,
   },
 ];

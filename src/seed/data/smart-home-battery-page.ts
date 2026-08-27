@@ -61,7 +61,7 @@ export const smartHomeBatterySections = [
         image: null,
       },
       {
-        title: "Smart home ecosystem",
+        title: "Smart Home Ecosystem",
         description: "Home Assistant, Google Home, Apple HomeKit, Tesla app, mySigen — your battery plays well with what you already use.",
         image: null,
       },
@@ -87,17 +87,17 @@ export const smartHomeBatterySections = [
               "Typical high-use households earn $1,000–$1,200 per year through a combination of daily cycling and VPP activation events. Lower-use households earn $500–$700. This is on top of the upfront $1,300 rebate.",
           },
           {
-            title: "What you keep control of",
+            title: "What You Keep Control Of",
             description:
               "Dispatch events are capped at around 30 per year, for a few hours each. Outside events, you have full control. If you use grid power during an activation window to cover your own home, Synergy credits you for that too — you're never financially worse off.",
           },
           {
-            title: "What systems are VPP-ready",
+            title: "What Systems Are VPP-Ready",
             description:
               "Every battery we install is VPP-capable and on the Synergy or Horizon Power Supported Solutions List. Tesla Powerwall 3, BYD Battery-Box, Alpha ESS, Sigenergy SigenStor, iStore and Goodwe Lynx all qualify.",
           },
         ],
-        ctaText: "Read the Full Battery Rebate Guide",
+        ctaText: "Read The Full Battery Rebate Guide",
         ctaLink: "#assessment",
         image: null,
       },
@@ -108,27 +108,27 @@ export const smartHomeBatterySections = [
           "In 2026, Perth's Distributed Energy Buyback Scheme (DEBS) pays just 2.25c per kWh for solar exported off-peak, and 10c per kWh during the 3pm–9pm window. But grid electricity costs you around 30c per kWh on the A1 tariff. A smart battery exploits that gap automatically.",
         blocks: [
           {
-            title: "The tariff arbitrage",
+            title: "The Tariff Arbitrage",
             description:
               "Every kWh you store in your battery and consume in the evening saves ~30c. Every kWh you export to the grid earns ~2.25c. The gap — roughly 27c per kWh — is where battery economics comes from.",
           },
           {
-            title: "Smart Home TOU plan compatibility",
+            title: "Smart Home TOU Plan Compatibility",
             description:
               "If you're on Synergy's Smart Home Plan (time-of-use), a smart battery also charges from cheap overnight electricity (when solar isn't producing), rides out the morning peak and tops up again at midday. Some Perth homes earn more from shifting than from solar itself.",
           },
           {
-            title: "Automated load scheduling",
+            title: "Automated Load Scheduling",
             description:
               "Your hot water, pool pump, EV charger and even dishwasher can be scheduled to run when your battery is full and the grid is cheap. The smart battery coordinates all of this in the background.",
           },
           {
-            title: "What happens on a cloudy winter day",
+            title: "What Happens On A Cloudy Winter Day",
             description:
               "The battery reserves evening capacity, charges what it can from reduced solar, and only pulls from the grid as a last resort — at the cheapest window available.",
           },
         ],
-        ctaText: "Read the Full Battery Rebate Guide",
+        ctaText: "Read The Full Battery Rebate Guide",
         ctaLink: "#rebate-guide",
         image: null,
       },
@@ -139,22 +139,22 @@ export const smartHomeBatterySections = [
           "Every battery comes with an app. Some are genuinely useful; some are just a dashboard. Here's what a good one looks like in 2026.",
         blocks: [
           {
-            title: "What you actually use day-to-day",
+            title: "What You Actually Use Day-To-Day",
             description:
               "• Live energy flow (Solar → Battery → Home → Grid, updated every few seconds)\n• State of charge and time-until-full / time-until-empty estimates\n• Today vs this week vs this month vs this year dashboards\n• Outage alerts and backup-mode switching\n• VPP activation notifications with earnings summary\n• Rule-based automation (\"Charge to 100% before 2pm on a hot day\", \"Reserve 30% for blackouts\")",
           },
           {
-            title: "The best battery apps in 2026",
+            title: "The Best Battery Apps In 2026",
             description:
               "Tesla App — Industry benchmark for clean UX, multi-product integration (Powerwall, Solar, EV, Charger)\n\nMySigen App — Sigenergy's AI-assisted assistant powered by GPT-4, handles natural-language queries ('What's my battery doing today?')\n\nBYD BYOS — Functional, no-frills, reliable\n\niStore App — Local brand, integrates with iStore hot water and pool heater.",
           },
           {
-            title: "Voice and automation",
+            title: "Voice And Automation",
             description:
               "Your hot water, pool pump, EV charger and even dishwasher can be scheduled to run when your battery is full and the grid is cheap. The smart battery coordinates all of this in the background.",
           },
         ],
-        ctaText: "Read the Full Battery Rebate Guide",
+        ctaText: "Read The Full Battery Rebate Guide",
         ctaLink: "#rebate-guide",
         image: null,
       },
@@ -165,27 +165,27 @@ export const smartHomeBatterySections = [
           "If you already run Home Assistant, Google Home, Apple HomeKit or Tesla's ecosystem, your battery should fit in — not force you to switch.",
         blocks: [
           {
-            title: "The tariff arbitrage",
+            title: "The Tariff Arbitrage",
             description:
               "Every kWh you store in your battery and consume in the evening saves ~30c. Every kWh you export to the grid earns ~2.25c. The gap — roughly 27c per kWh — is where battery economics comes from.",
           },
           {
-            title: "Smart Home TOU plan compatibility",
+            title: "Smart Home TOU Plan Compatibility",
             description:
-              "If you're on Synergy's Smart Home Plan (Time-Of-Use), a smart battery also charges from cheap overnight electricity (when solar isn't producing), rides out the morning peak and tops up again at midday. Some Perth homes earn more from shifting than from solar itself.",
+              "If you're on Synergy's Smart Home Plan (time-of-use), a smart battery also charges from cheap overnight electricity (when solar isn't producing), rides out the morning peak and tops up again at midday. Some Perth homes earn more from shifting than from solar itself.",
           },
           {
-            title: "Automated load scheduling",
+            title: "Automated Load Scheduling",
             description:
               "Your hot water, pool pump, EV charger and even dishwasher can be scheduled to run when your battery is full and the grid is cheap. The smart battery coordinates all of this in the background.",
           },
           {
-            title: "What happens on a cloudy winter day",
+            title: "What Happens On A Cloudy Winter Day",
             description:
               "The battery reserves evening capacity, charges what it can from reduced solar, and only pulls from the grid as a last resort — at the cheapest window available.",
           },
         ],
-        ctaText: "Read the Full Battery Rebate Guide",
+        ctaText: "Read The Full Battery Rebate Guide",
         ctaLink: "#rebate-guide",
         image: null,
       },
@@ -193,7 +193,7 @@ export const smartHomeBatterySections = [
   },
   {
     __component: "smart-home-battery.timeline" as const,
-    topSubtitle: "A Tuesday in Summer",
+    topSubtitle: "A Tuesday In Summer",
     title: "What Your Battery Does Automatically",
     events: [
       {
@@ -250,20 +250,20 @@ export const smartHomeBatterySections = [
         title: "Sigenergy SigenStor (Our Smart Home Pick)",
         logo: null,
         specification: [
-          {
-            title: "Best For:",
-            description: "Tech-Forward Homes, EV Owners, Home Assistant Users",
-          },
-          {
-            title: "Why:",
-            description:
-              "Five-In-One Design (Hybrid Inverter + Battery + EV DC Charger + EMS + Gateway). Stacks From 5 KWh To 48 KWh. 25kW Bidirectional DC EV Charger Enables V2H/V2G. GPT-4 Powered MySigen Assistant. Native Home Assistant Integration.",
-          },
-          {
-            title: "Warranty:",
-            description: "10 Years On Battery And Inverter, 5 Years On Gateway",
-          },
-        ],
+            {
+              title: "Best For:",
+              description: "Tech-forward homes, EV owners, Home Assistant users",
+            },
+            {
+              title: "Why:",
+              description:
+                "Five-in-one design (hybrid inverter + battery + EV DC charger + EMS + gateway). Stacks from 5 kWh to 48 kWh. 25kW bidirectional DC EV charger enables V2H/V2G. GPT-4 powered MySigen assistant. Native Home Assistant integration.",
+            },
+            {
+              title: "Warranty:",
+              description: "10 years on battery and inverter, 5 years on gateway",
+            },
+          ],
         showbutton: true,
         buttonText: "Explore Smart Home Batteries",
         buttonLink: "#sigenergy",
@@ -272,20 +272,20 @@ export const smartHomeBatterySections = [
         title: "Tesla Powerwall 3 (The Benchmark)",
         logo: null,
         specification: [
-          {
-            title: "Best For:",
-            description: "Tesla EV Owners, Homes Valuing Industry-Leading App UX",
-          },
-          {
-            title: "Why:",
-            description:
-              "13.5 KWh Usable. Integrated Solar Inverter (No Separate Hybrid Inverter Needed). Up To 10kW Continuous Backup. Tesla App Is Still The Category Benchmark. Native Integration With Tesla Wall Connector And Vehicles.",
-          },
-          {
-            title: "Warranty:",
-            description: "10 Years Product",
-          },
-        ],
+            {
+              title: "Best For:",
+              description: "Tesla EV owners, homes valuing industry-leading app UX",
+            },
+            {
+              title: "Why:",
+              description:
+                "13.5 kWh usable. Integrated solar inverter (no separate hybrid inverter needed). Up to 10kW continuous backup. Tesla app is still the category benchmark. Native integration with Tesla Wall Connector and vehicles.",
+            },
+            {
+              title: "Warranty:",
+              description: "10 years product",
+            },
+          ],
         showbutton: true,
         buttonText: "Explore Smart Home Batteries",
         buttonLink: "#tesla",
@@ -294,20 +294,20 @@ export const smartHomeBatterySections = [
         title: "BYD Battery-Box Premium (The Modular Choice)",
         logo: null,
         specification: [
-          {
-            title: "Best For:",
-            description: "Homes Wanting Modular Scalability Without Ecosystem Lock-In",
-          },
-          {
-            title: "Why:",
-            description:
-              "5.1 KWh Modules Stack To 22.1 KWh Per Tower; Up To 3 Towers In Parallel. LFP Chemistry. IP55 Rated For Outdoor Install. Compatible With Most Major Hybrid Inverters (Sungrow, Fronius, SolaX) — Gives You Inverter Flexibility.",
-          },
-          {
-            title: "Warranty:",
-            description: "10 Years Product, 10 Years Performance",
-          },
-        ],
+            {
+              title: "Best For:",
+              description: "Homes wanting modular scalability without ecosystem lock-in",
+            },
+            {
+              title: "Why:",
+              description:
+                "5.1 kWh modules stack to 22.1 kWh per tower; up to 3 towers in parallel. LFP chemistry. IP55 rated for outdoor install. Compatible with most major hybrid inverters (Sungrow, Fronius, SolaX) — gives you inverter flexibility.",
+            },
+            {
+              title: "Warranty:",
+              description: "10 years product, 10 years performance",
+            },
+          ],
         showbutton: true,
         buttonText: "Explore Smart Home Batteries",
         buttonLink: "#byd",
