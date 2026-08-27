@@ -15,6 +15,7 @@
     "seed:portfolio": "node scripts/seed-portfolio.js",
     "seed": "node scripts/seed.js",
     "seed:promotion": "node scripts/seed-promotion.js",
+    "seed:compare": "node scripts/seed-compare.js",
     "admin:reset-password": "node scripts/reset-admin-password.js",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
