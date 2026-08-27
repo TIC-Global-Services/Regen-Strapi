@@ -45,7 +45,6 @@ export const promotionSections: Section[] = [
     },
     highlightPrefix: "Upto",
     highlightValue: "$5400",
-    highlightSuffix: null,
     description: "Back In Rebate",
     ctaLabel: "See What's Included & Get A Quote",
     ctaLink: "#why-regen-power-mobile",
@@ -55,7 +54,6 @@ export const promotionSections: Section[] = [
   {
     __component: "promotion.limited-spots",
     title: "Limited Spots Available Serve Yours Now!",
-    titleGreen: null,
     cards: [
       {
         type: "nested",
@@ -73,7 +71,6 @@ export const promotionSections: Section[] = [
         bgImage: null,
         icon: null,
         showBadge: false,
-        nestedCard: null,
       },
       {
         type: "black",
@@ -82,7 +79,6 @@ export const promotionSections: Section[] = [
         bgImage: null,
         icon: null,
         showBadge: true,
-        nestedCard: null,
       },
       {
         type: "nested",
@@ -94,8 +90,6 @@ export const promotionSections: Section[] = [
         nestedCard: { type: "image", logo: null, image: null, showBadge: true },
       },
     ],
-    ctaText: null,
-    ctaLink: null,
   },
 
   // ─── 3. Trust Regen ──────────────────────────────────────────────────
@@ -128,11 +122,9 @@ export const promotionSections: Section[] = [
     title: "Get an Obligation Free Quotation",
     noticeText:
       "Due To The Current High Demand For Batteries, We Are Unable To Accept Bookings \nFor Solar-Only Installations At This Time. Bookings Will Only Be Accepted For Solar + Battery or Battery-Only Installations.",
-    noticeHighlight: null,
     videoThumbnail: null,
     videoUrl: "https://player.vimeo.com/video/810074456?h=62919e7375",
     buttonText: "Get Your Free Quote",
-    buttonLink: null,
   },
 
   // ─── 5. Battery Rebates ──────────────────────────────────────────────
@@ -266,7 +258,6 @@ export const promotionSections: Section[] = [
     title: "Ready to Begin? Get A Free Quote.",
     noticeText:
       "Due To The Current High Demand For Batteries, We Are Unable To Accept Bookings \nFor Solar-Only Installations At This Time. Bookings Will Only Be Accepted For Solar + Battery or Battery-Only Installations.",
-    noticeHighlight: null,
     contactDetails: {
       title: "Contact Us",
       description:
@@ -284,7 +275,6 @@ export const promotionSections: Section[] = [
       ],
     },
     buttonText: "Get Your Free Quote",
-    buttonLink: null,
   },
 
   // ─── 10. Solar Financing ─────────────────────────────────────────────
@@ -349,8 +339,8 @@ export const promotionSections: Section[] = [
     subtitle: "Our Customers Love Us",
     description: "Regen Power Is Rated 4.9 Stars By The ProductReview.Com.Au Community, Australia's Leading Consumer Review Platform.",
     awards: [
-      { name: null, title: null, image: null, description: "6-Time ProductReview Award Winner (2021, 2022, 2023, 2024, 2025 & 2026)" },
-      { name: null, title: null, image: null, description: "⭐ 5.0 Stars • 2,684 Reviews" },
+      { image: null, description: "6-Time ProductReview Award Winner (2021, 2022, 2023, 2024, 2025 & 2026)" },
+      { image: null, description: "⭐ 5.0 Stars • 2,684 Reviews" },
     ],
     reviews: [
       {
@@ -418,7 +408,6 @@ export const promotionSections: Section[] = [
         {
           question: "What is the battery rebate scheme?",
           answer: "The battery rebate scheme offers financial incentives from both state and federal governments to reduce the upfront cost of installing battery storage systems in homes and businesses, enhancing energy independence and reducing electricity bills.",
-          bulletPoints: null,
         },
         {
           question: "How much rebate can I receive?",
@@ -429,8 +418,6 @@ export const promotionSections: Section[] = [
           ],
         },
       ],
-      ctaText: null,
-      ctaLink: null,
     },
     faqItems: [
       {
