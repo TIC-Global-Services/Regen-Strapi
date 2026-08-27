@@ -8,7 +8,7 @@ export default {
     await runSeed(strapi, {
       force: true,
       only: [
-        "api::press-media-page.press-media-page",
+        "api::promotion-page.promotion-page",
       ],
     });
   },
