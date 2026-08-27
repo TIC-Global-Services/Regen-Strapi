@@ -4,7 +4,8 @@
  * Runs the page seeder (src/seed) against a running Strapi instance.
  *
  * Usage:
- *   node scripts/seed.js
+ *   npm run seed              # safe: fills only EMPTY/MISSING (no force)
+ *   FORCE=1 npm run seed      # force: overwrites all 22 pages (for casing sync)
  */
 
 const path = require('path');
@@ -16,10 +17,17 @@ async function main() {
   const distDir = path.join(appDir, 'dist');
   const app = await createStrapi({ appDir, distDir }).load();
 
+  const force = process.env.FORCE === '1';
+  if (force) console.log('FORCE=1 — will overwrite all pages');
+
   try {
-    await runSeed(app);
+    await runSeed(app, force ? { force: true } : {});
+  } catch (err) {
+    if (err.details) console.error(JSON.stringify(err.details, null, 2));
+    throw err;
   } finally {
-    await app.destroy().catch(() => {});
+    await new Promise((r) => setTimeout(r, 500));
+    try { await app.destroy(); } catch {}
   }
 
   console.log('\nDone.');
