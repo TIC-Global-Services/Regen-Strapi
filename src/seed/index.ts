@@ -22,6 +22,7 @@ import { batteryStorageSections } from "./data/battery-storage-page";
 import { smartHomeBatterySections } from "./data/smart-home-battery-page";
 import { batteryBrandsSections } from "./data/battery-brands-page";
 import { governmentRebatesSections } from "./data/government-rebates-page";
+import { promotionSections } from "./data/promotion-page";
 
 const pages = [
   {
@@ -268,9 +269,25 @@ const pages = [
       metaRobots: "index, follow",
     },
   },
+  {
+    uid: "api::promotion-page.promotion-page" as UID.ContentType,
+    title: "Promotion",
+    sections: promotionSections,
+    seo: {
+      metaTitle: "Solar Perth | Regen Power — WA Battery Rebates + Solar Packages",
+      metaDescription:
+        "Double rebates, double savings. WA & Federal battery rebates up to $5,255 off. Perth solar + battery packages from Regen Power — 45,000+ installs since 2003.",
+      keywords: "solar perth, battery rebate WA, solar battery perth",
+      metaRobots: "index, follow",
+    },
+  },
 ];
 
-async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number]) {
+async function seedSingleType(
+  strapi: Core.Strapi,
+  page: (typeof pages)[number],
+  force = false
+) {
   const existing = await strapi.documents(page.uid).findFirst({
     status: "published",
     populate: ["seo"],
@@ -279,6 +296,19 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
   const fieldName = (page as any).fieldName || "sections";
 
   if (existing) {
+    if (force) {
+      await strapi.documents(page.uid).update({
+        documentId: existing.documentId,
+        data: {
+          [fieldName]: page.sections,
+          seo: page.seo,
+        } as any,
+        status: "published",
+      });
+      strapi.log.info(`[seed] ${page.title} OVERWRITTEN`);
+      return;
+    }
+
     const existingField = (existing as any)[fieldName];
     const needsSections = !existingField || existingField.length === 0;
     const needsSeo = !(existing as any).seo;
@@ -311,12 +341,25 @@ async function seedSingleType(strapi: Core.Strapi, page: (typeof pages)[number])
   strapi.log.info(`[seed] ${page.title} created`);
 }
 
-export async function runSeed(strapi: Core.Strapi) {
-  strapi.log.info("🌱 Starting Page Seeder...");
+export async function runSeed(
+  strapi: Core.Strapi,
+  opts: { force?: boolean; only?: string[] } = {}
+) {
+  const force = opts.force ?? false;
+  const targets = opts.only ? pages.filter((p) => opts.only!.includes(p.uid)) : pages;
 
-  for (const page of pages) {
-    await seedSingleType(strapi, page);
+  if (opts.only && targets.length === 0) {
+    strapi.log.warn(`[seed] No pages matched "only" filter: ${opts.only.join(", ")}`);
+    return;
   }
 
-  strapi.log.info(`✅ ${pages.length} pages seeded successfully.`);
+  strapi.log.info(
+    `🌱 Starting Page Seeder...${force ? " (FORCE MODE - overwriting existing content)" : ""} (${targets.length} page${targets.length === 1 ? "" : "s"} to process)`
+  );
+
+  for (const page of targets) {
+    await seedSingleType(strapi, page, force);
+  }
+
+  strapi.log.info(`✅ ${targets.length} page${targets.length === 1 ? "" : "s"} seeded successfully.`);
 }
