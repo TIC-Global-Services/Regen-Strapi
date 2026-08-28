@@ -16,6 +16,11 @@
     },
     "placeholder": {
       "type": "string"
+    },
+    "options": {
+      "type": "component",
+      "component": "battery-product.right-sizing-option",
+      "repeatable": true
     }
   },
   "config": {}

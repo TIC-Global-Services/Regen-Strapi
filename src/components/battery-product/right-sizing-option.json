@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_battery_product_right_sizing_options",
+  "info": {
+    "displayName": "Right Sizing Option"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}
