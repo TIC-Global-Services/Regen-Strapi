@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_about_award_cards",
+  "info": {
+    "displayName": "Award Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "badge": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "badgeSizeClass": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

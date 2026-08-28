@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_about_awards",
+  "info": {
+    "displayName": "Awards"
+  },
+  "options": {},
+  "attributes": {
+    "cards": {
+      "type": "component",
+      "component": "about.award-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

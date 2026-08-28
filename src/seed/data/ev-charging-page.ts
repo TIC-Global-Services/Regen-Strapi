@@ -33,7 +33,64 @@ export const evChargingSections: Section[] = [
     ],
   },
 
-  // ─── 3. Charger Products ────────────────────────────────────────────
+  // ─── 3. Installer Brands ─────────────────────────────────────────────
+  {
+    __component: "ev-charging.installer-brands",
+    subtitle: "More Than Tesla — Five Charger Brands",
+    title: "One Trusted Installer",
+    description:
+      "Different homes, different EVs, different energy setups. We carry the brands we trust to deliver.",
+    brands: [
+      {
+        name: "Sigenergy",
+        cardTitle: "Sigenergy, For The Buyer Thinking 10 Years Ahead",
+        description:
+          "SigenStor is an all-in-one solar, battery, and EV charging system with bidirectional charging and advanced energy management. Designed for future-ready homes.\n7–22 kW AC | 25 kW DC bidirectional | V2H & V2G ready",
+      },
+      {
+        name: "Fronius",
+        cardTitle: "Fronius Wattpilot Solar-Smart, Beautifully Built",
+        description:
+          "Solar-integrated EV charging, built by Fronius. Up to 22 kW | Smart energy management",
+      },
+      {
+        name: "Goodwe",
+        cardTitle: "Goodwe HCA G2 — The Smart-Value All-Rounder",
+        description: "Smart EV charging built for Goodwe solar systems. Up to 22 kW | 5-year warranty",
+      },
+      {
+        name: "AlphaESS",
+        cardTitle: "Alpha ESS, For Alpha Battery Owners",
+        description:
+          "Designed for Alpha ESS battery homes, the SMILE-G3-EVCT11 brings solar, battery, and EV charging together in one AlphaCloud platform. Intelligent charging modes optimize solar usage, off-peak tariffs, and charging performance.",
+      },
+    ],
+  },
+
+  // ─── 4. Why Charge At Home ──────────────────────────────────────────
+  {
+    __component: "ev-charging.benefit-cards",
+    title: "Why Charge At Home",
+    benefits: [
+      {
+        title: "Cheaper Per Km Than Petrol",
+        description:
+          "Charging at home is dramatically cheaper than petrol — even more so when you're charging from your own solar. Daytime solar charging effectively brings your fuel cost to zero.",
+      },
+      {
+        title: "Always A Full Charge In The Morning",
+        description:
+          "Plug in when you get home, wake up to a full battery. A 7kW home charger adds about 45 km of range per hour — enough to fully replenish the average daily commute (35–50 km) in two to three hours, every night.",
+      },
+      {
+        title: "You're In Control",
+        description:
+          "Schedule charging for off-peak periods, prioritize solar surplus, set kilowatt limits, monitor every session from your phone. The right home charger is smarter than any public station — and never has a queue.",
+      },
+    ],
+  },
+
+  // ─── 5. Charger Products (live order) ────────────────────────────────────
   {
     __component: "ev-charging.charger-products",
     subtitle: "Single-Phase Or Three-Phase?",
@@ -52,63 +109,6 @@ export const evChargingSections: Section[] = [
     ],
   },
 
-  // ─── 4. Installer Brands ─────────────────────────────────────────────
-  {
-    __component: "ev-charging.installer-brands",
-    subtitle: "More Than Tesla — Five Charger Brands",
-    title: "One Trusted Installer",
-    description:
-      "Different homes, different EVs, different energy setups. We carry the brands we trust to deliver.",
-    brands: [
-      {
-        name: "Sigenergy",
-        cardTitle: "Sigenergy, For The Buyer Thinking 10 Years Ahead",
-        description:
-          "SigenStor is an all-in-one solar, battery, and EV charging system with bidirectional charging and advanced energy management.",
-      },
-      {
-        name: "Fronius",
-        cardTitle: "Fronius Wattpilot — Solar-Smart, Beautifully Built",
-        description:
-          "Solar-integrated EV charging, built by Fronius. Up to 22 kW | Smart energy management",
-      },
-      {
-        name: "Goodwe",
-        cardTitle: "Goodwe HCA G2 — The Smart-Value All-Rounder",
-        description: "Smart EV charging built for Goodwe solar systems. Up to 22 kW | 5-year warranty",
-      },
-      {
-        name: "AlphaESS",
-        cardTitle: "Alpha ESS, For Alpha Battery Owners",
-        description:
-          "Designed for Alpha ESS battery homes. Intelligent charging modes optimise solar usage, off-peak tariffs, and charging performance.",
-      },
-    ],
-  },
-
-  // ─── 5. Why Charge At Home ──────────────────────────────────────────
-  {
-    __component: "ev-charging.benefit-cards",
-    title: "Why Charge At Home",
-    benefits: [
-      {
-        title: "Cheaper Per Km Than Petrol",
-        description:
-          "Charging at home is dramatically cheaper than petrol — even more so when you're charging from your own solar. Daytime solar charging effectively brings your fuel cost to zero.",
-      },
-      {
-        title: "Always A Full Charge In The Morning",
-        description:
-          "Plug in when you get home, wake up to a full battery. A 7kW home charger adds about 45 km of range per hour.",
-      },
-      {
-        title: "You're In Control",
-        description:
-          "Schedule charging for off-peak periods, prioritise solar surplus, set kilowatt limits, monitor every session from your phone.",
-      },
-    ],
-  },
-
   // ─── 6. Home Battery (V2H) ─────────────────────────────────────────
   {
     __component: "ev-charging.home-battery",
@@ -116,10 +116,10 @@ export const evChargingSections: Section[] = [
     title: "A Home Battery",
     paragraphs: [
       {
-        text: "Vehicle-to-home (V2H) lets your car push energy back into your home — or even back to the grid. With a 75-100 kWh battery on wheels, your EV can power the house for days during an outage.",
+        text: "Vehicle-to-home (V2H) lets your car push energy back into your home — or even back to the grid. With a 75–100 kWh battery on wheels, your EV can power the house for days during an outage, or shift load away from peak grid pricing automatically.",
       },
       {
-        text: "Sigenergy's SigenStor with the EV DC charging module is the only system in our range that supports true bidirectional 25kW DC charging today.",
+        text: "Sigenergy's SigenStor with the EV DC charging module is the only system in our range that supports true bidirectional 25kW DC charging today. It's V2X-ready, which means as carmakers roll out V2H/V2G firmware to compatible vehicles, your system already speaks the language.",
       },
     ],
     bulletPoints: [
@@ -142,7 +142,7 @@ export const evChargingSections: Section[] = [
       {
         title: "Solar Surplus Diversion",
         description:
-          "Spare solar generation flows straight to your EV instead of being exported at low feed-in tariffs.",
+          "Spare solar generation flows straight to your EV instead of being exported at low feed-in tariffs. Round-trip energy efficiency improves by 15–20%.",
       },
       {
         title: "Battery Boost",
@@ -152,7 +152,7 @@ export const evChargingSections: Section[] = [
       {
         title: "One App",
         description:
-          "Live monitoring of generation, storage, and EV charging in a single dashboard.",
+          "Live monitoring of generation, storage, and EV charging in a single dashboard, Tesla, Sigen, Solar.web, or SEMS depending on the brand you choose.",
       },
     ],
   },

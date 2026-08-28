@@ -23,6 +23,7 @@ import { smartHomeBatterySections } from "./data/smart-home-battery-page";
 import { batteryBrandsSections } from "./data/battery-brands-page";
 import { governmentRebatesSections } from "./data/government-rebates-page";
 import { promotionSections } from "./data/promotion-page";
+import { aboutSections } from "./data/about-page";
 
 export const pages = [
   {
@@ -281,13 +282,24 @@ export const pages = [
       metaRobots: "index, follow",
     },
   },
+  {
+    uid: "api::about-page.about-page" as UID.ContentType,
+    title: "About",
+    sections: aboutSections,
+    seo: {
+      metaTitle: "About Us | Regen Power",
+      metaDescription: "Regen Power at a glance — our story and what drives us.",
+      keywords: "Regen Power, about, solar installer Perth, awards",
+      metaRobots: "index, follow",
+    },
+  },
 ];
 
 function sanitizeSections(sections: any[]): any[] {
   // Strip null-string keys that Yup rejects (only media fields allow null)
   // Keep media nulls so relations clear correctly. Omit empty string-keys.
   const mediaNullOk = new Set([
-    "backgroundImage","batteryImage","bgImage","image","icon","logo","videoThumbnail","centerImage","imagePath","logoPath",
+    "backgroundImage","batteryImage","bgImage","image","icon","logo","video","videoThumbnail","centerImage","imagePath","logoPath","badge",
   ]);
   function clean(obj: any): any {
     if (Array.isArray(obj)) return obj.map(clean);
