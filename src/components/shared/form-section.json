@@ -20,6 +20,14 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos",
+        "files"
+      ]
     }
   },
   "config": {}
