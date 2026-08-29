@@ -366,4 +366,12 @@ export const homeSections: Section[] = [
       "Our technical sales team will design a system tailored to your home, usage, and budget. Most quotes delivered within 24 hours.",
     image: null,
   },
+  {
+    __component: "shared.form-section" as const,
+    subtitle: null,
+    title: null,
+    description: null,
+    image: null,
+    video: null,
+  },
 ];

@@ -99,4 +99,12 @@ export const commercialOffGridSections = [
     buttonLink: "#quote-form",
     backgroundImage: null,
   },
+  {
+    __component: "shared.form-section" as const,
+    subtitle: null,
+    title: null,
+    description: null,
+    image: null,
+    video: null,
+  },
 ];

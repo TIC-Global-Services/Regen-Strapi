@@ -423,11 +423,11 @@ export const offGridSolutionsSections = [
     ],
   },
   {
-    __component: "off-grid.off-grid-form" as const,
-    subtitle: "Talk To Our Remote Area",
-    title: "Engineering Team",
-    description:
-      "Off-grid projects are engineering jobs. The first conversation is technical, not transactional — load profile, site context, generator history, growth plans, water needs if any. Once we understand the problem, we come back with a system that solves it. Send us a brief site overview using the form, or call our remote-area team direct on 1800 073 436.",
+    __component: "shared.form-section" as const,
+    subtitle: null,
+    title: null,
+    description: null,
     image: null,
+    video: null,
   },
 ];

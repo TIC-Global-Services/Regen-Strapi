@@ -402,12 +402,12 @@ export const commercialSystemsSections = [
     ],
   },
   {
-    __component: "commercial-systems.commercial-form" as const,
-    subtitle: "Tell Us About Your Facility",
-    title: "We Will Come Back With A Number",
-    description:
-      "A commercial energy assessment is free and takes about 30 minutes — most of it on a screen-share with your last 12 months of Synergy or Horizon bills. We’ll come back inside a week with a sized system, a rebate-applied price, and a payback projection your accountant can model.",
+    __component: "shared.form-section" as const,
+    subtitle: null,
+    title: null,
+    description: null,
     image: null,
+    video: null,
   },
   {
     __component: "shared.cta-banner" as const,

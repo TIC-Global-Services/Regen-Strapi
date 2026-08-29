@@ -116,4 +116,12 @@ export const rebatesSections = [
     buttonText: "Get My Free Quote",
     backgroundImage: null,
   },
+  {
+    __component: "shared.form-section" as const,
+    subtitle: null,
+    title: null,
+    description: null,
+    image: null,
+    video: null,
+  },
 ];

@@ -10,10 +10,12 @@ export const contactSections = [
     backgroundImage: null,
   },
   {
-    __component: "contact.contact-form-section" as const,
-    title: "Contact Us",
-    description:
-      "Have a question, need a quote, or want to discuss your project? Fill in the form and our team will get back to you shortly.",
+    __component: "shared.form-section" as const,
+    subtitle: null,
+    title: null,
+    description: null,
+    image: null,
+    video: null,
   },
   {
     __component: "contact.location-map" as const,

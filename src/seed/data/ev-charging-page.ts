@@ -256,4 +256,12 @@ export const evChargingSections: Section[] = [
     buttonText: "Get My Free EV Quote",
     buttonLink: "/contact",
   },
+  {
+    __component: "shared.form-section" as const,
+    subtitle: null,
+    title: null,
+    description: null,
+    image: null,
+    video: null,
+  },
 ];
