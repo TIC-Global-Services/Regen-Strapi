@@ -15,7 +15,7 @@
       "type": "dynamiczone",
       "components": [
         "contact.hero",
-        "contact.contact-form-section",
+        "shared.form-section",
         "contact.location-map"
       ]
     },

@@ -17,6 +17,7 @@
         "portfolio.hero",
         "portfolio.filters",
         "shared.category-section",
+        "shared.form-section",
         "shared.cta-banner"
       ]
     },

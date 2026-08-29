@@ -16,6 +16,7 @@
       "components": [
         "faq.hero",
         "faq.categorized-faq",
+        "shared.form-section",
         "shared.cta-banner"
       ]
     },

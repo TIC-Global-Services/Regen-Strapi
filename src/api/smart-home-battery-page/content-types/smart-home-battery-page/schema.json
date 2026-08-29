@@ -22,6 +22,7 @@
         "smart-home-battery.timeline",
         "smart-home-battery.brands-grid",
         "smart-home-battery.install-bento",
+        "shared.form-section",
         "shared.cta-banner"
       ]
     },

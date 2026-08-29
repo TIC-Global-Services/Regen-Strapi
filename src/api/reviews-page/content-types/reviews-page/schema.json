@@ -17,6 +17,7 @@
         "reviews.hero",
         "reviews.intro-section",
         "reviews.testimonials-section",
+        "shared.form-section",
         "shared.cta-banner"
       ]
     },

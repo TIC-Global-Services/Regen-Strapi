@@ -24,6 +24,7 @@
         "ev-charging.installation-steps",
         "ev-charging.stats",
         "shared.faq",
+        "shared.form-section",
         "shared.cta-banner"
       ]
     },

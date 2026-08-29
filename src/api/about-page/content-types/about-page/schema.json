@@ -13,7 +13,7 @@
   "attributes": {
     "sections": {
       "type": "dynamiczone",
-      "components": ["about.hero", "about.awards"]
+      "components": ["about.hero", "about.awards", "shared.form-section"]
     },
     "seo": {
       "type": "component",
