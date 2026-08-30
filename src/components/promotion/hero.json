@@ -1,20 +1,64 @@
 {
   "collectionName": "components_promotion_heroes",
-  "info": { "displayName": "Hero" },
+  "info": {
+    "displayName": "Hero"
+  },
   "options": {},
   "attributes": {
-    "title": { "type": "text", "required": true },
-    "subtitle": { "type": "string" },
-    "backgroundImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
-    "batteryImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
-    "packages": { "type": "component", "component": "promotion.hero-package", "repeatable": true },
-    "sidebar": { "type": "component", "component": "promotion.hero-sidebar" },
-    "highlightPrefix": { "type": "string" },
-    "highlightValue": { "type": "string" },
-    "highlightSuffix": { "type": "string" },
-    "description": { "type": "string" },
-    "ctaLabel": { "type": "string" },
-    "ctaLink": { "type": "string" }
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "mobileTitle": {
+      "type": "string"
+    },
+    "mobileSubtitle": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "batteryImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "packages": {
+      "type": "component",
+      "component": "promotion.hero-package",
+      "repeatable": true
+    },
+    "sidebar": {
+      "type": "component",
+      "component": "promotion.hero-sidebar"
+    },
+    "highlightPrefix": {
+      "type": "string"
+    },
+    "highlightValue": {
+      "type": "string"
+    },
+    "highlightSuffix": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
   },
   "config": {}
 }

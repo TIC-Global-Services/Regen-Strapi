@@ -1,12 +1,23 @@
 {
   "collectionName": "components_promotion_award_items",
-  "info": { "displayName": "Award Item" },
+  "info": {
+    "displayName": "Award Item"
+  },
   "options": {},
   "attributes": {
-    "name": { "type": "string" },
-    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
-    "description": { "type": "text" },
-    "title": { "type": "string" }
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
   },
   "config": {}
 }

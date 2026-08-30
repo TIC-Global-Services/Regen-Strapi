@@ -40,6 +40,8 @@ export const promotionSections: Section[] = [
       ctaText: "Secure My Rebate",
       ctaLink: "#quote-form-section",
     },
+    mobileTitle: "20kWh",
+    mobileSubtitle: "Battery System",
     highlightPrefix: "Upto",
     highlightValue: "$5400",
     description: "Back In Rebate",
@@ -214,7 +216,6 @@ export const promotionSections: Section[] = [
     packages: [
       {
         name: "8.3kWh Battery",
-        capacity: "8.3kWh Battery",
         originalPrice: 14404,
         rebates: [
           { label: "State Rebate", amount: 1209 },
@@ -223,15 +224,10 @@ export const promotionSections: Section[] = [
         finalPrice: 10990,
         installationText: "Fully Installed",
         pricingNote: "Price is after the battery rebate",
-        priceNote: "Price is after the battery rebate",
-        stateRebate: 1209,
-        federalRebate: 2205,
-        isFullyInstalled: true,
         image: null,
       },
       {
         name: "16.6kWh Battery",
-        capacity: "16.6kWh Battery",
         originalPrice: 18245,
         rebates: [
           { label: "State Rebate", amount: 1300 },
@@ -240,10 +236,6 @@ export const promotionSections: Section[] = [
         finalPrice: 12990,
         installationText: "Fully Installed",
         pricingNote: "Price is after the battery rebate",
-        priceNote: "Price is after the battery rebate",
-        stateRebate: 1300,
-        federalRebate: 3955,
-        isFullyInstalled: true,
         image: null,
       },
     ],

@@ -1,20 +1,37 @@
 {
   "collectionName": "components_promotion_battery_package_items",
-  "info": { "displayName": "Battery Package Item" },
+  "info": {
+    "displayName": "Battery Package Item"
+  },
   "options": {},
   "attributes": {
-    "name": { "type": "string" },
-    "capacity": { "type": "string" },
-    "originalPrice": { "type": "integer" },
-    "finalPrice": { "type": "integer" },
-    "stateRebate": { "type": "integer" },
-    "federalRebate": { "type": "integer" },
-    "rebates": { "type": "component", "component": "promotion.rebate-item", "repeatable": true },
-    "installationText": { "type": "string" },
-    "isFullyInstalled": { "type": "boolean", "default": true },
-    "pricingNote": { "type": "string" },
-    "priceNote": { "type": "string" },
-    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+    "name": {
+      "type": "string"
+    },
+    "originalPrice": {
+      "type": "integer"
+    },
+    "finalPrice": {
+      "type": "integer"
+    },
+    "rebates": {
+      "type": "component",
+      "component": "promotion.rebate-item",
+      "repeatable": true
+    },
+    "installationText": {
+      "type": "string"
+    },
+    "pricingNote": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
   },
   "config": {}
 }

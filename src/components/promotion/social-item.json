@@ -1,11 +1,16 @@
 {
   "collectionName": "components_promotion_social_items",
-  "info": { "displayName": "Social Item" },
+  "info": {
+    "displayName": "Social Item"
+  },
   "options": {},
   "attributes": {
-    "name": { "type": "string" },
-    "link": { "type": "string" },
-    "url": { "type": "string" }
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
   },
   "config": {}
 }

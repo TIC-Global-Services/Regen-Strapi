@@ -1,12 +1,26 @@
 {
   "collectionName": "components_promotion_contact_infos",
-  "info": { "displayName": "Contact Info" },
+  "info": {
+    "displayName": "Contact Info"
+  },
   "options": {},
   "attributes": {
-    "title": { "type": "string" },
-    "description": { "type": "text" },
-    "items": { "type": "json" },
-    "socials": { "type": "json" }
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "type": "component",
+      "component": "promotion.contact-data",
+      "repeatable": true
+    },
+    "socials": {
+      "type": "component",
+      "component": "promotion.social-item",
+      "repeatable": true
+    }
   },
   "config": {}
 }
