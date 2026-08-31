@@ -161,19 +161,20 @@ async function main() {
       return;
     }
 
-    // Direct component table update — bypasses document-service DZ version check
+    // Direct DB update — bypasses document-service DZ version check
     // that throws "Some of the provided components in sections are not related to the entity"
     // when using documents().update({ data: { sections }}) with published ids on Strapi 5.
+    // In Strapi 5 the component table is managed via knex, not a model UID.
     let ok = 0, skip = 0;
     for (const card of cards) {
       const fileId = urlMap.get(card.title) ?? null; // 4 milestones stay null
-      // card.badge may be null or { id, ... } depending on populate depth
       const currentBadgeId = card.badge == null ? null : (typeof card.badge === 'object' ? card.badge.id : card.badge);
       if (currentBadgeId === fileId) { skip++; continue; }
-      await app.db.query('component::about.award-card').update({
-        where: { id: card.id },
-        data: { badge: fileId },
-      });
+      // component table is components_about_award_cards with media column `badge`
+      await app.db.connection.raw(
+        'UPDATE components_about_award_cards SET badge = ? WHERE id = ?',
+        [fileId, card.id]
+      );
       console.log(`  ✓ ${card.title.slice(0, 55)} -> badge ${fileId ?? 'null'}`);
       ok++;
     }
