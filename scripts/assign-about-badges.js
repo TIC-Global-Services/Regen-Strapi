@@ -161,20 +161,28 @@ async function main() {
       return;
     }
 
-    // Direct DB update — bypasses document-service DZ version check
-    // that throws "Some of the provided components in sections are not related to the entity"
-    // when using documents().update({ data: { sections }}) with published ids on Strapi 5.
-    // In Strapi 5 the component table is managed via knex, not a model UID.
+    // Media on components is not a column — in Strapi 5 it's stored in
+    // files_related_mph (file_id, related_id, related_type, field, \"order\").
+    // The components_about_award_cards table only has id/title/description/badge_size_class.
+    // So we INSERT/DELETE rows in files_related_mph instead of UPDATEing the component row.
+    // related_type is bare "about.award-card" (not "component::..."), as seen on this DB.
     let ok = 0, skip = 0;
     for (const card of cards) {
       const fileId = urlMap.get(card.title) ?? null; // 4 milestones stay null
       const currentBadgeId = card.badge == null ? null : (typeof card.badge === 'object' ? card.badge.id : card.badge);
       if (currentBadgeId === fileId) { skip++; continue; }
-      // component table is components_about_award_cards with media column `badge`
+
+      // Remove any existing link for this card's badge (if re-assigning)
       await app.db.connection.raw(
-        'UPDATE components_about_award_cards SET badge = ? WHERE id = ?',
-        [fileId, card.id]
+        'DELETE FROM files_related_mph WHERE related_type = ? AND field = ? AND related_id = ?',
+        ['about.award-card', 'badge', card.id]
       );
+      if (fileId != null) {
+        await app.db.connection.raw(
+          'INSERT INTO files_related_mph (file_id, related_id, related_type, field, \"order\") VALUES (?, ?, ?, ?, ?)',
+          [fileId, card.id, 'about.award-card', 'badge', 1]
+        );
+      }
       console.log(`  ✓ ${card.title.slice(0, 55)} -> badge ${fileId ?? 'null'}`);
       ok++;
     }
