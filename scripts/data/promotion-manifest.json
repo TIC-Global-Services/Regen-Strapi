@@ -1,0 +1,74 @@
+{
+  "_note": "47 media slots for promotion-page. Each entry maps a Strapi component.field to a file in Media Library/promotion-page. Singleton components match all rows (draft+published). Repeatables match by business key (value/title/name/description). Nested-card entries match via parent card value.",
+  "assignments": [
+    { "file": "landing_page_hero.png", "related_type": "promotion.hero", "field": "backgroundImage", "match": "singleton" },
+    { "file": "promotion_battery_fallback.png", "related_type": "promotion.hero", "field": "batteryImage", "match": "singleton" },
+
+    { "file": "white_regen_logo.svg", "related_type": "promotion.nested-card", "field": "logo", "parent": { "table": "components_promotion_limited_spot_cards", "where": { "value": "23" } } },
+    { "file": "perthcity3.png", "related_type": "promotion.limited-spot-card", "field": "bgImage", "where": { "value": "YES" } },
+    { "file": "limited_home.png", "related_type": "promotion.limited-spot-card", "field": "bgImage", "where": { "value": "45K+" } },
+    { "file": "limited_battery.png", "related_type": "promotion.nested-card", "field": "image", "parent": { "table": "components_promotion_limited_spot_cards", "where": { "value": "3k+" } } },
+
+    { "file": "excellent_logo.svg", "related_type": "promotion.trust-feature", "field": "icon", "where": { "title": "Excellent \nCustomer Satisfaction" } },
+    { "file": "best_value-logo.svg", "related_type": "promotion.trust-feature", "field": "icon", "where": { "title": "Best Value Solar \nPackages in Perth" } },
+    { "file": "wa_born_logo.svg", "related_type": "promotion.trust-feature", "field": "icon", "where": { "title": "WA Born and Bred \nCompany" } },
+
+    { "file": "solar_house_render.png", "related_type": "promotion.free-quotation", "field": "videoThumbnail", "match": "singleton" },
+
+    { "file": "battery_rebates_fallback.png", "related_type": "promotion.battery-rebates", "field": "bgImage", "match": "singleton" },
+
+    { "file": "alpha_ess_logo.png", "related_type": "promotion.brand-logo", "field": "logo", "where": { "name": "alphaess" } },
+    { "file": "byd_logo.png", "related_type": "promotion.brand-logo", "field": "logo", "where": { "name": "byd" } },
+    { "file": "goodwe_logo.png", "related_type": "promotion.brand-logo", "field": "logo", "where": { "name": "GOODWE" } },
+    { "file": "istore_logo.png", "related_type": "promotion.brand-logo", "field": "logo", "where": { "name": "ISTORE" } },
+    { "file": "sigenergy.png", "related_type": "promotion.brand-logo", "field": "logo", "where": { "name": "SIGENERGY" } },
+    { "file": "tesla_logo.png", "related_type": "promotion.brand-logo", "field": "logo", "where": { "name": "TESLA" } },
+
+    { "file": "istore_brand.png", "related_type": "promotion.battery-card", "field": "image", "where": { "name": "iStore" } },
+    { "file": "istore_logo.png", "related_type": "promotion.battery-card", "field": "logo", "where": { "name": "iStore" } },
+    { "file": "tesla.png", "related_type": "promotion.battery-card", "field": "image", "where": { "name": "Tesla Powerwall" } },
+    { "file": "tesla_logo.png", "related_type": "promotion.battery-card", "field": "logo", "where": { "name": "Tesla Powerwall" } },
+    { "file": "sig_energy.png", "related_type": "promotion.battery-card", "field": "image", "where": { "name": "Sigenergy" } },
+    { "file": "sigenergy.png", "related_type": "promotion.battery-card", "field": "logo", "where": { "name": "Sigenergy" } },
+    { "file": "goodwe.png", "related_type": "promotion.battery-card", "field": "image", "where": { "name": "Goodwe" } },
+    { "file": "goodwe_logo.png", "related_type": "promotion.battery-card", "field": "logo", "where": { "name": "Goodwe" } },
+    { "file": "alpha_ess.png", "related_type": "promotion.battery-card", "field": "image", "where": { "name": "AlphaESS" } },
+    { "file": "alpha_ess_logo.png", "related_type": "promotion.battery-card", "field": "logo", "where": { "name": "AlphaESS" } },
+    { "file": "byd.png", "related_type": "promotion.battery-card", "field": "image", "where": { "name": "BYD" } },
+    { "file": "byd_logo.png", "related_type": "promotion.battery-card", "field": "logo", "where": { "name": "BYD" } },
+
+    { "file": "fas100_logo.png", "related_type": "promotion.badge-logo", "field": "logo", "where": { "name": "fas100 Certified" } },
+    { "file": "tesla_certificate.png", "related_type": "promotion.badge-logo", "field": "logo", "where": { "name": "Tesla Certified" } },
+    { "file": "best_rated.png", "related_type": "promotion.badge-logo", "field": "logo", "where": { "name": "best rated batch" } },
+    { "file": "financialtimes_logo.png", "related_type": "promotion.badge-logo", "field": "logo", "where": { "name": "financialtimes logo" } },
+
+    { "file": "sig_energy.png", "related_type": "promotion.battery-package", "field": "centerImage", "match": "singleton" },
+    { "file": "sig_energy.png", "related_type": "promotion.battery-package-item", "field": "image", "where": { "name": "8.3kWh Battery" } },
+    { "file": "sig_energy.png", "related_type": "promotion.battery-package-item", "field": "image", "where": { "name": "16.6kWh Battery" } },
+
+    { "file": "solar-finance-1.svg", "related_type": "promotion.financing-grid-item", "field": "icon", "where": { "title": "10 Years Repayment" }, "whereIndex": 0 },
+    { "file": "solar-finance-2.svg", "related_type": "promotion.financing-grid-item", "field": "icon", "where": { "title": "10 Years Repayment" }, "whereIndex": 1 },
+    { "file": "solar-finance-3.svg", "related_type": "promotion.financing-grid-item", "field": "icon", "where": { "title": "0% Interest Scheme" } },
+    { "file": "solar-finance-4.svg", "related_type": "promotion.financing-grid-item", "field": "icon", "where": { "title": "Owner-Occupiers Eligible" } },
+    { "file": "solar-finance-5.svg", "related_type": "promotion.financing-grid-item", "field": "icon", "where": { "title": "Lower Energy Bills" } },
+    { "file": "solar-finance-6.svg", "related_type": "promotion.financing-grid-item", "field": "icon", "where": { "title": "Premium Quality Hardware" } },
+
+    { "file": "about-regen.png", "related_type": "promotion.about-regen", "field": "image", "match": "singleton" },
+
+    { "file": "top_rated_logo.png", "related_type": "promotion.award-item", "field": "image", "where": { "description": "6-Time ProductReview Award Winner" } },
+    { "file": "product_review.svg", "related_type": "promotion.award-item", "field": "image", "where": { "description": "5.0 Stars" } },
+
+    { "file": "australian_logo.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "ATC Finalist 2014 & 2019" } },
+    { "file": "rising_stars_logo.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "Rising Stars Winner 2019" } },
+    { "file": "financialtimes_logo.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "FT High-Growth Company 2020-2023" } },
+    { "file": "fas100_logo.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "Financial Review Fast 100 2020" } },
+    { "file": "sea_logo.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "SEA Ambassador Award" } },
+    { "file": "awards_winner.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "Belmont Small Business Award Winner" } },
+    { "file": "best-rated-1.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "best-rated" } },
+    { "file": "best-rated-2.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "best-rated#2" } },
+    { "file": "top-rated-installer.jpg", "related_type": "promotion.award-item", "field": "image", "where": { "name": "top-rated-installer" } },
+    { "file": "google_rating.png", "related_type": "promotion.award-item", "field": "image", "where": { "name": "google-rating" } },
+
+    { "file": "faq.png", "related_type": "promotion.faq-highlight-card", "field": "bgImage", "match": "singleton" }
+  ]
+}

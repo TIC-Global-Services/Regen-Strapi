@@ -68,13 +68,52 @@ function stripMeta(obj) {
     const out = {};
     for (const [k, v] of Object.entries(obj)) {
       if (META_KEYS.has(k)) continue;
-      // media object — normalize to null vs {url} for comparison
-      // keep as-is but strip its meta too
+      if (k === 'canonicalURL' && (v === null || v === undefined || v === '')) continue;
+      // DB omits media keys when null, seed has explicit null — normalize both to null-ish equal
+      // For compare, treat missing media key same as null
       out[k] = stripMeta(v);
     }
     return out;
   }
   return obj;
+}
+
+function seedForCompare(sections) {
+  const s = sanitizeSections(sections || []);
+  // Expand: ensure missing media keys are explicit null so DB missing == seed null compares equal
+  const mediaKeys = ['backgroundImage','batteryImage','bgImage','image','icon','logo','videoThumbnail','centerImage','imagePath','logoPath','metaImage','canonicalURL'];
+  function ensureMedia(obj) {
+    if (Array.isArray(obj)) return obj.map(ensureMedia);
+    if (obj && typeof obj === 'object') {
+      for (const k of mediaKeys) if (!(k in obj) && '__component' in obj) {
+        // only fill if component schema has it — heuristic: if siblings have media, don't inject
+        // simpler: don't inject, instead normalize DB side below
+      }
+      const out = {};
+      for (const [k,v] of Object.entries(obj)) out[k] = ensureMedia(v);
+      return out;
+    }
+    return obj;
+  }
+  return s.map(ensureMedia);
+}
+
+function normalizeDbForCompare(dbSections, seedSections) {
+  // Align DB missing keys with seed nulls for comparison
+  // If seed has backgroundImage: null and DB omits it, treat as equal
+  function align(db, seed) {
+    if (Array.isArray(db) && Array.isArray(seed)) return db.map((d,i)=>align(d, seed[i]));
+    if (db && typeof db === 'object' && seed && typeof seed === 'object') {
+      const out = { ...stripMeta(db) };
+      for (const k of Object.keys(seed)) {
+        if (!(k in out) && seed[k] === null) out[k] = null;
+        else if (k in out) out[k] = align(out[k], seed[k]);
+      }
+      return out;
+    }
+    return stripMeta(db);
+  }
+  return align(normalizeDbSections(dbSections), seedSections);
 }
 
 function normalizeDbSections(dbSections) {
@@ -143,8 +182,11 @@ async function main() {
 
   for (const page of targets) {
     const fieldName = page.fieldName || 'sections';
-    const seedSections = sanitizeSections(page.sections || []);
-    const seedSeo = page.seo || null;
+    const seedSectionsRaw = sanitizeSections(page.sections || []);
+    const seedSeoRaw = page.seo || null;
+    // For fair compare, strip canonicalURL noise and normalize case-insensitive check later
+    const seedSections = seedSectionsRaw;
+    const seedSeo = stripMeta(seedSeoRaw);
     const seedHash = hash(seedSections);
 
     let dbDoc = null;
@@ -171,38 +213,41 @@ async function main() {
       continue;
     }
 
-    const dbSections = normalizeDbSections(dbSectionsRaw);
-    const dbHash = hash(dbSections);
-    const dbSeo = stripMeta(dbDoc.seo || null);
+    const dbSectionsAligned = normalizeDbForCompare(dbSectionsRaw, seedSections);
+    const dbSectionsStripped = normalizeDbSections(dbSectionsRaw);
+    // Use aligned for hash so null-vs-missing media doesn't cause false DIFF
+    const dbHash = hash(dbSectionsAligned);
+    const dbSeoNorm = stripMeta(dbDoc.seo || null);
+    // DB seo has canonicalURL:null noise — already stripped above
 
-    const lenMatch = dbSections.length === seedSections.length;
+    const lenMatch = dbSectionsStripped.length === seedSections.length;
     const hashMatch = dbHash === seedHash;
-    const seoMatch = deepEqual(stripMeta(seedSeo), dbSeo);
+    const seoMatch = deepEqual(seedSeo, dbSeoNorm);
 
     // component order check
     const seedComps = seedSections.map(s=>s.__component).join(', ');
-    const dbComps = dbSections.map(s=>s.__component).join(', ');
+    const dbComps = dbSectionsStripped.map(s=>s.__component).join(', ');
     const compsMatch = seedComps === dbComps;
 
     if (lenMatch && hashMatch && seoMatch && compsMatch) {
-      console.log(`[OK]      ${page.title} (${page.uid}) — ${dbSections.length}/${seedSections.length} sections, hash ${dbHash} — match`);
+      console.log(`[OK]      ${page.title} (${page.uid}) — ${dbSectionsStripped.length}/${seedSections.length} sections, hash ${dbHash} — match`);
       ok++;
     } else {
       diff++;
       const reasons = [];
-      if (!lenMatch) reasons.push(`sections ${dbSections.length} vs ${seedSections.length}`);
+      if (!lenMatch) reasons.push(`sections ${dbSectionsStripped.length} vs ${seedSections.length}`);
       if (!hashMatch) reasons.push(`hash ${dbHash} vs ${seedHash}`);
       if (!compsMatch) reasons.push(`components differ`);
       if (!seoMatch) {
-        const sd = firstDiff(stripMeta(seedSeo), dbSeo, 'seo');
+        const sd = firstDiff(seedSeo, dbSeoNorm, 'seo');
         reasons.push(sd ? sd : `seo differs`);
       }
-      // find first section diff
+      // find first section diff — compare aligned so null-missing doesn't show
       let secDiff = null;
-      if (lenMatch && !hashMatch) secDiff = firstDiff(seedSections, dbSections, 'sections');
+      if (lenMatch && !hashMatch) secDiff = firstDiff(seedSections, dbSectionsAligned, 'sections');
       else if (!lenMatch) secDiff = `seed components: [${seedComps}] vs db: [${dbComps}]`;
 
-      console.log(`[DIFF]    ${page.title} (${page.uid}) — ${dbSections.length}/${seedSections.length} sections, db:${dbHash} seed:${seedHash} — ${reasons.join(' | ')}`);
+      console.log(`[DIFF]    ${page.title} (${page.uid}) — ${dbSectionsStripped.length}/${seedSections.length} sections, db:${dbHash} seed:${seedHash} — ${reasons.join(' | ')}`);
       if (secDiff) console.log(`          → ${secDiff.slice(0, 300)}`);
       if (VERBOSE) {
         console.log('  seed hash', seedHash, 'db hash', dbHash);
