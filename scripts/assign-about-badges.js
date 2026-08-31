@@ -11,8 +11,13 @@
  * 50 cards in src/seed/data/about-page.ts, 46 with badge, 4 milestones
  * intentionally stay null (no image on regenpower.com/about-us).
  *
+ * Uses direct component table update to bypass Strapi 5 draft/published
+ * DZ version check that otherwise throws:
+ *   "Some of the provided components in sections are not related to the entity"
+ * when using documents().update({ data: { sections }}) with published ids.
+ *
  * Usage:
- *   node scripts/assign-about-badges.js              # live DB (VPS: docker exec ...)
+ *   node scripts/assign-about-badges.js              # writes
  *   DRY_RUN=1 node scripts/assign-about-badges.js    # preview only, no writes
  *   FOLDER="about-page/awardbadges" node scripts/assign-about-badges.js  # custom path
  *
@@ -25,7 +30,7 @@
  *   git push
  *   ssh VPS "cd regen-power/strapi-cms && git pull && docker compose build --no-cache strapi && docker compose up -d"
  *   docker exec strapi-cms-strapi-1 node scripts/assign-about-badges.js
- *   curl -s "https://regen-cms.theinternetcompany.one/api/about-page?populate[sections][populate]=*" | jq '.data.sections[1].cards[0] | {title, badge: .badge.url}'
+ *   curl -s "https://regen-cms.theinternetcompany.one/api/about-page?populate[sections][on][about.awards][populate][cards][populate]=badge" | jq '.data.sections[1].cards[0] | {title, badge: .badge.url}'
  */
 
 const path = require('path');
@@ -43,9 +48,7 @@ function loadManifest() {
     console.error(`Missing ${MANIFEST_FILE}. Copy Documents/api-data-regen/about-awards/manifest.json -> scripts/data/about-awards-manifest.json`);
     process.exit(1);
   }
-  const raw = JSON.parse(fs.readFileSync(MANIFEST_FILE, 'utf8'));
-  // Filter to entries that expect a badge
-  return raw;
+  return JSON.parse(fs.readFileSync(MANIFEST_FILE, 'utf8'));
 }
 
 async function resolveFolderId(strapi, folderPath) {
@@ -87,7 +90,6 @@ async function main() {
       process.exit(1);
     }
 
-    // Index files by name and by hash (Strapi stores hash without ext)
     const byName = new Map(files.map(f => [f.name.toLowerCase(), f]));
     const byHash = new Map(files.map(f => [String(f.hash).toLowerCase(), f]));
     const byNameNoExt = new Map(files.map(f => [f.name.replace(/\.[^.]+$/, '').toLowerCase(), f]));
@@ -103,7 +105,6 @@ async function main() {
       const localLower = m.localFile.toLowerCase();
       const hash = localLower.replace(/\.[^.]+$/, '');
       let file = byName.get(localLower) || byHash.get(hash) || byNameNoExt.get(hash);
-      // Fallback: match by slug part (after 02-2026-)
       if (!file) {
         const slugPart = localLower.split('-').slice(2).join('-').replace(/\.[^.]+$/, '').slice(0, 30);
         file = files.find(f => f.name.toLowerCase().includes(slugPart));
@@ -118,7 +119,7 @@ async function main() {
     }
     console.log(`Matched: ${matched} badges, ${missing} missing files, ${noBadge} milestones intentionally without badge`);
 
-    // Load current about-page sections — need deep populate so cards come back with ids
+    // Load live document with ids — need published populate to get card ids
     let aboutDoc = await app.documents(ABOUT_UID).findFirst({
       status: 'published',
       populate: { sections: { populate: '*' }, seo: { populate: '*' } },
@@ -137,18 +138,6 @@ async function main() {
     const cards = awardsSection.cards || [];
     console.log(`Live cards: ${cards.length}`);
 
-    // Build hydrated cards — assign badge id per title
-    // Keep existing card ids so document-service doesn't hit deleteOldDZComponents
-    const hydratedCards = cards.map(card => {
-      const id = urlMap.get(card.title) ?? null;
-      // Preserve id for Strapi's DZ update, set badge as media id
-      const { id: cardId, ...rest } = card;
-      return { id: cardId, ...rest, badge: id ?? null };
-    });
-
-    // Also handle cards that are in seed/manifest but not yet in live (seed was 50, live may be older)
-    // If live has fewer cards than manifest, we need to add missing ones — but this script is assign-only.
-    // Warn if live is stale.
     const manifestWithBadge = new Set(manifest.filter(m => m.localFile).map(m => m.title));
     const liveTitles = new Set(cards.map(c => c.title));
     const newInManifest = [...manifestWithBadge].filter(t => !liveTitles.has(t));
@@ -160,33 +149,37 @@ async function main() {
     }
 
     // Preview
-    for (const c of hydratedCards.slice(0, 5)) {
-      const hasBadge = c.badge ? `badge id=${c.badge}` : 'no badge';
-      console.log(`  - ${c.title.slice(0, 55)} -> ${hasBadge}`);
+    for (const c of cards.slice(0, 5)) {
+      const badgeId = urlMap.get(c.title) ?? null;
+      const badgeLabel = badgeId ? `badge id=${badgeId}` : 'no badge';
+      console.log(`  - ${c.title.slice(0, 55)} -> ${badgeLabel}`);
     }
-    if (hydratedCards.length > 5) console.log(`  ... and ${hydratedCards.length - 5} more`);
+    if (cards.length > 5) console.log(`  ... and ${cards.length - 5} more`);
 
     if (DRY_RUN) {
       console.log('\nDRY_RUN=1 — no writes. Remove DRY_RUN to assign.');
       return;
     }
 
-    // Write back — preserve section ids, only hydrate badge on awards cards
-    const newSections = sections.map(s => {
-      if (s.__component !== 'about.awards') return s;
-      // Keep section id so Strapi doesn't treat it as new DZ entry
-      const { id: sectionId, ...sectionRest } = s;
-      return { id: sectionId, ...sectionRest, cards: hydratedCards };
-    });
+    // Direct component table update — bypasses document-service DZ version check
+    // that throws "Some of the provided components in sections are not related to the entity"
+    // when using documents().update({ data: { sections }}) with published ids on Strapi 5.
+    let ok = 0, skip = 0;
+    for (const card of cards) {
+      const fileId = urlMap.get(card.title) ?? null; // 4 milestones stay null
+      // card.badge may be null or { id, ... } depending on populate depth
+      const currentBadgeId = card.badge == null ? null : (typeof card.badge === 'object' ? card.badge.id : card.badge);
+      if (currentBadgeId === fileId) { skip++; continue; }
+      await app.db.query('component::about.award-card').update({
+        where: { id: card.id },
+        data: { badge: fileId },
+      });
+      console.log(`  ✓ ${card.title.slice(0, 55)} -> badge ${fileId ?? 'null'}`);
+      ok++;
+    }
 
-    await app.documents(ABOUT_UID).update({
-      documentId: aboutDoc.documentId,
-      data: { sections: newSections },
-      status: 'published',
-    });
-
-    console.log(`\n✅ Assigned badges to ${matched} cards in ${ABOUT_UID} (4 milestones remain null)`);
-    console.log(`Verify: curl -s "http://localhost:1337/api/about-page?populate[sections][populate]=*" | jq '.data.sections[1].cards[0].badge'`);
+    console.log(`\n✅ Updated ${ok} cards, ${skip} already correct — ${ABOUT_UID} (4 milestones remain null)`);
+    console.log(`Verify: curl -s "https://regen-cms.theinternetcompany.one/api/about-page?populate[sections][on][about.awards][populate][cards][populate]=badge" | jq '.data.sections[1].cards[0] | {title, badge: .badge}'`);
   } finally {
     await app.destroy().catch(e => console.warn(`teardown warning (safe): ${e.message}`));
   }
