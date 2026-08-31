@@ -118,9 +118,12 @@ async function main() {
     }
     console.log(`Matched: ${matched} badges, ${missing} missing files, ${noBadge} milestones intentionally without badge`);
 
-    // Load current about-page sections (use dist seed as source of truth for order)
-    let aboutDoc = await app.documents(ABOUT_UID).findFirst({ status: 'published', populate: '*' });
-    if (!aboutDoc) aboutDoc = await app.documents(ABOUT_UID).findFirst({ populate: '*' });
+    // Load current about-page sections — need deep populate so cards come back with ids
+    let aboutDoc = await app.documents(ABOUT_UID).findFirst({
+      status: 'published',
+      populate: { sections: { populate: '*' }, seo: { populate: '*' } },
+    });
+    if (!aboutDoc) aboutDoc = await app.documents(ABOUT_UID).findFirst({ populate: { sections: { populate: '*' } } });
     if (!aboutDoc) {
       console.error(`No document for ${ABOUT_UID}. Run PAGES=about-page npm run seed first.`);
       process.exit(1);
@@ -135,10 +138,12 @@ async function main() {
     console.log(`Live cards: ${cards.length}`);
 
     // Build hydrated cards — assign badge id per title
+    // Keep existing card ids so document-service doesn't hit deleteOldDZComponents
     const hydratedCards = cards.map(card => {
       const id = urlMap.get(card.title) ?? null;
-      // Strapi expects media relation as id (number) for single media
-      return { ...card, badge: id ?? null };
+      // Preserve id for Strapi's DZ update, set badge as media id
+      const { id: cardId, ...rest } = card;
+      return { id: cardId, ...rest, badge: id ?? null };
     });
 
     // Also handle cards that are in seed/manifest but not yet in live (seed was 50, live may be older)
@@ -166,15 +171,17 @@ async function main() {
       return;
     }
 
-    // Write back — only update sections, preserve other sections
+    // Write back — preserve section ids, only hydrate badge on awards cards
     const newSections = sections.map(s => {
       if (s.__component !== 'about.awards') return s;
-      return { ...s, cards: hydratedCards };
+      // Keep section id so Strapi doesn't treat it as new DZ entry
+      const { id: sectionId, ...sectionRest } = s;
+      return { id: sectionId, ...sectionRest, cards: hydratedCards };
     });
 
     await app.documents(ABOUT_UID).update({
       documentId: aboutDoc.documentId,
-      data: { sections: newSections } ,
+      data: { sections: newSections },
       status: 'published',
     });
 
