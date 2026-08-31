@@ -21,7 +21,7 @@
     "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/03-2026-productreview-com-au-awards-winner-2026.png"
   },
   {
-    "title": "Regen Power Named Western Australia\u2019s Best-Rated Solar Installer 2025 by SolarQuotes",
+    "title": "Regen Power Named Western Australia’s Best-Rated Solar Installer 2025 by SolarQuotes",
     "badgeSrc": "https://regenpower.com/wp-content/uploads/2025/10/wa-top-rated-installers-1.jpg",
     "badgeAlt": "Solar quotes award - top rated installer in WA",
     "localFile": "04-2025-regen-power-named-western-australia-s-best-rated-solar-insta.jpg",
@@ -50,10 +50,11 @@
   },
   {
     "title": "Completed 45,000 installations",
-    "badgeSrc": "https://regenpower.com/wp-content/uploads/2025/03/22nd_anniversary_logo.png",
+    "badgeSrc": null,
     "badgeAlt": "22nd anniversary celebration",
-    "localFile": "08-2025-completed-45-000-installations.png",
-    "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/08-2025-completed-45-000-installations.png"
+    "localFile": null,
+    "localPath": null,
+    "reason": "No badge image on WordPress (milestone) - was phantom reuse of neighbor image"
   },
   {
     "title": "ProductReview.com.au Awards Winner 2025",
@@ -63,7 +64,7 @@
     "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/09-2025-productreview-com-au-awards-winner-2025.png"
   },
   {
-    "title": "The CEO Magazine\u2019s 2024 Executive of the Year Awards Finalist",
+    "title": "The CEO Magazine’s 2024 Executive of the Year Awards Finalist",
     "badgeSrc": "https://regenpower.com/wp-content/uploads/2024/12/2024-executive-of-the-year-award.jpg",
     "badgeAlt": "CEO Magazine 2024 Executive of the year award finalist",
     "localFile": "10-2024-the-ceo-magazine-s-2024-executive-of-the-year-awards-finalis.jpg",
@@ -134,10 +135,11 @@
   },
   {
     "title": "Completed 40,000 installations",
-    "badgeSrc": "https://regenpower.com/wp-content/uploads/2023/11/2023-Stevie-Award-Winner.png",
+    "badgeSrc": null,
     "badgeAlt": "2023-Stevie-Award-Winner",
-    "localFile": "20-2023-completed-40-000-installations.png",
-    "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/20-2023-completed-40-000-installations.png"
+    "localFile": null,
+    "localPath": null,
+    "reason": "No badge image on WordPress (milestone) - was phantom reuse of neighbor image"
   },
   {
     "title": "FT High-Growth Companies 2023",
@@ -154,7 +156,7 @@
     "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/22-2023-productreview-awards-winner-2023.png"
   },
   {
-    "title": "Belmont & WA Business Awards 2022 \u2013 \"Enterprise of the Year\" category",
+    "title": "Belmont & WA Business Awards 2022 – \"Enterprise of the Year\" category",
     "badgeSrc": "https://regenpower.com/wp-content/uploads/2022/12/belmont-2022-300x134.jpg",
     "badgeAlt": "",
     "localFile": "23-2023-belmont-wa-business-awards-2022-enterprise-of-the-year-categ.jpg",
@@ -162,10 +164,11 @@
   },
   {
     "title": "Completed 35,000 installations",
-    "badgeSrc": "https://regenpower.com/wp-content/uploads/2022/12/belmont-2022-300x134.jpg",
+    "badgeSrc": null,
     "badgeAlt": "",
-    "localFile": "24-2022-completed-35-000-installations.jpg",
-    "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/24-2022-completed-35-000-installations.jpg"
+    "localFile": null,
+    "localPath": null,
+    "reason": "No badge image on WordPress (milestone) - was phantom reuse of neighbor image"
   },
   {
     "title": "FT High-Growth Companies Asia-Pacific",
@@ -217,7 +220,7 @@
     "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/31-2021-productreview-com-au-2021-award-winner.png"
   },
   {
-    "title": "2021 WA Australian of the Year \u2013 Finalist",
+    "title": "2021 WA Australian of the Year – Finalist",
     "badgeSrc": "https://regenpower.com/wp-content/uploads/2022/12/austraianoftheyearward.jpg",
     "badgeAlt": "",
     "localFile": "32-2020-2021-wa-australian-of-the-year-finalist.jpg",
@@ -284,10 +287,11 @@
   },
   {
     "title": "Crossed 8,000 PV installations",
-    "badgeSrc": "https://regenpower.com/wp-content/uploads/2019/11/awards-atc-finalist-2014.png",
+    "badgeSrc": null,
     "badgeAlt": "regen award",
-    "localFile": "41-2014-crossed-8-000-pv-installations.png",
-    "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/41-2014-crossed-8-000-pv-installations.png"
+    "localFile": null,
+    "localPath": null,
+    "reason": "No badge image on WordPress (milestone) - was phantom reuse of neighbor image"
   },
   {
     "title": "Crossed 6,000 PV installations",
@@ -306,10 +310,11 @@
   },
   {
     "title": "Patented HybridGEN",
-    "badgeSrc": "https://regenpower.com/wp-content/uploads/2023/03/SEA-Awards.png",
+    "badgeSrc": null,
     "badgeAlt": "",
-    "localFile": "44-2010-patented-hybridgen.png",
-    "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/44-2010-patented-hybridgen.png"
+    "localFile": null,
+    "localPath": null,
+    "reason": "No badge image on WordPress (milestone) - was phantom reuse of neighbor image"
   },
   {
     "title": "SHCP Scheme",
@@ -334,10 +339,27 @@
   },
   {
     "title": "ARC Linkage Project",
-    "badgeSrc": "https://regenpower.com/wp-content/uploads/2023/03/maldives.jpg",
+    "badgeSrc": null,
     "badgeAlt": "",
-    "localFile": "48-2006-arc-linkage-project.jpg",
-    "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/48-2006-arc-linkage-project.jpg"
+    "localFile": null,
+    "localPath": null,
+    "reason": "No badge image (ARC 2006 $270k)"
+  },
+  {
+    "title": "ARC Linkage Project",
+    "badgeSrc": null,
+    "badgeAlt": "",
+    "localFile": null,
+    "localPath": null,
+    "reason": "No badge image (ARC 2006 $280k)"
+  },
+  {
+    "title": "ARC Linkage Project",
+    "badgeSrc": null,
+    "badgeAlt": "",
+    "localFile": null,
+    "localPath": null,
+    "reason": "No badge image (ARC 2004 $230k+250k)"
   },
   {
     "title": "Asian Development Bank Project",

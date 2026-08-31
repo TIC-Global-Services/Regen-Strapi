@@ -256,6 +256,16 @@ export const aboutSections: Section[] = [
         badge: null,
       },
       {
+        title: "ARC Linkage Project",
+        description: "Grant amount: $280,000 Variable speed diesel power conversion system using a doubly fed induction generator",
+        badge: null,
+      },
+      {
+        title: "ARC Linkage Project",
+        description: "Grant amount: $230,000 & 250,000 Project details: Control and Interfacing of IGBT Inverters for small scale grid-connected wind turbine generators Multifunction Power Electronic Interface for Mini-Grid Systems",
+        badge: null,
+      },
+      {
         title: "Asian Development Bank Project",
         description: "Grant amount: $150,000 Rural Electrification Institutional Strengthening Project",
         badge: null,
