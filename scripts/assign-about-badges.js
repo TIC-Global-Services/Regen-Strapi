@@ -120,23 +120,38 @@ async function main() {
     console.log(`Matched: ${matched} badges, ${missing} missing files, ${noBadge} milestones intentionally without badge`);
 
     // Load live document with ids — need published populate to get card ids
-    let aboutDoc = await app.documents(ABOUT_UID).findFirst({
+    // Strapi 5 draftAndPublish keeps DRAFT and PUBLISHED with separate
+    // component row ids. Public API reads published, Content Manager
+    // (admin) reads draft by default — so we must link BOTH or the
+    // admin will still show empty badges.
+    const publishedDoc = await app.documents(ABOUT_UID).findFirst({
       status: 'published',
       populate: { sections: { populate: '*' }, seo: { populate: '*' } },
     });
-    if (!aboutDoc) aboutDoc = await app.documents(ABOUT_UID).findFirst({ populate: { sections: { populate: '*' } } });
+    const draftDoc = await app.documents(ABOUT_UID).findFirst({
+      status: 'draft',
+      populate: { sections: { populate: '*' }, seo: { populate: '*' } },
+    });
+    const aboutDoc = publishedDoc || draftDoc || await app.documents(ABOUT_UID).findFirst({ populate: { sections: { populate: '*' } } });
     if (!aboutDoc) {
       console.error(`No document for ${ABOUT_UID}. Run PAGES=about-page npm run seed first.`);
       process.exit(1);
     }
-    const sections = aboutDoc.sections || [];
-    const awardsSection = sections.find(s => s.__component === 'about.awards');
-    if (!awardsSection) {
-      console.error('No about.awards section in live document. Seed about-page first.');
-      process.exit(1);
+    // Collect cards from BOTH versions (dedup by id) so admin sees badges too
+    const seen = new Set();
+    const cards = [];
+    for (const doc of [publishedDoc, draftDoc]) {
+      if (!doc) continue;
+      const sec = (doc.sections || []).find(s => s.__component === 'about.awards');
+      for (const c of (sec?.cards || [])) {
+        if (!seen.has(c.id)) { seen.add(c.id); cards.push(c); }
+      }
     }
-    const cards = awardsSection.cards || [];
-    console.log(`Live cards: ${cards.length}`);
+    if (cards.length === 0) {
+      const fallback = (aboutDoc.sections || []).find(s => s.__component === 'about.awards');
+      for (const c of (fallback?.cards || [])) if (!seen.has(c.id)) cards.push(c);
+    }
+    console.log(`Live cards: ${cards.length} (published ${publishedDoc?.sections?.find(s=>s.__component==='about.awards')?.cards?.length ?? 0} + draft ${draftDoc?.sections?.find(s=>s.__component==='about.awards')?.cards?.length ?? 0} unique)`);
 
     const manifestWithBadge = new Set(manifest.filter(m => m.localFile).map(m => m.title));
     const liveTitles = new Set(cards.map(c => c.title));
