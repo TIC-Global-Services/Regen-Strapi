@@ -96,25 +96,42 @@ async function findComponentRows(strapi, relatedType, entry) {
     return r.rows.map(row => row.id);
   }
 
-  // parent-lookup for nested-card
+  // parent-lookup for nested-card — Strapi 5 stores single components in a _cmps link table, not a FK column
   if (entry.parent) {
     const parentTable = entry.parent.table;
     const whereCol = Object.keys(entry.parent.where)[0];
     const whereVal = entry.parent.where[whereCol];
-    // find parent id(s)
     const pr = await strapi.db.connection.raw(
-      `SELECT id, nested_card FROM ${parentTable} WHERE ${whereCol} ILIKE ?`,
+      `SELECT id FROM ${parentTable} WHERE ${whereCol} ILIKE ?`,
       [`%${whereVal}%`]
     );
     if (pr.rows.length === 0) {
       console.warn(`  ! parent not found: ${parentTable} WHERE ${whereCol} ILIKE '%${whereVal}%'`);
       return [];
     }
-    // nested_card column holds the FK to components_promotion_nested_cards
-    // column name varies: check schema — limited_spot_cards has nested_card
-    const nestedIds = pr.rows.map(r => r.nested_card).filter(Boolean);
+    const cmpsTable = `${parentTable}_cmps`;
+    const nestedIds = [];
+    for (const row of pr.rows) {
+      // Strapi 5 cmps tables use (entity_id, cmp_id) — entity_id is parent id, cmp_id is nested-card id
+      // Try to auto-detect columns if naming differs
+      const colRes = await strapi.db.connection.raw(
+        `SELECT column_name FROM information_schema.columns WHERE table_name='${cmpsTable}' ORDER BY ordinal_position`
+      );
+      if (colRes.rows.length === 0) {
+        console.warn(`  ! cmps table ${cmpsTable} not found`);
+        continue;
+      }
+      const cmpCols = colRes.rows.map(r => r.column_name);
+      const entityCol = cmpCols.find(c => /entity|parent|owner|left/i.test(c)) || cmpCols[0];
+      const cmpCol = cmpCols.find(c => /cmp|component|child|right|nested/i.test(c) && c !== entityCol) || cmpCols[1] || cmpCols[cmpCols.length - 1];
+      const r = await strapi.db.connection.raw(
+        `SELECT "${cmpCol}" as cmp_id FROM ${cmpsTable} WHERE "${entityCol}" = ?`,
+        [row.id]
+      );
+      for (const rr of r.rows) if (rr.cmp_id) nestedIds.push(rr.cmp_id);
+    }
     if (nestedIds.length === 0) {
-      console.warn(`  ! parent ${whereVal} has no nested_card FK`);
+      console.warn(`  ! parent ${whereVal} has no nestedCard link (parent ids: ${pr.rows.map(r=>r.id).join(',')}, cmps table: ${cmpsTable})`);
       return [];
     }
     return nestedIds;
