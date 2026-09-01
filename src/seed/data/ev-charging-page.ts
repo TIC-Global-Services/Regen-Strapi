@@ -128,7 +128,7 @@ export const evChargingSections: Section[] = [
       { text: "V2H + V2G ready" },
     ],
     ctaText: "Talk To Us About Sigenergy",
-    ctaLink: "#contact",
+    ctaLink: "/contact",
   },
 
   // ─── 7. Under One Roof (Feature Cards) ──────────────────────────────

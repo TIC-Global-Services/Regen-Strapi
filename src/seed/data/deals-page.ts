@@ -5,7 +5,7 @@ export const dealsSections = [
     title: "Not Built On The Lowest Price.",
     description: "Tier-1 panels, premium hybrid inverters, and our 23-year workmanship track record — bundled with every federal and WA rebate we can stack. See what's on right now, and lock in 2026 rebate values before the 1 May step-down.",
     ctaText: "Get My Tailored Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {
@@ -24,7 +24,7 @@ export const dealsSections = [
     title: "Right Now.",
     description: "Regen Power runs seasonal and campaign-based offers across solar, battery, and solar-plus-battery bundles. Current promotions below — changes month to month.",
     ctaText: "Get This Bundle Quoted",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     promotions: [
       { title: "Pre-May Rebate Boost — Battery Bundle", description: "6.6 kW solar + 10 kWh battery package with all three rebates stacked. Lock in the higher pre-May-1 federal rebate value." },
       { title: "Signature Solar Package", description: "LONGi Hi-MO + Fronius GEN24 Plus — our premium solar-only tier for homeowners not adding a battery in this cycle." },

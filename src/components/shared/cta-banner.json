@@ -19,7 +19,7 @@
     },
     "buttonLink": {
       "type": "string",
-      "default": "#quote-form"
+      "default": "/contact"
     },
     "backgroundImage": {
       "type": "media",

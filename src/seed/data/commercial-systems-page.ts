@@ -6,7 +6,7 @@ export const commercialSystemsSections = [
     description:
       "Commercial solar systems for Perth and WA businesses since 2003. 10 kW to 1 MW, in-house engineers, integrated battery storage, full rebate management. Explore case studies and request a free energy assessment.",
     ctaText: "Book Energy Assessment",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {
@@ -35,7 +35,7 @@ export const commercialSystemsSections = [
           "Systems up to 30 kVA benefit from a simplified Western Power approval — no GPU, studies, or extra fees. A ~39 kW / 30 kVA setup fits this range, maximizes incentives, and typically pays back in 2–3 years.",
         image: null,
         ctaText: "See SME Case Studies",
-        ctaHref: "#",
+        ctaHref: "/commercial/case-studies",
         details: [
           { label: "Typical Install", value: "39kW DC, 30kVA Inverter, Optional 30–60kWh Battery" },
           { label: "Approval Pathway", value: "Streamlined Western Power Application, ~10 Days" },
@@ -51,7 +51,7 @@ export const commercialSystemsSections = [
           "Systems over 30 kVA AC require a Western Power engineering study and a grid protection unit (GPU), adding $12,000–$18,000 to the project. Despite the added cost, 50–100 kW systems benefit from economies of scale and can typically achieve a payback in under three years.",
         image: null,
         ctaText: "See Mid-Market Case Studies",
-        ctaHref: "#",
+        ctaHref: "/commercial/case-studies",
         details: [
           { label: "Typical Install", value: "50kW, 70kW Or 100kW DC · Three-Phase String Or Hybrid Inverters" },
           { label: "Approval Pathway", value: "Western Power Engineering Study + GPU (~6–10 Weeks)" },
@@ -67,7 +67,7 @@ export const commercialSystemsSections = [
           "Systems above 100 kW generate Large-scale Generation Certificates (LGCs) instead of STCs, creating an ongoing revenue stream alongside electricity bill savings. A typical 150 kW system can generate 210 LGCs annually, delivering $8,400–$12,600 in additional yearly value.",
         image: null,
         ctaText: "Discuss A 100kW+ Project",
-        ctaHref: "#",
+        ctaHref: "/contact",
         details: [
           { label: "Typical Install", value: "150kW, 300kW, 500kW Or 1MW+ · Multiple Inverters · Optional Battery Or Ground-Mount" },
           { label: "Approval Pathway", value: "Full Western Power Process · LGC Accreditation And PPAs Where Applicable" },
@@ -416,7 +416,7 @@ export const commercialSystemsSections = [
     description:
       "System size depends on your energy usage, roof space, and future needs. Our experts design systems that balance performance and cost for optimal ROI.",
     buttonText: "Get Started",
-    buttonLink: "#quote-form",
+    buttonLink: "/contact",
     backgroundImage: null,
   },
 ];

@@ -5,7 +5,7 @@ export const faqSections = [
     title: "Perth For 23 Years.",
     description: "Forty-plus questions Perth homeowners have asked over the last year, grouped so you can find the topic you are looking for fast. If yours is not here, a five-minute phone call usually does the trick.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

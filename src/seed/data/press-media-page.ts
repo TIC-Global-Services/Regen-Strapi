@@ -6,7 +6,7 @@ export const pressMediaSections = [
     description:
       "Explore How Regen Power Is Shaping The Future Of Energy Through Innovation, Impact, And Industry Leadership.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

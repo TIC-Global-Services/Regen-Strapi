@@ -6,7 +6,7 @@ export const offGridSolutionsSections = [
     description:
       "With over 20 years of experience, we design and install off-grid power systems for remote homes, farms, mining sites, and more across Australia and globally. Our HybridGEN technology powers sites across Asia. If grid access is limited or unreliable, our engineering team can help you find the right solution.",
     ctaText: "Talk To Our Team",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {
@@ -100,7 +100,7 @@ export const offGridSolutionsSections = [
           "Solar PV + lithium battery + small backup generator. The straightforward off-grid solution for homes and small commercial sites. Remote homes, lifestyle blocks, holiday properties, small workshops, weekenders.",
         image: null,
         ctaText: "Learn More",
-        ctaHref: "#",
+        ctaHref: "/contact",
       },
       {
         title: "HybridGEN: Patented Hybrid Power Pack",
@@ -108,7 +108,7 @@ export const offGridSolutionsSections = [
           "A factory-integrated system combining solar, optional wind, battery storage, and a variable-speed generator—delivering far better efficiency than traditional diesel setups. Farms, stations, agribusiness, telecom towers, irrigation, treatment plants — wherever a diesel generator is currently the primary power source.",
         image: null,
         ctaText: "Learn More",
-        ctaHref: "#",
+        ctaHref: "/contact",
       },
       {
         title: "Solar-Wind-Diesel Microgrid",
@@ -116,7 +116,7 @@ export const offGridSolutionsSections = [
           "Containerised, portable microgrid system (15kW to 150kW per container); multi-container designs available. Multi-source generation; multi-day battery autonomy; remote monitoring. Mining and exploration camps, resorts, remote communities, fringe-of-grid commercial sites, and international projects.",
         image: null,
         ctaText: "Learn More",
-        ctaHref: "#",
+        ctaHref: "/contact",
       },
     ],
   },

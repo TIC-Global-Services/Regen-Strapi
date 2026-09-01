@@ -200,6 +200,7 @@ export const homeSections: Section[] = [
           "Through the WA battery rebate, eligible Synergy customers can access an interest-free loan of up to $10,000 repayable over 10 years.",
         image: null,
         ctaText: "Check Your Eligibility",
+        ctaLink: "/solar/government-rebates",
       },
     ],
   },

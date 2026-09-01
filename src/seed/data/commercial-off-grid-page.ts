@@ -6,7 +6,7 @@ export const commercialOffGridSections = [
     description:
       "Scalable solar and hybrid energy solutions designed to reduce operational costs, increase efficiency, and ensure uninterrupted power.",
     ctaText: "Request Consultation",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {
@@ -96,7 +96,7 @@ export const commercialOffGridSections = [
     description:
       "System size depends on your energy usage, roof space, and future needs. Our experts design systems that balance performance and cost for optimal ROI.",
     buttonText: "Get Started",
-    buttonLink: "#quote-form",
+    buttonLink: "/contact",
     backgroundImage: null,
   },
   {

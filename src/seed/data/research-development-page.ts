@@ -6,7 +6,7 @@ export const researchDevelopmentSections = [
     description:
       "Advanced research and development driving next-generation renewable energy solutions.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

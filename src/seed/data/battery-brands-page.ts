@@ -5,7 +5,7 @@ export const batteryBrandsSections = [
     title: "Brands We Carry In Perth",
     description: "The brands we trust, from premium to accessible. Tesla Powerwall 3, BYD Battery-Box, Alpha ESS, iStore, Sigenergy SigenStor, Anker Solix, Goodwe Lynx Home. Every one has been through our technical review and field-tested across our 45,000+ installations.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote",
+    ctaLink: "/contact",
     showOverlay: true,
     backgroundImage: null,
   },
@@ -532,7 +532,7 @@ export const batteryBrandsSections = [
     mainTitle: "claim your rebate",
     description: "Tell us which brand you're leaning towards (or we'll help you choose) and we'll put together a personalised quote with your rebate already applied.",
     buttonText: "get my free quote",
-    buttonLink: "#",
+    buttonLink: "/contact",
     backgroundImage: null,
   },
   {

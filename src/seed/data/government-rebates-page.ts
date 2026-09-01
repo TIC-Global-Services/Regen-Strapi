@@ -5,7 +5,7 @@ export const governmentRebatesSections = [
     title: "Claim Up To $7,500 Off Your Battery",
     description: "Three rebates stack on a 10 kWh battery in WA: up to $1,300 (Synergy) or $3,800 (Horizon) from the state, ~$3,720 from the federal Cheaper Home Batteries Program, and a $10,000 interest-free loan if you qualify. This guide walks you through all three.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

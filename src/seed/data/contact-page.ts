@@ -6,7 +6,7 @@ export const contactSections = [
     description:
       "From Your First Enquiry To Final Installation, Our Specialists Are Here To Guide You Every Step Of The Way. Contact Us Today For A Personalised Energy Solution.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

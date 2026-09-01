@@ -26,6 +26,9 @@
     },
     "centerButtonText": {
       "type": "string"
+    },
+    "centerButtonLink": {
+      "type": "string"
     }
   },
   "config": {}

@@ -5,7 +5,7 @@ export const batteryProductSections = [
     title: "Our Full Product Range",
     description: "We don't sell what we don't trust. Every brand on this page has been through our technical review, field-tested across our 45,000+ installations, and is on the Synergy or Horizon Power Supported Solutions List. Pricing is personalised — your quote includes your full rebate value and a sizing recommendation based on your home.",
     ctaText: "Get My Free Personalized Quote",
-    ctaLink: "#quote",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {
@@ -75,7 +75,7 @@ export const batteryProductSections = [
     title: "Your Battery",
     description: "The sweet spot for most Perth homes in 2026 is a 10 kWh battery — it aligns with the WA rebate cap ($130/kWh × 10 = $1,300 max) and the federal rebate threshold. Above 10 kWh, you're paying more per stored kWh than you're rebating back.",
     ctaText: "Get My Free Battery Quote",
-    ctaHref: "#quote-form",
+    ctaHref: "/contact",
     steps: [
       {
         icon: null,
@@ -385,7 +385,7 @@ export const batteryProductSections = [
     topImage: null,
     bottomImage: null,
     ctaText: "See If I Qualify For The Interest-Free Loan",
-    ctaLink: "#contact",
+    ctaLink: "/contact",
   },
   {
     __component: "battery-product.homeowners" as const,
@@ -416,6 +416,7 @@ export const batteryProductSections = [
     showReadMore: true,
     centerButton: true,
     centerButtonText: "See 2,000+ Verified Reviews On ProductReview.com.au",
+    centerButtonLink: "/reviews",
   },
   {
     __component: "shared.cta-banner" as const,
@@ -423,7 +424,7 @@ export const batteryProductSections = [
     mainTitle: "Battery Quote",
     description: "Our quote process takes just 15 minutes, and you'll receive 2–3 battery options tailored to your home, with all eligible rebates applied upfront, an interest-free loan option (if eligible), a clear installation timeline, and transparent, no-obligation pricing.",
     buttonText: "Get My Free Battery Quote",
-    buttonLink: "#quote-form",
+    buttonLink: "/contact",
     backgroundImage: null,
   },
   {

@@ -24,7 +24,7 @@
     },
     "ctaHref": {
       "type": "string",
-      "default": "#quote-form"
+      "default": "/contact"
     }
   },
   "config": {}

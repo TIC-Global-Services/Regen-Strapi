@@ -5,7 +5,7 @@ export const brandsSections = [
     title: "We Trust On Perth Roofs.",
     description: "We install only Tier-1 solar panels and premium hybrid inverters, selected for reliability, strong local support, and proven performance across 45,000+ installations. No budget components, no subcontractors — just quality systems built to last 25 years.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

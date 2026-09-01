@@ -6,7 +6,7 @@ export const portfolioSections = [
     description:
       "80+ Installations Across Commercial, Residential, Off-Grid, And EV Charging\u2014Designed In-House And Installed By Regen Electricians. Filter By Industry, Size, Or Location, And Explore Each Project In Detail.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

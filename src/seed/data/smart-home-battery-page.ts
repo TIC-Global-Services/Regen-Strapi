@@ -6,7 +6,7 @@ export const smartHomeBatterySections = [
     description:
       "A smart home battery learns your household's patterns, participates in Synergy's Virtual Power Plant to earn you credits, and orchestrates when to charge your EV, run your pool pump or draw from the grid. We install the systems that make this actually work — not just on paper.",
     ctaText: "See If A Smart System Suits My Home",
-    ctaLink: "#quote",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {
@@ -98,7 +98,7 @@ export const smartHomeBatterySections = [
           },
         ],
         ctaText: "Read The Full Battery Rebate Guide",
-        ctaLink: "#assessment",
+        ctaLink: "/battery/government-rebates",
         image: null,
       },
       {
@@ -129,7 +129,7 @@ export const smartHomeBatterySections = [
           },
         ],
         ctaText: "Read The Full Battery Rebate Guide",
-        ctaLink: "#rebate-guide",
+        ctaLink: "/battery/government-rebates",
         image: null,
       },
       {
@@ -155,7 +155,7 @@ export const smartHomeBatterySections = [
           },
         ],
         ctaText: "Read The Full Battery Rebate Guide",
-        ctaLink: "#rebate-guide",
+        ctaLink: "/battery/government-rebates",
         image: null,
       },
       {
@@ -186,7 +186,7 @@ export const smartHomeBatterySections = [
           },
         ],
         ctaText: "Read The Full Battery Rebate Guide",
-        ctaLink: "#rebate-guide",
+        ctaLink: "/battery/government-rebates",
         image: null,
       },
     ],
@@ -266,7 +266,7 @@ export const smartHomeBatterySections = [
           ],
         showbutton: true,
         buttonText: "Explore Smart Home Batteries",
-        buttonLink: "#sigenergy",
+        buttonLink: "/battery/battery-product#sigenergy",
       },
       {
         title: "Tesla Powerwall 3 (The Benchmark)",
@@ -288,7 +288,7 @@ export const smartHomeBatterySections = [
           ],
         showbutton: true,
         buttonText: "Explore Smart Home Batteries",
-        buttonLink: "#tesla",
+        buttonLink: "/battery/battery-product#tesla",
       },
       {
         title: "BYD Battery-Box Premium (The Modular Choice)",
@@ -310,7 +310,7 @@ export const smartHomeBatterySections = [
           ],
         showbutton: true,
         buttonText: "Explore Smart Home Batteries",
-        buttonLink: "#byd",
+        buttonLink: "/battery/battery-product#byd",
       },
     ],
   },
@@ -354,7 +354,7 @@ export const smartHomeBatterySections = [
     description:
       "Tell us about your home — what ecosystem you're using, whether you have an EV, what your Synergy bills look like. We'll design a smart system that actually works for you, not a generic package.",
     buttonText: "Request A Smart System Consultation",
-    buttonLink: "#consultation",
+    buttonLink: "/contact",
     backgroundImage: null,
   },
   {

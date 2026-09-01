@@ -5,7 +5,7 @@ export const rebatesSections = [
     title: "In WA, 2026",
     description: "Three rebates, one no-interest loan, and the key 2026 program rules Perth homeowners still need to understand when pricing solar, batteries, and the balance after incentives.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

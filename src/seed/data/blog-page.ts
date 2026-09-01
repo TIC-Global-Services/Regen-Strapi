@@ -6,7 +6,7 @@ export const blogSections = [
     description:
       "Explore expert insights, practical solar guides, renewable energy trends, and the latest innovations helping Australian homes and businesses transition to cleaner, more efficient energy solutions. Stay informed with industry updates and actionable advice from the Regen Power team.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

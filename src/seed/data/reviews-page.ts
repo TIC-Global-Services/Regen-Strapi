@@ -5,7 +5,7 @@ export const reviewsSections = [
     title: "Real Results.",
     description: "",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
   {

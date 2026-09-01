@@ -5,7 +5,7 @@ export const solarSections = [
     title: "Perth Climate",
     description: "WA’s #1 rated solar installer with 45,000+ installations since 2003. CEC-approved. ProductReview award winner 2021–2026.",
     ctaText: "Get Your Free Quote",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     backgroundImage: null,
   },
 {
@@ -41,7 +41,7 @@ export const solarSections = [
     title: "One Quality Standard",
     description: "All our panels are BloombergNEF Tier-1, trusted, proven, and built for the long run. These are manufacturers you can rely on 25 years from now. We use N-type TOPCon cells, today's standard for performance. More efficiency, better low-light output, and less degradation than older tech.",
     ctaText: "See our full panel range",
-    ctaHref: "",
+    ctaHref: "/contact",
     brands: [
       { name: "JA Solar", logo: null },
       { name: "JinkoSolar", logo: null },
@@ -108,7 +108,7 @@ export const solarSections = [
     title: "Solar System Be?",
     description: "The right system size depends on four things: your daily power use, your household size, the phase type of your home's power supply, and how much usable roof space you have.",
     ctaText: "Get a Sizing Recommendation For My Home",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
     labelColumnTitle: "Daily Use",
     columns: [
       { title: "Recommended Size" },
@@ -175,7 +175,7 @@ export const solarSections = [
     consultationTitle: "Free Consultation",
     consultationText: "A 15-minute call with a Regen energy advisor. We review your bill, household setup, and goals. No pressure, no sales script.",
     ctaText: "Start With A Free Consultation",
-    ctaLink: "#quote-form",
+    ctaLink: "/contact",
   },
   {
     __component: "solar.engineering-items" as const,
