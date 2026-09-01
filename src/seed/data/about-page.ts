@@ -279,9 +279,9 @@ export const aboutSections: Section[] = [
   },
   {
     __component: "shared.form-section" as const,
-    subtitle: null,
-    title: null,
-    description: null,
+    subtitle: "Get Your Free Solar &",
+    title: "Battery Quote",
+    description: "Our technical sales team will design a system tailored to your home, usage, and budget. Most quotes delivered within 24 hours.",
     image: null,
     video: null,
   },
