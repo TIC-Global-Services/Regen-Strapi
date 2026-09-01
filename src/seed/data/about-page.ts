@@ -131,12 +131,12 @@ export const aboutSections: Section[] = [
         badge: null,
       },
       {
-        title: "Completed 35,000 installations",
+        title: "Completed 35,000 installations, 2022",
         description: "Regen Power has completed 35,000 residential rooftop solar installations.",
         badge: null,
       },
       {
-        title: "FT High-Growth Companies Asia-Pacific",
+        title: "FT High-Growth Companies Asia-Pacific, 2022",
         description: "Regen Power ranked 424th in the List of High-Growth Companies of Asia Pacific by FT for the year of 2022.",
         badge: null,
       },
@@ -176,22 +176,22 @@ export const aboutSections: Section[] = [
         badge: null,
       },
       {
-        title: "A High Growth Company",
+        title: "A High Growth Company, 2020",
         description: "Australian Financial Review Fast 100 Companies List — Financial Times High-Growth Companies in Asia-Pacific 2020. Nikhil Jayaraj, Managing Director, was named winner of Business News 40under40 2020.",
         badge: null,
       },
       {
-        title: "Rising Stars People's Choice Awards",
+        title: "Rising Stars People's Choice Awards, 2019",
         description: "Winner of the 2019 Rising Stars People's Choice in Western Australia. Certified Tesla Installer — Completed 25,000 installations",
         badge: null,
       },
       {
-        title: "20,000 Installations",
+        title: "20,000 Installations, 2018",
         description: "Completed 20,000 residential, commercial and off-grid solar installations throughout Australia. Our 15th Year Anniversary as one of the top consistent solar panels installers Perth",
         badge: null,
       },
       {
-        title: "15,000 Installations",
+        title: "15,000 Installations 2017",
         description: "Regen completed 15,000 residential, commercial and off-grid solar installations throughout Australia.",
         badge: null,
       },
