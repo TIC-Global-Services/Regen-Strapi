@@ -242,10 +242,10 @@
   },
   {
     "title": "20,000 Installations",
-    "badgeSrc": "https://regenpower.com/wp-content/uploads/2023/03/2019-awards-won.png",
+    "badgeSrc": null,
     "badgeAlt": "",
     "localFile": "35-2019-20-000-installations.png",
-    "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/35-2019-20-000-installations.png"
+    "localPath": null
   },
   {
     "title": "15,000 Installations",
@@ -370,7 +370,7 @@
   },
   {
     "title": "Our Beginning, 2003",
-    "badgeSrc": "https://regenpower.com/wp-content/uploads/2023/01/solar-panels-bg-clip.jpg",
+    "badgeSrc": "https://regenpower.com/wp-content/uploads/2022/12/Regen-power-new-main-logo-2x.png",
     "badgeAlt": "",
     "localFile": "50-2003-our-beginning.jpg",
     "localPath": "/Users/arnodorian/Documents/api-data-regen/about-awards/49-2004-asian-development-bank-project.png"
