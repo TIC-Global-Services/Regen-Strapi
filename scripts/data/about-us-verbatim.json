@@ -1,0 +1,1559 @@
+{
+  "source": "https://regenpower.com/about-us/",
+  "scrapedAt": "2026-08-31T16:38:29.588Z",
+  "htmlBytes": 475212,
+  "note": "Verbatim scrape — every H3 award/milestone as it appears. No combining, no deduplication. Paragraphs are exact <p> text following each H3 until next H3/year. Images are <img> src between that H3 and next H3. year is nearest preceding timeline-yr marker.",
+  "totalAwards": 52,
+  "awardsFlat": [
+    {
+      "year": null,
+      "title": "Finalist - Smart Installer, Smart Energy Excellence Awards 2026.",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Finalist - Smart Installer, Smart Energy Excellence Awards 2026.</h3>",
+      "paragraphs": [
+        "Regen Power is proud to be recognised nationally. Finalist – Smart Installer, Smart Energy Excellence Awards 2026."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2026/05/Finalist_Smart_Installer.png",
+          "alt": "Finalist Smart Installer Award"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2026/03/2026_Sunwiz_Awards.png",
+          "alt": "2026 Sunwiz Awards Winner"
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2026",
+      "title": "#1 Most Popular Solar Installer in Western Australia and #2 Most Popular in Australia by SunWiz Awards 2026",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">#1 Most Popular Solar Installer in Western Australia and<br>#2 Most Popular in Australia by SunWiz Awards 2026</h3>",
+      "paragraphs": [
+        "RegenPower has been recognised as the #1 Most Popular Solar Installer in Western Australia and #2 Most Popular in Australia by SunWiz Awards 2026. This recognition reflects our commitment to delivering quality solar solutions and exceptional customer experiences across the nation."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2026",
+      "title": "ProductReview.com.au Awards Winner 2026",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview.com.au Awards Winner 2026</h3>",
+      "paragraphs": [
+        "Regen Power has won the ProductReview.com.au Award in the Solar Installer Category for the sixth year in a row year (2021, 2022, 2023, 2024, 2025 & 2026). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2025."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2026/01/ProductReview_Award_Winner_2026_white_bg.png",
+          "alt": "Product Review Award Winner 2026"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2025/10/wa-top-rated-installers-1.jpg",
+          "alt": "Solar quotes award - top rated installer in WA"
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2025",
+      "title": "Regen Power Named Western Australia’s Best-Rated Solar Installer 2025 by SolarQuotes",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Regen Power Named Western Australia’s Best-Rated Solar Installer 2025 by SolarQuotes</h3>",
+      "paragraphs": [
+        "Regen Power is proud to announce its latest recognition as Western Australia’s Best-Rated Solar Installer for 2025, awarded by SolarQuotes, one of Australia’s most respected and independent renewable energy review platforms."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2025",
+      "title": "Top 5 Best Rated Solar companies",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Top 5 Best Rated Solar companies</h3>",
+      "paragraphs": [
+        "Regen Power is in the Top 5 Best Rated Solar companies in Australia for quality of excellent review."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2025/08/Best-Rated-Top-5-Australia-2025.png",
+          "alt": "Sunwiz award top 5 best rated solar installer Australia 2025"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2025/07/Belmont-awards-hall-of-fame.png",
+          "alt": "Belmont awards hall of fame"
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2025",
+      "title": "Hall of Fame",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Hall of Fame</h3>",
+      "paragraphs": [
+        "31st Belmont & Western Australian Small Business Awards 2024."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2025",
+      "title": "Celebrating 22nd Anniversary",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Celebrating 22<sup>nd</sup> Anniversary</h3>",
+      "paragraphs": [
+        "Regen Power is celebrating completing 22 years in the industry."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2025/03/22nd_anniversary_logo.png",
+          "alt": "22nd anniversary celebration"
+        }
+      ],
+      "imageCount": 1
+    },
+    {
+      "year": "2025",
+      "title": "Completed 45,000 installations",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Completed 45,000 installations</h3>",
+      "paragraphs": [
+        "Regen Power has completed 45,000 residential rooftop solar installations."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2025",
+      "title": "ProductReview.com.au Awards Winner 2025",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview.com.au Awards Winner 2025</h3>",
+      "paragraphs": [
+        "Regen Power has won the ProductReview.com.au Award in the Solar Installer Category for the fifth year in a row year (2021, 2022, 2023, 2024 & 2025). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2024."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2025/01/product-review-award-21-25.png",
+          "alt": "ProductReview.com.au award winner 2025"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2024/12/2024-executive-of-the-year-award.jpg",
+          "alt": "CEO Magazine 2024 Executive of the year award finalist"
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2024",
+      "title": "The CEO Magazine’s 2024 Executive of the Year Awards Finalist",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">The CEO Magazine’s 2024 Executive of the Year Awards Finalist</h3>",
+      "paragraphs": [
+        "Dr. Nikhil Jayaraj, Managing Director of Regen Power, was honoured as a finalist in The CEO Magazine’s Executive of the Year Awards 2024 for his exceptional leadership and transformative impact in the renewable energy sector. This recognition celebrates his achievements in driving innovation, sustainable growth, and academic contributions to the industry."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2024",
+      "title": "EUPD INSTALLER AWARD AUSTRALIA 2024",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">EUPD INSTALLER AWARD AUSTRALIA 2024</h3>",
+      "paragraphs": [
+        "Regen Power, an award-winning leader in renewable energy, proudly receives the EUPD Research “Top Brand PV Installer 2024” award for the second consecutive year."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2024/10/EUPD_Research_Siegel_Top_Brand_PV_Installer_Australia_2024.png",
+          "alt": ""
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2024/10/40U40_2024_E_Trophy.jpg",
+          "alt": "Winner of Business News 40under40 Awards 2024"
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2024",
+      "title": "40 UNDER 40 WA Awards 2024",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">40 UNDER 40 WA Awards 2024</h3>",
+      "paragraphs": [
+        "Nikhil Jayaraj, Managing Director, Regen Power Pty Ltd was second time named as a winner of Business News 40under40 Awards 2024."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2024",
+      "title": "SUNWIZ Top 5 All Star Award Winner 2023",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">SUNWIZ Top 5 All Star Award Winner 2023</h3>",
+      "paragraphs": [],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2024/03/Sunwiz-All-Star-Award-2024.png",
+          "alt": "Sunwiz All Star Award"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2024/03/Sunwiz-No-1-Award-2023.png",
+          "alt": "Sunwiz No 1 Installer award"
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2024",
+      "title": "SUNWIZ No1 Combined WA Award Winner 2023",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">SUNWIZ No1 Combined WA Award Winner 2023</h3>",
+      "paragraphs": [
+        "Recognized as the NO 1 solar provider for the most number of solar installations in WA"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2024",
+      "title": "ProductReview Awards Winner 2024",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview Awards Winner 2024</h3>",
+      "paragraphs": [
+        "Regen Power has won the ProductReview.com.au Award in the Solar Installer Category for the fourth year in a row year (2021, 2022, 2023 & 2024). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2023."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2024/01/Product-review-2021-2024-winner-logo.jpg",
+          "alt": "Product Review award 2024"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/11/EUPD-Research-Installer-Award-2023.png",
+          "alt": ""
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2023",
+      "title": "EUPD Research Installer Award 2023",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">EUPD Research Installer Award 2023</h3>",
+      "paragraphs": [
+        "Recognition for unwavering commitment to quality and excellence.",
+        "The award recognizes top players in the renewable energy field based on rigorous criteria, including installation quality, customer satisfaction, and contribution to the energy transition."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2023",
+      "title": "Telstra Business Awards 2024 Finalist",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Telstra Business Awards 2024 Finalist</h3>",
+      "paragraphs": [
+        "WA state finalist under “promoting sustainability” category",
+        "Regen Power is recognized as the WA state finalist under the “Promoting Sustainability “ category of Telstra Best of Business Awards 2024"
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/11/Telstra-Business-Awards-2024-Finalist.png",
+          "alt": "Telstra Business Awards 2024 Finalist"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/11/2023-MD-of-the-year-finalist.png",
+          "alt": "The CEO Magazine Awards 2023 - Managing Director of the year finalist"
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2023",
+      "title": "The CEO Magazine Awards 2023 finalist",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">The CEO Magazine Awards 2023 finalist</h3>",
+      "paragraphs": [
+        "Mr. Nikhil Jayaraj was selected as a finalist for Managing Director of the Year in The CEO Magazine’s 2023 Executive of the Year Awards.",
+        "Mr Nikhi Jayaraj was selected as a finalist for Managing Director of the Year in The CEO Magazine’s 2023 Executive of the Year Awards. In its 12th year, the Executive of the Year Awards recognises the individuals contributing significantly to their organizations, industries, and the wider Australian business community."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2023",
+      "title": "Stevie International Business Awards 2023",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Stevie International Business Awards 2023</h3>",
+      "paragraphs": [
+        "Regen Power and its Managing Director Mr. Nikhil Jayaraj was named the winner of a Gold Stevie® Award in the “Fastest-Growing Company of the Year – in Asia, Australia and New Zealand” and “Best Entrepreneur – Energy” category in The 20th Annual International Business Awards®.",
+        "Regen Power has been distinguished as the Fastest-Growing Company of the Year in the Asia, Australia and New Zealand region. Additionally, our Managing Director, Mr. Nikhil Jayaraj, has been honored with the Best Entrepreneur – Energy category award."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/11/2023-Stevie-Award-Winner.png",
+          "alt": "2023-Stevie-Award-Winner"
+        }
+      ],
+      "imageCount": 1
+    },
+    {
+      "year": "2023",
+      "title": "Completed 40,000 installations",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Completed 40,000 installations</h3>",
+      "paragraphs": [
+        "Regen Power has completed 40,000 residential rooftop solar installations."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2023",
+      "title": "FT High-Growth Companies 2023",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">FT High-Growth Companies 2023</h3>",
+      "paragraphs": [
+        "Regen Power ranked 387th in the List of High-Growth Companies of Asia Pacific by FT for the year of 2023."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/FT-2020-2023-logo.jpg",
+          "alt": "FT High Growth Company Asia Pacific 2023 Award"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/award-productreview-2023.png",
+          "alt": ""
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2023",
+      "title": "ProductReview Awards Winner 2023",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview Awards Winner 2023</h3>",
+      "paragraphs": [
+        "Regen Power has won the ProductReview.com.au Award in the Solar Installer Category for the third year in a row year (2021, 2022 & 2023). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2022"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2023",
+      "title": "Belmont & WA Business Awards 2022 – \"Enterprise of the Year\" category",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Belmont &amp; WA Business Awards 2022 – \"Enterprise of the Year\" category</h3>",
+      "paragraphs": [
+        "Regen Power has been named the winner of the 29th Belmont & Western Australian Award 2022 in the category of “Enterprise of the Year”. The award recognises an organisation’s overall business excellence."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2022/12/belmont-2022-300x134.jpg",
+          "alt": ""
+        }
+      ],
+      "imageCount": 1
+    },
+    {
+      "year": "2022",
+      "title": "Completed 35,000 installations",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Completed 35,000 installations</h3>",
+      "paragraphs": [
+        "Regen Power has completed 35,000 residential rooftop solar installations."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2022",
+      "title": "FT High-Growth Companies Asia-Pacific",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">FT High-Growth Companies Asia-Pacific</h3>",
+      "paragraphs": [
+        "Regen Power ranked 424th in the List of High-Growth Companies of Asia Pacific by FT for the year of 2022."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2022/12/ft-high-growth-20-21-22-300x135.png",
+          "alt": ""
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/award-productreview-2022.png",
+          "alt": ""
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2021",
+      "title": "2022 ProductReview.com.au Award",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">2022 ProductReview.com.au Award</h3>",
+      "paragraphs": [
+        "Regen Power has won the ProductReview Award in the Solar Installer Category for the second year in a row year (2021 & 2022). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2021"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2021",
+      "title": "2021 Belmont and Western Australia Business Awards",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">2021 Belmont and Western Australia Business Awards</h3>",
+      "paragraphs": [
+        "Regen Power has been named the winner of the 28th Belmont & Western Australian Award 2021 in the category of ‘Sustainability.’ The award recognises an organisation that is conscious of the environment, sustainability, energy efficiency, and circular economy practices."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2022/12/BELMONT2021-300x195.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2022/12/WAOFTHEYEAR2021-300x164.jpg",
+          "alt": ""
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2021",
+      "title": "Western Australian of the year Award",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Western Australian of the year Award</h3>",
+      "paragraphs": [
+        "Emeritus Professor Chem Nayar, CEO Regen Power, is the finalist of Western Australian of the Year Awards 2021 in the Professions Award category"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2021",
+      "title": "Financial Times High Growth Company in Asia-Pacific 2021",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Financial Times High Growth Company in Asia-Pacific 2021</h3>",
+      "paragraphs": [
+        "Regen Power ranked as 326th High Growth Company in Asia-Pacific 2021 by Financial Times"
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2022/12/FT2021-300x171.png",
+          "alt": ""
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/Brett-Lee-Regen-Power-brand-ambassador.png",
+          "alt": ""
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2021",
+      "title": "Brett Lee, Brand Ambassador 2021",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Brett Lee, Brand Ambassador 2021</h3>",
+      "paragraphs": [
+        "Australian Cricket Legend and top bowler in the world joins Regen Power as brand ambassador"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2021",
+      "title": "ProductReview.com.au 2021 Award Winner",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview.com.au 2021 Award Winner</h3>",
+      "paragraphs": [
+        "ProductReview.com.au 2021 Award winner Regen Power is proud to be 2021 ProductReview Award Winner. Regen Power has 4.8 Stars rating by the ProductReview.com.au Community. ProductReview.com.au is Australia’s #1 consumer review website. Since 2003, ProductReview has over 90,000 of Australia’s top products & services"
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/award-productreview-2021.png",
+          "alt": ""
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2022/12/austraianoftheyearward.jpg",
+          "alt": ""
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2020",
+      "title": "2021 WA Australian of the Year – Finalist",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">2021 WA Australian of the Year – Finalist</h3>",
+      "paragraphs": [
+        "Emeritus Professor Chem Nayar, CEO Regen Power, is the finalist for the 2021 WA Australian of the Year."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2020",
+      "title": "A High Growth Company",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">A High Growth Company</h3>",
+      "paragraphs": [],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/02/fast-100-logo.png",
+          "alt": "Financial review fast 100 2020"
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/2019-awards-won.png",
+          "alt": ""
+        }
+      ],
+      "imageCount": 2
+    },
+    {
+      "year": "2019",
+      "title": "Rising Stars People's Choice Awards",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Rising Stars People's Choice Awards</h3>",
+      "paragraphs": [],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2019",
+      "title": "20,000 Installations",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">20,000 Installations</h3>",
+      "paragraphs": [
+        "Completed 20,000 residential, commercial and off-grid solar installations throughout Australia. Our 15th Year Anniversary as one of the top consistent solar panels installers Perth.",
+        "20,000",
+        "Installations",
+        "15,000",
+        "Installations"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2017",
+      "title": "15,000 Installations",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">15,000 Installations</h3>",
+      "paragraphs": [
+        "Regen completed 15,000 residential, commercial and off-grid solar installations throughout Australia."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2017",
+      "title": "Western Australian Knowledge",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Western Australian Knowledge</h3>",
+      "paragraphs": [
+        "Born and bred in Perth, WA, in 2003 when the market was still learning about rooftop solar PV systems, Regen Power is the pioneer in residential and commercial solar power system and solar panel solutions. We have installed over 10,000 residential rooftop solar systems Australia-wide and led the charge into other countries to start projects with both economic and educational implication in sustainability living."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2016",
+      "title": "Spanning Continents",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Spanning Continents</h3>",
+      "paragraphs": [
+        "Besides focusing on taking our own HybridGEN (integrated Renwable PowerPack) System to the Australian commercial and industrial market, Regen Power is engaged in business development in developing countries in Africa, India and South East Asia. We provide residential rooftop and commercial grid connected and off-grid solar power solutions through local partners, as well as engineering design and consultation on utility scale projects ranging from 500kW to 100MW."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2016",
+      "title": "Crossed 10,000 PV installations",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Crossed 10,000 PV installations</h3>",
+      "paragraphs": [
+        "By 2015 we crossed over 10,000 solar installations, over 1000 HybridGEN-backed telecom power supplies, and several remote community projects.",
+        "10,000",
+        "Installations"
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2019/11/awards-atc-finalist-2014.png",
+          "alt": "regen award"
+        }
+      ],
+      "imageCount": 1
+    },
+    {
+      "year": "2014",
+      "title": "Finalist in Australian Technology Competition",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Finalist in Australian Technology Competition</h3>",
+      "paragraphs": [],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2014",
+      "title": "Crossed 8,000 PV installations",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Crossed 8,000 PV installations</h3>",
+      "paragraphs": [
+        "By 2014 we crossed over 8,000 solar installations.",
+        "8,000",
+        "Installations"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2012",
+      "title": "Crossed 6,000 PV installations",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Crossed 6,000 PV installations</h3>",
+      "paragraphs": [
+        "Crossed 6,000 PV installations."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2012",
+      "title": "Sustainable Energy Industry's Ambassador Award",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Sustainable Energy Industry's Ambassador Award</h3>",
+      "paragraphs": [
+        "Regen Power has invested heavily in R&D to invent sustainable technologies that would save fuel, electricity cost and reduce pollution. The patented technology is deployed in major mining sites in Western Australia. As a testimony for our commitment to sustainable energy development, Regen Power was conferred the prestigious Sustainable Energy Industry’s Ambassador Award and the Product Technology Award in 2011."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/SEA-Awards.png",
+          "alt": ""
+        }
+      ],
+      "imageCount": 1
+    },
+    {
+      "year": "2010",
+      "title": "Patented HybridGEN",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Patented HybridGEN</h3>",
+      "paragraphs": [
+        "Regen has pioneered an innovative solar integrated power system, named HybridGEN™. This system is based on Professor Nayar’s patented variable speed diesel generator technology (US 7072194 & PCT/AU2011/001068)."
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2010",
+      "title": "SHCP Scheme",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">SHCP Scheme</h3>",
+      "paragraphs": [
+        "Installed over 1000 residential systems under Solar Homes & Communities Plan (SHCP)"
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/Eco-Resort-Project.png",
+          "alt": "48kW Eco Beach Resort Installation"
+        }
+      ],
+      "imageCount": 1
+    },
+    {
+      "year": "2008",
+      "title": "48kW Eco-Beach Resort, Broome.",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">48kW Eco-Beach Resort, Broome.</h3>",
+      "paragraphs": [
+        "Delivered a turn-key solar PV/Diesel hybrid power system for the Eco Beach Wilderness Resort in Broome, A$1.1 Million"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2008",
+      "title": "Wind / PV / Diesel Micro Grid System - Maldives",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Wind / PV / Diesel Micro Grid System - Maldives</h3>",
+      "paragraphs": [
+        "A renewable energy power plan was proposed to implement through a program of deployment of solar and wind systems in stand-alone systems and with mini-grid distribution village power for the islands in the Republic of Maldives"
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/03/maldives.jpg",
+          "alt": ""
+        }
+      ],
+      "imageCount": 1
+    },
+    {
+      "year": "2006",
+      "title": "ARC Linkage Project",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ARC Linkage Project</h3>",
+      "paragraphs": [
+        "Grant amount: $270,000 Innovative Grid-Connected, Small-Scale Wind Turbine Generators Offering Low Cost and Wide Operating Speed Range"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2006",
+      "title": "ARC Linkage Project",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ARC Linkage Project</h3>",
+      "paragraphs": [
+        "Grant amount: $280,000 Variable speed diesel power conversion system using a doubly fed induction generator"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2004",
+      "title": "ARC Linkage Project",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ARC Linkage Project</h3>",
+      "paragraphs": [
+        "Grant amount: $230,000 & 250,000 Project details: Control and Interfacing of IGBT Inverters for small scale grid-connected wind turbine generators Multifunction Power Electronic Interface for Mini- Grid Systems"
+      ],
+      "images": [],
+      "imageCount": 0
+    },
+    {
+      "year": "2004",
+      "title": "Asian Development Bank Project",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Asian Development Bank Project</h3>",
+      "paragraphs": [
+        "Grant amount: $150,000 Rural Electrification Institutional Strengthening Project"
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2022/12/Regen-power-new-main-logo-2x.png",
+          "alt": "Regen Power"
+        }
+      ],
+      "imageCount": 1
+    },
+    {
+      "year": "2003",
+      "title": "Our Beginning",
+      "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Our Beginning</h3>",
+      "paragraphs": [
+        "In 2003, Regen Power was established in Perth and is renowned for both innovation in the field of renewable energy and the service of our dedicated team. The company has secured its market share in Western Australia under the leadership of founding Managing Director, Professor Chem Nayar, who has over 30 years’ experience in applied research and commercialisation of alternative energy sources. In 1988, Professor Nayar established the Centre for Renewable Energy and Sustainable Technologies Australia at Curtin University and successfully managed the Centre for 15 years.",
+        "HomeAbout Solar How Does Solar Power Works Government Rebates Why Regen Power? FAQ Residential Solar Deals Solar Packages Solar Panels Solar Inverters Other Products Battery Storage How Solar Batteries Work? Home Solar Battery Storage Tesla Powerwall WA Battery Rebate iStore Battery EV Chargers Australia Commercial Our recent projects Live Monitoring Case Studies Case Study – Banasurasagar Reservoir Case Study – Illawarra Medical Center Case Study – Perth YHA Case Study – Smithfield Case Study – Dubbo Case Study – Kewdale Case Study – Duncraig Case Study – Church Case Study – Others Research and Development Off Grid HybridGEN Solar Pool Pump Acquasmart Microgrid: Solar-Wind-Diesel Hybrid Systems for Remote Areas About usContact BlogPress ReleasePortfolioReviews Western Australia 4/90 Catalano Circuit, Canning Vale 6155, WA. Phone: 1 300 876 354 +61 8 9456 3491 Fax: +61 8 9456 3492 Email: sales@regenpower.com EC License: EC9676",
+        "South Australia Level 2, 70 Hindmarsh Square, Adelaide, SA 5000 Phone: 08 8311 1403 Email: sales.sa@regenpower.com EC License: PGE 305378",
+        "Queensland 15 Burke Street, Woolloongabba, QLD, 4102 Phone: 07 3036 7421 Email: sales.qld@regenpower.com",
+        "New South Wales Level 17, 123 Pitt St, Sydney NSW 2000 Phone: (02) 8077 4232 Email: sales.nsw@regenpower.com EC License: 358290C",
+        "Victoria Level 23, Collins Square Tower Five, 727 Collins Street, VIC 3008 Phone: 03 8676 8807 Email: sales.vic@regenpower.com",
+        "Copyright © 2026 Regen Power - All rights reserved."
+      ],
+      "images": [
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/01/solar-panels-bg-clip.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2023/01/footer-contact-phone.png",
+          "alt": ""
+        },
+        {
+          "src": "https://regenpower.com/wp-content/uploads/2024/04/footer-member-logos-2024.png",
+          "alt": ""
+        }
+      ],
+      "imageCount": 3
+    }
+  ],
+  "timeline": [
+    {
+      "year": "2026",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2026",
+          "title": "#1 Most Popular Solar Installer in Western Australia and #2 Most Popular in Australia by SunWiz Awards 2026",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">#1 Most Popular Solar Installer in Western Australia and<br>#2 Most Popular in Australia by SunWiz Awards 2026</h3>",
+          "paragraphs": [
+            "RegenPower has been recognised as the #1 Most Popular Solar Installer in Western Australia and #2 Most Popular in Australia by SunWiz Awards 2026. This recognition reflects our commitment to delivering quality solar solutions and exceptional customer experiences across the nation."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2026",
+          "title": "ProductReview.com.au Awards Winner 2026",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview.com.au Awards Winner 2026</h3>",
+          "paragraphs": [
+            "Regen Power has won the ProductReview.com.au Award in the Solar Installer Category for the sixth year in a row year (2021, 2022, 2023, 2024, 2025 & 2026). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2025."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2026/01/ProductReview_Award_Winner_2026_white_bg.png",
+              "alt": "Product Review Award Winner 2026"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2025/10/wa-top-rated-installers-1.jpg",
+              "alt": "Solar quotes award - top rated installer in WA"
+            }
+          ],
+          "imageCount": 2
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "count": 6,
+      "awards": [
+        {
+          "year": "2025",
+          "title": "Regen Power Named Western Australia’s Best-Rated Solar Installer 2025 by SolarQuotes",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Regen Power Named Western Australia’s Best-Rated Solar Installer 2025 by SolarQuotes</h3>",
+          "paragraphs": [
+            "Regen Power is proud to announce its latest recognition as Western Australia’s Best-Rated Solar Installer for 2025, awarded by SolarQuotes, one of Australia’s most respected and independent renewable energy review platforms."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2025",
+          "title": "Top 5 Best Rated Solar companies",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Top 5 Best Rated Solar companies</h3>",
+          "paragraphs": [
+            "Regen Power is in the Top 5 Best Rated Solar companies in Australia for quality of excellent review."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2025/08/Best-Rated-Top-5-Australia-2025.png",
+              "alt": "Sunwiz award top 5 best rated solar installer Australia 2025"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2025/07/Belmont-awards-hall-of-fame.png",
+              "alt": "Belmont awards hall of fame"
+            }
+          ],
+          "imageCount": 2
+        },
+        {
+          "year": "2025",
+          "title": "Hall of Fame",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Hall of Fame</h3>",
+          "paragraphs": [
+            "31st Belmont & Western Australian Small Business Awards 2024."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2025",
+          "title": "Celebrating 22nd Anniversary",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Celebrating 22<sup>nd</sup> Anniversary</h3>",
+          "paragraphs": [
+            "Regen Power is celebrating completing 22 years in the industry."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2025/03/22nd_anniversary_logo.png",
+              "alt": "22nd anniversary celebration"
+            }
+          ],
+          "imageCount": 1
+        },
+        {
+          "year": "2025",
+          "title": "Completed 45,000 installations",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Completed 45,000 installations</h3>",
+          "paragraphs": [
+            "Regen Power has completed 45,000 residential rooftop solar installations."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2025",
+          "title": "ProductReview.com.au Awards Winner 2025",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview.com.au Awards Winner 2025</h3>",
+          "paragraphs": [
+            "Regen Power has won the ProductReview.com.au Award in the Solar Installer Category for the fifth year in a row year (2021, 2022, 2023, 2024 & 2025). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2024."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2025/01/product-review-award-21-25.png",
+              "alt": "ProductReview.com.au award winner 2025"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2024/12/2024-executive-of-the-year-award.jpg",
+              "alt": "CEO Magazine 2024 Executive of the year award finalist"
+            }
+          ],
+          "imageCount": 2
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "count": 6,
+      "awards": [
+        {
+          "year": "2024",
+          "title": "The CEO Magazine’s 2024 Executive of the Year Awards Finalist",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">The CEO Magazine’s 2024 Executive of the Year Awards Finalist</h3>",
+          "paragraphs": [
+            "Dr. Nikhil Jayaraj, Managing Director of Regen Power, was honoured as a finalist in The CEO Magazine’s Executive of the Year Awards 2024 for his exceptional leadership and transformative impact in the renewable energy sector. This recognition celebrates his achievements in driving innovation, sustainable growth, and academic contributions to the industry."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2024",
+          "title": "EUPD INSTALLER AWARD AUSTRALIA 2024",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">EUPD INSTALLER AWARD AUSTRALIA 2024</h3>",
+          "paragraphs": [
+            "Regen Power, an award-winning leader in renewable energy, proudly receives the EUPD Research “Top Brand PV Installer 2024” award for the second consecutive year."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2024/10/EUPD_Research_Siegel_Top_Brand_PV_Installer_Australia_2024.png",
+              "alt": ""
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2024/10/40U40_2024_E_Trophy.jpg",
+              "alt": "Winner of Business News 40under40 Awards 2024"
+            }
+          ],
+          "imageCount": 2
+        },
+        {
+          "year": "2024",
+          "title": "40 UNDER 40 WA Awards 2024",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">40 UNDER 40 WA Awards 2024</h3>",
+          "paragraphs": [
+            "Nikhil Jayaraj, Managing Director, Regen Power Pty Ltd was second time named as a winner of Business News 40under40 Awards 2024."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2024",
+          "title": "SUNWIZ Top 5 All Star Award Winner 2023",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">SUNWIZ Top 5 All Star Award Winner 2023</h3>",
+          "paragraphs": [],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2024/03/Sunwiz-All-Star-Award-2024.png",
+              "alt": "Sunwiz All Star Award"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2024/03/Sunwiz-No-1-Award-2023.png",
+              "alt": "Sunwiz No 1 Installer award"
+            }
+          ],
+          "imageCount": 2
+        },
+        {
+          "year": "2024",
+          "title": "SUNWIZ No1 Combined WA Award Winner 2023",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">SUNWIZ No1 Combined WA Award Winner 2023</h3>",
+          "paragraphs": [
+            "Recognized as the NO 1 solar provider for the most number of solar installations in WA"
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2024",
+          "title": "ProductReview Awards Winner 2024",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview Awards Winner 2024</h3>",
+          "paragraphs": [
+            "Regen Power has won the ProductReview.com.au Award in the Solar Installer Category for the fourth year in a row year (2021, 2022, 2023 & 2024). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2023."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2024/01/Product-review-2021-2024-winner-logo.jpg",
+              "alt": "Product Review award 2024"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/11/EUPD-Research-Installer-Award-2023.png",
+              "alt": ""
+            }
+          ],
+          "imageCount": 2
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "count": 8,
+      "awards": [
+        {
+          "year": "2023",
+          "title": "EUPD Research Installer Award 2023",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">EUPD Research Installer Award 2023</h3>",
+          "paragraphs": [
+            "Recognition for unwavering commitment to quality and excellence.",
+            "The award recognizes top players in the renewable energy field based on rigorous criteria, including installation quality, customer satisfaction, and contribution to the energy transition."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2023",
+          "title": "Telstra Business Awards 2024 Finalist",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Telstra Business Awards 2024 Finalist</h3>",
+          "paragraphs": [
+            "WA state finalist under “promoting sustainability” category",
+            "Regen Power is recognized as the WA state finalist under the “Promoting Sustainability “ category of Telstra Best of Business Awards 2024"
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/11/Telstra-Business-Awards-2024-Finalist.png",
+              "alt": "Telstra Business Awards 2024 Finalist"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/11/2023-MD-of-the-year-finalist.png",
+              "alt": "The CEO Magazine Awards 2023 - Managing Director of the year finalist"
+            }
+          ],
+          "imageCount": 2
+        },
+        {
+          "year": "2023",
+          "title": "The CEO Magazine Awards 2023 finalist",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">The CEO Magazine Awards 2023 finalist</h3>",
+          "paragraphs": [
+            "Mr. Nikhil Jayaraj was selected as a finalist for Managing Director of the Year in The CEO Magazine’s 2023 Executive of the Year Awards.",
+            "Mr Nikhi Jayaraj was selected as a finalist for Managing Director of the Year in The CEO Magazine’s 2023 Executive of the Year Awards. In its 12th year, the Executive of the Year Awards recognises the individuals contributing significantly to their organizations, industries, and the wider Australian business community."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2023",
+          "title": "Stevie International Business Awards 2023",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Stevie International Business Awards 2023</h3>",
+          "paragraphs": [
+            "Regen Power and its Managing Director Mr. Nikhil Jayaraj was named the winner of a Gold Stevie® Award in the “Fastest-Growing Company of the Year – in Asia, Australia and New Zealand” and “Best Entrepreneur – Energy” category in The 20th Annual International Business Awards®.",
+            "Regen Power has been distinguished as the Fastest-Growing Company of the Year in the Asia, Australia and New Zealand region. Additionally, our Managing Director, Mr. Nikhil Jayaraj, has been honored with the Best Entrepreneur – Energy category award."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/11/2023-Stevie-Award-Winner.png",
+              "alt": "2023-Stevie-Award-Winner"
+            }
+          ],
+          "imageCount": 1
+        },
+        {
+          "year": "2023",
+          "title": "Completed 40,000 installations",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Completed 40,000 installations</h3>",
+          "paragraphs": [
+            "Regen Power has completed 40,000 residential rooftop solar installations."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2023",
+          "title": "FT High-Growth Companies 2023",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">FT High-Growth Companies 2023</h3>",
+          "paragraphs": [
+            "Regen Power ranked 387th in the List of High-Growth Companies of Asia Pacific by FT for the year of 2023."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/FT-2020-2023-logo.jpg",
+              "alt": "FT High Growth Company Asia Pacific 2023 Award"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/award-productreview-2023.png",
+              "alt": ""
+            }
+          ],
+          "imageCount": 2
+        },
+        {
+          "year": "2023",
+          "title": "ProductReview Awards Winner 2023",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview Awards Winner 2023</h3>",
+          "paragraphs": [
+            "Regen Power has won the ProductReview.com.au Award in the Solar Installer Category for the third year in a row year (2021, 2022 & 2023). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2022"
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2023",
+          "title": "Belmont & WA Business Awards 2022 – \"Enterprise of the Year\" category",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Belmont &amp; WA Business Awards 2022 – \"Enterprise of the Year\" category</h3>",
+          "paragraphs": [
+            "Regen Power has been named the winner of the 29th Belmont & Western Australian Award 2022 in the category of “Enterprise of the Year”. The award recognises an organisation’s overall business excellence."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2022/12/belmont-2022-300x134.jpg",
+              "alt": ""
+            }
+          ],
+          "imageCount": 1
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2022",
+          "title": "Completed 35,000 installations",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Completed 35,000 installations</h3>",
+          "paragraphs": [
+            "Regen Power has completed 35,000 residential rooftop solar installations."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2022",
+          "title": "FT High-Growth Companies Asia-Pacific",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">FT High-Growth Companies Asia-Pacific</h3>",
+          "paragraphs": [
+            "Regen Power ranked 424th in the List of High-Growth Companies of Asia Pacific by FT for the year of 2022."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2022/12/ft-high-growth-20-21-22-300x135.png",
+              "alt": ""
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/award-productreview-2022.png",
+              "alt": ""
+            }
+          ],
+          "imageCount": 2
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "count": 6,
+      "awards": [
+        {
+          "year": "2021",
+          "title": "2022 ProductReview.com.au Award",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">2022 ProductReview.com.au Award</h3>",
+          "paragraphs": [
+            "Regen Power has won the ProductReview Award in the Solar Installer Category for the second year in a row year (2021 & 2022). The award is given to the solar company that earned the highest 5-star rating in the calendar year 2021"
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2021",
+          "title": "2021 Belmont and Western Australia Business Awards",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">2021 Belmont and Western Australia Business Awards</h3>",
+          "paragraphs": [
+            "Regen Power has been named the winner of the 28th Belmont & Western Australian Award 2021 in the category of ‘Sustainability.’ The award recognises an organisation that is conscious of the environment, sustainability, energy efficiency, and circular economy practices."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2022/12/BELMONT2021-300x195.jpg",
+              "alt": ""
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2022/12/WAOFTHEYEAR2021-300x164.jpg",
+              "alt": ""
+            }
+          ],
+          "imageCount": 2
+        },
+        {
+          "year": "2021",
+          "title": "Western Australian of the year Award",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Western Australian of the year Award</h3>",
+          "paragraphs": [
+            "Emeritus Professor Chem Nayar, CEO Regen Power, is the finalist of Western Australian of the Year Awards 2021 in the Professions Award category"
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2021",
+          "title": "Financial Times High Growth Company in Asia-Pacific 2021",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Financial Times High Growth Company in Asia-Pacific 2021</h3>",
+          "paragraphs": [
+            "Regen Power ranked as 326th High Growth Company in Asia-Pacific 2021 by Financial Times"
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2022/12/FT2021-300x171.png",
+              "alt": ""
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/Brett-Lee-Regen-Power-brand-ambassador.png",
+              "alt": ""
+            }
+          ],
+          "imageCount": 2
+        },
+        {
+          "year": "2021",
+          "title": "Brett Lee, Brand Ambassador 2021",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Brett Lee, Brand Ambassador 2021</h3>",
+          "paragraphs": [
+            "Australian Cricket Legend and top bowler in the world joins Regen Power as brand ambassador"
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2021",
+          "title": "ProductReview.com.au 2021 Award Winner",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ProductReview.com.au 2021 Award Winner</h3>",
+          "paragraphs": [
+            "ProductReview.com.au 2021 Award winner Regen Power is proud to be 2021 ProductReview Award Winner. Regen Power has 4.8 Stars rating by the ProductReview.com.au Community. ProductReview.com.au is Australia’s #1 consumer review website. Since 2003, ProductReview has over 90,000 of Australia’s top products & services"
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/award-productreview-2021.png",
+              "alt": ""
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2022/12/austraianoftheyearward.jpg",
+              "alt": ""
+            }
+          ],
+          "imageCount": 2
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2020",
+          "title": "2021 WA Australian of the Year – Finalist",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">2021 WA Australian of the Year – Finalist</h3>",
+          "paragraphs": [
+            "Emeritus Professor Chem Nayar, CEO Regen Power, is the finalist for the 2021 WA Australian of the Year."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2020",
+          "title": "A High Growth Company",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">A High Growth Company</h3>",
+          "paragraphs": [],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/02/fast-100-logo.png",
+              "alt": "Financial review fast 100 2020"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/2019-awards-won.png",
+              "alt": ""
+            }
+          ],
+          "imageCount": 2
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2019",
+          "title": "Rising Stars People's Choice Awards",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Rising Stars People's Choice Awards</h3>",
+          "paragraphs": [],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2019",
+          "title": "20,000 Installations",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">20,000 Installations</h3>",
+          "paragraphs": [
+            "Completed 20,000 residential, commercial and off-grid solar installations throughout Australia. Our 15th Year Anniversary as one of the top consistent solar panels installers Perth.",
+            "20,000",
+            "Installations",
+            "15,000",
+            "Installations"
+          ],
+          "images": [],
+          "imageCount": 0
+        }
+      ]
+    },
+    {
+      "year": "2017",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2017",
+          "title": "15,000 Installations",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">15,000 Installations</h3>",
+          "paragraphs": [
+            "Regen completed 15,000 residential, commercial and off-grid solar installations throughout Australia."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2017",
+          "title": "Western Australian Knowledge",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Western Australian Knowledge</h3>",
+          "paragraphs": [
+            "Born and bred in Perth, WA, in 2003 when the market was still learning about rooftop solar PV systems, Regen Power is the pioneer in residential and commercial solar power system and solar panel solutions. We have installed over 10,000 residential rooftop solar systems Australia-wide and led the charge into other countries to start projects with both economic and educational implication in sustainability living."
+          ],
+          "images": [],
+          "imageCount": 0
+        }
+      ]
+    },
+    {
+      "year": "2016",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2016",
+          "title": "Spanning Continents",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Spanning Continents</h3>",
+          "paragraphs": [
+            "Besides focusing on taking our own HybridGEN (integrated Renwable PowerPack) System to the Australian commercial and industrial market, Regen Power is engaged in business development in developing countries in Africa, India and South East Asia. We provide residential rooftop and commercial grid connected and off-grid solar power solutions through local partners, as well as engineering design and consultation on utility scale projects ranging from 500kW to 100MW."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2016",
+          "title": "Crossed 10,000 PV installations",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Crossed 10,000 PV installations</h3>",
+          "paragraphs": [
+            "By 2015 we crossed over 10,000 solar installations, over 1000 HybridGEN-backed telecom power supplies, and several remote community projects.",
+            "10,000",
+            "Installations"
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2019/11/awards-atc-finalist-2014.png",
+              "alt": "regen award"
+            }
+          ],
+          "imageCount": 1
+        }
+      ]
+    },
+    {
+      "year": "2014",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2014",
+          "title": "Finalist in Australian Technology Competition",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Finalist in Australian Technology Competition</h3>",
+          "paragraphs": [],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2014",
+          "title": "Crossed 8,000 PV installations",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Crossed 8,000 PV installations</h3>",
+          "paragraphs": [
+            "By 2014 we crossed over 8,000 solar installations.",
+            "8,000",
+            "Installations"
+          ],
+          "images": [],
+          "imageCount": 0
+        }
+      ]
+    },
+    {
+      "year": "2012",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2012",
+          "title": "Crossed 6,000 PV installations",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Crossed 6,000 PV installations</h3>",
+          "paragraphs": [
+            "Crossed 6,000 PV installations."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2012",
+          "title": "Sustainable Energy Industry's Ambassador Award",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Sustainable Energy Industry's Ambassador Award</h3>",
+          "paragraphs": [
+            "Regen Power has invested heavily in R&D to invent sustainable technologies that would save fuel, electricity cost and reduce pollution. The patented technology is deployed in major mining sites in Western Australia. As a testimony for our commitment to sustainable energy development, Regen Power was conferred the prestigious Sustainable Energy Industry’s Ambassador Award and the Product Technology Award in 2011."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/SEA-Awards.png",
+              "alt": ""
+            }
+          ],
+          "imageCount": 1
+        }
+      ]
+    },
+    {
+      "year": "2010",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2010",
+          "title": "Patented HybridGEN",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Patented HybridGEN</h3>",
+          "paragraphs": [
+            "Regen has pioneered an innovative solar integrated power system, named HybridGEN™. This system is based on Professor Nayar’s patented variable speed diesel generator technology (US 7072194 & PCT/AU2011/001068)."
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2010",
+          "title": "SHCP Scheme",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">SHCP Scheme</h3>",
+          "paragraphs": [
+            "Installed over 1000 residential systems under Solar Homes & Communities Plan (SHCP)"
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/Eco-Resort-Project.png",
+              "alt": "48kW Eco Beach Resort Installation"
+            }
+          ],
+          "imageCount": 1
+        }
+      ]
+    },
+    {
+      "year": "2008",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2008",
+          "title": "48kW Eco-Beach Resort, Broome.",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">48kW Eco-Beach Resort, Broome.</h3>",
+          "paragraphs": [
+            "Delivered a turn-key solar PV/Diesel hybrid power system for the Eco Beach Wilderness Resort in Broome, A$1.1 Million"
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2008",
+          "title": "Wind / PV / Diesel Micro Grid System - Maldives",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Wind / PV / Diesel Micro Grid System - Maldives</h3>",
+          "paragraphs": [
+            "A renewable energy power plan was proposed to implement through a program of deployment of solar and wind systems in stand-alone systems and with mini-grid distribution village power for the islands in the Republic of Maldives"
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/03/maldives.jpg",
+              "alt": ""
+            }
+          ],
+          "imageCount": 1
+        }
+      ]
+    },
+    {
+      "year": "2006",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2006",
+          "title": "ARC Linkage Project",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ARC Linkage Project</h3>",
+          "paragraphs": [
+            "Grant amount: $270,000 Innovative Grid-Connected, Small-Scale Wind Turbine Generators Offering Low Cost and Wide Operating Speed Range"
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2006",
+          "title": "ARC Linkage Project",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ARC Linkage Project</h3>",
+          "paragraphs": [
+            "Grant amount: $280,000 Variable speed diesel power conversion system using a doubly fed induction generator"
+          ],
+          "images": [],
+          "imageCount": 0
+        }
+      ]
+    },
+    {
+      "year": "2004",
+      "count": 2,
+      "awards": [
+        {
+          "year": "2004",
+          "title": "ARC Linkage Project",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">ARC Linkage Project</h3>",
+          "paragraphs": [
+            "Grant amount: $230,000 & 250,000 Project details: Control and Interfacing of IGBT Inverters for small scale grid-connected wind turbine generators Multifunction Power Electronic Interface for Mini- Grid Systems"
+          ],
+          "images": [],
+          "imageCount": 0
+        },
+        {
+          "year": "2004",
+          "title": "Asian Development Bank Project",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Asian Development Bank Project</h3>",
+          "paragraphs": [
+            "Grant amount: $150,000 Rural Electrification Institutional Strengthening Project"
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2022/12/Regen-power-new-main-logo-2x.png",
+              "alt": "Regen Power"
+            }
+          ],
+          "imageCount": 1
+        }
+      ]
+    },
+    {
+      "year": "2003",
+      "count": 1,
+      "awards": [
+        {
+          "year": "2003",
+          "title": "Our Beginning",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Our Beginning</h3>",
+          "paragraphs": [
+            "In 2003, Regen Power was established in Perth and is renowned for both innovation in the field of renewable energy and the service of our dedicated team. The company has secured its market share in Western Australia under the leadership of founding Managing Director, Professor Chem Nayar, who has over 30 years’ experience in applied research and commercialisation of alternative energy sources. In 1988, Professor Nayar established the Centre for Renewable Energy and Sustainable Technologies Australia at Curtin University and successfully managed the Centre for 15 years.",
+            "HomeAbout Solar How Does Solar Power Works Government Rebates Why Regen Power? FAQ Residential Solar Deals Solar Packages Solar Panels Solar Inverters Other Products Battery Storage How Solar Batteries Work? Home Solar Battery Storage Tesla Powerwall WA Battery Rebate iStore Battery EV Chargers Australia Commercial Our recent projects Live Monitoring Case Studies Case Study – Banasurasagar Reservoir Case Study – Illawarra Medical Center Case Study – Perth YHA Case Study – Smithfield Case Study – Dubbo Case Study – Kewdale Case Study – Duncraig Case Study – Church Case Study – Others Research and Development Off Grid HybridGEN Solar Pool Pump Acquasmart Microgrid: Solar-Wind-Diesel Hybrid Systems for Remote Areas About usContact BlogPress ReleasePortfolioReviews Western Australia 4/90 Catalano Circuit, Canning Vale 6155, WA. Phone: 1 300 876 354 +61 8 9456 3491 Fax: +61 8 9456 3492 Email: sales@regenpower.com EC License: EC9676",
+            "South Australia Level 2, 70 Hindmarsh Square, Adelaide, SA 5000 Phone: 08 8311 1403 Email: sales.sa@regenpower.com EC License: PGE 305378",
+            "Queensland 15 Burke Street, Woolloongabba, QLD, 4102 Phone: 07 3036 7421 Email: sales.qld@regenpower.com",
+            "New South Wales Level 17, 123 Pitt St, Sydney NSW 2000 Phone: (02) 8077 4232 Email: sales.nsw@regenpower.com EC License: 358290C",
+            "Victoria Level 23, Collins Square Tower Five, 727 Collins Street, VIC 3008 Phone: 03 8676 8807 Email: sales.vic@regenpower.com",
+            "Copyright © 2026 Regen Power - All rights reserved."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/01/solar-panels-bg-clip.jpg",
+              "alt": ""
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2023/01/footer-contact-phone.png",
+              "alt": ""
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2024/04/footer-member-logos-2024.png",
+              "alt": ""
+            }
+          ],
+          "imageCount": 3
+        }
+      ]
+    },
+    {
+      "year": "unknown",
+      "count": 1,
+      "awards": [
+        {
+          "year": null,
+          "title": "Finalist - Smart Installer, Smart Energy Excellence Awards 2026.",
+          "titleHtml": "<h3 class=\"elementor-heading-title elementor-size-default\">Finalist - Smart Installer, Smart Energy Excellence Awards 2026.</h3>",
+          "paragraphs": [
+            "Regen Power is proud to be recognised nationally. Finalist – Smart Installer, Smart Energy Excellence Awards 2026."
+          ],
+          "images": [
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2026/05/Finalist_Smart_Installer.png",
+              "alt": "Finalist Smart Installer Award"
+            },
+            {
+              "src": "https://regenpower.com/wp-content/uploads/2026/03/2026_Sunwiz_Awards.png",
+              "alt": "2026 Sunwiz Awards Winner"
+            }
+          ],
+          "imageCount": 2
+        }
+      ]
+    }
+  ],
+  "orphans": [
+    {
+      "type": "p",
+      "text": "Email: sales@regenpower.com"
+    },
+    {
+      "type": "p",
+      "text": "Call: 1800 073 436"
+    },
+    {
+      "type": "img",
+      "src": "https://regenpower.com/wp-content/uploads/2021/08/Regen-power-new-main-logo-2x.png"
+    },
+    {
+      "type": "img",
+      "src": "https://regenpower.com/wp-content/uploads/2021/08/Regen-power-new-main-logo-2x.png"
+    },
+    {
+      "type": "p",
+      "text": "Regen Power At a Glance"
+    }
+  ]
+}
