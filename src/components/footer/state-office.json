@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_footer_state_offices",
+  "info": { "displayName": "State Office", "icon": "pinMap" },
+  "options": {},
+  "attributes": {
+    "state": { "type": "string", "required": true },
+    "address": { "type": "string", "required": true },
+    "phone": { "type": "string" },
+    "email": { "type": "string" }
+  },
+  "config": {}
+}

@@ -1,0 +1,84 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": "Site-wide footer — single type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "helpText": {
+      "type": "string",
+      "default": "Need help? Call our expert team on"
+    },
+    "helpPhoneLabel": {
+      "type": "string",
+      "default": "08 9456 3491"
+    },
+    "helpPhoneHref": {
+      "type": "string",
+      "default": "0894563491"
+    },
+    "quickLinksTitle": {
+      "type": "string",
+      "default": "Quick Links"
+    },
+    "quickLinks": {
+      "type": "component",
+      "component": "footer.quick-link",
+      "repeatable": true
+    },
+    "headOfficeTitle": {
+      "type": "string",
+      "default": "WA Head Office"
+    },
+    "headOffice": {
+      "type": "component",
+      "component": "footer.office",
+      "repeatable": false
+    },
+    "stateOfficesTitle": {
+      "type": "string",
+      "default": "Other State Offices"
+    },
+    "stateOffices": {
+      "type": "component",
+      "component": "footer.state-office",
+      "repeatable": true
+    },
+    "socialLinks": {
+      "type": "component",
+      "component": "footer.social-link",
+      "repeatable": true
+    },
+    "copyrightText": {
+      "type": "string",
+      "default": "Copyright © 2026 Regen Power Pty Ltd. All rights reserved."
+    },
+    "creditLabel": {
+      "type": "string",
+      "default": "Designed & Developed by"
+    },
+    "creditName": {
+      "type": "string",
+      "default": "TIC Global services"
+    },
+    "creditHref": {
+      "type": "string"
+    }
+  }
+}

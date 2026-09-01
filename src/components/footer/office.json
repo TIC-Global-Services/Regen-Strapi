@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_footer_offices",
+  "info": {
+    "displayName": "Office",
+    "icon": "building"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "directLine": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "hours": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

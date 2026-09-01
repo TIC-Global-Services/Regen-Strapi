@@ -24,6 +24,7 @@ import { batteryBrandsSections } from "./data/battery-brands-page";
 import { governmentRebatesSections } from "./data/government-rebates-page";
 import { promotionSections } from "./data/promotion-page";
 import { aboutSections } from "./data/about-page";
+import { footerData } from "./data/footer";
 
 export const pages = [
   {
@@ -293,6 +294,14 @@ export const pages = [
       metaRobots: "index, follow",
     },
   },
+  {
+    uid: "api::footer.footer" as UID.ContentType,
+    title: "Footer (site-wide)",
+    sections: footerData as unknown as never[],
+    // Flat single type — no sections/seo dynamic zone; store flat fields directly
+    fieldName: "__flat__" as unknown as never,
+    seo: null as unknown as never,
+  },
 ];
 
 function sanitizeSections(sections: any[]): any[] {
@@ -321,6 +330,46 @@ async function seedSingleType(
   page: (typeof pages)[number],
   force = false
 ) {
+  const isFlat = (page as any).fieldName === "__flat__";
+
+  // Footer is a flat single type — no sections/seo zone, write fields directly.
+  if (isFlat) {
+    const flatFields = (page.sections as unknown) as Record<string, unknown>;
+    const existing = await strapi.documents(page.uid).findFirst({ status: "published" } as any);
+    if (existing) {
+      if (!force) {
+        strapi.log.info(`[seed] ${page.title} already exists with content`);
+        return;
+      }
+      try {
+        await strapi.documents(page.uid).update({
+          documentId: existing.documentId,
+          data: flatFields as any,
+          status: "published",
+        });
+      } catch (err: any) {
+        if (err.details?.errors) {
+          strapi.log.error(`[seed] ${page.title} validation failed:`);
+          for (const e of err.details.errors) strapi.log.error(`  - ${e.path}: ${e.message}`);
+        }
+        throw err;
+      }
+      strapi.log.info(`[seed] ${page.title} OVERWRITTEN`);
+      return;
+    }
+    try {
+      await strapi.documents(page.uid).create({ data: flatFields as any, status: "published" });
+    } catch (err: any) {
+      if (err.details?.errors) {
+        strapi.log.error(`[seed] ${page.title} validation failed:`);
+        for (const e of err.details.errors) strapi.log.error(`  - ${e.path}: ${e.message}`);
+      }
+      throw err;
+    }
+    strapi.log.info(`[seed] ${page.title} created`);
+    return;
+  }
+
   const existing = await strapi.documents(page.uid).findFirst({
     status: "published",
     populate: ["seo"],

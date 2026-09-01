@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_footer_social_links",
+  "info": { "displayName": "Social Link", "icon": "earth" },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string", "required": true },
+    "href": { "type": "string", "required": true },
+    "icon": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  },
+  "config": {}
+}
