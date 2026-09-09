@@ -13,6 +13,7 @@
     "strapi": "strapi",
     "migrate:wordpress": "node scripts/migrate-wordpress.js",
     "seed:portfolio": "node scripts/seed-portfolio.js",
+    "seed:case-studies": "node scripts/seed-case-studies.js",
     "seed": "node scripts/seed.js",
     "seed:promotion": "node scripts/seed-promotion.js",
     "seed:compare": "node scripts/seed-compare.js",

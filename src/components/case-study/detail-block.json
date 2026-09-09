@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_case_study_detail_blocks",
+  "info": {
+    "displayName": "Case Study Detail Block"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

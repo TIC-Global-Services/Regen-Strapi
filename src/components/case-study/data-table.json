@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_case_study_data_tables",
+  "info": {
+    "displayName": "Case Study Data Table"
+  },
+  "options": {},
+  "attributes": {
+    "tableId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "headers": {
+      "type": "json"
+    },
+    "rows": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}

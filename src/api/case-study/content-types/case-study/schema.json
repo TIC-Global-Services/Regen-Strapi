@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Case Study List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cardTitle": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "cardTitle",
+      "required": true
+    },
+    "cardSubtitle": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "locationDetails": {
+      "type": "text"
+    },
+    "revealText": {
+      "type": "text"
+    },
+    "pdf": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["files"]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "caseStudyDetails": {
+      "type": "component",
+      "repeatable": true,
+      "component": "case-study.detail-block"
+    },
+    "tables": {
+      "type": "component",
+      "repeatable": true,
+      "component": "case-study.data-table"
+    }
+  }
+}

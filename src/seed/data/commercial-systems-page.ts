@@ -150,27 +150,81 @@ export const commercialSystemsSections = [
       "The fastest payback in WA commercial solar comes from businesses whose operating hours line up with peak solar generation — roughly 9am to 4pm. These six industries are where we’ve installed the most systems and seen the strongest results.",
     cards: [
       {
+        title: "Banasurasagar Reservoir · Wayanadu, Kerala",
+        description:
+          "500kWp Floating Solar Farm\nThe floating solar power plant was commissioned and inaugurated on 4th December 2017. The project generates about 700,000 kWh per year fed directly to the grid. Floating solar panels generate higher output due to lower ambient temperatures existing on the surface of the waterbody, while significantly curbing reservoir evaporation.",
+        image: null,
+        textPosition: "top",
+        footerTitle: "Read More",
+        footerDescription: "",
+      },
+      {
+        title: "Autobarn Store · Dubbo, NSW",
+        description:
+          "40kW Rooftop On-Grid Solar PV System\nEnergy efficiency was one of the major considerations. The cost of power has increased by up to 90% over the past few years, and with the extended opening hours of the store, reducing operational energy costs and eliminating carbon footprint was our primary objective.",
+        image: null,
+        textPosition: "top",
+        footerTitle: "Read More",
+        footerDescription: "",
+      },
+      {
+        title: "Duncraig Medical Centre · Perth, WA",
+        description:
+          "10kW Rooftop On-Grid Solar PV System\nThe medical centre is open 7 days a week and thus ideally suited for rooftop solar photovoltaic power generation. Regen Power designed a high-yield 10kW system offsetting 30% of annual electricity consumption with a simple payback period of 3.5 years.",
+        image: null,
+        textPosition: "top",
+        footerTitle: "Read More",
+        footerDescription: "",
+      },
+      {
+        title: "Illawarra Medical Centre · Ballajura, WA",
+        description:
+          "50kW Rooftop On-Grid Solar PV System\nThe Director of the medical centre, Dr Alan Leeb, wanted to offset as much of the Medical Centre's electricity costs as possible while making a positive contribution to the environment by generating green electricity.",
+        image: null,
+        textPosition: "top",
+        footerTitle: "Read More",
+        footerDescription: "",
+      },
+      {
+        title: "Advanta Furniture Company · Kewdale, WA",
+        description:
+          "30kW Rooftop On-Grid Solar PV System\nBy implementing Solar Power, LED Lighting, and Energy Efficiency solutions, Advanta Commercial Furniture Facility has the potential to reduce its carbon footprint by ~71% and eliminate 43.75 tonnes of CO2e annually.",
+        image: null,
+        textPosition: "top",
+        footerTitle: "Read More",
+        footerDescription: "",
+      },
+      {
+        title: "Commercial Solar Systems Showcase · Australia & Regional Sites",
+        description:
+          "TAFE SA & Remote Hybrid Facilities Across Australia\nNearly 639,000 off-grid base stations and remote facilities are being rolled out across regional zones where energy reliability is paramount and renewable hybrid microgrids slash running costs.",
+        image: null,
+        textPosition: "top",
+        footerTitle: "Read More",
+        footerDescription: "",
+      },
+      {
         title: "Perth City YHA · Perth, WA",
         description:
-          "37 kW rooftop on-grid\n30% of annual electricity offset, 39 tonnes CO₂ saved per year, 2.2-year payback.",
+          "37kW Rooftop On-Grid Solar PV System\nThe Perth City YHA operates 7 days a week in the city centre. The installed 37kW solar PV system generates 190kWh per day, offsetting 30% of annual consumption with a rapid 2.2-year return on investment.",
         image: null,
         textPosition: "top",
         footerTitle: "Read More",
         footerDescription: "",
       },
       {
-        title: "Illawarra Medical Centre · Wollongong, NSW",
+        title: "Industrial Logistics Warehouse · Smithfield, NSW",
         description:
-          "Battery-backed medical install\n24/7 reliability, reduced grid demand, ongoing LGC revenue stream.",
+          "100kW Rooftop On-Grid Solar PV System\nThe Smithfield 100kW commercial installation generates 157,000kWh per annum across 1,000 sq.m of warehouse roof space, recouping upfront costs within 2 years through smart feed-in tariff management and capital depreciation.",
         image: null,
         textPosition: "top",
         footerTitle: "Read More",
         footerDescription: "",
       },
       {
-        title: "Smithfield Manufacturing · Smithfield, NSW",
+        title: "Saint Mary Coptic & Community Churches · QLD & WA",
         description:
-          "High-daytime-load factory\nDirect offset of peak tariff blocks, full STC + LGC stacking, under-3-year payback.",
+          "30kW Commercial Church Solar Installations\nA photovoltaic solar electric system was designed and installed on the roof of the church, generating over 16,000kWh per annum, reducing carbon footprint by 16 tonnes of CO2, and saving over 50% of church electricity bills.",
         image: null,
         textPosition: "top",
         footerTitle: "Read More",
