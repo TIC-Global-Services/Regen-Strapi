@@ -28,6 +28,67 @@
     "metaRobots": {
       "type": "string",
       "default": "index, follow"
+    },
+    "schemaType": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "Organization",
+        "WebPage",
+        "Article",
+        "Product",
+        "FAQPage",
+        "LocalBusiness",
+        "BreadcrumbList"
+      ],
+      "default": "WebPage"
+    },
+    "structuredData": {
+      "type": "json"
+    },
+    "ogTitle": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "ogDescription": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "ogImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "ogType": {
+      "type": "string",
+      "default": "website"
+    },
+    "ogUrl": {
+      "type": "string"
+    },
+    "twitterCard": {
+      "type": "enumeration",
+      "enum": ["summary", "summary_large_image", "app", "player"],
+      "default": "summary_large_image"
+    },
+    "twitterTitle": {
+      "type": "string",
+      "maxLength": 70
+    },
+    "twitterDescription": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "twitterImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "twitterSite": {
+      "type": "string"
+    },
+    "twitterCreator": {
+      "type": "string"
     }
   },
   "config": {}
