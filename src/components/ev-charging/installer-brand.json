@@ -20,6 +20,14 @@
       "type": "text"
     },
     "specs": {
+      "type": "component",
+      "component": "ev-charging.spec",
+      "repeatable": true
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
       "type": "string"
     }
   },

@@ -18,6 +18,18 @@
       "type": "component",
       "component": "ev-charging.feature-card",
       "repeatable": true
+    },
+    "primaryCtaText": {
+      "type": "string"
+    },
+    "primaryCtaLink": {
+      "type": "string"
+    },
+    "secondaryCtaText": {
+      "type": "string"
+    },
+    "secondaryCtaLink": {
+      "type": "string"
     }
   },
   "config": {}

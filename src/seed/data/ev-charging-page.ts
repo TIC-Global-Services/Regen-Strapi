@@ -45,24 +45,45 @@ export const evChargingSections: Section[] = [
         name: "Sigenergy",
         cardTitle: "Sigenergy, For The Buyer Thinking 10 Years Ahead",
         description:
-          "SigenStor is an all-in-one solar, battery, and EV charging system with bidirectional charging and advanced energy management. Designed for future-ready homes.\n7–22 kW AC | 25 kW DC bidirectional | V2H & V2G ready",
+          "SigenStor is an all-in-one solar, battery, and EV charging system with bidirectional charging and advanced energy management. Designed for future-ready homes.",
+        specs: [
+          { label: "7–22 kW AC" },
+          { label: "25 kW DC Bidirectional" },
+          { label: "V2H & V2G Ready" },
+        ],
+        ctaText: "Talk To Us About Sigenergy",
+        ctaLink: "/contact",
       },
       {
         name: "Fronius",
         cardTitle: "Fronius Wattpilot Solar-Smart, Beautifully Built",
-        description:
-          "Solar-integrated EV charging, built by Fronius. Up to 22 kW | Smart energy management",
+        description: "Solar-integrated EV charging, built by Fronius.",
+        specs: [
+          { label: "Up To 22 kW" },
+          { label: "Smart Energy Management" },
+        ],
+        ctaText: "Talk To Us About Fronius",
+        ctaLink: "/contact",
       },
       {
         name: "Goodwe",
         cardTitle: "Goodwe HCA G2 — The Smart-Value All-Rounder",
-        description: "Smart EV charging built for Goodwe solar systems. Up to 22 kW | 5-year warranty",
+        description: "Smart EV charging built for Goodwe solar systems.",
+        specs: [
+          { label: "Up To 22 kW" },
+          { label: "5-Year Warranty" },
+        ],
+        ctaText: "Talk To Us About Goodwe",
+        ctaLink: "/contact",
       },
       {
         name: "AlphaESS",
         cardTitle: "Alpha ESS, For Alpha Battery Owners",
         description:
           "Designed for Alpha ESS battery homes, the SMILE-G3-EVCT11 brings solar, battery, and EV charging together in one AlphaCloud platform. Intelligent charging modes optimize solar usage, off-peak tariffs, and charging performance.",
+        specs: [{ label: "AlphaCloud Platform Integration" }],
+        ctaText: "Talk To Us About AlphaESS",
+        ctaLink: "/contact",
       },
     ],
   },
@@ -155,6 +176,10 @@ export const evChargingSections: Section[] = [
           "Live monitoring of generation, storage, and EV charging in a single dashboard, Tesla, Sigen, Solar.web, or SEMS depending on the brand you choose.",
       },
     ],
+    primaryCtaText: "Get A Free Quote",
+    primaryCtaLink: "/contact",
+    secondaryCtaText: "Explore Solar & Battery",
+    secondaryCtaLink: "/battery-storage",
   },
 
   // ─── 8. Installation Steps ──────────────────────────────────────────
