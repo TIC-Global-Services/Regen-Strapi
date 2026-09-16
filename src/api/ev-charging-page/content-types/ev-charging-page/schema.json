@@ -15,6 +15,7 @@
       "type": "dynamiczone",
       "components": [
         "ev-charging.hero",
+        "ev-charging.stats-and-intro",
         "ev-charging.wall-connector",
         "ev-charging.charger-products",
         "ev-charging.installer-brands",
