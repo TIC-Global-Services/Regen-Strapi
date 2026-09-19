@@ -9,9 +9,15 @@
       "type": "string"
     },
     "desc": {
-      "type": "string"
+      "type": "text"
     },
     "bgClass": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaHref": {
       "type": "string"
     },
     "items": {
