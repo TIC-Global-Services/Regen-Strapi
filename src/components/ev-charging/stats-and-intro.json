@@ -5,21 +5,10 @@
   },
   "options": {},
   "attributes": {
-    "introSubtitle": {
-      "type": "string"
-    },
-    "introTitle": {
-      "type": "string"
-    },
     "tickerItems": {
       "type": "component",
       "repeatable": true,
       "component": "shared.ticker-item"
-    },
-    "introParagraphs": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.intro-paragraph"
     }
   },
   "config": {}
