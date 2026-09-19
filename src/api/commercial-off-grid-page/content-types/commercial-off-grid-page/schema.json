@@ -16,6 +16,7 @@
       "components": [
         "commercial-off-grid.hero",
         "commercial-systems.stats-card-grid",
+        "commercial-systems.packages-grid",
         "shared.editorial-section",
         "commercial-off-grid.solutions-portfolio",
         "shared.form-section",
