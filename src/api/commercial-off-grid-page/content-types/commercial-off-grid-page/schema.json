@@ -15,6 +15,7 @@
       "type": "dynamiczone",
       "components": [
         "commercial-off-grid.hero",
+        "commercial-systems.stats-card-grid",
         "shared.editorial-section",
         "commercial-off-grid.solutions-portfolio",
         "shared.form-section",
