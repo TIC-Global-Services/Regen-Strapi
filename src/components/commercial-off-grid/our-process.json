@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_commercial_off_grid_our_processes",
+  "info": {
+    "displayName": "Our Process"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "component": "ev-charging.installation-step",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
