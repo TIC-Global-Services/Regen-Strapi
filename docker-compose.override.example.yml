@@ -1,0 +1,22 @@
+# Production VPS: runs Postgres in the same compose project as Strapi.
+# Copy to docker-compose.override.yml on the server (that file is git-ignored; compose merges it automatically).
+# DATABASE_USERNAME / DATABASE_PASSWORD are read from the server's .env.
+services:
+  postgres:
+    image: postgres:17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  strapi:
+    environment:
+      DATABASE_HOST: postgres
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:

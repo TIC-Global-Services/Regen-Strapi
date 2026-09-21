@@ -1,0 +1,7 @@
+# Reverse proxy + automatic HTTPS for the production VPS.
+# Install on the server at /etc/caddy/Caddyfile, then: caddy validate --config /etc/caddy/Caddyfile && systemctl reload caddy
+# Needs DNS: an A record for strapi.regenpower.com pointing at the VPS IP.
+strapi.regenpower.com {
+	encode gzip
+	reverse_proxy localhost:1337
+}
