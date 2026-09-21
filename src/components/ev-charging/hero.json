@@ -10,6 +10,11 @@
       "multiple": false,
       "allowedTypes": ["images", "videos"]
     },
+    "mobileBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "videos"]
+    },
     "subtitle": {
       "type": "string"
     },
