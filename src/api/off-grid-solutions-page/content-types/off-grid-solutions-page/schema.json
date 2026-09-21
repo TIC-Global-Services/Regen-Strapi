@@ -15,6 +15,7 @@
       "type": "dynamiczone",
       "components": [
         "off-grid.hero",
+        "ev-charging.stats-and-intro",
         "commercial-systems.stats-card-grid",
         "off-grid.solutions-portfolio",
         "off-grid.three-solutions-section",
