@@ -37,6 +37,11 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }
