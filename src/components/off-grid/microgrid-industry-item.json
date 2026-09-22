@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_off_grid_microgrid_industry_items",
+  "info": {
+    "displayName": "Microgrid Industry Item"
+  },
+  "options": {},
+  "attributes": {
+    "application": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
