@@ -9,7 +9,7 @@ POSTGRES_CONTAINER=regen-strapi-postgres-1
 DB_USER=regen_admin
 DB_NAME=regen
 BACKUP_DIR=/root/backups
-RETAIN_DAYS=14
+RETAIN_DAYS=30
 LOG=/var/log/regen-db-backup.log
 
 {
