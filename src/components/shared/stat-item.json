@@ -12,6 +12,9 @@
     "label": {
       "type": "string",
       "required": true
+    },
+    "body": {
+      "type": "text"
     }
   },
   "config": {}
