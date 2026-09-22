@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_smart_home_battery_compatibility_matrices",
+  "info": {
+    "displayName": "Compatibility Matrix"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "columns": {
+      "type": "json"
+    },
+    "rows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "smart-home-battery.compatibility-row"
+    },
+    "footerText": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

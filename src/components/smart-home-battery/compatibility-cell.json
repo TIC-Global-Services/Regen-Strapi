@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_smart_home_battery_compatibility_cells",
+  "info": {
+    "displayName": "Compatibility Cell"
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "enumeration",
+      "enum": ["full", "partial", "limited", "none"]
+    },
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

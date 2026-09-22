@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_smart_home_battery_compatibility_rows",
+  "info": {
+    "displayName": "Compatibility Row"
+  },
+  "options": {},
+  "attributes": {
+    "battery": {
+      "type": "string"
+    },
+    "cells": {
+      "type": "component",
+      "repeatable": true,
+      "component": "smart-home-battery.compatibility-cell"
+    }
+  },
+  "config": {}
+}
