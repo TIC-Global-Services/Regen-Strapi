@@ -9,7 +9,7 @@ const config: Core.Config.Middlewares = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:', 'http', 'https://regenpower-assets.cloud'],
+          'connect-src': ["'self'", 'https:', 'https://regenpower-assets.cloud'],
           'img-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 'https://regenpower-assets.cloud'],
           'media-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 'https://regenpower-assets.cloud'],
           upgradeInsecureRequests: null,
