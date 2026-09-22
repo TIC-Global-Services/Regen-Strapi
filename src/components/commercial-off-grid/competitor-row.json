@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_commercial_off_grid_competitor_rows",
+  "info": {
+    "displayName": "Competitor Row"
+  },
+  "options": {},
+  "attributes": {
+    "competitor": {
+      "type": "string",
+      "required": true
+    },
+    "positioning": {
+      "type": "string",
+      "required": true
+    },
+    "doWell": {
+      "type": "string",
+      "required": true
+    },
+    "misses": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}
