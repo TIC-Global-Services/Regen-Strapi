@@ -23,6 +23,9 @@
     },
     "ctaHref": {
       "type": "string"
+    },
+    "bestFor": {
+      "type": "string"
     }
   },
   "config": {}
