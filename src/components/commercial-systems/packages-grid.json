@@ -18,6 +18,11 @@
       "type": "component",
       "repeatable": true,
       "component": "commercial-systems.package"
+    },
+    "notes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-block"
     }
   },
   "config": {}
