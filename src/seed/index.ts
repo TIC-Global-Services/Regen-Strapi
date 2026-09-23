@@ -22,7 +22,6 @@ import { batteryStorageSections } from "./data/battery-storage-page";
 import { smartHomeBatterySections } from "./data/smart-home-battery-page";
 import { batteryBrandsSections } from "./data/battery-brands-page";
 import { governmentRebatesSections } from "./data/government-rebates-page";
-import { promotionSections } from "./data/promotion-page";
 import { aboutSections } from "./data/about-page";
 import { footerData } from "./data/footer";
 
@@ -268,18 +267,6 @@ export const pages = [
       metaTitle: "Government Battery Rebates | Regen Power",
       metaDescription: "Claim rebates off your battery in WA. Stack the WA Residential Battery Scheme, federal program & interest-free loan.",
       keywords: "WA battery rebate, government rebate battery",
-      metaRobots: "index, follow",
-    },
-  },
-  {
-    uid: "api::promotion-page.promotion-page" as UID.ContentType,
-    title: "Promotion",
-    sections: promotionSections,
-    seo: {
-      metaTitle: "Solar Perth | Regen Power — WA Battery Rebates + Solar Packages",
-      metaDescription:
-        "Double rebates, double savings. WA & Federal battery rebates up to $5,255 off. Perth solar + battery packages from Regen Power — 45,000+ installs since 2003.",
-      keywords: "solar perth, battery rebate WA, solar battery perth",
       metaRobots: "index, follow",
     },
   },
