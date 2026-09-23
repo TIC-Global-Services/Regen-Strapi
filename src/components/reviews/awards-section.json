@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_reviews_awards_sections",
+  "info": {
+    "displayName": "Awards Section"
+  },
+  "options": {},
+  "attributes": {
+    "awards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reviews.award-item"
+    }
+  },
+  "config": {}
+}

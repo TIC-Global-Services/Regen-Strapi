@@ -16,6 +16,7 @@
       "components": [
         "reviews.hero",
         "reviews.intro-section",
+        "reviews.awards-section",
         "reviews.testimonials-section",
         "shared.form-section",
         "shared.cta-banner"

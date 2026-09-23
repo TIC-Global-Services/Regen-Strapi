@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_reviews_award_items",
+  "info": {
+    "displayName": "Award Item"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
