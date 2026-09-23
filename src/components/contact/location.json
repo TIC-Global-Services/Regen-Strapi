@@ -10,11 +10,11 @@
       "required": true
     },
     "lat": {
-      "type": "decimal",
+      "type": "float",
       "required": true
     },
     "lng": {
-      "type": "decimal",
+      "type": "float",
       "required": true
     },
     "address": {
