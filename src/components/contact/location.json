@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_contact_locations",
+  "info": {
+    "displayName": "Location"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lat": {
+      "type": "decimal",
+      "required": true
+    },
+    "lng": {
+      "type": "decimal",
+      "required": true
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "mapsUrl": {
+      "type": "string"
+    },
+    "labelPosition": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ]
+    }
+  },
+  "config": {}
+}

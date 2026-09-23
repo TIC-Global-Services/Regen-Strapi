@@ -16,7 +16,8 @@
       "components": [
         "contact.hero",
         "shared.form-section",
-        "contact.location-map"
+        "contact.location-map",
+        "contact.locations-map"
       ]
     },
     "seo": {
