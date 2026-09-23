@@ -30,10 +30,14 @@ function buildPopulate(strapi, uid, depth = 0) {
   const populate = {};
   for (const [key, attr] of Object.entries(model.attributes)) {
     if (attr.type === 'component') {
-      populate[key] = { populate: buildPopulate(strapi, attr.component, depth + 1) };
+      const sub = buildPopulate(strapi, attr.component, depth + 1);
+      populate[key] = sub === true ? true : { populate: sub };
     } else if (attr.type === 'dynamiczone') {
       const on = {};
-      for (const compUid of attr.components) on[compUid] = { populate: buildPopulate(strapi, compUid, depth + 1) };
+      for (const compUid of attr.components) {
+        const sub = buildPopulate(strapi, compUid, depth + 1);
+        on[compUid] = sub === true ? true : { populate: sub };
+      }
       populate[key] = { on };
     } else if (attr.type === 'media' || attr.type === 'relation') {
       populate[key] = true;
