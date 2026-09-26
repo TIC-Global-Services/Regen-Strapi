@@ -5,6 +5,9 @@
   },
   "options": {},
   "attributes": {
+    "badge": {
+      "type": "string"
+    },
     "subtitle": {
       "type": "string"
     },
@@ -32,6 +35,12 @@
     },
     "ctaLink": {
       "type": "text"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "solar.timeline-step",
+      "max": 8
     }
   },
   "config": {}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_solar_timeline_steps",
+  "info": {
+    "displayName": "Timeline Step"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

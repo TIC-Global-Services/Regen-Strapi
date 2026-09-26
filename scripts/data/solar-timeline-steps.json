@@ -1,0 +1,11 @@
+{
+  "badge": "Your Solar Journey",
+  "steps": [
+    { "title": "Free Consultation", "description": "A 15-minute call with a Regen energy advisor. We review your bill, household setup, and goals. No pressure, no sales script." },
+    { "title": "Site Assessment", "description": "A CEC-accredited designer visits your home (or uses satellite + phase confirmation) to check roof orientation, shade, switchboard, and meter. Takes about 45 minutes." },
+    { "title": "Custom System Design", "description": "We design a system specifically for your roof, household, and plans — including battery-readiness if relevant. You receive a detailed quote with panel layout, component specs, and total investment." },
+    { "title": "Paperwork And Rebates", "description": "We handle all Synergy / Western Power applications, DEBS feed-in registration, and federal STC rebate paperwork. The rebate is applied upfront as a discount — no forms for you to file." },
+    { "title": "Installation Day", "description": "Our in-house crew of CEC-accredited electricians installs your system in 6–8 hours for a typical residential job. You'll be back on power (off-grid) by the afternoon." },
+    { "title": "Switch-On And Monitoring", "description": "Once Western Power approves your meter reconfiguration (typically 2–10 business days), we help you activate the monitoring app and explain how to read your production, consumption, and savings." }
+  ]
+}
