@@ -14,6 +14,26 @@
     "description": {
       "type": "text"
     },
+    "submitButtonText": {
+      "type": "string",
+      "default": "Submit"
+    },
+    "retryButtonText": {
+      "type": "string",
+      "default": "Try Again"
+    },
+    "yesLabel": {
+      "type": "string",
+      "default": "Yes"
+    },
+    "noLabel": {
+      "type": "string",
+      "default": "No"
+    },
+    "resultLabel": {
+      "type": "string",
+      "default": "Eligibility Result"
+    },
     "questions": {
       "type": "component",
       "repeatable": true,
