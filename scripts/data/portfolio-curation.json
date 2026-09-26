@@ -803,5 +803,61 @@
    "international",
    "solar-farms"
   ]
+ },
+ {
+  "documentId": "ixd124upmaoeaai7gmptu8u5",
+  "title": "Sungrow Solar Battery Installation at Gladstone Rd, Rivervale, WA 6103",
+  "filters": [
+   "10-30-kw",
+   "storage"
+  ]
+ },
+ {
+  "documentId": "fi5hw9vo09yw6lrvqlk0p7hs",
+  "title": "TESLA Powerwall 3 Solar Battery Installation at Gladys Road, Lesmurdie, WA 6076",
+  "filters": [
+   "10-30-kw",
+   "storage"
+  ]
+ },
+ {
+  "documentId": "f1jdvg1m6n88o0r8jqa0wqu0",
+  "title": "BYD Solar Battery Installation at Rothbury Rd, Embleton, WA 6062",
+  "filters": [
+   "10-30-kw",
+   "storage"
+  ]
+ },
+ {
+  "documentId": "ze7jzleojgm9jhi6xicdg5yg",
+  "title": "GOODWE Solar Battery Installation at Wellington Road, Morley, WA 6062",
+  "filters": [
+   "10-30-kw",
+   "storage"
+  ]
+ },
+ {
+  "documentId": "vcy2u6e66qmet55e5bogxc4o",
+  "title": "GOODWE Solar Battery Installation at Brockman St, Gingin, WA 6503",
+  "filters": [
+   "10-30-kw",
+   "storage"
+  ]
+ },
+ {
+  "documentId": "nidglcbnang63ex9kliysd1o",
+  "title": "Fronius Solar Battery Installation at Chaffers Street, Morley, WA 6062",
+  "filters": [
+   "10-30-kw",
+   "storage"
+  ]
+ },
+ {
+  "documentId": "iiulpcyrm43fig7u7lvw54y0",
+  "title": "Alpha – ESS Solar Battery Installation at Shepherd St, Glen Forrest, WA 6071",
+  "filters": [
+   "50-90-kw",
+   "storage"
+  ]
  }
 ]
