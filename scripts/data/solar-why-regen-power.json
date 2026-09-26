@@ -1,0 +1,24 @@
+{
+  "badge": "Why Regen Power",
+  "title": "The numbers behind 23 years of Perth solar.",
+  "paragraphs": [
+    { "text": "Regen Power was founded in Perth in 2003 by Dr. Nikhil Jayaraj — one of Australia's first PhD-qualified renewable energy specialists. More than two decades later, we remain privately owned, Perth-based, and engineer-led.", "isSecondary": false },
+    { "text": "That matters for one reason: when you call us after installation — about an app update, a Synergy feed-in query, a battery upgrade in 2030 — the team answering is the same team that designed your system.", "isSecondary": true }
+  ],
+  "stats": [
+    { "value": "45,000+", "label": "Installations across Australia" },
+    { "value": "23 years", "label": "Operating in Perth since 2003" },
+    { "value": "4.9 ★", "label": "Avg rating, Google + ProductReview" },
+    { "value": "6×", "label": "ProductReview Award winner 2021–2026" },
+    { "value": "CEC", "label": "Approved Retailer", "logoFileId": 67 },
+    { "value": "Tesla", "label": "Certified Partner", "logoFileId": 71 }
+  ],
+  "awardsTitle": "Recognised By The Industry",
+  "awards": [
+    { "text": "ProductReview.com.au Award Winner — six consecutive years, 2021–2026" },
+    { "text": "EUPD Research \"Top Brand PV Installer\" — multiple years" },
+    { "text": "SunWiz Top Residential Solar Installer — Western Australia" },
+    { "text": "The CEO Magazine Executive of the Year Awards — Finalist (Dr. Nikhil Jayaraj)" },
+    { "text": "Business News 40under40 — Award winner (Dr. Nikhil Jayaraj)" }
+  ]
+}

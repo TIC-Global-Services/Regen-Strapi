@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_solar_why_regen_awards",
+  "info": {
+    "displayName": "Why Regen Award"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

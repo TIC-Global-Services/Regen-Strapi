@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_solar_why_regen_stats",
+  "info": {
+    "displayName": "Why Regen Stat"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  },
+  "config": {}
+}
