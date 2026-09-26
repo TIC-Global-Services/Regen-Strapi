@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_navbar_sub_items",
+  "info": {
+    "displayName": "Sub Item",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_navbar_nav_items",
+  "info": {
+    "displayName": "Nav Item",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "openInNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "subItems": {
+      "type": "component",
+      "component": "navbar.sub-item",
+      "repeatable": true,
+      "max": 10
+    }
+  },
+  "config": {}
+}

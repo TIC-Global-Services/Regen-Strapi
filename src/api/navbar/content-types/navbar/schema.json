@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "navbars",
+  "info": {
+    "singularName": "navbar",
+    "pluralName": "navbars",
+    "displayName": "Navbar",
+    "description": "Site-wide header navigation — single type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "logoLight": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "logoAlt": {
+      "type": "string",
+      "default": "Regen Power"
+    },
+    "logoHref": {
+      "type": "string",
+      "default": "/"
+    },
+    "items": {
+      "type": "component",
+      "component": "navbar.nav-item",
+      "repeatable": true,
+      "max": 8
+    },
+    "showCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Speak to Us"
+    },
+    "ctaHref": {
+      "type": "string",
+      "default": "tel:+61894563491"
+    }
+  }
+}
