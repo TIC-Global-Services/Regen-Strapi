@@ -17,6 +17,9 @@
     "goodFitTitle": {
       "type": "string"
     },
+    "leftDescription": {
+      "type": "text"
+    },
     "goodFitItems": {
       "type": "component",
       "repeatable": true,
@@ -24,6 +27,9 @@
     },
     "conversationTitle": {
       "type": "string"
+    },
+    "rightDescription": {
+      "type": "text"
     },
     "conversationItems": {
       "type": "component",

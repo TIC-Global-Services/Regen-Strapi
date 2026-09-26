@@ -17,6 +17,9 @@
     "leftTitle": {
       "type": "string"
     },
+    "leftDescription": {
+      "type": "text"
+    },
     "leftItems": {
       "type": "component",
       "repeatable": true,
@@ -24,6 +27,9 @@
     },
     "rightTitle": {
       "type": "string"
+    },
+    "rightDescription": {
+      "type": "text"
     },
     "rightItems": {
       "type": "component",
